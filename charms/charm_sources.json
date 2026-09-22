@@ -1,0 +1,222 @@
+{
+ "4": [
+  {
+   "name": "Arbitrator_crafted",
+   "cat": "steelsword",
+   "lockey": "item_name_arbitrator"
+  },
+  {
+   "name": "CHT Charmstone 4",
+   "cat": "usable",
+   "lockey": "cht_st_4"
+  },
+  {
+   "name": "Negotiator_crafted",
+   "cat": "silversword",
+   "lockey": "item_name_negotiator"
+  }
+ ],
+ "2": [
+  {
+   "name": "Ardaenye_crafted",
+   "cat": "steelsword",
+   "lockey": "item_name_ardaenye"
+  },
+  {
+   "name": "CHT Charmstone 2",
+   "cat": "usable",
+   "lockey": "cht_st_2"
+  },
+  {
+   "name": "Zerrikanterment_crafted",
+   "cat": "silversword",
+   "lockey": "item_name_zerrikanterment"
+  }
+ ],
+ "6": [
+  {
+   "name": "Azurewrath_crafted",
+   "cat": "silversword",
+   "lockey": "item_name_azurewrath"
+  },
+  {
+   "name": "CHT Charmstone 6",
+   "cat": "usable",
+   "lockey": "cht_st_6"
+  }
+ ],
+ "7": [
+  {
+   "name": "Barbersurgeon_crafted",
+   "cat": "steelsword",
+   "lockey": "item_name_barbersurgeon"
+  },
+  {
+   "name": "Bloodsword_crafted",
+   "cat": "silversword",
+   "lockey": "item_name_bloodsword"
+  },
+  {
+   "name": "CHT Charmstone 7",
+   "cat": "usable",
+   "lockey": "cht_st_7"
+  }
+ ],
+ "12": [
+  {
+   "name": "Beannshie_crafted",
+   "cat": "steelsword",
+   "lockey": "item_name_beannshie"
+  },
+  {
+   "name": "CHT Charmstone 12",
+   "cat": "usable",
+   "lockey": "cht_st_12"
+  },
+  {
+   "name": "Reachofthedamned_crafted",
+   "cat": "silversword",
+   "lockey": "item_name_reachofthedamned"
+  }
+ ],
+ "13": [
+  {
+   "name": "Blackunicorn_crafted",
+   "cat": "steelsword",
+   "lockey": "item_name_blackunicorn"
+  },
+  {
+   "name": "CHT Charmstone 13",
+   "cat": "usable",
+   "lockey": "cht_st_13"
+  },
+  {
+   "name": "Weeper_crafted",
+   "cat": "silversword",
+   "lockey": "item_name_weeper"
+  }
+ ],
+ "1": [
+  {
+   "name": "CHT Charmstone 1",
+   "cat": "usable",
+   "lockey": "cht_st_1"
+  },
+  {
+   "name": "Gwyhyr_crafted",
+   "cat": "steelsword",
+   "lockey": "item_name_gwyhyr"
+  }
+ ],
+ "10": [
+  {
+   "name": "CHT Charmstone 10",
+   "cat": "usable",
+   "lockey": "cht_st_10"
+  },
+  {
+   "name": "Cheesecutter",
+   "cat": "steelsword",
+   "lockey": "item_name_cheesecutter"
+  }
+ ],
+ "11": [
+  {
+   "name": "CHT Charmstone 11",
+   "cat": "usable",
+   "lockey": "cht_st_11"
+  },
+  {
+   "name": "EP1 Crafted Witcher Silver Sword",
+   "cat": "silversword",
+   "lockey": "item_name_electrum_sword"
+  }
+ ],
+ "14": [
+  {
+   "name": "CHT Charmstone 14",
+   "cat": "usable",
+   "lockey": "cht_st_14"
+  },
+  {
+   "name": "Deireadh_crafted",
+   "cat": "steelsword",
+   "lockey": "item_name_deireadh"
+  }
+ ],
+ "15": [
+  {
+   "name": "CHT Charmstone 15",
+   "cat": "usable",
+   "lockey": "cht_st_15"
+  },
+  {
+   "name": "Ultimatum_crafted",
+   "cat": "steelsword",
+   "lockey": "item_name_ultimatum"
+  }
+ ],
+ "3": [
+  {
+   "name": "CHT Charmstone 3",
+   "cat": "usable",
+   "lockey": "cht_st_3"
+  },
+  {
+   "name": "Inis_crafted",
+   "cat": "steelsword",
+   "lockey": "item_name_inis"
+  },
+  {
+   "name": "Naevdeseidhe_crafted",
+   "cat": "silversword",
+   "lockey": "item_name_naevdeseidhe"
+  }
+ ],
+ "5": [
+  {
+   "name": "CHT Charmstone 5",
+   "cat": "usable",
+   "lockey": "cht_st_5"
+  },
+  {
+   "name": "Tlareg_crafted",
+   "cat": "silversword",
+   "lockey": "item_name_tlareg"
+  },
+  {
+   "name": "Torlara_crafted",
+   "cat": "steelsword",
+   "lockey": "item_name_torlara"
+  }
+ ],
+ "8": [
+  {
+   "name": "CHT Charmstone 8",
+   "cat": "usable",
+   "lockey": "cht_st_8"
+  },
+  {
+   "name": "Havcaaren_crafted",
+   "cat": "silversword",
+   "lockey": "item_name_havcaaren"
+  },
+  {
+   "name": "Princessxenthiasword_crafted",
+   "cat": "steelsword",
+   "lockey": "item_name_princessxenthiasword"
+  }
+ ],
+ "9": [
+  {
+   "name": "CHT Charmstone 9",
+   "cat": "usable",
+   "lockey": "cht_st_9"
+  },
+  {
+   "name": "Headtaker_crafted",
+   "cat": "steelsword",
+   "lockey": "item_name_headtaker"
+  }
+ ]
+}

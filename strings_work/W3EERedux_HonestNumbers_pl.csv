@@ -1,0 +1,7 @@
+;meta[language=pl]
+; id      |key(hex)|key(str)| text
+2114479000|        |w3eeredux_root|Dodatki do W3EE Redux
+2114479001|        |hnum_menu|Uczciwe Liczby
+2114479002|        |hnum_enabled|Uczciwe liczby włączone
+2114479003|        |hnum_signrows|Wiersze Znaków: pokaż realną moc każdego Znaku
+2114479004|        |hnum_durability|Obrażenia mieczy: uwzględnij zużycie ostrza, jak w walce

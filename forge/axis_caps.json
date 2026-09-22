@@ -1,0 +1,214 @@
+{
+ "lifesteal": [
+  0.2,
+  "PC Caretaker Shovel"
+ ],
+ "armor_reduction": [
+  0.25,
+  "Knight Mace 1"
+ ],
+ "indestructible": [
+  0.5,
+  "Adversary Silver Sword"
+ ],
+ "spell_power": [
+  0.25,
+  "Gryphon School silver sword 4"
+ ],
+ "poise_damage": [
+  0.5,
+  "Bear School silver sword 4"
+ ],
+ "armor_reduction_heavy_style": [
+  0.1,
+  "Arbitrator_crafted"
+ ],
+ "attack_speed_fast_style": [
+  0.1,
+  "Arbitrator_crafted"
+ ],
+ "attack_stamina_cost_bonus": [
+  0.25,
+  "Wolf School steel sword 4"
+ ],
+ "buff_apply_chance": [
+  0.45,
+  "Red Wolf School steel sword 1"
+ ],
+ "desc_burningchance_mult": [
+  0.15,
+  "Red Wolf School silver sword 1"
+ ],
+ "spell_power_igni": [
+  0.3,
+  "Ardaenye_crafted"
+ ],
+ "spell_power_yrden": [
+  0.3,
+  "Azurewrath_crafted"
+ ],
+ "spell_power_quen": [
+  0.3,
+  "Azurewrath_crafted"
+ ],
+ "vigor_regen": [
+  0.3,
+  "pool:Magical_Spellslinger"
+ ],
+ "desc_bleedingchance_mult": [
+  0.25,
+  "q702 vampire steel sword"
+ ],
+ "attack_speed": [
+  0.15,
+  "EP1 Viper School silver sword"
+ ],
+ "injury_chance": [
+  0.3,
+  "Headtaker_crafted"
+ ],
+ "damage_through_blocks": [
+  0.5,
+  "pool:Master_CrushBlocks"
+ ],
+ "attack_power": [
+  0.3,
+  "pool:Master_Heft"
+ ],
+ "parry_stamina_cost_bonus": [
+  0.2,
+  "Crafted Ofir Steel Sword"
+ ],
+ "counter_damage_bonus": [
+  0.3,
+  "Bear School steel sword 4"
+ ],
+ "focus_gain": [
+  0.3,
+  "Blackunicorn_crafted"
+ ],
+ "attack_power_fast_style": [
+  0.2,
+  "pool:Magical_Needle"
+ ],
+ "critical_hit_chance": [
+  0.15,
+  "EP1 Viper School steel sword"
+ ],
+ "desc_poinsonchance_mult": [
+  0.25,
+  "EP1 Viper School silver sword"
+ ],
+ "movement_stamina_efficiency": [
+  0.25,
+  "Robustswordofdolblathanna_crafted"
+ ],
+ "critical_hit_damage_bonus": [
+  1.0,
+  "Serpent Silver Sword 3"
+ ],
+ "spell_power_axii": [
+  0.3,
+  "Lune_crafted"
+ ],
+ "desc_freezingchance_mult": [
+  0.15,
+  "Reachofthedamned_crafted"
+ ],
+ "spell_power_aard": [
+  0.3,
+  "Gloryofthenorth_crafted"
+ ],
+ "dismember_chance": [
+  0.01,
+  "Gnomish sword 2_crafted"
+ ],
+ "desc_confusionchance_mult": [
+  0.15,
+  "Gryphon School silver sword 4"
+ ],
+ "instant_kill_chance_mult": [
+  0.03,
+  "Hanza steel sword 3"
+ ],
+ "damage_from_behind_off": [
+  0.3,
+  "Lynx School silver sword 4"
+ ],
+ "desc_staggerchance_mult": [
+  0.05,
+  "Knight Mace 3"
+ ],
+ "attack_power_horseback": [
+  0.25,
+  "Knights steel sword 3"
+ ],
+ "attack_speed_heavy_style": [
+  0.1,
+  "Negotiator_crafted"
+ ],
+ "armor_reduction_fast_style": [
+  0.2,
+  "pool:Master_Needle"
+ ],
+ "nonhuman_exp_bonus_when_fatal": [
+  0.05,
+  "Serpent Silver Sword 1"
+ ],
+ "human_exp_bonus_when_fatal": [
+  0.05,
+  "Serpent Steel Sword 1"
+ ],
+ "toxicity_drain": [
+  0.2,
+  "Unique steel sword"
+ ],
+ "injury_resist": [
+  0.1,
+  "Bear Armor 4"
+ ],
+ "poise_bonus": [
+  1.0,
+  "Bear Boots 1"
+ ],
+ "poison_resistance_perc": [
+  0.4,
+  "Knight Geralt A Boots 3"
+ ],
+ "burning_resistance_perc": [
+  0.4,
+  "Knight Geralt A Pants 3"
+ ],
+ "bleeding_resistance_perc": [
+  0.4,
+  "Knight Geralt A Gloves 3"
+ ],
+ "bonus_herb_chance": [
+  0.05,
+  "Gloves 04"
+ ],
+ "quen_chance_on_projectile": [
+  0.25,
+  "Knight Geralt A Armor 3"
+ ],
+ "safe_dodge_angle_bonus": [
+  1.0,
+  "Lynx Boots 1"
+ ],
+ "returned_silver_damage_mult": [
+  0.01,
+  "Medium armor 05r"
+ ],
+ "evade_speed": [
+  0.06,
+  "Thief Armor"
+ ],
+ "attack_power_heavy_style": [
+  0.2,
+  "pool:Master_Butcher"
+ ],
+ "shield_disarm_chance": [
+  0.3,
+  "pool:Magical_Ram"
+ ]
+}

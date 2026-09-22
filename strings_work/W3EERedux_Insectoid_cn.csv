@@ -1,0 +1,10 @@
+;meta[language=zh]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|W3EE Redux 扩展
+2114478001|        |insc_menu|虫类突变修正
+2114478002|        |insc_enabled|修正毒性兑换比率
+2114478003|        |insc_rate|   ...每点百分之一秒 (原版 10)
+2114478004|        |insc_fixdesc|在描述中显示真实比率
+2114478005|        |insc_dmgredon|恢复原版伤害减免
+2114478006|        |insc_dmgredperc|   ...连续受击时减免, %
+2114478007|        |insc_dmgredwin|   ...窗口时长, 秒

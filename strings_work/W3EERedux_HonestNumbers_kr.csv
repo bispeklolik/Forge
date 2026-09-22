@@ -1,0 +1,7 @@
+;meta[language=kr]
+; id      |key(hex)|key(str)| text
+2114479000|        |w3eeredux_root|W3EE Redux 애드온
+2114479001|        |hnum_menu|정직한 수치
+2114479002|        |hnum_enabled|정직한 수치 활성화
+2114479003|        |hnum_signrows|표식 항목: 각 표식의 실제 위력 표시
+2114479004|        |hnum_durability|검 피해량: 전투와 동일하게 칼날 마모 반영

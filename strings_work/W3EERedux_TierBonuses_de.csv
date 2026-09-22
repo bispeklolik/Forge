@@ -1,0 +1,12 @@
+;meta[language=de]
+; id      |key(hex)|key(str)| text
+2114477000|        |w3eeredux_root|W3EE-Redux-Erweiterungen
+2114477001|        |tssb_menu|Set-Boni nach Stufe
+2114477002|        |tssb_enabled|Großmeister-Bonus auf jeder Stufe
+2114477003|        |tssb_tier1|   ...Stärke auf Stufe 1, %
+2114477004|        |tssb_tier2|   ...Stärke auf Stufe 2, %
+2114477005|        |tssb_tier3|   ...Stärke auf Stufe 3, %
+2114477006|        |tssb_tier4|   ...Stärke auf Stufe 4, %
+2114477007|        |tssb_descgm|In Beschreibungen: Großmeisterwert in Klammern
+2114477008|        |tssb_descnote|In Beschreibungen: Zeile zur Bonusstärke
+2114477009|        |tssb_note|Stufenabhängige Stärke:

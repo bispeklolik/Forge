@@ -1,0 +1,10 @@
+;meta[language=de]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|W3EE-Redux-Erweiterungen
+2114478001|        |insc_menu|Insektoid-Mutation korrigiert
+2114478002|        |insc_enabled|Toxizitäts-Umrechnung korrigieren
+2114478003|        |insc_rate|   ...Hundertstelsekunden pro Punkt (original 10)
+2114478004|        |insc_fixdesc|Echten Wert in der Beschreibung zeigen
+2114478005|        |insc_dmgredon|Originale Schadensreduktion zurückholen
+2114478006|        |insc_dmgredperc|   ...Reduktion bei Folgetreffern, %
+2114478007|        |insc_dmgredwin|   ...Fensterlänge, Sek.

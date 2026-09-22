@@ -1,0 +1,10 @@
+;meta[language=pl]
+; id      |key(hex)|key(str)| text
+2114490000|        |w3eeredux_root|Dodatki do W3EE Redux
+2114490001|        |drgd_menu|Dynamic Ragdolls
+2114490002|        |drgd_chance|Free ragdoll death chance (%)
+2114490003|        |drgd_force|Ragdoll impulse strength (%)
+2114490004|        |drgd_mute|Mute corpses on sign hits
+2114490005|        |drgd_drop|Drop weapons on non-sword deaths
+2114490006|        |drgd_deadly|Deadly Counter (Mutation 3, low health)
+2114490007|        |drgd_fists|Fists never dismember

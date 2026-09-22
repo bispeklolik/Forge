@@ -1,0 +1,12 @@
+;meta[language=br]
+; id      |key(hex)|key(str)| text
+2114477000|        |w3eeredux_root|Complementos do W3EE Redux
+2114477001|        |tssb_menu|Bônus de Conjunto por Nível
+2114477002|        |tssb_enabled|Bônus de grão-mestre em todo nível
+2114477003|        |tssb_tier1|   ...força no nível 1, %
+2114477004|        |tssb_tier2|   ...força no nível 2, %
+2114477005|        |tssb_tier3|   ...força no nível 3, %
+2114477006|        |tssb_tier4|   ...força no nível 4, %
+2114477007|        |tssb_descgm|Descrições: valor de grão-mestre entre parênteses
+2114477008|        |tssb_descnote|Descrições: linha sobre a força do bônus
+2114477009|        |tssb_note|Força conforme o nível:

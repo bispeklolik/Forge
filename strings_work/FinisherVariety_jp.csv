@@ -1,0 +1,4 @@
+;meta[language=jp]
+; id      |key(hex)|key(str)| text
+2114473000|        |fvar_menu|フィニッシュ演出の多様化
+2114473001|        |fvar_mode|多様性: 0 W3EE, 1 バニラ, 2 最大

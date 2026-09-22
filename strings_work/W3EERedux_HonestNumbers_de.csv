@@ -1,0 +1,7 @@
+;meta[language=de]
+; id      |key(hex)|key(str)| text
+2114479000|        |w3eeredux_root|W3EE-Redux-Erweiterungen
+2114479001|        |hnum_menu|Ehrliche Zahlen
+2114479002|        |hnum_enabled|Ehrliche Zahlen aktiv
+2114479003|        |hnum_signrows|Zeichen-Zeilen: echte Wirkung jedes Zeichens zeigen
+2114479004|        |hnum_durability|Schwertschaden: Klingenabnutzung einrechnen, wie im Kampf

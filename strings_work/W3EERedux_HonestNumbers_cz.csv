@@ -1,0 +1,7 @@
+;meta[language=cz]
+; id      |key(hex)|key(str)| text
+2114479000|        |w3eeredux_root|Doplňky pro W3EE Redux
+2114479001|        |hnum_menu|Poctivá Čísla
+2114479002|        |hnum_enabled|Poctivá čísla zapnuta
+2114479003|        |hnum_signrows|Řádky Znamení: zobrazit skutečnou sílu každého Znamení
+2114479004|        |hnum_durability|Poškození mečů: započítat opotřebení čepele jako v boji

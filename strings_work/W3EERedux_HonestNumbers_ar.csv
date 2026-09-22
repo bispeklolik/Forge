@@ -1,0 +1,7 @@
+;meta[language=ar]
+; id      |key(hex)|key(str)| text
+2114479000|        |w3eeredux_root|إضافات W3EE Redux
+2114479001|        |hnum_menu|أرقام صادقة
+2114479002|        |hnum_enabled|تفعيل الأرقام الصادقة
+2114479003|        |hnum_signrows|صفوف الإشارات: إظهار القوة الحقيقية لكل إشارة
+2114479004|        |hnum_durability|ضرر السيوف: احتساب تآكل النصل كما في القتال

@@ -1,0 +1,58 @@
+[
+ {
+  "name": "Vesemir KM Boots",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/boots-01.png",
+  "lockey": "frgz_vsmkm_boots",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Vesemir KM Gloves",
+  "cat": "gloves",
+  "icon": "icons/inventory/quests/ico_recipe.png",
+  "lockey": "frgz_vsmkm_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Vesemir KM Pants",
+  "cat": "pants",
+  "icon": "icons/inventory/quests/ico_recipe.png",
+  "lockey": "frgz_vsmkm_pants",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Perfect KM Armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/armor-01.png",
+  "lockey": "frgz_prfkm_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Perfect KM Gloves",
+  "cat": "gloves",
+  "icon": "icons/inventory/quests/ico_recipe.png",
+  "lockey": "frgz_prfkm_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Perfect KM Pants",
+  "cat": "pants",
+  "icon": "icons/inventory/quests/ico_recipe.png",
+  "lockey": "frgz_prfkm_pants",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Perfect KM Boots",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/boots-01.png",
+  "lockey": "frgz_prfkm_boots",
+  "quality": 4,
+  "tags_effects": []
+ }
+]

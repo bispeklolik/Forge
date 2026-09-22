@@ -1,0 +1,7 @@
+;meta[language=hu]
+; id      |key(hex)|key(str)| text
+2114479000|        |w3eeredux_root|W3EE Redux kiegészítők
+2114479001|        |hnum_menu|Őszinte Számok
+2114479002|        |hnum_enabled|Őszinte számok bekapcsolva
+2114479003|        |hnum_signrows|Jel-sorok: az egyes jelek valós erejének mutatása
+2114479004|        |hnum_durability|Kardsebzés: a penge kopásának beszámítása, mint harcban

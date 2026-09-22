@@ -1,0 +1,7 @@
+;meta[language=br]
+; id      |key(hex)|key(str)| text
+2114479000|        |w3eeredux_root|Complementos do W3EE Redux
+2114479001|        |hnum_menu|Números Honestos
+2114479002|        |hnum_enabled|Números honestos ativados
+2114479003|        |hnum_signrows|Linhas de Sinais: mostrar a potência real de cada Sinal
+2114479004|        |hnum_durability|Dano das espadas: contar o desgaste da lâmina, como em combate

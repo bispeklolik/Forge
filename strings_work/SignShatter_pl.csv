@@ -1,0 +1,13 @@
+;meta[language=pl]
+; id      |key(hex)|key(str)| text
+2114471000|        |ssht_menu|Rozerwanie Znakiem
+2114471001|        |ssht_humanpoise|Rozrywaj ludzi ze złamaną postawą
+2114471002|        |ssht_humanhp|   ...tylko poniżej tego % zdrowia
+2114471003|        |ssht_shatterscale|   ...krzywa szansy (100 = jeden do jednego)
+2114471004|        |ssht_killshatter|Rozrywaj wszystko, co zabije Aard
+2114471005|        |ssht_killshatterhumans|   ...w tym ludzi
+2114471006|        |ssht_ignipoise|Igni też rozrywa ludzi
+2114471007|        |ssht_ignikill|Rozrywaj wszystko, co zabije Igni
+2114471008|        |ssht_slomochance|Szansa na spowolnienie czasu
+2114471009|        |ssht_slomoscale|   ...siła (mniej = mocniej)
+2114471010|        |ssht_slomotime|   ...czas trwania, sek

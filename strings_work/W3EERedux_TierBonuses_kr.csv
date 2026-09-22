@@ -1,0 +1,12 @@
+;meta[language=kr]
+; id      |key(hex)|key(str)| text
+2114477000|        |w3eeredux_root|W3EE Redux 애드온
+2114477001|        |tssb_menu|등급 비례 세트 보너스
+2114477002|        |tssb_enabled|모든 등급에서 그랜드마스터 보너스
+2114477003|        |tssb_tier1|   ...1등급 강도, %
+2114477004|        |tssb_tier2|   ...2등급 강도, %
+2114477005|        |tssb_tier3|   ...3등급 강도, %
+2114477006|        |tssb_tier4|   ...4등급 강도, %
+2114477007|        |tssb_descgm|설명에 그랜드마스터 수치를 괄호로 표시
+2114477008|        |tssb_descnote|설명에 보너스 강도 줄 추가
+2114477009|        |tssb_note|등급별 강도:

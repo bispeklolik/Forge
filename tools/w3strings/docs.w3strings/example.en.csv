@@ -1,0 +1,19 @@
+;meta[language=en]
+; id      |key(hex)|key(str)| text
+;
+; comment lines use ; as first character
+; all comment lines (except the two line header) will be ignored
+;
+2119999000|        ||This string is accessible only by its id 2119999000
+;
+; example: key strings, useable characters: a-z0-9_
+;
+2119999001|        |mod_test_key|This string can be accessed by id 2119999001 and by key: mod_test_key
+2119999002|        |mod_NONCASE|String keys are not case sensitive (this string can be accessed by key: mod_NoNcAsE)
+2119999011|        |    |An empty key string is ignored. This string is accessible only by its id.
+;
+; example: override some game strings
+;
+2119999100|53feae24||Overriden Load (by known keyhash)
+2119999101|        |MENU_MAIN_QUIT|Overriden Exit (by known keystring)
+2119999200|53feae24|mod_test_key2|A provided key string always takes precedence over a provided hash (hash is generated from key string)

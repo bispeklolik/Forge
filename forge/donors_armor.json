@@ -1,0 +1,3170 @@
+[
+ {
+  "name": "Astrogarus Armor",
+  "cat": "armor",
+  "icon": "icons/astrogarus_armor.dds",
+  "lockey": "item_name_astrogarus_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Barber Surgeon Coat",
+  "cat": "armor",
+  "icon": "icons/regis.dds",
+  "lockey": "item_name_regis",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Bear Armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/bear_armor_64x128.png",
+  "lockey": "item_name_bear_armor",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Bear Armor 1",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/bear_armor_1_64x128.png",
+  "lockey": "item_name_bear_armor_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Bear Armor 2",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/bear_armor_2_64x128.png",
+  "lockey": "item_name_bear_armor_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Bear Armor 3",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/bear_armor_3_64x128.png",
+  "lockey": "item_name_bear_armor_3",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Bear Armor 4",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/bear_armor_4_64x128.png",
+  "lockey": "item_name_bear_armor_4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Black Viper Armor",
+  "cat": "armor",
+  "icon": "icons/black_viper_armor.dds",
+  "lockey": "item_name_black_viper_armor",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "blavikenarmor",
+  "cat": "armor",
+  "icon": "icons/inventory/blaviken/blaviken_armor_01_64x128.png",
+  "lockey": "item_name_blaviken_armor_01",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Blue Stripes Armor",
+  "cat": "armor",
+  "icon": "icons/blue_stripes_armor.dds",
+  "lockey": "item_name_bluestripes_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Crafted Burning Rose Armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/flaming_rose_armor_64x128.png",
+  "lockey": "item_name_rose_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Crafted Ofir Armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/ofir_armor_1_64x128.png",
+  "lockey": "item_name_ofir_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Dearg Ruadhri",
+  "cat": "armor",
+  "icon": "icons/dearg_ruadhri.dds",
+  "lockey": "item_name_dearg_ruadhri",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "DLC1 Temerian Armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/temerian-jacket-64x128.png",
+  "lockey": "item_name_temerian_armour_dlc",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "DLC14 Skellige Armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/undvik_chest_64x128.png",
+  "lockey": "item_name_skellige_armour_dlc",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "DLC5 Nilfgaardian Armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armor/nilfgaardian_armor_64x64.png",
+  "lockey": "item_name_nilfgaardian_armour_dlc",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Dol Blathanna Armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/elven_armor_64x128.png",
+  "lockey": "ui_gog_reward_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Emhyr Robe",
+  "cat": "armor",
+  "icon": "icons/emhyr.dds",
+  "lockey": "item_name_emhyr_robe",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "EP1 Standalone Starting Armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/armor-01.png",
+  "lockey": "item_name_starting_armor_01",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "EP1 Witcher Armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/viper_armor_64x128.png",
+  "lockey": "item_name_hoscorset_armor",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Eskel Armor",
+  "cat": "armor",
+  "icon": "icons/eskel_armor.dds",
+  "lockey": "item_name_eskel_armor",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Frock",
+  "cat": "armor",
+  "icon": "icons/frock.dds",
+  "lockey": "item_name_frock",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Gambeson",
+  "cat": "armor",
+  "icon": "icons/gambeson.dds",
+  "lockey": "item_name_gambeson",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Geralt Kontusz R",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/wedding_suit_64x128.png",
+  "lockey": "item_name_geralt_kontusz",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Gryphon Armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/gryphon_armor_64x128.png",
+  "lockey": "item_name_gryphon_armor",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Gryphon Armor 1",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/gryphon_armor_1_64x128.png",
+  "lockey": "item_name_gryphon_armor_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Gryphon Armor 2",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/gryphon_armor_2_64x128.png",
+  "lockey": "item_name_gryphon_armor_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Gryphon Armor 3",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/gryphon_armor_3_64x128.png",
+  "lockey": "item_name_gryphon_armor_3",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Gryphon Armor 4",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/gryphon_armor_4_64x128.png",
+  "lockey": "item_name_gryphon_armor_4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Guard Lvl1 A Armor 3",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/guard_1a_armor_1_64x128.png",
+  "lockey": "item_name_guard_lvl1_A_geralt_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Guard Lvl1 Armor 3",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/guard_1_armor_1_64x128.png",
+  "lockey": "item_name_guard_lvl1_geralt_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Guard Lvl2 A Armor 3",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/guard_2a_armor_1_64x128.png",
+  "lockey": "item_name_guard_lvl2_A_geralt_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Guard Lvl2 Armor 3",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/guard_2_armor_1_64x128.png",
+  "lockey": "item_name_guard_lvl2_geralt_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Heavy armor 01r",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_heavy_lvl1_01_64x128.png",
+  "lockey": "item_name_heavy_armor_01",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Heavy armor 02r",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_heavy_lvl2_01_64x128.png",
+  "lockey": "item_name_heavy_armor_02",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Heavy armor 03 Netflix",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_heavy_lvl3_01_64x128.png",
+  "lockey": "item_name_heavy_armor_03",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Heavy armor 03r",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_heavy_lvl3_01_64x128.png",
+  "lockey": "item_name_heavy_armor_03",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Heavy armor 04r",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_heavy_lvl4_01_64x128.png",
+  "lockey": "item_name_heavy_armor_04",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Heavy armor 05r",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_heavy_lvl1_02_64x128.png",
+  "lockey": "item_name_heavy_armor_05",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Hunter Armor",
+  "cat": "armor",
+  "icon": "icons/hunter_armor.dds",
+  "lockey": "item_name_hunter_armor",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Journeyman Armor",
+  "cat": "armor",
+  "icon": "icons/journeyman_armor.dds",
+  "lockey": "item_name_journeyman_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Kinslayer Armor",
+  "cat": "armor",
+  "icon": "icons/kinslayer_armor.dds",
+  "lockey": "item_name_kinslayer_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Knight Geralt A Armor 3",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/knight_2_armor_1_64x128.png",
+  "lockey": "item_name_knight_A_geralt_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Knight Geralt Armor 3",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/knight_1_armor_1_64x128.png",
+  "lockey": "item_name_knight_geralt_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_armor_v1_1",
+  "cat": "armor",
+  "icon": "armor\\kotw_armor_v1_1_64x128.dds",
+  "lockey": "kotw_armor_v1_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_armor_v1_2",
+  "cat": "armor",
+  "icon": "armor\\kotw_armor_v1_2_64x128.dds",
+  "lockey": "kotw_armor_v1_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_armor_v2_1",
+  "cat": "armor",
+  "icon": "armor\\kotw_armor_v2_1_64x128.dds",
+  "lockey": "kotw_armor_v2_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_armor_v2_2",
+  "cat": "armor",
+  "icon": "armor\\kotw_armor_v2_2_64x128.dds",
+  "lockey": "kotw_armor_v2_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_armor_v3_1",
+  "cat": "armor",
+  "icon": "armor\\kotw_armor_v3_1_64x128.dds",
+  "lockey": "kotw_armor_v3_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_armor_v3_2",
+  "cat": "armor",
+  "icon": "armor\\kotw_armor_v3_2_64x128.dds",
+  "lockey": "kotw_armor_v3_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Lambert Armor",
+  "cat": "armor",
+  "icon": "icons/lambert_armor.dds",
+  "lockey": "item_name_lambert_armor",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Light armor 01r",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl1_01_64x128.png",
+  "lockey": "item_name_light_armor_01",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Light armor 02r",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl2_01_64x128.png",
+  "lockey": "item_name_light_armor_02",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Light armor 03r",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl3_01_64x128.png",
+  "lockey": "item_name_light_armor_03",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Light armor 04r",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl4_01_64x128.png",
+  "lockey": "item_name_light_armor_04",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Light armor 05_crafted",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl1_02_64x128.png",
+  "lockey": "item_name_shiadhalarmor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Light armor 06r",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl2_02_64x128.png",
+  "lockey": "item_name_light_armor_06",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Light armor 07r",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl3_02_64x128.png",
+  "lockey": "item_name_light_armor_07",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Light armor 08r",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl4_02_64x128.png",
+  "lockey": "item_name_light_armor_08",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Light armor 09r",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl2_03_64x128.png",
+  "lockey": "item_name_light_armor_09",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Lynx Armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/lynx_armor_64x128.png",
+  "lockey": "item_name_lynx_armor",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Lynx Armor 1",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/lynx_armor_1_64x128.png",
+  "lockey": "item_name_lynx_armor_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Lynx Armor 2",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/lynx_armor_2_64x128.png",
+  "lockey": "item_name_lynx_armor_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Lynx Armor 3",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/lynx_armor_3_64x128.png",
+  "lockey": "item_name_lynx_armor_3",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Lynx Armor 4",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/lynx_armor_4_64x128.png",
+  "lockey": "item_name_lynx_armor_4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Medium armor 01r",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_medium_lvl1_01_64x128.png",
+  "lockey": "item_name_medium_armor_01",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Medium armor 02r",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/t_01_mg__common_medium_lvl2-64x128.png",
+  "lockey": "item_name_medium_armor_02",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Medium armor 03r",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/t_01_mg__common_medium_lvl3-64x128.png",
+  "lockey": "item_name_medium_armor_03",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Medium armor 04r",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_medium_lvl4_01_64x128.png",
+  "lockey": "item_name_medium_armor_04",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Medium armor 05r",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_medium_lvl1_02_64x128.png",
+  "lockey": "item_name_medium_armor_05",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Medium armor 07r",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_medium_lvl4_03_64x128.png",
+  "lockey": "item_name_medium_armor_07",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Medium armor 10r",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_medium_lvl4_02_64x128.png",
+  "lockey": "item_name_medium_armor_10",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Medium armor 11r",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_medium_lvl4_04_64x128.png",
+  "lockey": "item_name_medium_armor_11",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Netflix Armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/netflix-jacket-64x128.png",
+  "lockey": "item_name_netflix_armour_dlc",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Netflix Armor 1",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/netflix-jacket-64x128.png",
+  "lockey": "item_name_netflix_armour_dlc_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Netflix Armor 2",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/forgotten_wolven_armor_64x128.png",
+  "lockey": "item_name_netflix_armour_dlc_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Nilfgaardian Armor 1",
+  "cat": "armor",
+  "icon": "icons/nilfgaardian_armor_01.dds",
+  "lockey": "item_name_nilfgaardian_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Nilfgaardian Armor 2",
+  "cat": "armor",
+  "icon": "icons/nilfgaardian_armor_02.dds",
+  "lockey": "item_name_nilfgaardian_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Noble Kontusz",
+  "cat": "armor",
+  "icon": "icons/elven_noble_kontusz.dds",
+  "lockey": "item_name_noble_kontusz",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Oathbreaker armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_medium_lvl3_02_64x128.png",
+  "lockey": "item_name_oathbreakerarmor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Oathbreaker Armor",
+  "cat": "armor",
+  "icon": "icons/oathbreaker_armor.dds",
+  "lockey": "item_name_oathbreaker_armor",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Ofieri Mage Armor",
+  "cat": "armor",
+  "icon": "icons/ofieri_mage_armor.dds",
+  "lockey": "item_name_ofieri_mage_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Olgierd Kontusz",
+  "cat": "armor",
+  "icon": "icons/olgierd_kontusz_icon.dds",
+  "lockey": "item_name_olgierd_kontusz",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Paladin Armor",
+  "cat": "armor",
+  "icon": "icons/paladin_armor.dds",
+  "lockey": "item_name_paladin_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "q108 Medium armor 10",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/undvik_chest_64x128.png",
+  "lockey": "item_name_skellige_armour_dlc",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "q702_vampire_armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/vampire_armor_64x128.png",
+  "lockey": "item_name_baw_vampire_chest",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "q704_vampire_armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/q704_vampire_armor_64x128.png",
+  "lockey": "item_name_baw_vampire_chest_2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Quilted Armor",
+  "cat": "armor",
+  "icon": "icons/quilted_armor.dds",
+  "lockey": "item_name_quilted_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Raven Armor",
+  "cat": "armor",
+  "icon": "icons/armor/t01__raven.dds",
+  "lockey": "item_name_armor__raven",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Red Wolf Armor 1",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/red_wolf_armor_1_64x128.png",
+  "lockey": "item_name_red_wolf_armor_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Red Wolf Armor 2",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/red_wolf_armor_2_64x128.png",
+  "lockey": "item_name_newgame_red_wolf_armor_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Relic Heavy 3 armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_heavy_lvl3_02_64x128.png",
+  "lockey": "item_name_heavy_armor_08",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Relic Heavy 3 crafted",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_heavy_lvl3_02_64x128.png",
+  "lockey": "item_name_heavy_armor_08",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Seltkirk Armor",
+  "cat": "armor",
+  "icon": "icons/seltkirk_armor.dds",
+  "lockey": "item_name_seltkirk_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Shadaal armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_heavy_lvl3_02_64x128.png",
+  "lockey": "item_name_heavy_armor_07",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Shiadhal armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl1_02_64x128.png",
+  "lockey": "item_name_shiadhalarmor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Shiadhal Armor",
+  "cat": "armor",
+  "icon": "icons/shiadhal_armor.dds",
+  "lockey": "item_name_shiadhalarmor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "sq701_geralt_armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/sq701_geralt_armor_64x128.png",
+  "lockey": "item_name_sq701_geralt_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "sq701_ravix_armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/sq701_ravix_armor_64x128.png",
+  "lockey": "item_name_sq701_ravix_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Starting Armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/armor-01.png",
+  "lockey": "item_name_starting_armor_01",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Starting Armor 1",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/armor-01.png",
+  "lockey": "starting_armor_improved",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Thief Armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/thief_armor_64x128.png",
+  "lockey": "item_name_thief_borsody_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Thief Armor No Medallion",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/thief_armor_64x128.png",
+  "lockey": "item_name_thief_borsody_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Thyssen armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_medium_lvl2_02_64x128.png",
+  "lockey": "item_name_thyssenarmor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Thyssen armor crafted",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_medium_lvl2_02_64x128.png",
+  "lockey": "item_name_thyssenarmor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Toussaint Armor 3",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/toussaint_armor_2_64x128.png",
+  "lockey": "item_name_toussaint_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Tracker Armor",
+  "cat": "armor",
+  "icon": "icons/tracker_armor.dds",
+  "lockey": "item_name_tracker_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Traveler Kontusz",
+  "cat": "armor",
+  "icon": "icons/elven_traveler_kontusz.dds",
+  "lockey": "item_name_traveler_kontusz",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "vagabondarmor",
+  "cat": "armor",
+  "icon": "icons/vagabicon.dds",
+  "lockey": "frgv_vagabond",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Vlodimir Kontusz",
+  "cat": "armor",
+  "icon": "icons/vlodimir_kontusz_icon.dds",
+  "lockey": "item_name_vlodimir_kontusz",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Voorhis Coat",
+  "cat": "armor",
+  "icon": "icons/voorhis.dds",
+  "lockey": "item_name_voorhis_coat",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Wanderer Armor",
+  "cat": "armor",
+  "icon": "icons/wanderer_armor.dds",
+  "lockey": "item_name_wanderer_armor",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Warden Armor",
+  "cat": "armor",
+  "icon": "icons/warden_armor.dds",
+  "lockey": "item_name_warden_armor",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "White Tiger Armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/white_tiger_armor_64x128.png",
+  "lockey": "item_name_ngu_tiger_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Wild Hunt Armor",
+  "cat": "armor",
+  "icon": "icons/wh_armor_1.dds",
+  "lockey": "item_name_wh_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Wolf Armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/wolf_armor_lvl1_64x128.png",
+  "lockey": "item_name_wolf_armor",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Wolf Armor 1",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/wolf_armor_lvl2_64x128.png",
+  "lockey": "item_name_wolf_armor_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Wolf Armor 2",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/wolf_armor_lvl3_64x128.png",
+  "lockey": "item_name_wolf_armor_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Wolf Armor 3",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/wolf_armor_lvl4_64x128.png",
+  "lockey": "item_name_wolf_armor_3",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Wolf Armor 4",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/wolf_armor_lvl5_64x128.png",
+  "lockey": "item_name_wolf_armor_4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Zireael armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_heavy_lvl2_02_64x128.png",
+  "lockey": "item_name_zireaelarmor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Autogen Boots",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/boots-01.png",
+  "lockey": "item_name_boots_01",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Bear Boots 1",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/bear_boots_lvl1_64x128.png",
+  "lockey": "item_name_bear_boots_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Bear Boots 2",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/bear_boots_lvl1_64x128.png",
+  "lockey": "item_name_bear_boots_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Bear Boots 3",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/bear_boots_lvl2_64x128.png",
+  "lockey": "item_name_bear_boots_3",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Bear Boots 4",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/bear_boots_lvl2_64x128.png",
+  "lockey": "item_name_bear_boots_4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Bear Boots 5",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/bear_boots_lvl5_64x128.png",
+  "lockey": "item_name_bear_boots_5",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Black Viper Boots",
+  "cat": "boots",
+  "icon": "icons/black_viper_boots.dds",
+  "lockey": "item_name_black_viper_boots",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "blavikenboots",
+  "cat": "boots",
+  "icon": "icons/inventory/blaviken/blaviken_boots_01_64x128.png",
+  "lockey": "item_name_blaviken_boots_01",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Blue Stripes Boots",
+  "cat": "boots",
+  "icon": "icons/blue_stripes_boots.dds",
+  "lockey": "item_name_bluestripes_boots",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Boots 012",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl1_64x218.png",
+  "lockey": "item_name_boots_01",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Boots 022",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl2_64x128.png",
+  "lockey": "item_name_boots_02",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Boots 032",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl3_64x128.png",
+  "lockey": "item_name_boots_03",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Boots 04",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl4_64x128.png",
+  "lockey": "item_name_boots_04",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Boots 07",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl1_64x218.png",
+  "lockey": "item_name_boots_07",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Boots 07_crafted",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl1_64x218.png",
+  "lockey": "item_name_boots_07",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Crafted Ofir Boots",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/ofir_shoes_64x128.png",
+  "lockey": "item_name_ofir_shoes",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "DLC1 Temerian Boots",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/temerian_boots_64x128.png",
+  "lockey": "item_name_temerian_boots_dlc",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "DLC14 Skellige Boots",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/undvik_feet_64x128.png",
+  "lockey": "item_name_undvik_boots_dlc",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "DLC5 Nilfgaardian Boots",
+  "cat": "boots",
+  "icon": "icons/inventory/armor/nilfgaardian_boots_64x128.png",
+  "lockey": "item_name_nilfgaardian_boots_dlc",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Dol Blathanna Boots",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/elven_boots_64x128.png",
+  "lockey": "ui_gog_reward_boots",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "EP1 Standalone Starting Boots",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/boots-01.png",
+  "lockey": "item_name_boots_01",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "EP1 Witcher Boots",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/viper_shoes_64x128.png",
+  "lockey": "item_name_hoscorset_boots",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Geralt Kontusz Boots R",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_heavy_boots_lvl1_64x128.png",
+  "lockey": "item_name_geralt_kontusz_boots",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Gryphon Boots 1",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/gryphon_boots_lvl1_64x128.png",
+  "lockey": "item_name_gryphon_boots_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Gryphon Boots 2",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/gryphon_boots_lvl1_64x128.png",
+  "lockey": "item_name_gryphon_boots_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Gryphon Boots 3",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/gryphon_boots_lvl2_64x128.png",
+  "lockey": "item_name_gryphon_boots_3",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Gryphon Boots 4",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/gryphon_boots_lvl2_64x128.png",
+  "lockey": "item_name_gryphon_boots_4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Gryphon Boots 5",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/gryphon_boots_lvl5_64x128.png",
+  "lockey": "item_name_gryphon_boots_5",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Guard Lvl1 A Boots 3",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/guard_1a_boots_1_64x128.png",
+  "lockey": "item_name_guard_lvl1_A_geralt_boots",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Guard Lvl1 Boots 3",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/guard_1_boots_1_64x128.png",
+  "lockey": "item_name_guard_lvl1_geralt_boots",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Guard Lvl2 A Boots 3",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/guard_2a_boots_1_64x128.png",
+  "lockey": "item_name_guard_lvl2_A_geralt_boots",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Guard Lvl2 Boots 3",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/guard_2_boots_1_64x128.png",
+  "lockey": "item_name_guard_lvl2_geralt_boots",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Heavy boots 07",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_heavy_boots_lvl1_64x128.png",
+  "lockey": "item_name_heavy_boots_07",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Heavy boots 07_crafted",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_heavy_boots_lvl1_64x128.png",
+  "lockey": "item_name_heavy_boots_07",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Heavy boots 08",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_heavy_boots_lvl4_02_64x128.png",
+  "lockey": "item_name_heavy_boots_08",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Heavy boots 08_crafted",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_heavy_boots_lvl4_02_64x128.png",
+  "lockey": "item_name_heavy_boots_08",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Hunter Boots",
+  "cat": "boots",
+  "icon": "icons/hunter_boots.dds",
+  "lockey": "item_name_hunter_boots",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Journeyman Boots",
+  "cat": "boots",
+  "icon": "icons/journeyman_boots.dds",
+  "lockey": "item_name_journeyman_boots",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Kinslayer Boots",
+  "cat": "boots",
+  "icon": "icons/kinslayer_boots.dds",
+  "lockey": "item_name_kinslayer_boots",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Knight Geralt A Boots 3",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/knight_2_boots_1_64x128.png",
+  "lockey": "item_name_knight_A_geralt_boots",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Knight Geralt Boots 3",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/knight_1_boots_1_64x128.png",
+  "lockey": "item_name_knight_geralt_boots",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_boots_v1_1",
+  "cat": "boots",
+  "icon": "boots\\kotw_boots_v1_1_64x128.dds",
+  "lockey": "kotw_boots_v1_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_boots_v1_2",
+  "cat": "boots",
+  "icon": "boots\\kotw_boots_v1_2_64x128.dds",
+  "lockey": "kotw_boots_v1_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_boots_v2_1",
+  "cat": "boots",
+  "icon": "boots\\kotw_boots_v2_1_64x128.dds",
+  "lockey": "kotw_boots_v2_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_boots_v2_2",
+  "cat": "boots",
+  "icon": "boots\\kotw_boots_v2_2_64x128.dds",
+  "lockey": "kotw_boots_v2_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_boots_v3_1",
+  "cat": "boots",
+  "icon": "boots\\kotw_boots_v3_1_64x128.dds",
+  "lockey": "kotw_boots_v3_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_boots_v3_2",
+  "cat": "boots",
+  "icon": "boots\\kotw_boots_v3_2_64x128.dds",
+  "lockey": "kotw_boots_v3_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Lynx Boots 1",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/lynx_boots_lvl1_64x128.png",
+  "lockey": "item_name_lynx_boots_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Lynx Boots 2",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/lynx_boots_lvl1_64x128.png",
+  "lockey": "item_name_lynx_boots_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Lynx Boots 3",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/lynx_boots_lvl2_64x128.png",
+  "lockey": "item_name_lynx_boots_3",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Lynx Boots 4",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/lynx_boots_lvl2_64x128.png",
+  "lockey": "item_name_lynx_boots_4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Lynx Boots 5",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/lynx_boots_lvl5_64x128.png",
+  "lockey": "item_name_lynx_boots_5",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Nekker Boots",
+  "cat": "boots",
+  "icon": "icons/inventory/quests/nekker_shoes_64x128.png",
+  "lockey": "dlc_item_name_nekker_boots",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Netflix Boots",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/netflix_boots_64x128.png",
+  "lockey": "item_name_netflix_boots_dlc",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Netflix Boots 1",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/netflix_boots_64x128.png",
+  "lockey": "item_name_netflix_boots_dlc_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Netflix Boots 2",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/forgotten_wolven_boots_64x128.png",
+  "lockey": "item_name_netflix_boots_dlc_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Nilfgaardian Boots 1",
+  "cat": "boots",
+  "icon": "icons/nilfgaardian_boots_01.dds",
+  "lockey": "item_name_nilfgaardian_boots_01",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Oathbreaker Boots",
+  "cat": "boots",
+  "icon": "icons/oathbreaker_boots.dds",
+  "lockey": "item_name_oathbreaker_boots",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "q702_vampire_boots",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/vampire_boots_64x128.png",
+  "lockey": "item_name_baw_vampire_boots",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "q704_vampire_boots",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/q704_vampire_boots_64x128.png",
+  "lockey": "item_name_baw_vampire_boots_2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Red Wolf Boots 1",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/red_wolf_boots_1_64x128.png",
+  "lockey": "item_name_red_wolf_boots_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Red Wolf Boots 2",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/red_wolf_boots_2_64x128.png",
+  "lockey": "item_name_newgame_red_wolf_boots_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Starting Boots",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/boots-01.png",
+  "lockey": "starting_boots_kaer",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Starting Boots 1",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/boots-01.png",
+  "lockey": "starting_boots_improved",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Thief Boots",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/thief_shoes_64x128.png",
+  "lockey": "item_name_thief_borsody_boots",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Thief Boots No Medallion",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/thief_shoes_64x128.png",
+  "lockey": "item_name_thief_borsody_boots",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Toussaint Boots 3",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/toussaint_boots_2_64x128.png",
+  "lockey": "item_name_toussaint_boots",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Wanderer Boots",
+  "cat": "boots",
+  "icon": "icons/wanderer_boots.dds",
+  "lockey": "item_name_wanderer_boots",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Warden Boots",
+  "cat": "boots",
+  "icon": "icons/warden_boots.dds",
+  "lockey": "item_name_warden_boots",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "White Tiger Boots",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/white_tiger_boots_64x128.png",
+  "lockey": "item_name_ngu_tiger_boots",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Wild Hunt Boots 1",
+  "cat": "boots",
+  "icon": "icons/wh_boots_1.dds",
+  "lockey": "item_name_wh_boots",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Wild Hunt Boots 2",
+  "cat": "boots",
+  "icon": "icons/wh_boots_2.dds",
+  "lockey": "item_name_wh_boots",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Wolf Boots 1",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/wolf_boots_lvl1_64x128.png",
+  "lockey": "item_name_wolf_boots_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Wolf Boots 2",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/wolf_boots_lvl1_64x128.png",
+  "lockey": "item_name_wolf_boots_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Wolf Boots 3",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/wolf_boots_lvl2_64x128.png",
+  "lockey": "item_name_wolf_boots_3",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Wolf Boots 4",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/wolf_boots_lvl2_64x128.png",
+  "lockey": "item_name_wolf_boots_4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Wolf Boots 5",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/wolf_boots_lvl5_64x128.png",
+  "lockey": "item_name_wolf_boots_5",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Bear Gloves 1",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/bear_gloves_lvl1_64x128.png",
+  "lockey": "item_name_bear_gloves_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Bear Gloves 2",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/bear_gloves_lvl1_64x128.png",
+  "lockey": "item_name_bear_gloves_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Bear Gloves 3",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/bear_gloves_lvl2_64x128.png",
+  "lockey": "item_name_bear_gloves_3",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Bear Gloves 4",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/bear_gloves_lvl2_64x128.png",
+  "lockey": "item_name_bear_gloves_4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Bear Gloves 5",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/bear_gloves_lvl5_64x128.png",
+  "lockey": "item_name_bear_gloves_5",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Black Viper Gloves",
+  "cat": "gloves",
+  "icon": "icons/black_viper_gloves.dds",
+  "lockey": "item_name_black_viper_gloves",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "blavikengloves",
+  "cat": "gloves",
+  "icon": "icons/inventory/blaviken/blaviken_gloves_01_64x128.png",
+  "lockey": "item_name_blaviken_gloves_01",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Blue Stripes Gloves",
+  "cat": "gloves",
+  "icon": "icons/blue_stripes_gloves.dds",
+  "lockey": "item_name_bluestripes_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Crafted Burning Rose Gloves",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/flaming_rose_gloves_64x128.png",
+  "lockey": "item_name_rose_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Crafted Ofir Gloves",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/ofir_gloves_1_64x128.png",
+  "lockey": "item_name_ofir_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "DLC1 Temerian Gloves",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/temerian_gloves_64x128.png",
+  "lockey": "item_name_temerian_gloves_dlc",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "DLC14 Skellige Gloves",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/undvik_gloves_64x128.png",
+  "lockey": "item_name_skellige_gloves_dlc",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "DLC5 Nilfgaardian Gloves",
+  "cat": "gloves",
+  "icon": "icons/inventory/armor/nilfgaardian_gloves_64x128.png",
+  "lockey": "item_name_nilfgaardian_gloves_dlc",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Dol Blathanna Gloves",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/elven_gloves_64x128.png",
+  "lockey": "ui_gog_reward_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "EP1 Standalone Starting Gloves",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/gauntlet-01.png",
+  "lockey": "item_name_gloves_01",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "EP1 Witcher Gloves",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/viper_gloves_64x128.png",
+  "lockey": "item_name_hoscorset_gloves",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Gloves 04",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/common_light_lvl4_64x128.png",
+  "lockey": "item_name_gloves_04",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Gloves 04_crafted",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/common_light_lvl4_64x128.png",
+  "lockey": "item_name_gloves_04",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Gryphon Gloves 1",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/gryphon_gloves_lvl1_64x128.png",
+  "lockey": "item_name_gryphon_gloves_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Gryphon Gloves 2",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/gryphon_gloves_lvl1_64x128.png",
+  "lockey": "item_name_gryphon_gloves_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Gryphon Gloves 3",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/gryphon_gloves_lvl2_64x128.png",
+  "lockey": "item_name_gryphon_gloves_3",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Gryphon Gloves 4",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/gryphon_gloves_lvl2_64x128.png",
+  "lockey": "item_name_gryphon_gloves_4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Gryphon Gloves 5",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/gryphon_gloves_lvl5_64x128.png",
+  "lockey": "item_name_gryphon_gloves_5",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Guard Lvl1 A Gloves 3",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/guard_1_gloves_1_64x128.png",
+  "lockey": "item_name_guard_lvl1_A_geralt_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Guard Lvl1 Gloves 3",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/guard_1a_gloves_1_64x128.png",
+  "lockey": "item_name_guard_lvl1_geralt_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Guard Lvl2 A Gloves 3",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/guard_2a_gloves_1_64x128.png",
+  "lockey": "item_name_guard_lvl2_A_geralt_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Guard Lvl2 Gloves 3",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/common_light_lvl3_64x128.png",
+  "lockey": "item_name_guard_lvl2_geralt_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Heavy gloves 04",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/common_heavy_lvl4_64x128.png",
+  "lockey": "item_name_heavy_gloves_04",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Heavy gloves 04 Netflix",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/common_heavy_lvl4_64x128.png",
+  "lockey": "item_name_heavy_gloves_04",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Heavy gloves 04_crafted",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/common_heavy_lvl4_64x128.png",
+  "lockey": "item_name_heavy_gloves_04",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Hunter Gloves",
+  "cat": "gloves",
+  "icon": "icons/hunter_gloves.dds",
+  "lockey": "item_name_hunter_gloves",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Journeyman Gloves",
+  "cat": "gloves",
+  "icon": "icons/journeyman_gloves.dds",
+  "lockey": "item_name_journeyman_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Kinslayer Gloves",
+  "cat": "gloves",
+  "icon": "icons/kinslayer_gloves.dds",
+  "lockey": "item_name_kinslayer_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Knight Geralt A Gloves 3",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/knight_2_gloves_1_64x128.png",
+  "lockey": "item_name_knight_A_geralt_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Knight Geralt Gloves 3",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/knight_1_gloves_1_64x128.png",
+  "lockey": "item_name_knight_geralt_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_gloves_v1_1",
+  "cat": "gloves",
+  "icon": "gloves\\kotw_gloves_v1_1_64x128.dds",
+  "lockey": "kotw_gloves_v1_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_gloves_v1_2",
+  "cat": "gloves",
+  "icon": "gloves\\kotw_gloves_v1_2_64x128.dds",
+  "lockey": "kotw_gloves_v1_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_gloves_v2_1",
+  "cat": "gloves",
+  "icon": "gloves\\kotw_gloves_v2_1_64x128.dds",
+  "lockey": "kotw_gloves_v2_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_gloves_v2_2",
+  "cat": "gloves",
+  "icon": "gloves\\kotw_gloves_v2_2_64x128.dds",
+  "lockey": "kotw_gloves_v2_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_gloves_v3_1",
+  "cat": "gloves",
+  "icon": "gloves\\kotw_gloves_v3_1_64x128.dds",
+  "lockey": "kotw_gloves_v3_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_gloves_v3_2",
+  "cat": "gloves",
+  "icon": "gloves\\kotw_gloves_v3_2_64x128.dds",
+  "lockey": "kotw_gloves_v3_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Lynx Gloves 1",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/lynx_gloves_lvl1_64x128.png",
+  "lockey": "item_name_lynx_gloves_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Lynx Gloves 2",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/lynx_gloves_lvl1_64x128.png",
+  "lockey": "item_name_lynx_gloves_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Lynx Gloves 3",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/lynx_gloves_lvl2_64x128.png",
+  "lockey": "item_name_lynx_gloves_3",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Lynx Gloves 4",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/lynx_gloves_lvl2_64x128.png",
+  "lockey": "item_name_lynx_gloves_4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Lynx Gloves 5",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/lynx_gloves_lvl5_64x128.png",
+  "lockey": "item_name_lynx_gloves_5",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Netflix Gloves",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/netflix_gloves_64x128.png",
+  "lockey": "item_name_netflix_gloves_dlc",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Netflix Gloves 1",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/netflix_gloves_64x128.png",
+  "lockey": "item_name_netflix_gloves_dlc_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Netflix Gloves 2",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/forgotten_wolven_gloves_64x128.png",
+  "lockey": "item_name_netflix_gloves_dlc_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Nilfgaardian Gloves 1",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/common_heavy_lvl4_64x128.png",
+  "lockey": "item_name_nilfgaardian_gloves_01",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Oathbreaker Gloves",
+  "cat": "gloves",
+  "icon": "icons/oathbreaker_gloves.dds",
+  "lockey": "item_name_oathbreaker_gloves",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "q702_vampire_gloves",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/vampire_gloves_64x128.png",
+  "lockey": "item_name_baw_vampire_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "q704_vampire_gloves",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/q704_vampire_gloves_64x128.png",
+  "lockey": "item_name_baw_vampire_gloves_2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Red Wolf Gloves 1",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/red_wolf_gloves_1_64x128.png",
+  "lockey": "item_name_red_wolf_gloves_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Red Wolf Gloves 2",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/red_wolf_gloves_2_64x128.png",
+  "lockey": "item_name_newgame_red_wolf_gloves_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Starting Gloves",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/gauntlet-01.png",
+  "lockey": "starting_gloves_kaer",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Starting Gloves 1",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/gauntlet-01.png",
+  "lockey": "starting_gloves_improved",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Thief Gloves",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/thief_gloves_64x128.png",
+  "lockey": "item_name_thief_borsody_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Thief Gloves No Medallion",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/thief_gloves_64x128.png",
+  "lockey": "item_name_thief_borsody_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Toussaint Gloves 3",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/toussaint_gloves_2_64x128.png",
+  "lockey": "item_name_toussaint_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Wanderer Gloves",
+  "cat": "gloves",
+  "icon": "icons/wanderer_gloves.dds",
+  "lockey": "item_name_wanderer_gloves",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Warden Gloves",
+  "cat": "gloves",
+  "icon": "icons/warden_gloves.dds",
+  "lockey": "item_name_warden_gloves",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "White Tiger Gloves",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/white_tiger_gloves_64x128.png",
+  "lockey": "item_name_ngu_tiger_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Wild Hunt Gloves",
+  "cat": "gloves",
+  "icon": "icons/wh_gloves_1.dds",
+  "lockey": "item_name_wh_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Wolf Gloves 1",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/wolf_gloves_lvl1_64x128.png",
+  "lockey": "item_name_wolf_gloves_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Wolf Gloves 2",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/wolf_gloves_lvl1_64x128.png",
+  "lockey": "item_name_wolf_gloves_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Wolf Gloves 3",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/wolf_gloves_lvl2_64x128.png",
+  "lockey": "item_name_wolf_gloves_3",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Wolf Gloves 4",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/wolf_gloves_lvl2_64x128.png",
+  "lockey": "item_name_wolf_gloves_4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Wolf Gloves 5",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/wolf_gloves_lvl5_64x128.png",
+  "lockey": "item_name_wolf_gloves_5",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Bear Pants 1",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/l_01_mg__bear_lvl1_64x128.png",
+  "lockey": "item_name_bear_pants_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Bear Pants 2",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/l_01_mg__bear_lvl1_64x128.png",
+  "lockey": "item_name_bear_pants_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Bear Pants 3",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/l_01_mg__bear_lvl2.png",
+  "lockey": "item_name_bear_pants_3",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Bear Pants 4",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/l_01_mg__bear_lvl2.png",
+  "lockey": "item_name_bear_pants_4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Bear Pants 5",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/bear_pants_lvl5_64x128.png",
+  "lockey": "item_name_bear_pants_5",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Black Viper Pants",
+  "cat": "pants",
+  "icon": "icons/black_viper_pants.dds",
+  "lockey": "item_name_black_viper_pants",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "blavikenpants",
+  "cat": "pants",
+  "icon": "icons/inventory/blaviken/blaviken_pants_01_64x128.png",
+  "lockey": "item_name_blaviken_pants_01",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Blue Stripes Pants",
+  "cat": "pants",
+  "icon": "icons/blue_stripes_pants.dds",
+  "lockey": "item_name_bluestripes_pants",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Crafted Ofir Pants",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/ofir_pants_64x128.png",
+  "lockey": "item_name_ofir_pants",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "DLC1 Temerian Pants",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/temerian_pants_64x128.png",
+  "lockey": "item_name_temerian_pants_dlc",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "DLC14 Skellige Pants",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/undvik_legs_64x128.png",
+  "lockey": "item_name_skellige_pants_dlc",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "DLC5 Nilfgaardian Pants",
+  "cat": "pants",
+  "icon": "icons/inventory/armor/nilfgaardian_legs_64x128.png",
+  "lockey": "item_name_nilfgaardian_pants_dlc",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Dol Blathanna Pants",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/elven_pants_64x128.png",
+  "lockey": "ui_gog_reward_trousers",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "EP1 Standalone Starting Pants",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/trousers-01.png",
+  "lockey": "item_name_pants_01",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "EP1 Witcher Pants",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/viper_pants_64x128.png",
+  "lockey": "item_name_hoscorset_pants",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Frock Pants",
+  "cat": "pants",
+  "icon": "icons/frock_pants.dds",
+  "lockey": "item_name_frock_pants",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Gryphon Pants 1",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/gryphon_pants_lvl1_64x128.png",
+  "lockey": "item_name_gryphon_pants_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Gryphon Pants 2",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/gryphon_pants_lvl1_64x128.png",
+  "lockey": "item_name_gryphon_pants_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Gryphon Pants 3",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/gryphon_pants_lvl2_64x128.png",
+  "lockey": "item_name_gryphon_pants_3",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Gryphon Pants 4",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/gryphon_pants_lvl2_64x128.png",
+  "lockey": "item_name_gryphon_pants_4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Gryphon Pants 5",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/gryphon_pants_lvl5_64x128.png",
+  "lockey": "item_name_gryphon_pants_5",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Guard Lvl1 A Pants 3",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/guard_1a_pants_1_64x128.png",
+  "lockey": "item_name_guard_lvl1_A_geralt_pants",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Guard Lvl1 Pants 3",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/guard_1_pants_1_64x128.png",
+  "lockey": "item_name_guard_lvl1_geralt_pants",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Guard Lvl2 A Pants 3",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/guard_2a_pants_1_64x128.png",
+  "lockey": "item_name_guard_lvl2_A_geralt_pants",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Guard Lvl2 Pants 3",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/guard_2_pants_1_64x128.png",
+  "lockey": "item_name_guard_lvl2_geralt_pants",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Heavy pants 04",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/common_heavy_pants_lvl4_64x128.png",
+  "lockey": "item_name_heavy_pants_04",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Heavy pants 04_crafted",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/common_heavy_pants_lvl4_64x128.png",
+  "lockey": "item_name_heavy_pants_04",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Hunter Pants",
+  "cat": "pants",
+  "icon": "icons/hunter_pants.dds",
+  "lockey": "item_name_hunter_pants",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Journeyman Pants",
+  "cat": "pants",
+  "icon": "icons/journeyman_pants.dds",
+  "lockey": "item_name_journeyman_pants",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Kinslayer Pants",
+  "cat": "pants",
+  "icon": "icons/kinslayer_pants.dds",
+  "lockey": "item_name_kinslayer_pants",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Knight Geralt A Pants 3",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/knight_2_pants_1_64x128.png",
+  "lockey": "item_name_knight_A_geralt_pants",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Knight Geralt Pants 3",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/knight_1_pants_1_64x128.png",
+  "lockey": "item_name_knight_geralt_pants",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_legs_v1_1",
+  "cat": "pants",
+  "icon": "legs\\kotw_legs_v1_1_64x128.dds",
+  "lockey": "kotw_legs_v1_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_legs_v1_2",
+  "cat": "pants",
+  "icon": "legs\\kotw_legs_v1_2_64x128.dds",
+  "lockey": "kotw_legs_v1_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_legs_v2_1",
+  "cat": "pants",
+  "icon": "legs\\kotw_legs_v2_1_64x128.dds",
+  "lockey": "kotw_legs_v2_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_legs_v2_2",
+  "cat": "pants",
+  "icon": "legs\\kotw_legs_v2_2_64x128.dds",
+  "lockey": "kotw_legs_v2_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_legs_v3_1",
+  "cat": "pants",
+  "icon": "legs\\kotw_legs_v3_1_64x128.dds",
+  "lockey": "kotw_legs_v3_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "kotw_legs_v3_2",
+  "cat": "pants",
+  "icon": "legs\\kotw_legs_v3_2_64x128.dds",
+  "lockey": "kotw_legs_v3_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Lynx Pants 1",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/lynx_pants.png",
+  "lockey": "item_name_lynx_pants_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Lynx Pants 2",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/lynx_pants.png",
+  "lockey": "item_name_lynx_pants_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Lynx Pants 3",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/lynx_pants_1.png",
+  "lockey": "item_name_lynx_pants_3",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Lynx Pants 4",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/lynx_pants_1.png",
+  "lockey": "item_name_lynx_pants_4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Lynx Pants 5",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/lynx_pants_5_64x128.png",
+  "lockey": "item_name_lynx_pants_5",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Netflix Pants",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/netflix_pants_64x128.png",
+  "lockey": "item_name_netflix_pants_dlc",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Netflix Pants 1",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/netflix_pants_64x128.png",
+  "lockey": "item_name_netflix_pants_dlc_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Netflix Pants 2",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/forgotten_wolven_pants_64x128.png",
+  "lockey": "item_name_netflix_pants_dlc_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Nilfgaardian Pants 1",
+  "cat": "pants",
+  "icon": "icons/nilfgaardian_pants_01.dds",
+  "lockey": "item_name_nilfgaardian_pants_01",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Nilfgaardian Pants 2",
+  "cat": "pants",
+  "icon": "icons/nilfgaardian_pants_02.dds",
+  "lockey": "item_name_nilfgaardian_pants_01",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Oathbreaker Pants",
+  "cat": "pants",
+  "icon": "icons/oathbreaker_pants.dds",
+  "lockey": "item_name_oathbreaker_pants",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Pants 04",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/common_light_pants_lvl4_64x128.png",
+  "lockey": "item_name_pants_04",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Pants 04_crafted",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/common_light_pants_lvl4_64x128.png",
+  "lockey": "item_name_pants_04",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "q702_vampire_pants",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/vampire_pants_64x128.png",
+  "lockey": "item_name_baw_vampire_trousers",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "q704_vampire_pants",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/q704_vampire_pants_64x128.png",
+  "lockey": "item_name_baw_vampire_trousers_2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Red Wolf Pants 1",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/red_wolf_pants_1_64x128.png",
+  "lockey": "item_name_red_wolf_pants_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Red Wolf Pants 2",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/red_wolf_pants_2_64x128.png",
+  "lockey": "item_name_newgame_red_wolf_pants_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Starting Pants",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/trousers-01.png",
+  "lockey": "starting_pants_kaer",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Starting Pants 1",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/trousers-01.png",
+  "lockey": "starting_pants_improved",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Thief Pants",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/thief_pants_64x128.png",
+  "lockey": "item_name_thief_borsody_pants",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Thief Pants No Medallion",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/thief_pants_64x128.png",
+  "lockey": "item_name_thief_borsody_pants",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Toussaint Pants 3",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/toussaint_pants_2_64x128.png",
+  "lockey": "item_name_toussaint_pants",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Wanderer Pants",
+  "cat": "pants",
+  "icon": "icons/wanderer_pants.dds",
+  "lockey": "item_name_wanderer_pants",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Warden Pants",
+  "cat": "pants",
+  "icon": "icons/warden_pants.dds",
+  "lockey": "item_name_warden_pants",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "White Tiger Pants",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/white_tiger_pants_64x128.png",
+  "lockey": "item_name_ngu_tiger_pants",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Wild Hunt Pants 1",
+  "cat": "pants",
+  "icon": "icons/wh_pants_1.dds",
+  "lockey": "item_name_wh_pants",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Wild Hunt Pants 2",
+  "cat": "pants",
+  "icon": "icons/wh_pants_2.dds",
+  "lockey": "item_name_wh_pants",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Wolf Pants 1",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/wolf_legs_lvl1_64x128.png",
+  "lockey": "item_name_wolf_pants_1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Wolf Pants 2",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/wolf_legs_lvl1_64x128.png",
+  "lockey": "item_name_wolf_pants_2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Wolf Pants 3",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/wolf_legs_lvl2_64x128.png",
+  "lockey": "item_name_wolf_pants_3",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Wolf Pants 4",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/wolf_legs_lvl2_64x128.png",
+  "lockey": "item_name_wolf_pants_4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Wolf Pants 5",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/wolf_pants_lvl5_64x128.png",
+  "lockey": "item_name_wolf_pants_5",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Frayed Armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armor/hindotero_armor_icon.png",
+  "lockey": "frgv_frayed",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Frayed Gloves",
+  "cat": "gloves",
+  "icon": "icons/inventory/armor/hindotero_gloves_icon.png",
+  "lockey": "frgv_frayedg",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Raven Pants",
+  "cat": "pants",
+  "icon": "icons/armor/l01__raven.dds",
+  "lockey": "item_name_pants__raven",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Raven Gloves",
+  "cat": "gloves",
+  "icon": "icons/armor/g01__raven.dds",
+  "lockey": "item_name_gloves__raven",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Raven Boots",
+  "cat": "boots",
+  "icon": "icons/armor/s01__raven.dds",
+  "lockey": "item_name_boots__raven",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Vesemir KM Armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/armor-01.png",
+  "lockey": "frgv_vesemir",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy armor 02",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_heavy_lvl2_01_64x128.png",
+  "lockey": "frgtw2_t_01_mg__tw2cmn_heavy_lvl2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy armor 03",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_heavy_lvl3_01_64x128.png",
+  "lockey": "frgtw2_t_01_mg__tw2cmn_heavy_lvl3",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Light armor 01",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl1_01_64x128.png",
+  "lockey": "frgtw2_t_01_mg__tw2cmn_light_lvl1",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Light armor 02",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl2_01_64x128.png",
+  "lockey": "frgtw2_t_01_mg__tw2cmn_light_lvl2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Light armor 03",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl3_01_64x128.png",
+  "lockey": "frgtw2_t_01_mg__tw2cmn_light_lvl3",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Light armor 04",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl4_01_64x128.png",
+  "lockey": "frgtw2_t_01_mg__tw2cmn_light_lvl4",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Medium armor 01",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_medium_lvl1_01_64x128.png",
+  "lockey": "frgtw2_t_01_mg__tw2cmn_medium_lvl1",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Medium armor 04",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_medium_lvl4_01_64x128.png",
+  "lockey": "frgtw2_t_01_mg__tw2cmn_medium_lvl4",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Zireael armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_heavy_lvl2_02_64x128.png",
+  "lockey": "frgtw2_t_02_mg__tw2cmn_heavy_lvl2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Shadaal armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_heavy_lvl3_02_64x128.png",
+  "lockey": "frgtw2_t_02_mg__tw2cmn_heavy_lvl3",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Shiadhal armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl1_02_64x128.png",
+  "lockey": "frgtw2_t_02_mg__tw2cmn_light_lvl1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Light armor 06",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl2_02_64x128.png",
+  "lockey": "frgtw2_t_02_mg__tw2cmn_light_lvl2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Light armor 07",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl3_02_64x128.png",
+  "lockey": "frgtw2_t_02_mg__tw2cmn_light_lvl3",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Light armor 08",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl4_02_64x128.png",
+  "lockey": "frgtw2_t_02_mg__tw2cmn_light_lvl4",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Medium armor 05",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_medium_lvl1_02_64x128.png",
+  "lockey": "frgtw2_t_02_mg__tw2cmn_medium_lvl1",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Relic Heavy 3 armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_heavy_lvl3_02_64x128.png",
+  "lockey": "frgtw2_t_03_mg__tw2cmn_heavy_lvl3",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Light armor 09",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl2_03_64x128.png",
+  "lockey": "frgtw2_t_03_mg__tw2cmn_light_lvl2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Medium armor 07",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_medium_lvl4_03_64x128.png",
+  "lockey": "frgtw2_t_03_mg__tw2cmn_medium_lvl4",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Nilfgaardian Casual Suit 01",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/nilfgaardian_casual_suit_01-64x128.png",
+  "lockey": "frgtw2_ta_01_mg__casual_tw2nilfgaard_suit",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Nilfgaardian Casual Suit 02",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/nilfgaardian_casual_suit-02-64x128.png",
+  "lockey": "frgtw2_ta_02_mg__casual_tw2nilfgaard_suit",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy pants 03",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/common_heavy_pants_lvl4_64x128.png",
+  "lockey": "frgtw2_l_01_mg__tw2cmn_heavy_lvl3",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Pants 01",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/common_light_pants_lvl1_64x128.png",
+  "lockey": "frgtw2_l_01_mg__tw2cmn_light_lvl1",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Pants 02",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/skellige_casual_pants_01_64x128.png",
+  "lockey": "frgtw2_l_01_mg__tw2cmn_light_lvl2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Pants 03",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/common_light_pants_lvl3_64x128.png",
+  "lockey": "frgtw2_l_01_mg__tw2cmn_light_lvl3",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Pants 04",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/common_light_pants_lvl4_64x128.png",
+  "lockey": "frgtw2_l_01_mg__tw2cmn_light_lvl4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Lynx Pants 1",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/lynx_pants.png",
+  "lockey": "frgtw2_l_01_mg__tw2c_lvl1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Lynx Pants 3",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/lynx_pants_1.png",
+  "lockey": "frgtw2_l_01_mg__tw2c_lvl2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Temerian Pants",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/temerian_pants_64x128.png",
+  "lockey": "frgtw2_l_01_mg__tw2temer",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy gloves 01",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/common_heavy_64x128.png",
+  "lockey": "frgtw2_g_01a_mg__tw2cmn_heavy_lvl1",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy gloves 02",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/common_heavy_64x128.png",
+  "lockey": "frgtw2_g_01a_mg__tw2cmn_heavy_lvl2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy gloves 03",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/common_heavy_lvl3_64x128.png",
+  "lockey": "frgtw2_g_01a_mg__tw2cmn_heavy_lvl3",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy gloves 04",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/common_heavy_lvl4_64x128.png",
+  "lockey": "frgtw2_g_01a_mg__tw2cmn_heavy_lvl4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy boots 01",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_heavy_boots_lvl1_64x128.png",
+  "lockey": "frgtw2_s_01_mg__tw2cmn_heavy_lvl1",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy boots 02",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_heavy_boots_lvl1_64x128.png",
+  "lockey": "frgtw2_s_01_mg__tw2cmn_heavy_lvl2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy boots 04",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_heavy_boots_lvl1_64x128.png",
+  "lockey": "frgtw2_s_01_mg__tw2cmn_heavy_lvl4",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Boots 01",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl1_64x218.png",
+  "lockey": "frgtw2_s_01_mg__tw2cmn_light_lvl1",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Boots 02",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl2_64x128.png",
+  "lockey": "frgtw2_s_01_mg__tw2cmn_light_lvl2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Boots 03",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl3_64x128.png",
+  "lockey": "frgtw2_s_01_mg__tw2cmn_light_lvl3",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Boots 04",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl4_64x128.png",
+  "lockey": "frgtw2_s_01_mg__tw2cmn_light_lvl4",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy boots 05",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_heavy_boots_lvl1_64x128.png",
+  "lockey": "frgtw2_s_02_mg__tw2cmn_heavy_lvl1",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy boots 06",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_heavy_boots_lvl1_64x128.png",
+  "lockey": "frgtw2_s_02_mg__tw2cmn_heavy_lvl2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy boots 08",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_heavy_boots_lvl4_02_64x128.png",
+  "lockey": "frgtw2_s_02_mg__tw2cmn_heavy_lvl4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Boots 01 q2",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl1_64x218.png",
+  "lockey": "frgtw2_s_02_mg__tw2cmn_light_lvl1",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Boots 05",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl1_64x218.png",
+  "lockey": "frgtw2_s_02_mg__tw2cmn_light_lvl2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Boots 06",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl1_64x218.png",
+  "lockey": "frgtw2_s_02_mg__tw2cmn_light_lvl3",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Boots 07",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl1_64x218.png",
+  "lockey": "frgtw2_s_02_mg__tw2cmn_light_lvl4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "Vesemir KM Boots",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/boots-01.png",
+  "lockey": "frgz_vsmkm_boots",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Vesemir KM Gloves",
+  "cat": "gloves",
+  "icon": "icons/inventory/quests/ico_recipe.png",
+  "lockey": "frgz_vsmkm_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Vesemir KM Pants",
+  "cat": "pants",
+  "icon": "icons/inventory/quests/ico_recipe.png",
+  "lockey": "frgz_vsmkm_pants",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Perfect KM Armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/armor-01.png",
+  "lockey": "frgz_prfkm_armor",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Perfect KM Gloves",
+  "cat": "gloves",
+  "icon": "icons/inventory/quests/ico_recipe.png",
+  "lockey": "frgz_prfkm_gloves",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Perfect KM Pants",
+  "cat": "pants",
+  "icon": "icons/inventory/quests/ico_recipe.png",
+  "lockey": "frgz_prfkm_pants",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "Perfect KM Boots",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/boots-01.png",
+  "lockey": "frgz_prfkm_boots",
+  "quality": 4,
+  "tags_effects": []
+ }
+]

@@ -1,0 +1,10 @@
+;meta[language=cz]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|Doplňky pro W3EE Redux
+2114478001|        |insc_menu|Oprava Mutace Hmyzáka
+2114478002|        |insc_enabled|Opravit převod toxicity
+2114478003|        |insc_rate|   ...setin sekundy za bod (původně 10)
+2114478004|        |insc_fixdesc|Zobrazit skutečný převod v popisu
+2114478005|        |insc_dmgredon|Obnovit původní snížení poškození
+2114478006|        |insc_dmgredperc|   ...snížení při opakovaných zásazích, %
+2114478007|        |insc_dmgredwin|   ...délka okna, sek

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<UserConfig>
+	<Group id="VanillaSetBonuses" displayName="Mods.vsb_menu">
+		<PresetsArray>
+			<Preset id="0" displayName="default">
+				<Entry varId="MinorCount" value="3" />
+				<Entry varId="MajorCount" value="6" />
+				<Entry varId="CountAllTiers" value="true" />
+				<Entry varId="ScalePower" value="true" />
+				<Entry varId="Tier1" value="40" />
+				<Entry varId="Tier2" value="55" />
+				<Entry varId="Tier3" value="70" />
+				<Entry varId="Tier4" value="85" />
+			</Preset>
+		</PresetsArray>
+		<VisibleVars>
+			<Var overrideGroup="VanillaSetBonuses" id="MinorCount" displayName="vsb_minor" displayType="SLIDER;1;6;1"/>
+			<Var overrideGroup="VanillaSetBonuses" id="MajorCount" displayName="vsb_major" displayType="SLIDER;1;6;1"/>
+			<Var overrideGroup="VanillaSetBonuses" id="CountAllTiers" displayName="vsb_count" displayType="TOGGLE"/>
+			<Var overrideGroup="VanillaSetBonuses" id="ScalePower" displayName="vsb_scale" displayType="TOGGLE"/>
+			<Var overrideGroup="VanillaSetBonuses" id="Tier1" displayName="vsb_t1" displayType="SLIDER;0;100;5"/>
+			<Var overrideGroup="VanillaSetBonuses" id="Tier2" displayName="vsb_t2" displayType="SLIDER;0;100;5"/>
+			<Var overrideGroup="VanillaSetBonuses" id="Tier3" displayName="vsb_t3" displayType="SLIDER;0;100;5"/>
+			<Var overrideGroup="VanillaSetBonuses" id="Tier4" displayName="vsb_t4" displayType="SLIDER;0;100;5"/>
+		</VisibleVars>
+	</Group>
+</UserConfig>

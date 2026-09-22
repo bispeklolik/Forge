@@ -1,0 +1,14 @@
+;meta[language=de]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|W3EE-Redux-Erweiterungen
+2114478001|        |mutf_menu|Mutations-Korrekturen
+2114478002|        |mutf_enabled|Mutations-Korrekturen aktiv
+2114478003|        |mutf_adrfloor|Insektoid: Abbautempo bei leerer Adrenalinleiste, %
+2114478004|        |mutf_adrtop|Insektoid: Abbautempo bei voller Adrenalinleiste, %
+2114478005|        |mutf_combatonly|Insektoid: wirkt nur im Kampf
+2114478006|        |mutf_fixdesc|Echte Zahlen in Mutationsbeschreibungen zeigen
+2114478007|        |insc_dmgredon|Insektoid: entfernte Schadensreduktion zurückholen
+2114478008|        |insc_dmgredperc|   ...wie viel schwächer Folgetreffer sind, %
+2114478009|        |insc_dmgredwin|   ...wie viele Sekunden es anhält
+2114478010|        |mutf_signbypass|Spektral: Zeichen-Bonus auf die versprochenen +50% anheben (0 = wie im Spiel)
+2114478011|        |mutf_sheet|Charakterbogen: Zeichenintensität nach Abschwächung zeigen

@@ -1,0 +1,5792 @@
+{
+ "Adversary Silver Sword": {
+  "num": 1,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    350.0
+   ],
+   [
+    "ElementalDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Aerondight EP2": {
+  "num": 2,
+  "rows": [
+   [
+    "ShockDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Ardaenye": {
+  "num": 388,
+  "rows": [
+   [
+    "FireDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Ardaenye_crafted": {
+  "num": 3,
+  "rows": [
+   [
+    "FireDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Axe 1": {
+  "num": 439,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "Axe 2": {
+  "num": 440,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "Azurewrath": {
+  "num": 389,
+  "rows": [
+   [
+    "ElementalDamage",
+    "add",
+    100.0
+   ],
+   [
+    "ShockDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Azurewrath_crafted": {
+  "num": 4,
+  "rows": [
+   [
+    "ElementalDamage",
+    "add",
+    100.0
+   ],
+   [
+    "ShockDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Beannshie": {
+  "num": 390,
+  "rows": [
+   [
+    "ElementalDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Beannshie_crafted": {
+  "num": 5,
+  "rows": [
+   [
+    "ElementalDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Bear School silver sword": {
+  "num": 6,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    314.0
+   ],
+   [
+    "ShockDamage",
+    "add",
+    30.0
+   ]
+  ]
+ },
+ "Bear School silver sword 1": {
+  "num": 7,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    364.0
+   ],
+   [
+    "ShockDamage",
+    "add",
+    60.0
+   ]
+  ]
+ },
+ "Bear School silver sword 2": {
+  "num": 8,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    414.0
+   ],
+   [
+    "ShockDamage",
+    "add",
+    90.0
+   ]
+  ]
+ },
+ "Bear School silver sword 3": {
+  "num": 9,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    454.0
+   ],
+   [
+    "ShockDamage",
+    "add",
+    120.0
+   ]
+  ]
+ },
+ "Bear School silver sword 4": {
+  "num": 10,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    524.0
+   ],
+   [
+    "ShockDamage",
+    "add",
+    150.0
+   ]
+  ]
+ },
+ "Bear School steel sword": {
+  "num": 11,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    204.0
+   ]
+  ]
+ },
+ "Bear School steel sword 1": {
+  "num": 12,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    244.0
+   ]
+  ]
+ },
+ "Bear School steel sword 2": {
+  "num": 13,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    284.0
+   ]
+  ]
+ },
+ "Bear School steel sword 3": {
+  "num": 14,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    316.0
+   ]
+  ]
+ },
+ "Bear School steel sword 4": {
+  "num": 15,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    372.0
+   ]
+  ]
+ },
+ "Blackjack": {
+  "num": 441,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    100.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    2.0
+   ]
+  ]
+ },
+ "Burning Rose Sword": {
+  "num": 94,
+  "rows": [
+   [
+    "FireDamage",
+    "add",
+    30.0
+   ]
+  ]
+ },
+ "Caranthil Staff": {
+  "num": 442,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    1000.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    10.0
+   ]
+  ]
+ },
+ "Caretaker Shovel": {
+  "num": 443,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    300.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    80.0
+   ]
+  ]
+ },
+ "Club": {
+  "num": 444,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    150.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    3.0
+   ]
+  ]
+ },
+ "Crafted Burning Rose Sword": {
+  "num": 16,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    332.0
+   ],
+   [
+    "FireDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Crafted Ofir Steel Sword": {
+  "num": 17,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    350.0
+   ]
+  ]
+ },
+ "Devine": {
+  "num": 391,
+  "rows": [
+   [
+    "PoisonDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Devine_crafted": {
+  "num": 18,
+  "rows": [
+   [
+    "PoisonDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Dol Blathanna longsword": {
+  "num": 19,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    244.0
+   ]
+  ]
+ },
+ "Dwarven Axe": {
+  "num": 445,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    350.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    7.0
+   ]
+  ]
+ },
+ "Dwarven Hammer": {
+  "num": 446,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    350.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    7.0
+   ]
+  ]
+ },
+ "Dwarven silver sword 1": {
+  "num": 392,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    335.0
+   ]
+  ]
+ },
+ "Dwarven silver sword 1_crafted": {
+  "num": 95,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    335.0
+   ]
+  ]
+ },
+ "Dwarven silver sword 1_crafted 1": {
+  "num": 96,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    235.0
+   ]
+  ]
+ },
+ "Dwarven silver sword 1_crafted 2": {
+  "num": 97,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    285.0
+   ]
+  ]
+ },
+ "Dwarven silver sword 1_crafted 3": {
+  "num": 98,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    335.0
+   ]
+  ]
+ },
+ "Dwarven silver sword 2": {
+  "num": 393,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    465.0
+   ]
+  ]
+ },
+ "Dwarven silver sword 2_crafted": {
+  "num": 99,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    465.0
+   ]
+  ]
+ },
+ "Dwarven silver sword 2_crafted 1": {
+  "num": 100,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    345.0
+   ]
+  ]
+ },
+ "Dwarven silver sword 2_crafted 2": {
+  "num": 101,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    405.0
+   ]
+  ]
+ },
+ "Dwarven silver sword 2_crafted 3": {
+  "num": 102,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    465.0
+   ]
+  ]
+ },
+ "Dwarven sword 1": {
+  "num": 394,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    350.0
+   ]
+  ]
+ },
+ "Dwarven sword 1_crafted": {
+  "num": 103,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    350.0
+   ]
+  ]
+ },
+ "Dwarven sword 1_crafted 1": {
+  "num": 104,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    250.0
+   ]
+  ]
+ },
+ "Dwarven sword 1_crafted 2": {
+  "num": 105,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    300.0
+   ]
+  ]
+ },
+ "Dwarven sword 1_crafted 3": {
+  "num": 106,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    350.0
+   ]
+  ]
+ },
+ "Dwarven sword 2": {
+  "num": 395,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    390.0
+   ]
+  ]
+ },
+ "Dwarven sword 2_crafted": {
+  "num": 107,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    390.0
+   ]
+  ]
+ },
+ "Dwarven sword 2_crafted 1": {
+  "num": 108,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    270.0
+   ]
+  ]
+ },
+ "Dwarven sword 2_crafted 2": {
+  "num": 109,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    330.0
+   ]
+  ]
+ },
+ "Dwarven sword 2_crafted 3": {
+  "num": 110,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    390.0
+   ]
+  ]
+ },
+ "EP1 Crafted Witcher Silver Sword": {
+  "num": 20,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    240.0
+   ]
+  ]
+ },
+ "EP1 Viper School silver sword": {
+  "num": 21,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    460.0
+   ],
+   [
+    "PoisonDamage",
+    "add",
+    150.0
+   ]
+  ]
+ },
+ "EP1 Viper School steel sword": {
+  "num": 22,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    364.0
+   ],
+   [
+    "PoisonDamage",
+    "add",
+    250.0
+   ]
+  ]
+ },
+ "EP2 Standalone Starting Silver Sword": {
+  "num": 111,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    435.0
+   ],
+   [
+    "armor_reduction",
+    "base",
+    50.0
+   ]
+  ]
+ },
+ "EP2 Standalone Starting Steel Sword": {
+  "num": 112,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    297.0
+   ],
+   [
+    "armor_reduction",
+    "base",
+    50.0
+   ]
+  ]
+ },
+ "Elven silver sword 1": {
+  "num": 396,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    325.0
+   ]
+  ]
+ },
+ "Elven silver sword 1_crafted": {
+  "num": 113,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    325.0
+   ]
+  ]
+ },
+ "Elven silver sword 1_crafted 1": {
+  "num": 114,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    225.0
+   ]
+  ]
+ },
+ "Elven silver sword 1_crafted 2": {
+  "num": 115,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    275.0
+   ]
+  ]
+ },
+ "Elven silver sword 1_crafted 3": {
+  "num": 116,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    325.0
+   ]
+  ]
+ },
+ "Elven silver sword 2": {
+  "num": 397,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    355.0
+   ]
+  ]
+ },
+ "Elven silver sword 2_crafted": {
+  "num": 117,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    355.0
+   ]
+  ]
+ },
+ "Elven silver sword 2_crafted 1": {
+  "num": 118,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    255.0
+   ]
+  ]
+ },
+ "Elven silver sword 2_crafted 2": {
+  "num": 119,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    305.0
+   ]
+  ]
+ },
+ "Elven silver sword 2_crafted 3": {
+  "num": 120,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    355.0
+   ]
+  ]
+ },
+ "Fate": {
+  "num": 23,
+  "rows": [
+   [
+    "FrostDamage",
+    "add",
+    50.0
+   ]
+  ]
+ },
+ "Gloryofthenorth": {
+  "num": 398,
+  "rows": [
+   [
+    "FrostDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Gloryofthenorth_crafted": {
+  "num": 24,
+  "rows": [
+   [
+    "FrostDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Gnomish silver sword 1": {
+  "num": 399,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    355.0
+   ]
+  ]
+ },
+ "Gnomish silver sword 1_crafted": {
+  "num": 121,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    355.0
+   ]
+  ]
+ },
+ "Gnomish silver sword 1_crafted 1": {
+  "num": 122,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    255.0
+   ]
+  ]
+ },
+ "Gnomish silver sword 1_crafted 2": {
+  "num": 123,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    305.0
+   ]
+  ]
+ },
+ "Gnomish silver sword 1_crafted 3": {
+  "num": 124,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    355.0
+   ]
+  ]
+ },
+ "Gnomish silver sword 2": {
+  "num": 400,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    465.0
+   ]
+  ]
+ },
+ "Gnomish silver sword 2_crafted": {
+  "num": 125,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    465.0
+   ]
+  ]
+ },
+ "Gnomish silver sword 2_crafted 1": {
+  "num": 126,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    325.0
+   ]
+  ]
+ },
+ "Gnomish silver sword 2_crafted 2": {
+  "num": 127,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    395.0
+   ]
+  ]
+ },
+ "Gnomish silver sword 2_crafted 3": {
+  "num": 128,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    465.0
+   ]
+  ]
+ },
+ "Gnomish sword 1": {
+  "num": 401,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    366.0
+   ]
+  ]
+ },
+ "Gnomish sword 1_crafted": {
+  "num": 129,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    366.0
+   ]
+  ]
+ },
+ "Gnomish sword 1_crafted 1": {
+  "num": 130,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    266.0
+   ]
+  ]
+ },
+ "Gnomish sword 1_crafted 2": {
+  "num": 131,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    316.0
+   ]
+  ]
+ },
+ "Gnomish sword 1_crafted 3": {
+  "num": 132,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    366.0
+   ]
+  ]
+ },
+ "Gnomish sword 2": {
+  "num": 402,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    405.0
+   ]
+  ]
+ },
+ "Gnomish sword 2_crafted": {
+  "num": 25,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    405.0
+   ]
+  ]
+ },
+ "Gnomish sword 2_crafted 1": {
+  "num": 133,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    245.0
+   ]
+  ]
+ },
+ "Gnomish sword 2_crafted 2": {
+  "num": 134,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    305.0
+   ]
+  ]
+ },
+ "Gnomish sword 2_crafted 3": {
+  "num": 135,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    365.0
+   ]
+  ]
+ },
+ "Great Axe 1": {
+  "num": 447,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    300.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    6.0
+   ]
+  ]
+ },
+ "Great Axe 2": {
+  "num": 448,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    300.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    6.0
+   ]
+  ]
+ },
+ "Gryphon School silver sword": {
+  "num": 26,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    224.0
+   ],
+   [
+    "ElementalDamage",
+    "add",
+    20.0
+   ]
+  ]
+ },
+ "Gryphon School silver sword 1": {
+  "num": 27,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    294.0
+   ],
+   [
+    "ElementalDamage",
+    "add",
+    40.0
+   ]
+  ]
+ },
+ "Gryphon School silver sword 2": {
+  "num": 28,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    374.0
+   ],
+   [
+    "ElementalDamage",
+    "add",
+    60.0
+   ]
+  ]
+ },
+ "Gryphon School silver sword 3": {
+  "num": 29,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    454.0
+   ],
+   [
+    "ElementalDamage",
+    "add",
+    80.0
+   ]
+  ]
+ },
+ "Gryphon School silver sword 4": {
+  "num": 30,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    524.0
+   ],
+   [
+    "ElementalDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Gryphon School steel sword": {
+  "num": 31,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    132.0
+   ],
+   [
+    "ElementalDamage",
+    "add",
+    30.0
+   ]
+  ]
+ },
+ "Gryphon School steel sword 1": {
+  "num": 32,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    188.0
+   ],
+   [
+    "ElementalDamage",
+    "add",
+    60.0
+   ]
+  ]
+ },
+ "Gryphon School steel sword 2": {
+  "num": 33,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    252.0
+   ],
+   [
+    "ElementalDamage",
+    "add",
+    90.0
+   ]
+  ]
+ },
+ "Gryphon School steel sword 3": {
+  "num": 34,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    316.0
+   ],
+   [
+    "ElementalDamage",
+    "add",
+    120.0
+   ]
+  ]
+ },
+ "Gryphon School steel sword 4": {
+  "num": 35,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    372.0
+   ],
+   [
+    "ElementalDamage",
+    "add",
+    150.0
+   ]
+  ]
+ },
+ "Guard lvl1 steel sword 3": {
+  "num": 36,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    372.0
+   ],
+   [
+    "armor_reduction",
+    "base",
+    100.0
+   ]
+  ]
+ },
+ "Guard lvl1 steel sword 3 Autogen": {
+  "num": 136,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    372.0
+   ]
+  ]
+ },
+ "Guard lvl1 steel sword 3 crafted 1": {
+  "num": 137,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    292.0
+   ]
+  ]
+ },
+ "Guard lvl1 steel sword 3 crafted 2": {
+  "num": 138,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    332.0
+   ]
+  ]
+ },
+ "Guard lvl1 steel sword 3 crafted 3": {
+  "num": 139,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    372.0
+   ]
+  ]
+ },
+ "Guard lvl2 steel sword 3": {
+  "num": 37,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    380.0
+   ],
+   [
+    "armor_reduction",
+    "base",
+    150.0
+   ]
+  ]
+ },
+ "Guard lvl2 steel sword 3 crafted 1": {
+  "num": 140,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    280.0
+   ]
+  ]
+ },
+ "Guisarme 1": {
+  "num": 449,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    250.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    5.0
+   ]
+  ]
+ },
+ "Guisarme 2": {
+  "num": 450,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    250.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    5.0
+   ]
+  ]
+ },
+ "Gwyhyr": {
+  "num": 403,
+  "rows": [
+   [
+    "ElementalDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Gwyhyr_crafted": {
+  "num": 38,
+  "rows": [
+   [
+    "ElementalDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Halberd 1": {
+  "num": 451,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    250.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    5.0
+   ]
+  ]
+ },
+ "Halberd 2": {
+  "num": 452,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    250.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    5.0
+   ]
+  ]
+ },
+ "Hanza steel sword 3": {
+  "num": 39,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    412.0
+   ]
+  ]
+ },
+ "Hanza steel sword 3 crafted 1": {
+  "num": 141,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    312.0
+   ]
+  ]
+ },
+ "Hanza steel sword 3 crafted 2": {
+  "num": 142,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    362.0
+   ]
+  ]
+ },
+ "Hanza steel sword 3 crafted 3": {
+  "num": 143,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    412.0
+   ]
+  ]
+ },
+ "Hatchet": {
+  "num": 453,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    150.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    3.0
+   ]
+  ]
+ },
+ "Imlerith Mace": {
+  "num": 454,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    600.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    50.0
+   ]
+  ]
+ },
+ "Inquisitor sword 1": {
+  "num": 404,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    276.0
+   ]
+  ]
+ },
+ "Inquisitor sword 1_crafted": {
+  "num": 144,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    276.0
+   ]
+  ]
+ },
+ "Inquisitor sword 1_crafted 1": {
+  "num": 145,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    246.0
+   ]
+  ]
+ },
+ "Inquisitor sword 1_crafted 2": {
+  "num": 146,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    276.0
+   ]
+  ]
+ },
+ "Inquisitor sword 1_crafted 3": {
+  "num": 147,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    306.0
+   ]
+  ]
+ },
+ "Inquisitor sword 2": {
+  "num": 405,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    310.0
+   ]
+  ]
+ },
+ "Inquisitor sword 2_crafted": {
+  "num": 148,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    310.0
+   ]
+  ]
+ },
+ "Inquisitor sword 2_crafted 1": {
+  "num": 149,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    210.0
+   ]
+  ]
+ },
+ "Inquisitor sword 2_crafted 2": {
+  "num": 150,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    260.0
+   ]
+  ]
+ },
+ "Inquisitor sword 2_crafted 3": {
+  "num": 151,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    310.0
+   ]
+  ]
+ },
+ "Knights steel sword 3": {
+  "num": 40,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    468.0
+   ]
+  ]
+ },
+ "Laundry pole": {
+  "num": 152,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    10.0
+   ]
+  ]
+ },
+ "Laundry stick": {
+  "num": 153,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    10.0
+   ]
+  ]
+ },
+ "Lucerne Hammer": {
+  "num": 455,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "Lune": {
+  "num": 406,
+  "rows": [
+   [
+    "ElementalDamage",
+    "add",
+    150.0
+   ]
+  ]
+ },
+ "Lune_crafted": {
+  "num": 41,
+  "rows": [
+   [
+    "ElementalDamage",
+    "add",
+    150.0
+   ]
+  ]
+ },
+ "Lynx School silver sword": {
+  "num": 42,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    284.0
+   ]
+  ]
+ },
+ "Lynx School silver sword 1": {
+  "num": 43,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    344.0
+   ]
+  ]
+ },
+ "Lynx School silver sword 2": {
+  "num": 44,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    404.0
+   ]
+  ]
+ },
+ "Lynx School silver sword 3": {
+  "num": 45,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    454.0
+   ]
+  ]
+ },
+ "Lynx School silver sword 4": {
+  "num": 46,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    524.0
+   ]
+  ]
+ },
+ "Lynx School steel sword": {
+  "num": 47,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    180.0
+   ]
+  ]
+ },
+ "Lynx School steel sword 1": {
+  "num": 48,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    228.0
+   ]
+  ]
+ },
+ "Lynx School steel sword 2": {
+  "num": 49,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    276.0
+   ]
+  ]
+ },
+ "Lynx School steel sword 3": {
+  "num": 50,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    316.0
+   ]
+  ]
+ },
+ "Lynx School steel sword 4": {
+  "num": 51,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    372.0
+   ]
+  ]
+ },
+ "Mace 1": {
+  "num": 456,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "Mace 2": {
+  "num": 457,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "NPC Burning Rose Sword": {
+  "num": 154,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    5.0
+   ]
+  ]
+ },
+ "NPC CyprianWhorenson sword": {
+  "num": 155,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    150.0
+   ]
+  ]
+ },
+ "NPC Dandelion Short Steel Sword": {
+  "num": 156,
+  "rows": [
+   [
+    "PhysicalDamage",
+    "base",
+    5.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    5.0
+   ]
+  ]
+ },
+ "NPC EP1 Steel Sword": {
+  "num": 157,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    5.0
+   ]
+  ]
+ },
+ "NPC EP1 Steel Sword 2": {
+  "num": 158,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    5.0
+   ]
+  ]
+ },
+ "NPC Eredin Sword": {
+  "num": 159,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    390.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    90.0
+   ]
+  ]
+ },
+ "NPC Gregoire Sword": {
+  "num": 160,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    200.0
+   ]
+  ]
+ },
+ "NPC Guard lvl1 Sword": {
+  "num": 161,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    200.0
+   ]
+  ]
+ },
+ "NPC Guard lvl2 Sword": {
+  "num": 162,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    200.0
+   ]
+  ]
+ },
+ "NPC Hakland Spear": {
+  "num": 458,
+  "rows": [
+   [
+    "PiercingDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "NPC Hanza steel sword": {
+  "num": 163,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    200.0
+   ]
+  ]
+ },
+ "NPC Hjalmar_Short_Steel_Sword": {
+  "num": 164,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    210.0
+   ]
+  ]
+ },
+ "NPC Inquisitor sword 1": {
+  "num": 165,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    370.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    70.0
+   ]
+  ]
+ },
+ "NPC Knight steel sword": {
+  "num": 166,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    200.0
+   ]
+  ]
+ },
+ "NPC Knights steel sword 1": {
+  "num": 167,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    200.0
+   ]
+  ]
+ },
+ "NPC Nazairi Mace": {
+  "num": 459,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "NPC Nilfgaardian sword 1": {
+  "num": 168,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    240.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    40.0
+   ]
+  ]
+ },
+ "NPC Nilfgaardian sword 2": {
+  "num": 169,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    270.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    50.0
+   ]
+  ]
+ },
+ "NPC Nilfgaardian sword 3": {
+  "num": 170,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    330.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    6.0
+   ]
+  ]
+ },
+ "NPC Nilfgaardian sword 4": {
+  "num": 171,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    370.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    70.0
+   ]
+  ]
+ },
+ "NPC No Mans Land sword 1": {
+  "num": 172,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    40.0
+   ]
+  ]
+ },
+ "NPC No Mans Land sword 1 q2": {
+  "num": 173,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    220.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    40.0
+   ]
+  ]
+ },
+ "NPC No Mans Land sword 2": {
+  "num": 174,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    220.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    40.0
+   ]
+  ]
+ },
+ "NPC No Mans Land sword 3": {
+  "num": 175,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    290.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    50.0
+   ]
+  ]
+ },
+ "NPC No Mans Land sword 4": {
+  "num": 176,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    340.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    60.0
+   ]
+  ]
+ },
+ "NPC Novigraadan sword 1": {
+  "num": 177,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    230.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    40.0
+   ]
+  ]
+ },
+ "NPC Novigraadan sword 2": {
+  "num": 178,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    260.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    50.0
+   ]
+  ]
+ },
+ "NPC Novigraadan sword 3": {
+  "num": 179,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    290.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    50.0
+   ]
+  ]
+ },
+ "NPC Novigraadan sword 4": {
+  "num": 180,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    330.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    60.0
+   ]
+  ]
+ },
+ "NPC Olgierd Sabre": {
+  "num": 181,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    100.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    80.0
+   ]
+  ]
+ },
+ "NPC Rusty Nilfgaardian sword": {
+  "num": 182,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    150.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    10.0
+   ]
+  ]
+ },
+ "NPC Rusty No Mans Land sword": {
+  "num": 183,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    150.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    10.0
+   ]
+  ]
+ },
+ "NPC Rusty Novigraadan sword": {
+  "num": 184,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    160.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    10.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    10.0
+   ]
+  ]
+ },
+ "NPC Rusty Skellige sword": {
+  "num": 185,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    150.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    10.0
+   ]
+  ]
+ },
+ "NPC Scoiatael sword 1": {
+  "num": 186,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    300.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    60.0
+   ]
+  ]
+ },
+ "NPC Scoiatael sword 2": {
+  "num": 187,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    300.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    60.0
+   ]
+  ]
+ },
+ "NPC Scoiatael sword 3": {
+  "num": 188,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    330.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    60.0
+   ]
+  ]
+ },
+ "NPC Scoiatael sword 4": {
+  "num": 189,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    330.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    80.0
+   ]
+  ]
+ },
+ "NPC Short Steel Sword": {
+  "num": 190,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    40.0
+   ]
+  ]
+ },
+ "NPC Short sword 1": {
+  "num": 191,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    40.0
+   ]
+  ]
+ },
+ "NPC Short sword 2": {
+  "num": 192,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    220.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    40.0
+   ]
+  ]
+ },
+ "NPC Skellige sword 1": {
+  "num": 193,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    230.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    40.0
+   ]
+  ]
+ },
+ "NPC Skellige sword 2": {
+  "num": 194,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    250.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    50.0
+   ]
+  ]
+ },
+ "NPC Skellige sword 3": {
+  "num": 195,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    270.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    50.0
+   ]
+  ]
+ },
+ "NPC Skellige sword 4": {
+  "num": 196,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    310.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    60.0
+   ]
+  ]
+ },
+ "NPC Vesemir Silver Sword": {
+  "num": 197,
+  "rows": [
+   [
+    "PhysicalDamage",
+    "base",
+    10.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    60.0
+   ]
+  ]
+ },
+ "NPC Vesemir Silver Sword q403 upgrade": {
+  "num": 198,
+  "rows": [
+   [
+    "PhysicalDamage",
+    "base",
+    10.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    100.0
+   ]
+  ]
+ },
+ "NPC Vesemir Steel Sword": {
+  "num": 199,
+  "rows": [
+   [
+    "PhysicalDamage",
+    "base",
+    60.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    10.0
+   ]
+  ]
+ },
+ "NPC Wildhunt sword 2": {
+  "num": 200,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    100.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    80.0
+   ]
+  ]
+ },
+ "NPC Witcher Silver Sword": {
+  "num": 201,
+  "rows": [
+   [
+    "PhysicalDamage",
+    "base",
+    10.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    60.0
+   ]
+  ]
+ },
+ "NPC Witcher Silver Sword q403 upgrade": {
+  "num": 202,
+  "rows": [
+   [
+    "PhysicalDamage",
+    "base",
+    10.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    100.0
+   ]
+  ]
+ },
+ "NPC Witcher Steel Sword": {
+  "num": 203,
+  "rows": [
+   [
+    "PhysicalDamage",
+    "base",
+    60.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    10.0
+   ]
+  ]
+ },
+ "NPC Wooden sword": {
+  "num": 204,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    2.0
+   ]
+  ]
+ },
+ "NPC q402 Skellige sword 3": {
+  "num": 205,
+  "rows": [
+   [
+    "FrostDamage",
+    "add",
+    150.0
+   ]
+  ]
+ },
+ "Negotiator": {
+  "num": 407,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    240.0
+   ]
+  ]
+ },
+ "Negotiator_crafted": {
+  "num": 52,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    240.0
+   ]
+  ]
+ },
+ "Netflix silver sword": {
+  "num": 206,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    344.0
+   ]
+  ]
+ },
+ "Netflix silver sword 1": {
+  "num": 207,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    454.0
+   ]
+  ]
+ },
+ "Netflix silver sword 2": {
+  "num": 208,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    524.0
+   ]
+  ]
+ },
+ "Netflix steel sword": {
+  "num": 209,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    228.0
+   ]
+  ]
+ },
+ "Netflix steel sword 1": {
+  "num": 210,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    318.0
+   ]
+  ]
+ },
+ "Netflix steel sword 2": {
+  "num": 211,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    372.0
+   ]
+  ]
+ },
+ "Nilfgaardian sword 1": {
+  "num": 408,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    85.0
+   ]
+  ]
+ },
+ "Nilfgaardian sword 1_crafted": {
+  "num": 212,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    85.0
+   ]
+  ]
+ },
+ "Nilfgaardian sword 1_crafted 1": {
+  "num": 213,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    65.0
+   ]
+  ]
+ },
+ "Nilfgaardian sword 1_crafted 2": {
+  "num": 214,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    85.0
+   ]
+  ]
+ },
+ "Nilfgaardian sword 1_crafted 3": {
+  "num": 215,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    105.0
+   ]
+  ]
+ },
+ "Nilfgaardian sword 4": {
+  "num": 409,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    270.0
+   ]
+  ]
+ },
+ "Nilfgaardian sword 4_crafted": {
+  "num": 216,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    270.0
+   ]
+  ]
+ },
+ "Nilfgaardian sword 4_crafted 1": {
+  "num": 217,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    210.0
+   ]
+  ]
+ },
+ "Nilfgaardian sword 4_crafted 2": {
+  "num": 218,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    240.0
+   ]
+  ]
+ },
+ "Nilfgaardian sword 4_crafted 3": {
+  "num": 219,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    270.0
+   ]
+  ]
+ },
+ "No Mans Land sword 1": {
+  "num": 410,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    38.0
+   ]
+  ]
+ },
+ "No Mans Land sword 1_crafted": {
+  "num": 220,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    38.0
+   ]
+  ]
+ },
+ "No Mans Land sword 1_crafted 1": {
+  "num": 221,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    28.0
+   ]
+  ]
+ },
+ "No Mans Land sword 1_crafted 2": {
+  "num": 222,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    38.0
+   ]
+  ]
+ },
+ "No Mans Land sword 1_crafted 3": {
+  "num": 223,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    48.0
+   ]
+  ]
+ },
+ "No Mans Land sword 2": {
+  "num": 411,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    45.0
+   ]
+  ]
+ },
+ "No Mans Land sword 2_crafted": {
+  "num": 224,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    45.0
+   ]
+  ]
+ },
+ "No Mans Land sword 2_crafted 1": {
+  "num": 225,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    35.0
+   ]
+  ]
+ },
+ "No Mans Land sword 2_crafted 2": {
+  "num": 226,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    45.0
+   ]
+  ]
+ },
+ "No Mans Land sword 2_crafted 3": {
+  "num": 227,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    55.0
+   ]
+  ]
+ },
+ "No Mans Land sword 3": {
+  "num": 412,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    150.0
+   ]
+  ]
+ },
+ "No Mans Land sword 3_crafted": {
+  "num": 228,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    150.0
+   ]
+  ]
+ },
+ "No Mans Land sword 3_crafted 1": {
+  "num": 229,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    110.0
+   ]
+  ]
+ },
+ "No Mans Land sword 3_crafted 2": {
+  "num": 230,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    130.0
+   ]
+  ]
+ },
+ "No Mans Land sword 3_crafted 3": {
+  "num": 231,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    150.0
+   ]
+  ]
+ },
+ "No Mans Land sword 4": {
+  "num": 413,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    195.0
+   ]
+  ]
+ },
+ "No Mans Land sword 4_crafted": {
+  "num": 232,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    195.0
+   ]
+  ]
+ },
+ "No Mans Land sword 4_crafted 1": {
+  "num": 233,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    135.0
+   ]
+  ]
+ },
+ "No Mans Land sword 4_crafted 2": {
+  "num": 234,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    165.0
+   ]
+  ]
+ },
+ "No Mans Land sword 4_crafted 3": {
+  "num": 235,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    195.0
+   ]
+  ]
+ },
+ "Novigraadan sword 1": {
+  "num": 414,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    67.0
+   ]
+  ]
+ },
+ "Novigraadan sword 1_crafted": {
+  "num": 236,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    67.0
+   ]
+  ]
+ },
+ "Novigraadan sword 1_crafted 1": {
+  "num": 237,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    57.0
+   ]
+  ]
+ },
+ "Novigraadan sword 1_crafted 2": {
+  "num": 238,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    67.0
+   ]
+  ]
+ },
+ "Novigraadan sword 1_crafted 3": {
+  "num": 239,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    77.0
+   ]
+  ]
+ },
+ "Novigraadan sword 2": {
+  "num": 415,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    110.0
+   ]
+  ]
+ },
+ "Novigraadan sword 2_crafted": {
+  "num": 240,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    110.0
+   ]
+  ]
+ },
+ "Novigraadan sword 2_crafted 1": {
+  "num": 241,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    70.0
+   ]
+  ]
+ },
+ "Novigraadan sword 2_crafted 2": {
+  "num": 242,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    90.0
+   ]
+  ]
+ },
+ "Novigraadan sword 2_crafted 3": {
+  "num": 243,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    110.0
+   ]
+  ]
+ },
+ "Novigraadan sword 3": {
+  "num": 416,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    155.0
+   ]
+  ]
+ },
+ "Novigraadan sword 3_crafted": {
+  "num": 244,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    155.0
+   ]
+  ]
+ },
+ "Novigraadan sword 3_crafted 1": {
+  "num": 245,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    115.0
+   ]
+  ]
+ },
+ "Novigraadan sword 3_crafted 2": {
+  "num": 246,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    135.0
+   ]
+  ]
+ },
+ "Novigraadan sword 3_crafted 3": {
+  "num": 247,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    155.0
+   ]
+  ]
+ },
+ "Novigraadan sword 4": {
+  "num": 417,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    230.0
+   ]
+  ]
+ },
+ "Novigraadan sword 4_crafted": {
+  "num": 248,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    230.0
+   ]
+  ]
+ },
+ "Novigraadan sword 4_crafted 1": {
+  "num": 249,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    150.0
+   ]
+  ]
+ },
+ "Novigraadan sword 4_crafted 2": {
+  "num": 250,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    190.0
+   ]
+  ]
+ },
+ "Novigraadan sword 4_crafted 3": {
+  "num": 251,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    230.0
+   ]
+  ]
+ },
+ "Ofir Sabre 2": {
+  "num": 252,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    308.0
+   ]
+  ]
+ },
+ "Olgierd Sabre": {
+  "num": 53,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    363.0
+   ]
+  ]
+ },
+ "Pickaxe": {
+  "num": 460,
+  "rows": [
+   [
+    "PiercingDamage",
+    "base",
+    90.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    3.0
+   ]
+  ]
+ },
+ "Pitchfork": {
+  "num": 461,
+  "rows": [
+   [
+    "PiercingDamage",
+    "base",
+    100.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "Plank": {
+  "num": 253,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    22.0
+   ]
+  ]
+ },
+ "Poker": {
+  "num": 462,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    70.0
+   ]
+  ]
+ },
+ "Q1_Axe2h": {
+  "num": 463,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    300.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    6.0
+   ]
+  ]
+ },
+ "Q1_Guisarme2h": {
+  "num": 464,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    250.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    5.0
+   ]
+  ]
+ },
+ "Q1_Halberd2h": {
+  "num": 465,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    250.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    5.0
+   ]
+  ]
+ },
+ "Q1_Hammer2h": {
+  "num": 466,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    300.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    6.0
+   ]
+  ]
+ },
+ "Q1_Mage_Staff2h": {
+  "num": 467,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    70.0
+   ]
+  ]
+ },
+ "Q1_Pitchfork2h": {
+  "num": 468,
+  "rows": [
+   [
+    "PiercingDamage",
+    "base",
+    100.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "Q1_Spear2h": {
+  "num": 469,
+  "rows": [
+   [
+    "PiercingDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "Q1_ZoltanAxe2h": {
+  "num": 470,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    300.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    6.0
+   ]
+  ]
+ },
+ "Q1_axe1h": {
+  "num": 471,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "Q1_axe1h_mq2024_spirit": {
+  "num": 472,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "Q1_cleaver1h": {
+  "num": 473,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "Q1_club1h": {
+  "num": 474,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    150.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    3.0
+   ]
+  ]
+ },
+ "Q1_mace1h": {
+  "num": 475,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "Q1_pickaxe1h": {
+  "num": 476,
+  "rows": [
+   [
+    "PiercingDamage",
+    "base",
+    90.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    3.0
+   ]
+  ]
+ },
+ "Q2_Axe2h": {
+  "num": 477,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    300.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    6.0
+   ]
+  ]
+ },
+ "Q2_Guisarme2h": {
+  "num": 478,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    250.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    5.0
+   ]
+  ]
+ },
+ "Q2_Halberd2h": {
+  "num": 479,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    250.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    5.0
+   ]
+  ]
+ },
+ "Q2_Hammer2h": {
+  "num": 480,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    300.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    6.0
+   ]
+  ]
+ },
+ "Q2_Mage_Staff2h": {
+  "num": 481,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    70.0
+   ]
+  ]
+ },
+ "Q2_Spear2h": {
+  "num": 482,
+  "rows": [
+   [
+    "PiercingDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "Q2_axe1h": {
+  "num": 483,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "Q2_cleaver1h": {
+  "num": 484,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "Q2_mace1h": {
+  "num": 485,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "Q3_DwarvenAxe2h": {
+  "num": 486,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    350.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    7.0
+   ]
+  ]
+ },
+ "Q3_DwarvenHammer2h": {
+  "num": 487,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    350.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    7.0
+   ]
+  ]
+ },
+ "Q3_Mage_Staff2h": {
+  "num": 488,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    70.0
+   ]
+  ]
+ },
+ "Q604 Olgierd Sabre": {
+  "num": 254,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    100.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    80.0
+   ]
+  ]
+ },
+ "Reachofthedamned": {
+  "num": 418,
+  "rows": [
+   [
+    "ElementalDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Reachofthedamned_crafted": {
+  "num": 54,
+  "rows": [
+   [
+    "ElementalDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Red Wolf School silver sword 1": {
+  "num": 55,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    360.0
+   ],
+   [
+    "FireDamage",
+    "add",
+    150.0
+   ]
+  ]
+ },
+ "Red Wolf School silver sword 2": {
+  "num": 56,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    854.0
+   ]
+  ]
+ },
+ "Red Wolf School steel sword 1": {
+  "num": 57,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    372.0
+   ]
+  ]
+ },
+ "Red Wolf School steel sword 2": {
+  "num": 58,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    636.0
+   ]
+  ]
+ },
+ "Reinald Netflix silver sword": {
+  "num": 255,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    344.0
+   ]
+  ]
+ },
+ "Reinald Netflix steel sword": {
+  "num": 256,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    228.0
+   ]
+  ]
+ },
+ "Rusty Nilfgaardian sword": {
+  "num": 257,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "Rusty No Mans Land sword": {
+  "num": 258,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "Rusty Novigraadan sword": {
+  "num": 259,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "Rusty Skellige sword": {
+  "num": 260,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    5.0
+   ]
+  ]
+ },
+ "Scoiatael sword 1": {
+  "num": 419,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    205.0
+   ]
+  ]
+ },
+ "Scoiatael sword 1_crafted": {
+  "num": 261,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    205.0
+   ]
+  ]
+ },
+ "Scoiatael sword 1_crafted 1": {
+  "num": 262,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    145.0
+   ]
+  ]
+ },
+ "Scoiatael sword 1_crafted 2": {
+  "num": 263,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    175.0
+   ]
+  ]
+ },
+ "Scoiatael sword 1_crafted 3": {
+  "num": 264,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    205.0
+   ]
+  ]
+ },
+ "Scoiatael sword 2": {
+  "num": 420,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    245.0
+   ]
+  ]
+ },
+ "Scoiatael sword 2_crafted": {
+  "num": 265,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    245.0
+   ]
+  ]
+ },
+ "Scoiatael sword 2_crafted 1": {
+  "num": 266,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    185.0
+   ]
+  ]
+ },
+ "Scoiatael sword 2_crafted 2": {
+  "num": 267,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    215.0
+   ]
+  ]
+ },
+ "Scoiatael sword 2_crafted 3": {
+  "num": 268,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    245.0
+   ]
+  ]
+ },
+ "Scoiatael sword 3": {
+  "num": 421,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    285.0
+   ]
+  ]
+ },
+ "Scoiatael sword 3_crafted": {
+  "num": 269,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    285.0
+   ]
+  ]
+ },
+ "Scoiatael sword 3_crafted 1": {
+  "num": 270,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    205.0
+   ]
+  ]
+ },
+ "Scoiatael sword 3_crafted 2": {
+  "num": 271,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    245.0
+   ]
+  ]
+ },
+ "Scoiatael sword 3_crafted 3": {
+  "num": 272,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    285.0
+   ]
+  ]
+ },
+ "Scoiatael sword 4": {
+  "num": 422,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    320.0
+   ]
+  ]
+ },
+ "Scoiatael sword 4_crafted": {
+  "num": 273,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    320.0
+   ]
+  ]
+ },
+ "Scoiatael sword 4_crafted 1": {
+  "num": 274,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    220.0
+   ]
+  ]
+ },
+ "Scoiatael sword 4_crafted 2": {
+  "num": 275,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    270.0
+   ]
+  ]
+ },
+ "Scoiatael sword 4_crafted 3": {
+  "num": 276,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    320.0
+   ]
+  ]
+ },
+ "Scythe": {
+  "num": 489,
+  "rows": [
+   [
+    "PiercingDamage",
+    "base",
+    100.0
+   ]
+  ]
+ },
+ "Serpent Silver Sword 1": {
+  "num": 59,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    504.0
+   ]
+  ]
+ },
+ "Serpent Silver Sword 1 crafted 1": {
+  "num": 277,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    344.0
+   ]
+  ]
+ },
+ "Serpent Silver Sword 1 crafted 2": {
+  "num": 278,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    424.0
+   ]
+  ]
+ },
+ "Serpent Silver Sword 1 crafted 3": {
+  "num": 279,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    504.0
+   ]
+  ]
+ },
+ "Serpent Silver Sword 2": {
+  "num": 60,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    534.0
+   ]
+  ]
+ },
+ "Serpent Silver Sword 2 crafted 1": {
+  "num": 280,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    374.0
+   ]
+  ]
+ },
+ "Serpent Silver Sword 2 crafted 2": {
+  "num": 281,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    454.0
+   ]
+  ]
+ },
+ "Serpent Silver Sword 2 crafted 3": {
+  "num": 282,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    534.0
+   ]
+  ]
+ },
+ "Serpent Silver Sword 3": {
+  "num": 61,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    564.0
+   ]
+  ]
+ },
+ "Serpent Silver Sword 3 crafted 1": {
+  "num": 283,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    384.0
+   ],
+   [
+    "FireDamage",
+    "add",
+    60.0
+   ]
+  ]
+ },
+ "Serpent Silver Sword 3 crafted 2": {
+  "num": 284,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    474.0
+   ],
+   [
+    "FireDamage",
+    "add",
+    80.0
+   ]
+  ]
+ },
+ "Serpent Silver Sword 3 crafted 3": {
+  "num": 285,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    564.0
+   ],
+   [
+    "FireDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Serpent Steel Sword 1": {
+  "num": 62,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    388.0
+   ]
+  ]
+ },
+ "Serpent Steel Sword 1 crafted 1": {
+  "num": 286,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    308.0
+   ]
+  ]
+ },
+ "Serpent Steel Sword 1 crafted 2": {
+  "num": 287,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    348.0
+   ]
+  ]
+ },
+ "Serpent Steel Sword 1 crafted 3": {
+  "num": 288,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    388.0
+   ]
+  ]
+ },
+ "Serpent Steel Sword 2": {
+  "num": 63,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    396.0
+   ]
+  ]
+ },
+ "Serpent Steel Sword 2 crafted 1": {
+  "num": 289,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    316.0
+   ]
+  ]
+ },
+ "Serpent Steel Sword 2 crafted 2": {
+  "num": 290,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    356.0
+   ]
+  ]
+ },
+ "Serpent Steel Sword 2 crafted 3": {
+  "num": 291,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    396.0
+   ]
+  ]
+ },
+ "Serpent Steel Sword 3": {
+  "num": 64,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    404.0
+   ]
+  ]
+ },
+ "Serpent Steel Sword 3 crafted 1": {
+  "num": 292,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    304.0
+   ],
+   [
+    "ShockDamage",
+    "add",
+    40.0
+   ]
+  ]
+ },
+ "Serpent Steel Sword 3 crafted 2": {
+  "num": 293,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    354.0
+   ],
+   [
+    "ShockDamage",
+    "add",
+    50.0
+   ]
+  ]
+ },
+ "Serpent Steel Sword 3 crafted 3": {
+  "num": 294,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    404.0
+   ],
+   [
+    "ShockDamage",
+    "add",
+    60.0
+   ]
+  ]
+ },
+ "Short sword 1": {
+  "num": 423,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    30.0
+   ]
+  ]
+ },
+ "Short sword 1_crafted": {
+  "num": 295,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    30.0
+   ]
+  ]
+ },
+ "Short sword 1_crafted 1": {
+  "num": 296,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    20.0
+   ]
+  ]
+ },
+ "Short sword 1_crafted 2": {
+  "num": 297,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    30.0
+   ]
+  ]
+ },
+ "Short sword 1_crafted 3": {
+  "num": 298,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    40.0
+   ]
+  ]
+ },
+ "Short sword 2": {
+  "num": 424,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    35.0
+   ]
+  ]
+ },
+ "Short sword 2_crafted": {
+  "num": 299,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    35.0
+   ]
+  ]
+ },
+ "Short sword 2_crafted 1": {
+  "num": 300,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    25.0
+   ]
+  ]
+ },
+ "Short sword 2_crafted 2": {
+  "num": 301,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    35.0
+   ]
+  ]
+ },
+ "Short sword 2_crafted 3": {
+  "num": 302,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    45.0
+   ]
+  ]
+ },
+ "Silver Vixen": {
+  "num": 65,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    284.0
+   ]
+  ]
+ },
+ "Silver sword 1": {
+  "num": 425,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    215.0
+   ]
+  ]
+ },
+ "Silver sword 1_crafted": {
+  "num": 303,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    215.0
+   ]
+  ]
+ },
+ "Silver sword 1_crafted 1": {
+  "num": 304,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    155.0
+   ]
+  ]
+ },
+ "Silver sword 1_crafted 2": {
+  "num": 305,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    185.0
+   ]
+  ]
+ },
+ "Silver sword 1_crafted 3": {
+  "num": 306,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    215.0
+   ]
+  ]
+ },
+ "Silver sword 2": {
+  "num": 426,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    225.0
+   ]
+  ]
+ },
+ "Silver sword 2_crafted": {
+  "num": 307,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    225.0
+   ]
+  ]
+ },
+ "Silver sword 2_crafted 1": {
+  "num": 308,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    165.0
+   ]
+  ]
+ },
+ "Silver sword 2_crafted 2": {
+  "num": 309,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    195.0
+   ]
+  ]
+ },
+ "Silver sword 2_crafted 3": {
+  "num": 310,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    225.0
+   ]
+  ]
+ },
+ "Silver sword 3": {
+  "num": 427,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    250.0
+   ]
+  ]
+ },
+ "Silver sword 3_crafted": {
+  "num": 311,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    250.0
+   ]
+  ]
+ },
+ "Silver sword 3_crafted 1": {
+  "num": 312,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    170.0
+   ]
+  ]
+ },
+ "Silver sword 3_crafted 2": {
+  "num": 313,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    210.0
+   ]
+  ]
+ },
+ "Silver sword 3_crafted 3": {
+  "num": 314,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    250.0
+   ]
+  ]
+ },
+ "Silver sword 4": {
+  "num": 428,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    275.0
+   ]
+  ]
+ },
+ "Silver sword 4_crafted": {
+  "num": 315,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    275.0
+   ]
+  ]
+ },
+ "Silver sword 4_crafted 1": {
+  "num": 316,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    195.0
+   ]
+  ]
+ },
+ "Silver sword 4_crafted 2": {
+  "num": 317,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    235.0
+   ]
+  ]
+ },
+ "Silver sword 4_crafted 3": {
+  "num": 318,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    275.0
+   ]
+  ]
+ },
+ "Silver sword 5": {
+  "num": 429,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    310.0
+   ]
+  ]
+ },
+ "Silver sword 5_crafted": {
+  "num": 319,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    310.0
+   ]
+  ]
+ },
+ "Silver sword 5_crafted 1": {
+  "num": 320,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    250.0
+   ]
+  ]
+ },
+ "Silver sword 5_crafted 2": {
+  "num": 321,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    300.0
+   ]
+  ]
+ },
+ "Silver sword 5_crafted 3": {
+  "num": 322,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    350.0
+   ]
+  ]
+ },
+ "Silver sword 6": {
+  "num": 430,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    325.0
+   ]
+  ]
+ },
+ "Silver sword 6_crafted": {
+  "num": 323,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    325.0
+   ]
+  ]
+ },
+ "Silver sword 6_crafted 1": {
+  "num": 324,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    250.0
+   ]
+  ]
+ },
+ "Silver sword 6_crafted 2": {
+  "num": 325,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    300.0
+   ]
+  ]
+ },
+ "Silver sword 6_crafted 3": {
+  "num": 326,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    350.0
+   ]
+  ]
+ },
+ "Silver sword 7": {
+  "num": 431,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    355.0
+   ]
+  ]
+ },
+ "Silver sword 7_crafted": {
+  "num": 327,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    355.0
+   ]
+  ]
+ },
+ "Silver sword 7_crafted 1": {
+  "num": 328,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    235.0
+   ]
+  ]
+ },
+ "Silver sword 7_crafted 2": {
+  "num": 329,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    275.0
+   ]
+  ]
+ },
+ "Silver sword 7_crafted 3": {
+  "num": 330,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    315.0
+   ]
+  ]
+ },
+ "Skellige sword 1": {
+  "num": 432,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    75.0
+   ]
+  ]
+ },
+ "Skellige sword 1_crafted": {
+  "num": 331,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    75.0
+   ]
+  ]
+ },
+ "Skellige sword 1_crafted 1": {
+  "num": 332,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    55.0
+   ]
+  ]
+ },
+ "Skellige sword 1_crafted 2": {
+  "num": 333,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    65.0
+   ]
+  ]
+ },
+ "Skellige sword 1_crafted 3": {
+  "num": 334,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    75.0
+   ]
+  ]
+ },
+ "Skellige sword 2": {
+  "num": 433,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    115.0
+   ]
+  ]
+ },
+ "Skellige sword 2_crafted": {
+  "num": 335,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    115.0
+   ]
+  ]
+ },
+ "Skellige sword 2_crafted 1": {
+  "num": 336,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    75.0
+   ]
+  ]
+ },
+ "Skellige sword 2_crafted 2": {
+  "num": 337,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    95.0
+   ]
+  ]
+ },
+ "Skellige sword 2_crafted 3": {
+  "num": 338,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    115.0
+   ]
+  ]
+ },
+ "Skellige sword 3_crafted": {
+  "num": 339,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    170.0
+   ]
+  ]
+ },
+ "Skellige sword 3_crafted 1": {
+  "num": 340,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    110.0
+   ]
+  ]
+ },
+ "Skellige sword 3_crafted 2": {
+  "num": 341,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    140.0
+   ]
+  ]
+ },
+ "Skellige sword 3_crafted 3": {
+  "num": 342,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    170.0
+   ]
+  ]
+ },
+ "Skellige sword 4": {
+  "num": 434,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    235.0
+   ]
+  ]
+ },
+ "Skellige sword 4_crafted": {
+  "num": 343,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    235.0
+   ]
+  ]
+ },
+ "Skellige sword 4_crafted 1": {
+  "num": 344,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    155.0
+   ]
+  ]
+ },
+ "Skellige sword 4_crafted 2": {
+  "num": 345,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    195.0
+   ]
+  ]
+ },
+ "Skellige sword 4_crafted 3": {
+  "num": 346,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    235.0
+   ]
+  ]
+ },
+ "Small Blackjack": {
+  "num": 490,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    50.0
+   ]
+  ]
+ },
+ "Spear 1": {
+  "num": 491,
+  "rows": [
+   [
+    "PiercingDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "Spear 2": {
+  "num": 492,
+  "rows": [
+   [
+    "PiercingDamage",
+    "base",
+    200.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "Staff": {
+  "num": 493,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    70.0
+   ]
+  ]
+ },
+ "Steel Vixen": {
+  "num": 66,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    284.0
+   ]
+  ]
+ },
+ "Tlareg": {
+  "num": 435,
+  "rows": [
+   [
+    "ShockDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Tlareg_crafted": {
+  "num": 67,
+  "rows": [
+   [
+    "ShockDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Torch Blunt": {
+  "num": 494,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    150.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    3.0
+   ]
+  ]
+ },
+ "Torlara": {
+  "num": 436,
+  "rows": [
+   [
+    "ShockDamage",
+    "add",
+    150.0
+   ]
+  ]
+ },
+ "Torlara_crafted": {
+  "num": 68,
+  "rows": [
+   [
+    "ShockDamage",
+    "add",
+    150.0
+   ]
+  ]
+ },
+ "Toussaint steel sword 3": {
+  "num": 69,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    428.0
+   ],
+   [
+    "armor_reduction",
+    "base",
+    250.0
+   ]
+  ]
+ },
+ "Toussaint steel sword 3 crafted 1": {
+  "num": 347,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    328.0
+   ]
+  ]
+ },
+ "Toussaint steel sword 3 crafted 2": {
+  "num": 348,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    378.0
+   ]
+  ]
+ },
+ "Toussaint steel sword 3 crafted 3": {
+  "num": 349,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    428.0
+   ]
+  ]
+ },
+ "Twohanded Hammer 1": {
+  "num": 495,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    300.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    6.0
+   ]
+  ]
+ },
+ "Twohanded Hammer 2": {
+  "num": 496,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    300.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    6.0
+   ]
+  ]
+ },
+ "Viper School silver sword": {
+  "num": 70,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    230.0
+   ],
+   [
+    "PoisonDamage",
+    "add",
+    30.0
+   ]
+  ]
+ },
+ "Viper School silver sword 1": {
+  "num": 71,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    290.0
+   ],
+   [
+    "PoisonDamage",
+    "add",
+    60.0
+   ]
+  ]
+ },
+ "Viper School silver sword 2": {
+  "num": 72,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    350.0
+   ],
+   [
+    "PoisonDamage",
+    "add",
+    90.0
+   ]
+  ]
+ },
+ "Viper School silver sword 3": {
+  "num": 73,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    410.0
+   ],
+   [
+    "PoisonDamage",
+    "add",
+    120.0
+   ]
+  ]
+ },
+ "Viper School silver sword 4": {
+  "num": 74,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    460.0
+   ],
+   [
+    "PoisonDamage",
+    "add",
+    150.0
+   ]
+  ]
+ },
+ "Viper School steel sword": {
+  "num": 75,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    182.0
+   ],
+   [
+    "PoisonDamage",
+    "add",
+    50.0
+   ]
+  ]
+ },
+ "Viper School steel sword 1": {
+  "num": 76,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    228.0
+   ],
+   [
+    "PoisonDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Viper School steel sword 2": {
+  "num": 77,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    273.0
+   ],
+   [
+    "PoisonDamage",
+    "add",
+    150.0
+   ]
+  ]
+ },
+ "Viper School steel sword 3": {
+  "num": 78,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    318.0
+   ],
+   [
+    "PoisonDamage",
+    "add",
+    200.0
+   ]
+  ]
+ },
+ "Viper School steel sword 4": {
+  "num": 79,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    364.0
+   ],
+   [
+    "PoisonDamage",
+    "add",
+    250.0
+   ]
+  ]
+ },
+ "W_Axe01": {
+  "num": 350,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    10.0
+   ]
+  ]
+ },
+ "W_Axe02": {
+  "num": 351,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    15.0
+   ]
+  ]
+ },
+ "W_Axe03": {
+  "num": 352,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    20.0
+   ]
+  ]
+ },
+ "W_Axe04": {
+  "num": 353,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    25.0
+   ]
+  ]
+ },
+ "W_Axe05": {
+  "num": 354,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    30.0
+   ]
+  ]
+ },
+ "W_Axe06": {
+  "num": 355,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    40.0
+   ]
+  ]
+ },
+ "W_Club": {
+  "num": 356,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    10.0
+   ]
+  ]
+ },
+ "W_Mace01": {
+  "num": 357,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    10.0
+   ]
+  ]
+ },
+ "W_Mace02": {
+  "num": 358,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    25.0
+   ]
+  ]
+ },
+ "W_Pickaxe": {
+  "num": 359,
+  "rows": [
+   [
+    "PiercingDamage",
+    "base",
+    10.0
+   ]
+  ]
+ },
+ "W_Poker": {
+  "num": 360,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    25.0
+   ]
+  ]
+ },
+ "Wand": {
+  "num": 497,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    50.0
+   ]
+  ]
+ },
+ "Weeper": {
+  "num": 437,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    400.0
+   ],
+   [
+    "PoisonDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "Weeper_crafted": {
+  "num": 80,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    400.0
+   ],
+   [
+    "PoisonDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "White Widow of Dol Blathanna": {
+  "num": 81,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    244.0
+   ]
+  ]
+ },
+ "Wild Hunt Axe": {
+  "num": 498,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    100.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    80.0
+   ]
+  ]
+ },
+ "Wild Hunt Halberd": {
+  "num": 499,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    100.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    80.0
+   ]
+  ]
+ },
+ "Wild Hunt Hammer": {
+  "num": 500,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    100.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    80.0
+   ]
+  ]
+ },
+ "Wild Hunt Spear": {
+  "num": 501,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    100.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    80.0
+   ]
+  ]
+ },
+ "Witcher Silver Sword 1": {
+  "num": 82,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    181.0
+   ]
+  ]
+ },
+ "Wolf School silver sword": {
+  "num": 361,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    254.0
+   ],
+   [
+    "FrostDamage",
+    "add",
+    30.0
+   ]
+  ]
+ },
+ "Wolf School silver sword 1": {
+  "num": 362,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    324.0
+   ],
+   [
+    "FrostDamage",
+    "add",
+    60.0
+   ]
+  ]
+ },
+ "Wolf School silver sword 2": {
+  "num": 363,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    404.0
+   ],
+   [
+    "FrostDamage",
+    "add",
+    90.0
+   ]
+  ]
+ },
+ "Wolf School silver sword 3": {
+  "num": 364,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    454.0
+   ],
+   [
+    "FrostDamage",
+    "add",
+    120.0
+   ]
+  ]
+ },
+ "Wolf School silver sword 4": {
+  "num": 83,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    524.0
+   ],
+   [
+    "FrostDamage",
+    "add",
+    150.0
+   ]
+  ]
+ },
+ "Wolf School steel sword": {
+  "num": 365,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    156.0
+   ]
+  ]
+ },
+ "Wolf School steel sword 1": {
+  "num": 366,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    212.0
+   ]
+  ]
+ },
+ "Wolf School steel sword 2": {
+  "num": 367,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    276.0
+   ]
+  ]
+ },
+ "Wolf School steel sword 3": {
+  "num": 368,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    316.0
+   ]
+  ]
+ },
+ "Wolf School steel sword 4": {
+  "num": 84,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    372.0
+   ]
+  ]
+ },
+ "Wooden sword": {
+  "num": 369,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    22.0
+   ]
+  ]
+ },
+ "Zerrikanterment": {
+  "num": 438,
+  "rows": [
+   [
+    "FireDamage",
+    "add",
+    150.0
+   ]
+  ]
+ },
+ "Zerrikanterment_crafted": {
+  "num": 85,
+  "rows": [
+   [
+    "FireDamage",
+    "add",
+    150.0
+   ]
+  ]
+ },
+ "blavikensilversword": {
+  "num": 370,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    524.0
+   ]
+  ]
+ },
+ "blavikensteelsword": {
+  "num": 371,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    372.0
+   ]
+  ]
+ },
+ "geralt_axe_01": {
+  "num": 372,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    120.0
+   ]
+  ]
+ },
+ "geralt_axe_02": {
+  "num": 373,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    120.0
+   ]
+  ]
+ },
+ "geralt_axe_03": {
+  "num": 374,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    120.0
+   ]
+  ]
+ },
+ "geralt_hammer_01": {
+  "num": 375,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    120.0
+   ]
+  ]
+ },
+ "geralt_hammer_02": {
+  "num": 376,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    120.0
+   ]
+  ]
+ },
+ "geralt_hammer_03": {
+  "num": 377,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    120.0
+   ]
+  ]
+ },
+ "geralt_mace_01": {
+  "num": 378,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    120.0
+   ]
+  ]
+ },
+ "geralt_mace_02": {
+  "num": 379,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    120.0
+   ]
+  ]
+ },
+ "geralt_mace_03": {
+  "num": 380,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    120.0
+   ]
+  ]
+ },
+ "kotw_vampire_silver_sword": {
+  "num": 381,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    93.0
+   ]
+  ]
+ },
+ "kotw_vampire_steel_sword": {
+  "num": 382,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    45.0
+   ]
+  ]
+ },
+ "mq1058_cat_school_sword": {
+  "num": 86,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    30.0
+   ]
+  ]
+ },
+ "mq4005 Silver sword 6_crafted": {
+  "num": 87,
+  "rows": [
+   [
+    "SilverDamage",
+    "base",
+    375.0
+   ]
+  ]
+ },
+ "q203 Ghost Human Sword": {
+  "num": 383,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    100.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "q203 Ghost Sword": {
+  "num": 384,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    100.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "q308 Iron Poker": {
+  "num": 385,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    100.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    4.0
+   ]
+  ]
+ },
+ "q402 Skellige sword 3": {
+  "num": 88,
+  "rows": [
+   [
+    "FrostDamage",
+    "add",
+    150.0
+   ]
+  ]
+ },
+ "q505 crafted sword": {
+  "num": 386,
+  "rows": [
+   [
+    "ElementalDamage",
+    "add",
+    50.0
+   ]
+  ]
+ },
+ "q603_dwarf_wooden_sword": {
+  "num": 502,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    150.0
+   ],
+   [
+    "SilverDamage",
+    "base",
+    3.0
+   ]
+  ]
+ },
+ "q702 vampire steel sword": {
+  "num": 89,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    356.0
+   ]
+  ]
+ },
+ "q704 vampire silver sword": {
+  "num": 90,
+  "rows": [
+   [
+    "ElementalDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "q704 vampire steel sword": {
+  "num": 91,
+  "rows": [
+   [
+    "ElementalDamage",
+    "add",
+    100.0
+   ]
+  ]
+ },
+ "sq303_blunt_sword": {
+  "num": 387,
+  "rows": [
+   [
+    "BludgeoningDamage",
+    "base",
+    22.0
+   ]
+  ]
+ },
+ "sq701 Geralt of Rivia sword": {
+  "num": 92,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    356.0
+   ]
+  ]
+ },
+ "sq701 Ravix of Fourhorn sword": {
+  "num": 93,
+  "rows": [
+   [
+    "SlashingDamage",
+    "base",
+    356.0
+   ]
+  ]
+ }
+}

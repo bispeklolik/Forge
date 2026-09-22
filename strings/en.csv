@@ -1,0 +1,17 @@
+;meta[language=en]
+; id      |key(hex)|key(str)| text
+2114471000|        |ash_menu|Aard Shatter
+2114471001|        |ash_humanpoise|Shatter humans with broken poise
+2114471002|        |ash_humanhp|   ...only below this health %
+2114471003|        |ash_killshatter|Shatter anything Aard kills
+2114471004|        |ash_killshatterhumans|   ...including humans
+2114471005|        |ash_slomochance|Slow motion chance on shatter
+2114471006|        |ash_slomoscale|   ...strength (lower = stronger)
+2114471007|        |ash_slomotime|   ...duration, sec
+2114471008|        |ash_finvariety|Finisher variety: 0 off, 1 vanilla, 2 max
+2114471009|        |ash_shatterscale|   ...chance curve scale (100 = one to one)
+2114471010|        |ash_ignipoise|Igni shatters humans too
+2114471011|        |ash_ignikill|Shatter anything Igni kills
+2114471012|        |ash_fixignilatch|Fix: Eruption disables finishers
+2114471013|        |ash_armordism|Dismember armoured humans
+2114471014|        |ash_armorchance|   ...chance for armoured

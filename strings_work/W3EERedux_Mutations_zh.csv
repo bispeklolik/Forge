@@ -1,0 +1,14 @@
+;meta[language=zh]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|W3EE Redux 擴充
+2114478001|        |mutf_menu|突變修正
+2114478002|        |mutf_enabled|啟用突變修正
+2114478003|        |mutf_adrfloor|蟲類: 腎上腺素為空時的排毒速度 (%)
+2114478004|        |mutf_adrtop|蟲類: 腎上腺素滿時的排毒速度 (%)
+2114478005|        |mutf_combatonly|蟲類: 僅在戰鬥中生效
+2114478006|        |mutf_fixdesc|在突變描述中顯示真實數值
+2114478007|        |insc_dmgredon|蟲類: 恢復被移除的傷害減免
+2114478008|        |insc_dmgredperc|   ...連續受擊減弱多少, %
+2114478009|        |insc_dmgredwin|   ...持續多少秒
+2114478010|        |mutf_signbypass|幽靈: 將法印加成提升至承諾的 +50% (0 = 保持原樣)
+2114478011|        |mutf_sheet|角色面板: 顯示衰減後的法印強度

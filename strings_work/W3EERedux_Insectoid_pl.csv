@@ -1,0 +1,10 @@
+;meta[language=pl]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|Dodatki do W3EE Redux
+2114478001|        |insc_menu|Naprawa Mutacji Insektoida
+2114478002|        |insc_enabled|Napraw przelicznik toksyczności
+2114478003|        |insc_rate|   ...setnych sekundy za punkt (oryginał 10)
+2114478004|        |insc_fixdesc|Pokaż prawdziwy przelicznik w opisie
+2114478005|        |insc_dmgredon|Przywróć oryginalną redukcję obrażeń
+2114478006|        |insc_dmgredperc|   ...redukcja przy kolejnych trafieniach, %
+2114478007|        |insc_dmgredwin|   ...długość okna, sek

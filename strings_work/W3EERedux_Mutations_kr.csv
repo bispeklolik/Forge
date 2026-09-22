@@ -1,0 +1,14 @@
+;meta[language=kr]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|W3EE Redux 애드온
+2114478001|        |mutf_menu|돌연변이 수정
+2114478002|        |mutf_enabled|돌연변이 수정 활성화
+2114478003|        |mutf_adrfloor|곤충형: 아드레날린이 비었을 때 해독 속도 (%)
+2114478004|        |mutf_adrtop|곤충형: 아드레날린이 가득할 때 해독 속도 (%)
+2114478005|        |mutf_combatonly|곤충형: 전투 중에만 작동
+2114478006|        |mutf_fixdesc|돌연변이 설명에 실제 수치 표시
+2114478007|        |insc_dmgredon|곤충형: 삭제된 피해 감소 복원
+2114478008|        |insc_dmgredperc|   ...연속 피격이 얼마나 약해지는지, %
+2114478009|        |insc_dmgredwin|   ...몇 초 동안 지속되는지
+2114478010|        |mutf_signbypass|스펙터: 표식 보너스를 약속된 +50%까지 상향 (0 = 게임 그대로)
+2114478011|        |mutf_sheet|캐릭터 화면: 감쇠 적용된 표식 강도 표시

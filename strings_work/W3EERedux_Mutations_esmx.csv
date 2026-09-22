@@ -1,0 +1,14 @@
+;meta[language=esmx]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|Complementos de W3EE Redux
+2114478001|        |mutf_menu|Arreglos de Mutaciones
+2114478002|        |mutf_enabled|Arreglos de mutaciones activados
+2114478003|        |mutf_adrfloor|Insectoide: velocidad de purga con adrenalina vacia, %
+2114478004|        |mutf_adrtop|Insectoide: velocidad de purga con adrenalina llena, %
+2114478005|        |mutf_combatonly|Insectoide: solo funciona en combate
+2114478006|        |mutf_fixdesc|Mostrar cifras reales en las descripciones de mutaciones
+2114478007|        |insc_dmgredon|Insectoide: restaurar la reducción de daño eliminada
+2114478008|        |insc_dmgredperc|   ...cuánto más débiles son los golpes seguidos, %
+2114478009|        |insc_dmgredwin|   ...cuántos segundos dura
+2114478010|        |mutf_signbypass|Espectro: elevar la bonificación de Signos al +50% prometido (0 = como está)
+2114478011|        |mutf_sheet|Hoja de personaje: mostrar la Intensidad de Signos tras el decaimiento

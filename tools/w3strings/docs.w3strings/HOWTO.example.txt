@@ -1,0 +1,8 @@
+HOW-TO example:
+- encode example.en.csv to w3strings file with: w3strings.exe --encode example.en.csv --id-space 9999
+- rename encoded example.en.csv.w3strings to en.w3strings and put it into the contents folder of your mod
+- put generated example.en.csv.w3strings.ws and testUtils.ws into the contents/scripts folder of your mod
+- optional: test script access by openening the console (from console mod) and call function test_verifyW3Strings() 
+  The test result will be logged and shown in the HUD.
+
+more details here: http://forums.cdprojektred.com/threads/62747-Utility-Strings-encoder-for-adding-new-strings-(new-ids-and-keys)-as-standalone-w3strings-file

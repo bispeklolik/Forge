@@ -1,0 +1,10 @@
+;meta[language=jp]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|W3EE Redux アドオン
+2114478001|        |insc_menu|インセクトイド変異の修正
+2114478002|        |insc_enabled|毒性の交換レートを修正
+2114478003|        |insc_rate|   ...1ポイントあたり1/100秒 (原作は10)
+2114478004|        |insc_fixdesc|説明に実際のレートを表示
+2114478005|        |insc_dmgredon|バニラのダメージ軽減を復活
+2114478006|        |insc_dmgredperc|   ...連続被弾時の軽減, %
+2114478007|        |insc_dmgredwin|   ...持続ウィンドウ, 秒

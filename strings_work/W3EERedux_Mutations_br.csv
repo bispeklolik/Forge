@@ -1,0 +1,14 @@
+;meta[language=br]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|Complementos do W3EE Redux
+2114478001|        |mutf_menu|Correções de Mutações
+2114478002|        |mutf_enabled|Correções de mutações ativadas
+2114478003|        |mutf_adrfloor|Insetoide: velocidade de remocao com adrenalina vazia, %
+2114478004|        |mutf_adrtop|Insetoide: velocidade de remocao com adrenalina cheia, %
+2114478005|        |mutf_combatonly|Insetoide: funciona apenas em combate
+2114478006|        |mutf_fixdesc|Mostrar números reais nas descrições das mutações
+2114478007|        |insc_dmgredon|Insetoide: restaurar a redução de dano removida
+2114478008|        |insc_dmgredperc|   ...quanto mais fracos ficam os golpes seguintes, %
+2114478009|        |insc_dmgredwin|   ...quantos segundos dura
+2114478010|        |mutf_signbypass|Espectro: elevar o bônus de Sinais aos +50% prometidos (0 = como está)
+2114478011|        |mutf_sheet|Ficha do personagem: mostrar Intensidade de Sinais após a queda

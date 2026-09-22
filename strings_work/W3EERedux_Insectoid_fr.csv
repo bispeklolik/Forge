@@ -1,0 +1,10 @@
+;meta[language=fr]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|Modules W3EE Redux
+2114478001|        |insc_menu|Correctif de la Mutation Insectoïde
+2114478002|        |insc_enabled|Corriger le taux de conversion de toxicité
+2114478003|        |insc_rate|   ...centièmes de seconde par point (origine 10)
+2114478004|        |insc_fixdesc|Afficher le vrai taux dans la description
+2114478005|        |insc_dmgredon|Rétablir la réduction de dégâts d'origine
+2114478006|        |insc_dmgredperc|   ...réduction sur les coups répétés, %
+2114478007|        |insc_dmgredwin|   ...durée de la fenêtre, sec

@@ -1,0 +1,14 @@
+;meta[language=hu]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|W3EE Redux kiegészítők
+2114478001|        |mutf_menu|Mutáció-javítások
+2114478002|        |mutf_enabled|Mutáció-javítások bekapcsolva
+2114478003|        |mutf_adrfloor|Rovar: meregtelenites ures adrenalinnal, %
+2114478004|        |mutf_adrtop|Rovar: meregtelenites teli adrenalinnal, %
+2114478005|        |mutf_combatonly|Rovar: csak harcban mukodik
+2114478006|        |mutf_fixdesc|Valós számok a mutációk leírásában
+2114478007|        |insc_dmgredon|Rovar: az eltávolított sebzéscsökkentés visszaállítása
+2114478008|        |insc_dmgredperc|   ...mennyivel gyengébbek az ismételt találatok, %
+2114478009|        |insc_dmgredwin|   ...hány másodpercig tart
+2114478010|        |mutf_signbypass|Kísértet: a jelbónusz emelése az ígért +50%-ra (0 = ahogy a játékban)
+2114478011|        |mutf_sheet|Karakterlap: a jelerő mutatása a csökkenés után

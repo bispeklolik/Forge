@@ -1,0 +1,7 @@
+;meta[language=jp]
+; id      |key(hex)|key(str)| text
+2114479000|        |w3eeredux_root|W3EE Redux アドオン
+2114479001|        |hnum_menu|正直な数値
+2114479002|        |hnum_enabled|正直な数値を有効化
+2114479003|        |hnum_signrows|印の行: 各印の実際の強さを表示
+2114479004|        |hnum_durability|剣のダメージ: 戦闘同様に刃の摩耗を反映

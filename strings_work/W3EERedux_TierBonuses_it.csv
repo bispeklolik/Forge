@@ -1,0 +1,12 @@
+;meta[language=it]
+; id      |key(hex)|key(str)| text
+2114477000|        |w3eeredux_root|Componenti aggiuntivi W3EE Redux
+2114477001|        |tssb_menu|Bonus Set in Base al Livello
+2114477002|        |tssb_enabled|Bonus da gran maestro a ogni livello
+2114477003|        |tssb_tier1|   ...potenza al livello 1, %
+2114477004|        |tssb_tier2|   ...potenza al livello 2, %
+2114477005|        |tssb_tier3|   ...potenza al livello 3, %
+2114477006|        |tssb_tier4|   ...potenza al livello 4, %
+2114477007|        |tssb_descgm|Descrizioni: valore da gran maestro tra parentesi
+2114477008|        |tssb_descnote|Descrizioni: riga sulla potenza del bonus
+2114477009|        |tssb_note|Potenza in base al livello:

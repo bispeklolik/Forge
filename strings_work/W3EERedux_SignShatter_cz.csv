@@ -1,0 +1,15 @@
+;meta[language=cz]
+; id      |key(hex)|key(str)| text
+2114471000|        |w3eeredux_root|Doplňky pro W3EE Redux
+2114471001|        |ssht_menu|Roztrhání Znamením
+2114471002|        |ssht_humanpoise|Trhat lidi se zlomeným postojem
+2114471003|        |ssht_humanhp|   ...jen pod tímto % zdraví
+2114471004|        |ssht_shatterscale|   ...jak rychle šance roste se zraněním (100 = normálně)
+2114471005|        |ssht_killshatter|Trhat vše, co zabije Aard
+2114471006|        |ssht_killshatterhumans|   ...včetně lidí
+2114471007|        |ssht_ignipoise|Igni trhá lidi také
+2114471008|        |ssht_ignikill|Trhat vše, co zabije Igni
+2114471009|        |ssht_burnkill|Trhat vše, co upálí oheň
+2114471010|        |ssht_slomochance|Šance na zpomalení času
+2114471011|        |ssht_slomoscale|   ...síla (nižší = silnější)
+2114471012|        |ssht_slomotime|   ...trvání, sek

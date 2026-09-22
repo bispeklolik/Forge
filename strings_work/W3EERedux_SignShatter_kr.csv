@@ -1,0 +1,15 @@
+;meta[language=kr]
+; id      |key(hex)|key(str)| text
+2114471000|        |w3eeredux_root|W3EE Redux 애드온
+2114471001|        |ssht_menu|표식 산산조각
+2114471002|        |ssht_humanpoise|균형이 무너진 인간을 산산조각
+2114471003|        |ssht_humanhp|   ...이 체력 % 미만에서만
+2114471004|        |ssht_shatterscale|   ...부상에 따라 확률이 오르는 속도 (100 = 보통)
+2114471005|        |ssht_killshatter|아드가 처치한 대상을 산산조각
+2114471006|        |ssht_killshatterhumans|   ...인간 포함
+2114471007|        |ssht_ignipoise|이그니도 인간을 산산조각
+2114471008|        |ssht_ignikill|이그니가 처치한 대상을 산산조각
+2114471009|        |ssht_burnkill|화상으로 죽은 대상을 산산조각
+2114471010|        |ssht_slomochance|산산조각 시 슬로모션 확률
+2114471011|        |ssht_slomoscale|   ...강도 (낮을수록 강함)
+2114471012|        |ssht_slomotime|   ...지속 시간, 초

@@ -1,0 +1,12373 @@
+{
+ "Bear Armor": {
+  "num": 1,
+  "armor": 480.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.027
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.027
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.027
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "Bear Armor 1": {
+  "num": 2,
+  "armor": 540.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.04
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "Bear Armor 2": {
+  "num": 3,
+  "armor": 600.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.053
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.053
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.053
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "Bear Armor 3": {
+  "num": 4,
+  "armor": 720.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.067
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.067
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.067
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "Bear Armor 4": {
+  "num": 5,
+  "armor": 780.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.24
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.08
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.08
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.08
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "blavikenarmor": {
+  "num": 204,
+  "armor": 460.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ "Crafted Burning Rose Armor": {
+  "num": 6,
+  "armor": 912.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.24
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.24
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.08
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.08
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.08
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "Crafted Ofir Armor": {
+  "num": 7,
+  "armor": 264.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.013
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.013
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.013
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "DLC1 Temerian Armor": {
+  "num": 205,
+  "armor": 324.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "DLC14 Skellige Armor": {
+  "num": 206,
+  "armor": 864.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.21
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.19
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.07
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.07
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.07
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "DLC5 Nilfgaardian Armor": {
+  "num": 207,
+  "armor": 408.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.02
+   ]
+  ]
+ },
+ "Dol Blathanna Armor": {
+  "num": 8,
+  "armor": 360.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.028
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.028
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "EP1 Standalone Starting Armor": {
+  "num": 9,
+  "armor": 410.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.03
+   ]
+  ]
+ },
+ "EP1 Witcher Armor": {
+  "num": 10,
+  "armor": 490.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.06
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.06
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.03
+   ]
+  ]
+ },
+ "Geralt Kontusz R": {
+  "num": 11,
+  "armor": 324.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.023
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.023
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.023
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Gryphon Armor": {
+  "num": 12,
+  "armor": 470.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.021
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.021
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.025
+   ]
+  ]
+ },
+ "Gryphon Armor 1": {
+  "num": 13,
+  "armor": 540.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.035
+   ]
+  ]
+ },
+ "Gryphon Armor 2": {
+  "num": 14,
+  "armor": 610.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.039
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.039
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.046
+   ]
+  ]
+ },
+ "Gryphon Armor 3": {
+  "num": 15,
+  "armor": 670.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.17
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.051
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.051
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.06
+   ]
+  ]
+ },
+ "Gryphon Armor 4": {
+  "num": 16,
+  "armor": 720.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.24
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.06
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.06
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.07
+   ]
+  ]
+ },
+ "Guard Lvl1 A Armor 3": {
+  "num": 17,
+  "armor": 420.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.025
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.025
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.025
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Guard Lvl1 Armor 3": {
+  "num": 18,
+  "armor": 420.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.025
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.025
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.025
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Guard Lvl2 A Armor 3": {
+  "num": 19,
+  "armor": 588.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.21
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.17
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.053
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.053
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.053
+   ]
+  ]
+ },
+ "Guard Lvl2 Armor 3": {
+  "num": 20,
+  "armor": 588.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.21
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.17
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.053
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.053
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.053
+   ]
+  ]
+ },
+ "Heavy armor 01r": {
+  "num": 21,
+  "armor": 984.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.26
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.17
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.087
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.087
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.087
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "Heavy armor 02r": {
+  "num": 22,
+  "armor": 864.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.26
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.17
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.087
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.087
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.087
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "Heavy armor 03 Netflix": {
+  "num": 23,
+  "armor": 936.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.28
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.24
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.093
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.093
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.093
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "Heavy armor 03r": {
+  "num": 24,
+  "armor": 936.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.28
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.24
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.093
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.093
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.093
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "Heavy armor 04r": {
+  "num": 25,
+  "armor": 960.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.26
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.17
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.087
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.087
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.087
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "Heavy armor 05r": {
+  "num": 26,
+  "armor": 996.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.27
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.23
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.09
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.09
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.09
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "Knight Geralt A Armor 3": {
+  "num": 27,
+  "armor": 912.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.27
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.23
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.21
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.09
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.09
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.09
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Knight Geralt Armor 3": {
+  "num": 28,
+  "armor": 912.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.27
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.23
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.21
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.09
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.09
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.09
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "kotw_armor_v1_1": {
+  "num": 208,
+  "armor": 978.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.28
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.24
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.12
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.1
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.07
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "kotw_armor_v1_2": {
+  "num": 209,
+  "armor": 902.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.26
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.17
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.1
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.08
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.065
+   ]
+  ]
+ },
+ "kotw_armor_v2_1": {
+  "num": 210,
+  "armor": 990.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.29
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.25
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.19
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.27
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.12
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.1
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.07
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "kotw_armor_v2_2": {
+  "num": 211,
+  "armor": 914.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.27
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.23
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.23
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.1
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.08
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.065
+   ]
+  ]
+ },
+ "kotw_armor_v3_1": {
+  "num": 212,
+  "armor": 1002.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.3
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.26
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.3
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.12
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.1
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.07
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "kotw_armor_v3_2": {
+  "num": 213,
+  "armor": 926.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.28
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.24
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.19
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.26
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.1
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.08
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.065
+   ]
+  ]
+ },
+ "Light armor 01r": {
+  "num": 29,
+  "armor": 276.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Light armor 02r": {
+  "num": 30,
+  "armor": 288.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Light armor 03r": {
+  "num": 31,
+  "armor": 300.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Light armor 04r": {
+  "num": 32,
+  "armor": 300.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Light armor 05_crafted": {
+  "num": 33,
+  "armor": 276.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ]
+  ]
+ },
+ "Light armor 06r": {
+  "num": 34,
+  "armor": 324.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.023
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.023
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.023
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Light armor 07r": {
+  "num": 35,
+  "armor": 336.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.023
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.023
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.023
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Light armor 08r": {
+  "num": 36,
+  "armor": 336.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.023
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.023
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.023
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Light armor 09r": {
+  "num": 37,
+  "armor": 324.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.023
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.023
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.023
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Lynx Armor": {
+  "num": 38,
+  "armor": 170.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.007
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.007
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.007
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Lynx Armor 1": {
+  "num": 39,
+  "armor": 200.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Lynx Armor 2": {
+  "num": 40,
+  "armor": 240.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.013
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.013
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.013
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Lynx Armor 3": {
+  "num": 41,
+  "armor": 280.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.017
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.017
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.017
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Lynx Armor 4": {
+  "num": 42,
+  "armor": 320.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Medium armor 01r": {
+  "num": 43,
+  "armor": 492.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.04
+   ]
+  ]
+ },
+ "Medium armor 02r": {
+  "num": 44,
+  "armor": 528.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.045
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.045
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.045
+   ]
+  ]
+ },
+ "Medium armor 03r": {
+  "num": 45,
+  "armor": 600.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.055
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.055
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.055
+   ]
+  ]
+ },
+ "Medium armor 04r": {
+  "num": 46,
+  "armor": 528.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ "Medium armor 05r": {
+  "num": 47,
+  "armor": 516.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.045
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.045
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.045
+   ]
+  ]
+ },
+ "Medium armor 07r": {
+  "num": 48,
+  "armor": 528.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ "Medium armor 10r": {
+  "num": 49,
+  "armor": 552.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ "Medium armor 11r": {
+  "num": 50,
+  "armor": 552.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ "Netflix Armor": {
+  "num": 214,
+  "armor": 360.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.02
+   ]
+  ]
+ },
+ "Netflix Armor 1": {
+  "num": 215,
+  "armor": 420.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.032
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.032
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.032
+   ]
+  ]
+ },
+ "Netflix Armor 2": {
+  "num": 216,
+  "armor": 520.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.17
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.036
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.036
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.036
+   ]
+  ]
+ },
+ "Oathbreaker armor": {
+  "num": 51,
+  "armor": 576.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ "q108 Medium armor 10": {
+  "num": 52,
+  "armor": 636.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.27
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.24
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.19
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.068
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.068
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.068
+   ]
+  ]
+ },
+ "q702_vampire_armor": {
+  "num": 53,
+  "armor": 912.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.26
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.24
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.08
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.08
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.08
+   ]
+  ]
+ },
+ "q704_vampire_armor": {
+  "num": 54,
+  "armor": 912.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.26
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.24
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.1
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.1
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.06
+   ]
+  ]
+ },
+ "Red Wolf Armor 1": {
+  "num": 55,
+  "armor": 240.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.016
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.016
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.016
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Red Wolf Armor 2": {
+  "num": 56,
+  "armor": 190.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.21
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.17
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.06
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.045
+   ]
+  ]
+ },
+ "Relic Heavy 3 armor": {
+  "num": 57,
+  "armor": 960.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.28
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.24
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.093
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.093
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.093
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "Relic Heavy 3 crafted": {
+  "num": 58,
+  "armor": 960.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.28
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.24
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.093
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.093
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.093
+   ]
+  ]
+ },
+ "Shadaal armor": {
+  "num": 59,
+  "armor": 936.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.28
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.24
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.093
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.093
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.093
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "Shiadhal armor": {
+  "num": 60,
+  "armor": 276.0,
+  "weight": 1,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "sq701_geralt_armor": {
+  "num": 61,
+  "armor": 888.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.25
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.17
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.083
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.083
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.083
+   ]
+  ]
+ },
+ "sq701_ravix_armor": {
+  "num": 62,
+  "armor": 888.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.25
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.17
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.083
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.083
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.083
+   ]
+  ]
+ },
+ "Starting Armor": {
+  "num": 63,
+  "armor": 410.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.03
+   ]
+  ]
+ },
+ "Starting Armor 1": {
+  "num": 64,
+  "armor": 440.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.04
+   ]
+  ]
+ },
+ "Thief Armor": {
+  "num": 65,
+  "armor": 420.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.02
+   ]
+  ]
+ },
+ "Thief Armor No Medallion": {
+  "num": 66,
+  "armor": 468.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.04
+   ]
+  ]
+ },
+ "Thyssen armor": {
+  "num": 67,
+  "armor": 504.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.04
+   ]
+  ]
+ },
+ "Thyssen armor crafted": {
+  "num": 68,
+  "armor": 504.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.04
+   ]
+  ]
+ },
+ "Toussaint Armor 3": {
+  "num": 69,
+  "armor": 924.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.27
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.23
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.21
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.09
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.09
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.09
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "vagabondarmor": {
+  "num": 217,
+  "armor": 425.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.17
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.028
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.028
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.028
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ "White Tiger Armor": {
+  "num": 70,
+  "armor": 960.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.24
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.1
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.1
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.06
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "Wolf Armor": {
+  "num": 218,
+  "armor": 250.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.009
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.009
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.016
+   ]
+  ]
+ },
+ "Wolf Armor 1": {
+  "num": 219,
+  "armor": 290.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.025
+   ]
+  ]
+ },
+ "Wolf Armor 2": {
+  "num": 220,
+  "armor": 350.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.021
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.021
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.034
+   ]
+  ]
+ },
+ "Wolf Armor 3": {
+  "num": 221,
+  "armor": 410.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.024
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.024
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.041
+   ]
+  ]
+ },
+ "Wolf Armor 4": {
+  "num": 71,
+  "armor": 480.0,
+  "weight": 2,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ "Zireael armor": {
+  "num": 72,
+  "armor": 888.0,
+  "weight": 3,
+  "cat": "armor",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.26
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.17
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.087
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.087
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.087
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "Autogen Boots": {
+  "num": 73,
+  "armor": 165.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.015
+   ]
+  ]
+ },
+ "Bear Boots 1": {
+  "num": 74,
+  "armor": 225.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.013
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.013
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.013
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ "Bear Boots 2": {
+  "num": 75,
+  "armor": 245.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ "Bear Boots 3": {
+  "num": 76,
+  "armor": 290.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.027
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.027
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.027
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ "Bear Boots 4": {
+  "num": 77,
+  "armor": 300.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.033
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ "Bear Boots 5": {
+  "num": 78,
+  "armor": 340.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.04
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "blavikenboots": {
+  "num": 222,
+  "armor": 170.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.028
+   ]
+  ]
+ },
+ "Boots 012": {
+  "num": 79,
+  "armor": 126.0,
+  "weight": 1,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.008
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.03
+   ]
+  ]
+ },
+ "Boots 022": {
+  "num": 80,
+  "armor": 132.0,
+  "weight": 1,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.008
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.03
+   ]
+  ]
+ },
+ "Boots 032": {
+  "num": 81,
+  "armor": 210.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ]
+  ]
+ },
+ "Boots 04": {
+  "num": 82,
+  "armor": 132.0,
+  "weight": 1,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.008
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.03
+   ]
+  ]
+ },
+ "Boots 07": {
+  "num": 83,
+  "armor": 121.0,
+  "weight": 1,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.008
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.03
+   ]
+  ]
+ },
+ "Boots 07_crafted": {
+  "num": 84,
+  "armor": 132.0,
+  "weight": 1,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.008
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.03
+   ]
+  ]
+ },
+ "Crafted Ofir Boots": {
+  "num": 85,
+  "armor": 126.0,
+  "weight": 1,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.006
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.006
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.006
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.03
+   ]
+  ]
+ },
+ "DLC1 Temerian Boots": {
+  "num": 223,
+  "armor": 144.0,
+  "weight": 1,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.03
+   ]
+  ]
+ },
+ "DLC14 Skellige Boots": {
+  "num": 224,
+  "armor": 360.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.035
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.035
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.035
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.03
+   ]
+  ]
+ },
+ "DLC5 Nilfgaardian Boots": {
+  "num": 225,
+  "armor": 180.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ]
+  ]
+ },
+ "Dol Blathanna Boots": {
+  "num": 86,
+  "armor": 162.0,
+  "weight": 1,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.014
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.014
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "EP1 Standalone Starting Boots": {
+  "num": 87,
+  "armor": 165.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.015
+   ]
+  ]
+ },
+ "EP1 Witcher Boots": {
+  "num": 88,
+  "armor": 190.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.015
+   ]
+  ]
+ },
+ "Geralt Kontusz Boots R": {
+  "num": 89,
+  "armor": 138.0,
+  "weight": 1,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.008
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.03
+   ]
+  ]
+ },
+ "Gryphon Boots 1": {
+  "num": 90,
+  "armor": 210.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.009
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.009
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.011
+   ]
+  ]
+ },
+ "Gryphon Boots 2": {
+  "num": 91,
+  "armor": 230.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ]
+  ]
+ },
+ "Gryphon Boots 3": {
+  "num": 92,
+  "armor": 260.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.021
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.021
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.025
+   ]
+  ]
+ },
+ "Gryphon Boots 4": {
+  "num": 93,
+  "armor": 270.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.024
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.024
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.028
+   ]
+  ]
+ },
+ "Gryphon Boots 5": {
+  "num": 94,
+  "armor": 300.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.035
+   ]
+  ]
+ },
+ "Guard Lvl1 A Boots 3": {
+  "num": 95,
+  "armor": 126.0,
+  "weight": 1,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.008
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.03
+   ]
+  ]
+ },
+ "Guard Lvl1 Boots 3": {
+  "num": 96,
+  "armor": 126.0,
+  "weight": 1,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.008
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.03
+   ]
+  ]
+ },
+ "Guard Lvl2 A Boots 3": {
+  "num": 97,
+  "armor": 216.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ]
+  ]
+ },
+ "Guard Lvl2 Boots 3": {
+  "num": 98,
+  "armor": 216.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ]
+  ]
+ },
+ "Heavy boots 07": {
+  "num": 99,
+  "armor": 210.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ]
+  ]
+ },
+ "Heavy boots 07_crafted": {
+  "num": 100,
+  "armor": 210.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ]
+  ]
+ },
+ "Heavy boots 08": {
+  "num": 101,
+  "armor": 372.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.033
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.03
+   ]
+  ]
+ },
+ "Heavy boots 08_crafted": {
+  "num": 102,
+  "armor": 372.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.033
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.03
+   ]
+  ]
+ },
+ "Knight Geralt A Boots 3": {
+  "num": 103,
+  "armor": 384.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.033
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.03
+   ]
+  ]
+ },
+ "Knight Geralt Boots 3": {
+  "num": 104,
+  "armor": 384.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.033
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.03
+   ]
+  ]
+ },
+ "kotw_boots_v1_1": {
+  "num": 226,
+  "armor": 357.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.045
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.03
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.03
+   ]
+  ]
+ },
+ "kotw_boots_v1_2": {
+  "num": 227,
+  "armor": 337.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.075
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.025
+   ]
+  ]
+ },
+ "kotw_boots_v2_1": {
+  "num": 228,
+  "armor": 369.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.045
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.03
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.03
+   ]
+  ]
+ },
+ "kotw_boots_v2_2": {
+  "num": 229,
+  "armor": 349.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.025
+   ]
+  ]
+ },
+ "kotw_boots_v3_1": {
+  "num": 230,
+  "armor": 381.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.045
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.03
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.03
+   ]
+  ]
+ },
+ "kotw_boots_v3_2": {
+  "num": 231,
+  "armor": 361.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.025
+   ]
+  ]
+ },
+ "Lynx Boots 1": {
+  "num": 105,
+  "armor": 80.0,
+  "weight": 1,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.003
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.003
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.003
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.05
+   ]
+  ]
+ },
+ "Lynx Boots 2": {
+  "num": 106,
+  "armor": 90.0,
+  "weight": 1,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.005
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.005
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.005
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.05
+   ]
+  ]
+ },
+ "Lynx Boots 3": {
+  "num": 107,
+  "armor": 105.0,
+  "weight": 1,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.007
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.007
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.007
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.05
+   ]
+  ]
+ },
+ "Lynx Boots 4": {
+  "num": 108,
+  "armor": 115.0,
+  "weight": 1,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.008
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.05
+   ]
+  ]
+ },
+ "Lynx Boots 5": {
+  "num": 109,
+  "armor": 130.0,
+  "weight": 1,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.03
+   ]
+  ]
+ },
+ "Nekker Boots": {
+  "num": 110,
+  "armor": 210.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ]
+  ]
+ },
+ "Netflix Boots": {
+  "num": 232,
+  "armor": 160.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ]
+  ]
+ },
+ "Netflix Boots 1": {
+  "num": 233,
+  "armor": 200.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.016
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.016
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.016
+   ]
+  ]
+ },
+ "Netflix Boots 2": {
+  "num": 234,
+  "armor": 220.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ]
+  ]
+ },
+ "q702_vampire_boots": {
+  "num": 111,
+  "armor": 420.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.04
+   ]
+  ]
+ },
+ "q704_vampire_boots": {
+  "num": 112,
+  "armor": 420.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.03
+   ]
+  ]
+ },
+ "Red Wolf Boots 1": {
+  "num": 113,
+  "armor": 120.0,
+  "weight": 1,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.008
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.03
+   ]
+  ]
+ },
+ "Red Wolf Boots 2": {
+  "num": 114,
+  "armor": 83.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.015
+   ]
+  ]
+ },
+ "Starting Boots": {
+  "num": 115,
+  "armor": 165.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.015
+   ]
+  ]
+ },
+ "Starting Boots 1": {
+  "num": 116,
+  "armor": 180.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.02
+   ]
+  ]
+ },
+ "Thief Boots": {
+  "num": 117,
+  "armor": 198.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ]
+  ]
+ },
+ "Thief Boots No Medallion": {
+  "num": 118,
+  "armor": 216.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.075
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ]
+  ]
+ },
+ "Toussaint Boots 3": {
+  "num": 119,
+  "armor": 384.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.033
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.03
+   ]
+  ]
+ },
+ "White Tiger Boots": {
+  "num": 120,
+  "armor": 264.0,
+  "weight": 3,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "Wolf Boots 1": {
+  "num": 235,
+  "armor": 120.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.004
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.004
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.006
+   ]
+  ]
+ },
+ "Wolf Boots 2": {
+  "num": 236,
+  "armor": 130.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.006
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.006
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.009
+   ]
+  ]
+ },
+ "Wolf Boots 3": {
+  "num": 237,
+  "armor": 155.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.009
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.009
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.016
+   ]
+  ]
+ },
+ "Wolf Boots 4": {
+  "num": 238,
+  "armor": 165.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.011
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.011
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.019
+   ]
+  ]
+ },
+ "Wolf Boots 5": {
+  "num": 121,
+  "armor": 190.0,
+  "weight": 2,
+  "cat": "boots",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.025
+   ]
+  ]
+ },
+ "Bear Gloves 1": {
+  "num": 122,
+  "armor": 220.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.013
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.013
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.013
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ "Bear Gloves 2": {
+  "num": 123,
+  "armor": 240.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ "Bear Gloves 3": {
+  "num": 124,
+  "armor": 270.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.027
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.027
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.027
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ "Bear Gloves 4": {
+  "num": 125,
+  "armor": 290.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.033
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ "Bear Gloves 5": {
+  "num": 126,
+  "armor": 320.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.04
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "blavikengloves": {
+  "num": 239,
+  "armor": 170.0,
+  "weight": 2,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.028
+   ]
+  ]
+ },
+ "Crafted Burning Rose Gloves": {
+  "num": 127,
+  "armor": 306.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.023
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.023
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.023
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.02
+   ]
+  ]
+ },
+ "Crafted Ofir Gloves": {
+  "num": 128,
+  "armor": 114.0,
+  "weight": 1,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.006
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.006
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.006
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.02
+   ]
+  ]
+ },
+ "DLC1 Temerian Gloves": {
+  "num": 240,
+  "armor": 144.0,
+  "weight": 1,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.02
+   ]
+  ]
+ },
+ "DLC14 Skellige Gloves": {
+  "num": 241,
+  "armor": 360.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.035
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.035
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.035
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.02
+   ]
+  ]
+ },
+ "DLC5 Nilfgaardian Gloves": {
+  "num": 242,
+  "armor": 180.0,
+  "weight": 2,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ]
+  ]
+ },
+ "Dol Blathanna Gloves": {
+  "num": 129,
+  "armor": 150.0,
+  "weight": 1,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.014
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.014
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "EP1 Standalone Starting Gloves": {
+  "num": 130,
+  "armor": 165.0,
+  "weight": 2,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.015
+   ]
+  ]
+ },
+ "EP1 Witcher Gloves": {
+  "num": 131,
+  "armor": 200.0,
+  "weight": 2,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.015
+   ]
+  ]
+ },
+ "Gloves 04": {
+  "num": 132,
+  "armor": 132.0,
+  "weight": 1,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.008
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.02
+   ]
+  ]
+ },
+ "Gloves 04_crafted": {
+  "num": 133,
+  "armor": 132.0,
+  "weight": 1,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.008
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.02
+   ]
+  ]
+ },
+ "Gryphon Gloves 1": {
+  "num": 134,
+  "armor": 210.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.009
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.009
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.011
+   ]
+  ]
+ },
+ "Gryphon Gloves 2": {
+  "num": 135,
+  "armor": 230.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ]
+  ]
+ },
+ "Gryphon Gloves 3": {
+  "num": 136,
+  "armor": 255.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.021
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.021
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.025
+   ]
+  ]
+ },
+ "Gryphon Gloves 4": {
+  "num": 137,
+  "armor": 265.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.024
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.024
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.028
+   ]
+  ]
+ },
+ "Gryphon Gloves 5": {
+  "num": 138,
+  "armor": 290.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.035
+   ]
+  ]
+ },
+ "Guard Lvl1 A Gloves 3": {
+  "num": 139,
+  "armor": 132.0,
+  "weight": 1,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.008
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.03
+   ]
+  ]
+ },
+ "Guard Lvl1 Gloves 3": {
+  "num": 140,
+  "armor": 132.0,
+  "weight": 1,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.008
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.03
+   ]
+  ]
+ },
+ "Guard Lvl2 A Gloves 3": {
+  "num": 141,
+  "armor": 204.0,
+  "weight": 2,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ]
+  ]
+ },
+ "Guard Lvl2 Gloves 3": {
+  "num": 142,
+  "armor": 204.0,
+  "weight": 2,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ]
+  ]
+ },
+ "Heavy gloves 04": {
+  "num": 143,
+  "armor": 360.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.033
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.02
+   ]
+  ]
+ },
+ "Heavy gloves 04 Netflix": {
+  "num": 144,
+  "armor": 360.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.033
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.02
+   ]
+  ]
+ },
+ "Heavy gloves 04_crafted": {
+  "num": 145,
+  "armor": 360.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.033
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.02
+   ]
+  ]
+ },
+ "Knight Geralt A Gloves 3": {
+  "num": 146,
+  "armor": 360.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.033
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.02
+   ]
+  ]
+ },
+ "Knight Geralt Gloves 3": {
+  "num": 147,
+  "armor": 360.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.033
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.02
+   ]
+  ]
+ },
+ "kotw_gloves_v1_1": {
+  "num": 243,
+  "armor": 357.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.045
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.03
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.02
+   ]
+  ]
+ },
+ "kotw_gloves_v1_2": {
+  "num": 244,
+  "armor": 337.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.075
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.025
+   ]
+  ]
+ },
+ "kotw_gloves_v2_1": {
+  "num": 245,
+  "armor": 369.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.045
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.03
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.02
+   ]
+  ]
+ },
+ "kotw_gloves_v2_2": {
+  "num": 246,
+  "armor": 349.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.025
+   ]
+  ]
+ },
+ "kotw_gloves_v3_1": {
+  "num": 247,
+  "armor": 381.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.045
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.03
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.02
+   ]
+  ]
+ },
+ "kotw_gloves_v3_2": {
+  "num": 248,
+  "armor": 361.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.025
+   ]
+  ]
+ },
+ "Lynx Gloves 1": {
+  "num": 148,
+  "armor": 80.0,
+  "weight": 1,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.01
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.01
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.01
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.003
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.003
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.003
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.05
+   ]
+  ]
+ },
+ "Lynx Gloves 2": {
+  "num": 149,
+  "armor": 90.0,
+  "weight": 1,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.005
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.005
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.005
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.05
+   ]
+  ]
+ },
+ "Lynx Gloves 3": {
+  "num": 150,
+  "armor": 105.0,
+  "weight": 1,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.007
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.007
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.007
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.05
+   ]
+  ]
+ },
+ "Lynx Gloves 4": {
+  "num": 151,
+  "armor": 115.0,
+  "weight": 1,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.008
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.05
+   ]
+  ]
+ },
+ "Lynx Gloves 5": {
+  "num": 152,
+  "armor": 130.0,
+  "weight": 1,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.02
+   ]
+  ]
+ },
+ "Netflix Gloves": {
+  "num": 249,
+  "armor": 160.0,
+  "weight": 2,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ]
+  ]
+ },
+ "Netflix Gloves 1": {
+  "num": 250,
+  "armor": 200.0,
+  "weight": 2,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.016
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.016
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.016
+   ]
+  ]
+ },
+ "Netflix Gloves 2": {
+  "num": 251,
+  "armor": 220.0,
+  "weight": 2,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ]
+  ]
+ },
+ "q702_vampire_gloves": {
+  "num": 153,
+  "armor": 408.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.04
+   ]
+  ]
+ },
+ "q704_vampire_gloves": {
+  "num": 154,
+  "armor": 408.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.03
+   ]
+  ]
+ },
+ "Red Wolf Gloves 1": {
+  "num": 155,
+  "armor": 110.0,
+  "weight": 1,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.008
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.02
+   ]
+  ]
+ },
+ "Red Wolf Gloves 2": {
+  "num": 156,
+  "armor": 80.0,
+  "weight": 2,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.015
+   ]
+  ]
+ },
+ "Starting Gloves": {
+  "num": 157,
+  "armor": 165.0,
+  "weight": 2,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.015
+   ]
+  ]
+ },
+ "Starting Gloves 1": {
+  "num": 158,
+  "armor": 170.0,
+  "weight": 2,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.02
+   ]
+  ]
+ },
+ "Thief Gloves": {
+  "num": 159,
+  "armor": 198.0,
+  "weight": 2,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ]
+  ]
+ },
+ "Thief Gloves No Medallion": {
+  "num": 160,
+  "armor": 216.0,
+  "weight": 2,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.075
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ]
+  ]
+ },
+ "Toussaint Gloves 3": {
+  "num": 161,
+  "armor": 360.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.033
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.02
+   ]
+  ]
+ },
+ "White Tiger Gloves": {
+  "num": 162,
+  "armor": 312.0,
+  "weight": 3,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "Wolf Gloves 1": {
+  "num": 252,
+  "armor": 115.0,
+  "weight": 2,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.004
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.004
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.006
+   ]
+  ]
+ },
+ "Wolf Gloves 2": {
+  "num": 253,
+  "armor": 125.0,
+  "weight": 2,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.006
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.006
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.009
+   ]
+  ]
+ },
+ "Wolf Gloves 3": {
+  "num": 254,
+  "armor": 155.0,
+  "weight": 2,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.009
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.009
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.016
+   ]
+  ]
+ },
+ "Wolf Gloves 4": {
+  "num": 255,
+  "armor": 165.0,
+  "weight": 2,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.011
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.011
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.019
+   ]
+  ]
+ },
+ "Wolf Gloves 5": {
+  "num": 163,
+  "armor": 190.0,
+  "weight": 2,
+  "cat": "gloves",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.025
+   ]
+  ]
+ },
+ "Bear Pants 1": {
+  "num": 164,
+  "armor": 250.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.013
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.013
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.013
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ "Bear Pants 2": {
+  "num": 165,
+  "armor": 270.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ "Bear Pants 3": {
+  "num": 166,
+  "armor": 295.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.027
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.027
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.027
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ "Bear Pants 4": {
+  "num": 167,
+  "armor": 315.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.033
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.033
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ "Bear Pants 5": {
+  "num": 168,
+  "armor": 340.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.04
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "blavikenpants": {
+  "num": 256,
+  "armor": 230.0,
+  "weight": 2,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.028
+   ]
+  ]
+ },
+ "Crafted Ofir Pants": {
+  "num": 169,
+  "armor": 120.0,
+  "weight": 1,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.006
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.006
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.006
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "DLC1 Temerian Pants": {
+  "num": 257,
+  "armor": 180.0,
+  "weight": 1,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "DLC14 Skellige Pants": {
+  "num": 258,
+  "armor": 348.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.035
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.035
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.035
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "DLC5 Nilfgaardian Pants": {
+  "num": 259,
+  "armor": 228.0,
+  "weight": 2,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ]
+  ]
+ },
+ "Dol Blathanna Pants": {
+  "num": 170,
+  "armor": 180.0,
+  "weight": 1,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.014
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.014
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "EP1 Standalone Starting Pants": {
+  "num": 171,
+  "armor": 180.0,
+  "weight": 2,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.015
+   ]
+  ]
+ },
+ "EP1 Witcher Pants": {
+  "num": 172,
+  "armor": 210.0,
+  "weight": 2,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.015
+   ]
+  ]
+ },
+ "Gryphon Pants 1": {
+  "num": 173,
+  "armor": 250.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ]
+  ]
+ },
+ "Gryphon Pants 2": {
+  "num": 174,
+  "armor": 260.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.021
+   ]
+  ]
+ },
+ "Gryphon Pants 3": {
+  "num": 175,
+  "armor": 275.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.021
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.021
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.025
+   ]
+  ]
+ },
+ "Gryphon Pants 4": {
+  "num": 176,
+  "armor": 295.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.027
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.027
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.032
+   ]
+  ]
+ },
+ "Gryphon Pants 5": {
+  "num": 177,
+  "armor": 310.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.035
+   ]
+  ]
+ },
+ "Guard Lvl1 A Pants 3": {
+  "num": 178,
+  "armor": 216.0,
+  "weight": 1,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Guard Lvl1 Pants 3": {
+  "num": 179,
+  "armor": 216.0,
+  "weight": 1,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Guard Lvl2 A Pants 3": {
+  "num": 180,
+  "armor": 312.0,
+  "weight": 2,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.038
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.038
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.038
+   ]
+  ]
+ },
+ "Guard Lvl2 Pants 3": {
+  "num": 181,
+  "armor": 312.0,
+  "weight": 2,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.038
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.038
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.038
+   ]
+  ]
+ },
+ "Heavy pants 04": {
+  "num": 182,
+  "armor": 492.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.19
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.17
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.063
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.063
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.063
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "Heavy pants 04_crafted": {
+  "num": 183,
+  "armor": 492.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.19
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.17
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.063
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.063
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.063
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "Knight Geralt A Pants 3": {
+  "num": 184,
+  "armor": 516.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.19
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.17
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.063
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.063
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.063
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Knight Geralt Pants 3": {
+  "num": 185,
+  "armor": 516.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.19
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.17
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.063
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.063
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.063
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "kotw_legs_v1_1": {
+  "num": 260,
+  "armor": 597.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.21
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.17
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.09
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.08
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.03
+   ]
+  ]
+ },
+ "kotw_legs_v1_2": {
+  "num": 261,
+  "armor": 529.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.19
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.17
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.075
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.06
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.045
+   ]
+  ]
+ },
+ "kotw_legs_v2_1": {
+  "num": 262,
+  "armor": 609.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.22
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.19
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.09
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.08
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.03
+   ]
+  ]
+ },
+ "kotw_legs_v2_2": {
+  "num": 263,
+  "armor": 541.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.18
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.14
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.17
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.075
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.06
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.045
+   ]
+  ]
+ },
+ "kotw_legs_v3_1": {
+  "num": 264,
+  "armor": 621.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.23
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.23
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.09
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.08
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.03
+   ]
+  ]
+ },
+ "kotw_legs_v3_2": {
+  "num": 265,
+  "armor": 553.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.21
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.19
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.2
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.075
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.06
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.045
+   ]
+  ]
+ },
+ "Lynx Pants 1": {
+  "num": 186,
+  "armor": 90.0,
+  "weight": 1,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.003
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.003
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.003
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.05
+   ]
+  ]
+ },
+ "Lynx Pants 2": {
+  "num": 187,
+  "armor": 100.0,
+  "weight": 1,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.005
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.005
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.005
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.05
+   ]
+  ]
+ },
+ "Lynx Pants 3": {
+  "num": 188,
+  "armor": 120.0,
+  "weight": 1,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.007
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.007
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.007
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.05
+   ]
+  ]
+ },
+ "Lynx Pants 4": {
+  "num": 189,
+  "armor": 130.0,
+  "weight": 1,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.008
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.05
+   ]
+  ]
+ },
+ "Lynx Pants 5": {
+  "num": 190,
+  "armor": 140.0,
+  "weight": 1,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Netflix Pants": {
+  "num": 266,
+  "armor": 180.0,
+  "weight": 2,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ]
+  ]
+ },
+ "Netflix Pants 1": {
+  "num": 267,
+  "armor": 220.0,
+  "weight": 2,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.016
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.016
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.016
+   ]
+  ]
+ },
+ "Netflix Pants 2": {
+  "num": 268,
+  "armor": 240.0,
+  "weight": 2,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ]
+  ]
+ },
+ "Pants 04": {
+  "num": 191,
+  "armor": 204.0,
+  "weight": 1,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Pants 04_crafted": {
+  "num": 192,
+  "armor": 204.0,
+  "weight": 1,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.09
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.018
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.018
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "q702_vampire_pants": {
+  "num": 193,
+  "armor": 456.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.04
+   ]
+  ]
+ },
+ "q704_vampire_pants": {
+  "num": 194,
+  "armor": 456.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.1
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.03
+   ]
+  ]
+ },
+ "Red Wolf Pants 1": {
+  "num": 195,
+  "armor": 130.0,
+  "weight": 1,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.008
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.008
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    0.1
+   ]
+  ]
+ },
+ "Red Wolf Pants 2": {
+  "num": 196,
+  "armor": 87.0,
+  "weight": 2,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.16
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.03
+   ]
+  ]
+ },
+ "Starting Pants": {
+  "num": 197,
+  "armor": 180.0,
+  "weight": 2,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.015
+   ]
+  ]
+ },
+ "Starting Pants 1": {
+  "num": 198,
+  "armor": 190.0,
+  "weight": 2,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.02
+   ]
+  ]
+ },
+ "Thief Pants": {
+  "num": 199,
+  "armor": 192.0,
+  "weight": 2,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ]
+  ]
+ },
+ "Thief Pants No Medallion": {
+  "num": 200,
+  "armor": 300.0,
+  "weight": 2,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.11
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.12
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.038
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.038
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.038
+   ]
+  ]
+ },
+ "Toussaint Pants 3": {
+  "num": 201,
+  "armor": 516.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.19
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.17
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.13
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.15
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.063
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.063
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.063
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "White Tiger Pants": {
+  "num": 202,
+  "armor": 264.0,
+  "weight": 3,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "staminaRegen_armor_mod",
+    "mult",
+    -0.1
+   ]
+  ]
+ },
+ "Wolf Pants 1": {
+  "num": 269,
+  "armor": 140.0,
+  "weight": 2,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.02
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.006
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.006
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.009
+   ]
+  ]
+ },
+ "Wolf Pants 2": {
+  "num": 270,
+  "armor": 160.0,
+  "weight": 2,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.03
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.009
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.009
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.016
+   ]
+  ]
+ },
+ "Wolf Pants 3": {
+  "num": 271,
+  "armor": 170.0,
+  "weight": 2,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.009
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.009
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.016
+   ]
+  ]
+ },
+ "Wolf Pants 4": {
+  "num": 272,
+  "armor": 200.0,
+  "weight": 2,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.025
+   ]
+  ]
+ },
+ "Wolf Pants 5": {
+  "num": 203,
+  "armor": 210.0,
+  "weight": 2,
+  "cat": "pants",
+  "skel": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.07
+   ],
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.08
+   ],
+   [
+    "armor_regen_penalty",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.015
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.025
+   ]
+  ]
+ }
+}

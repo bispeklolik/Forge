@@ -1,0 +1,12 @@
+;meta[language=zh]
+; id      |key(hex)|key(str)| text
+2114477000|        |w3eeredux_root|W3EE Redux 擴充
+2114477001|        |tssb_menu|按品階縮放的套裝加成
+2114477002|        |tssb_enabled|所有品階均享大師套裝加成
+2114477003|        |tssb_tier1|   ...品階 1 強度, %
+2114477004|        |tssb_tier2|   ...品階 2 強度, %
+2114477005|        |tssb_tier3|   ...品階 3 強度, %
+2114477006|        |tssb_tier4|   ...品階 4 強度, %
+2114477007|        |tssb_descgm|描述中以括號顯示大師數值
+2114477008|        |tssb_descnote|描述中加入加成強度說明
+2114477009|        |tssb_note|按品階的強度：

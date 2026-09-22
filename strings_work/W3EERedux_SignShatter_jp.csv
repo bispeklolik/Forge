@@ -1,0 +1,15 @@
+;meta[language=jp]
+; id      |key(hex)|key(str)| text
+2114471000|        |w3eeredux_root|W3EE Redux アドオン
+2114471001|        |ssht_menu|印による粉砕
+2114471002|        |ssht_humanpoise|体勢を崩した人間を粉砕する
+2114471003|        |ssht_humanhp|   ...この体力%未満のみ
+2114471004|        |ssht_shatterscale|   ...傷が増えるほど確率が上がる速さ (100 = 標準)
+2114471005|        |ssht_killshatter|アードが倒した敵を粉砕
+2114471006|        |ssht_killshatterhumans|   ...人間も含む
+2114471007|        |ssht_ignipoise|イグニも人間を粉砕する
+2114471008|        |ssht_ignikill|イグニが倒した敵を粉砕
+2114471009|        |ssht_burnkill|炎上で倒れた敵を粉砕
+2114471010|        |ssht_slomochance|粉砕時のスローモーション確率
+2114471011|        |ssht_slomoscale|   ...強さ (低いほど強い)
+2114471012|        |ssht_slomotime|   ...継続時間 (秒)

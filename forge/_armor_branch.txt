@@ -1,0 +1,2 @@
+\tif( schemName == 'FRG ForgeArmor schematic' || schemName == 'FRG ForgePants schematic'
+\t\t|| schemName == 'FRG ForgeGloves schematic' || schemName == 'FRG ForgeBoots schematic' )

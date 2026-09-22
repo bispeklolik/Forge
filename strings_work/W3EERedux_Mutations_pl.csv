@@ -1,0 +1,14 @@
+;meta[language=pl]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|Dodatki do W3EE Redux
+2114478001|        |mutf_menu|Naprawa Mutacji
+2114478002|        |mutf_enabled|Naprawy mutacji włączone
+2114478003|        |mutf_adrfloor|Insektoid: tempo usuwania przy pustej adrenalinie, %
+2114478004|        |mutf_adrtop|Insektoid: tempo usuwania przy pelnej adrenalinie, %
+2114478005|        |mutf_combatonly|Insektoid: dziala tylko w walce
+2114478006|        |mutf_fixdesc|Pokaż prawdziwe liczby w opisach mutacji
+2114478007|        |insc_dmgredon|Insektoid: przywróć usuniętą redukcję obrażeń
+2114478008|        |insc_dmgredperc|   ...o ile słabsze są kolejne trafienia, %
+2114478009|        |insc_dmgredwin|   ...ile sekund to trwa
+2114478010|        |mutf_signbypass|Zjawa: podnieś premię do Znaków do obiecanych +50% (0 = jak w grze)
+2114478011|        |mutf_sheet|Karta postaci: pokaż Moc Znaków po osłabieniu

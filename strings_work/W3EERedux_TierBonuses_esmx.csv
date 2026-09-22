@@ -1,0 +1,12 @@
+;meta[language=esmx]
+; id      |key(hex)|key(str)| text
+2114477000|        |w3eeredux_root|Complementos de W3EE Redux
+2114477001|        |tssb_menu|Bonos de Conjunto por Nivel
+2114477002|        |tssb_enabled|Bono de gran maestro en todos los niveles
+2114477003|        |tssb_tier1|   ...potencia en nivel 1, %
+2114477004|        |tssb_tier2|   ...potencia en nivel 2, %
+2114477005|        |tssb_tier3|   ...potencia en nivel 3, %
+2114477006|        |tssb_tier4|   ...potencia en nivel 4, %
+2114477007|        |tssb_descgm|Descripciones: valor de gran maestro entre paréntesis
+2114477008|        |tssb_descnote|Descripciones: línea sobre la potencia del bono
+2114477009|        |tssb_note|Potencia según el nivel:

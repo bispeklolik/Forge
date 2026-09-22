@@ -1,0 +1,12 @@
+;meta[language=fr]
+; id      |key(hex)|key(str)| text
+2114477000|        |w3eeredux_root|Modules W3EE Redux
+2114477001|        |tssb_menu|Bonus d'Équipement par Palier
+2114477002|        |tssb_enabled|Bonus grand maître à tous les paliers
+2114477003|        |tssb_tier1|   ...puissance au palier 1, %
+2114477004|        |tssb_tier2|   ...puissance au palier 2, %
+2114477005|        |tssb_tier3|   ...puissance au palier 3, %
+2114477006|        |tssb_tier4|   ...puissance au palier 4, %
+2114477007|        |tssb_descgm|Descriptions : valeur grand maître entre parenthèses
+2114477008|        |tssb_descnote|Descriptions : ligne sur la puissance du bonus
+2114477009|        |tssb_note|Puissance selon le palier :

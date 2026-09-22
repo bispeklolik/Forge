@@ -1,0 +1,14 @@
+;meta[language=fr]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|Modules W3EE Redux
+2114478001|        |mutf_menu|Correctifs des Mutations
+2114478002|        |mutf_enabled|Correctifs des mutations activés
+2114478003|        |mutf_adrfloor|Insectoide : vitesse de purge a adrenaline vide, %
+2114478004|        |mutf_adrtop|Insectoide : vitesse de purge a adrenaline pleine, %
+2114478005|        |mutf_combatonly|Insectoide : actif seulement en combat
+2114478006|        |mutf_fixdesc|Afficher les vrais chiffres dans les descriptions de mutations
+2114478007|        |insc_dmgredon|Insectoïde : rétablir la réduction de dégâts supprimée
+2114478008|        |insc_dmgredperc|   ...combien les coups suivants sont plus faibles, %
+2114478009|        |insc_dmgredwin|   ...combien de secondes cela dure
+2114478010|        |mutf_signbypass|Spectre : porter le bonus de Signes aux +50% promis (0 = tel quel)
+2114478011|        |mutf_sheet|Fiche de personnage : afficher l'Intensité des Signes après atténuation

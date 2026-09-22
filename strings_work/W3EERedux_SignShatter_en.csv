@@ -1,0 +1,15 @@
+;meta[language=en]
+; id      |key(hex)|key(str)| text
+2114471000|        |w3eeredux_root|W3EE Redux Add-ons
+2114471001|        |ssht_menu|Sign Shatter
+2114471002|        |ssht_humanpoise|Shatter humans with broken poise
+2114471003|        |ssht_humanhp|   ...only below this health %
+2114471004|        |ssht_shatterscale|   ...how fast the chance grows with wounds (100 = normal)
+2114471005|        |ssht_killshatter|Shatter anything Aard kills
+2114471006|        |ssht_killshatterhumans|   ...including humans
+2114471007|        |ssht_ignipoise|Igni shatters humans too
+2114471008|        |ssht_ignikill|Shatter anything Igni kills
+2114471009|        |ssht_burnkill|Shatter anything burning kills
+2114471010|        |ssht_slomochance|Slow motion chance on shatter
+2114471011|        |ssht_slomoscale|   ...strength (lower = stronger)
+2114471012|        |ssht_slomotime|   ...duration, sec

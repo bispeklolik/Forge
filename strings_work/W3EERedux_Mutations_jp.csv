@@ -1,0 +1,14 @@
+;meta[language=jp]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|W3EE Redux アドオン
+2114478001|        |mutf_menu|変異の修正
+2114478002|        |mutf_enabled|変異の修正を有効化
+2114478003|        |mutf_adrfloor|インセクトイド: アドレナリン空時の解毒速度 (%)
+2114478004|        |mutf_adrtop|インセクトイド: アドレナリン満タン時の解毒速度 (%)
+2114478005|        |mutf_combatonly|インセクトイド: 戦闘中のみ有効
+2114478006|        |mutf_fixdesc|変異の説明に実際の数値を表示
+2114478007|        |insc_dmgredon|インセクトイド: 削除されたダメージ軽減を復活
+2114478008|        |insc_dmgredperc|   ...連続被弾がどれだけ弱まるか, %
+2114478009|        |insc_dmgredwin|   ...何秒間続くか
+2114478010|        |mutf_signbypass|スペクター: 印の効果を約束の+50%に近づける (0 = ゲームのまま)
+2114478011|        |mutf_sheet|キャラクター画面: 減衰後の印の強さを表示

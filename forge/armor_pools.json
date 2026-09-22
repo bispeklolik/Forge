@@ -1,0 +1,1052 @@
+[
+ {
+  "pool": "ARMOR_MASTERWORK_LIGHT",
+  "ability": "Master_Armor_Light_ExtraPockets",
+  "stats": [
+   [
+    "carryweight_bonus",
+    "add",
+    9
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.005
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_LIGHT",
+  "ability": "Magical_Armor_Light_ThickPadding",
+  "stats": [
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.015
+   ],
+   [
+    "poison_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "bleeding_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "burning_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.005
+   ],
+   [
+    "weight",
+    "base",
+    2.5
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_LIGHT",
+  "ability": "Master_Armor_Light_Lightweight",
+  "stats": [
+   [
+    "evade_speed",
+    "mult",
+    0.045
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    0.055
+   ],
+   [
+    "weight",
+    "base",
+    -1.25
+   ],
+   [
+    "slashing_resistance_perc",
+    "base",
+    -0.015
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    -0.015
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    -0.015
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_LIGHT",
+  "ability": "Master_Armor_Light_Hefted",
+  "stats": [
+   [
+    "poise_bonus",
+    "add",
+    4.5
+   ],
+   [
+    "weight",
+    "base",
+    1.25
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.005
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_LIGHT",
+  "ability": "Master_Armor_Light_Warding",
+  "stats": [
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.075
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.075
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_LIGHT",
+  "ability": "Master_Armor_Light_Tenacious",
+  "stats": [
+   [
+    "injury_resist",
+    "mult",
+    0.15
+   ],
+   [
+    "bleeding_resistance_perc",
+    "base",
+    0.04
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.04
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_LIGHT",
+  "ability": "Master_Armor_Light_Ferocious",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.03
+   ],
+   [
+    "damage_from_behind_def",
+    "mult",
+    0.075
+   ],
+   [
+    "poise_bonus",
+    "add",
+    -5
+   ],
+   [
+    "safe_dodge_angle_bonus",
+    "add",
+    -6.5
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_LIGHT",
+  "ability": "Master_Armor_Light_Fragrant",
+  "stats": [
+   [
+    "poison_resistance_perc",
+    "base",
+    0.075
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_LIGHT",
+  "ability": "Master_Armor_Light_TightlyFitted",
+  "stats": [
+   [
+    "poison_resistance_perc",
+    "base",
+    0.075
+   ],
+   [
+    "bleeding_resistance_perc",
+    "base",
+    0.075
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_MEDIUM",
+  "ability": "Master_Armor_Medium_ExtraPockets",
+  "stats": [
+   [
+    "carryweight_bonus",
+    "add",
+    11
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.0075
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_MEDIUM",
+  "ability": "Magical_Armor_Medium_ThickPadding",
+  "stats": [
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.025
+   ],
+   [
+    "poison_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "bleeding_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "burning_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ],
+   [
+    "weight",
+    "base",
+    3.5
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_MEDIUM",
+  "ability": "Master_Armor_Medium_Lightweight",
+  "stats": [
+   [
+    "evade_speed",
+    "mult",
+    0.03
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    0.065
+   ],
+   [
+    "weight",
+    "base",
+    -1.75
+   ],
+   [
+    "slashing_resistance_perc",
+    "base",
+    -0.02
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    -0.02
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    -0.02
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_MEDIUM",
+  "ability": "Master_Armor_Medium_Hefted",
+  "stats": [
+   [
+    "poise_bonus",
+    "add",
+    6
+   ],
+   [
+    "weight",
+    "base",
+    1.75
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_MEDIUM",
+  "ability": "Master_Armor_Medium_Warding",
+  "stats": [
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.075
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.075
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_MEDIUM",
+  "ability": "Master_Armor_Medium_Tenacious",
+  "stats": [
+   [
+    "injury_resist",
+    "mult",
+    0.17
+   ],
+   [
+    "bleeding_resistance_perc",
+    "base",
+    0.05
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_MEDIUM",
+  "ability": "Master_Armor_Medium_Ferocious",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.03
+   ],
+   [
+    "damage_from_behind_def",
+    "mult",
+    0.095
+   ],
+   [
+    "poise_bonus",
+    "add",
+    -6
+   ],
+   [
+    "safe_dodge_angle_bonus",
+    "add",
+    -6.5
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_MEDIUM",
+  "ability": "Master_Armor_Medium_Fragrant",
+  "stats": [
+   [
+    "poison_resistance_perc",
+    "base",
+    0.075
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_MEDIUM",
+  "ability": "Master_Armor_Medium_TightlyFitted",
+  "stats": [
+   [
+    "poison_resistance_perc",
+    "base",
+    0.075
+   ],
+   [
+    "bleeding_resistance_perc",
+    "base",
+    0.075
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_HEAVY",
+  "ability": "Master_Armor_Heavy_ExtraPockets",
+  "stats": [
+   [
+    "carryweight_bonus",
+    "add",
+    13
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.01
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_HEAVY",
+  "ability": "Magical_Armor_Heavy_ThickPadding",
+  "stats": [
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.035
+   ],
+   [
+    "poison_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "bleeding_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "burning_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.015
+   ],
+   [
+    "weight",
+    "base",
+    4.5
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_HEAVY",
+  "ability": "Master_Armor_Heavy_Lightweight",
+  "stats": [
+   [
+    "evade_speed",
+    "mult",
+    0.015
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    0.075
+   ],
+   [
+    "weight",
+    "base",
+    -2.5
+   ],
+   [
+    "slashing_resistance_perc",
+    "base",
+    -0.025
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    -0.025
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    -0.025
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_HEAVY",
+  "ability": "Master_Armor_Heavy_Hefted",
+  "stats": [
+   [
+    "poise_bonus",
+    "add",
+    7.5
+   ],
+   [
+    "weight",
+    "base",
+    2.5
+   ],
+   [
+    "armor_speed",
+    "mult",
+    -0.015
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_HEAVY",
+  "ability": "Master_Armor_Heavy_Warding",
+  "stats": [
+   [
+    "elemental_resistance_perc",
+    "base",
+    0.075
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.075
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_HEAVY",
+  "ability": "Master_Armor_Heavy_Tenacious",
+  "stats": [
+   [
+    "injury_resist",
+    "mult",
+    0.185
+   ],
+   [
+    "bleeding_resistance_perc",
+    "base",
+    0.06
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.06
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_HEAVY",
+  "ability": "Master_Armor_Heavy_Ferocious",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.03
+   ],
+   [
+    "damage_from_behind_def",
+    "mult",
+    0.125
+   ],
+   [
+    "poise_bonus",
+    "add",
+    -7
+   ],
+   [
+    "safe_dodge_angle_bonus",
+    "add",
+    -6.5
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_HEAVY",
+  "ability": "Master_Armor_Heavy_Fragrant",
+  "stats": [
+   [
+    "poison_resistance_perc",
+    "base",
+    0.075
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MASTERWORK_HEAVY",
+  "ability": "Master_Armor_Heavy_TightlyFitted",
+  "stats": [
+   [
+    "poison_resistance_perc",
+    "base",
+    0.075
+   ],
+   [
+    "bleeding_resistance_perc",
+    "base",
+    0.075
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.05
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MAGICAL_LIGHT",
+  "ability": "Magical_Armor_Light_Stalwart",
+  "stats": [
+   [
+    "poise_bonus",
+    "add",
+    4.5
+   ],
+   [
+    "damage_negation_defense",
+    "mult",
+    0.125
+   ],
+   [
+    "safe_dodge_angle_bonus",
+    "add",
+    -7.5
+   ],
+   [
+    "evade_speed",
+    "mult",
+    -0.015
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MAGICAL_LIGHT",
+  "ability": "Magical_Armor_Light_Eager",
+  "stats": [
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    0.05
+   ],
+   [
+    "attack_speed",
+    "mult",
+    0.03
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.002
+   ],
+   [
+    "safe_dodge_angle_bonus",
+    "add",
+    -7.5
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MAGICAL_LIGHT",
+  "ability": "Magical_Armor_Light_WellFitted",
+  "stats": [
+   [
+    "armor_speed",
+    "mult",
+    0.01
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    0.003
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MAGICAL_LIGHT",
+  "ability": "Magical_Armor_Light_WellTempered",
+  "stats": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.01
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.01
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.009
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MAGICAL_LIGHT",
+  "ability": "Magical_Armor_Light_Trickster",
+  "stats": [
+   [
+    "safe_dodge_angle_bonus",
+    "add",
+    5
+   ],
+   [
+    "graze_damage_reduction",
+    "mult",
+    0.05
+   ],
+   [
+    "slashing_resistance_perc",
+    "base",
+    -0.015
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    -0.015
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    -0.015
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MAGICAL_LIGHT",
+  "ability": "Magical_Armor_Light_Noble",
+  "stats": [
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    0.04
+   ],
+   [
+    "damage_from_behind_def",
+    "mult",
+    0.075
+   ],
+   [
+    "evade_speed",
+    "mult",
+    -0.015
+   ],
+   [
+    "safe_dodge_angle_bonus",
+    "add",
+    -7.5
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MAGICAL_MEDIUM",
+  "ability": "Magical_Armor_Medium_Stalwart",
+  "stats": [
+   [
+    "poise_bonus",
+    "add",
+    6
+   ],
+   [
+    "damage_negation_defense",
+    "mult",
+    0.14
+   ],
+   [
+    "safe_dodge_angle_bonus",
+    "add",
+    -10
+   ],
+   [
+    "evade_speed",
+    "mult",
+    -0.025
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MAGICAL_MEDIUM",
+  "ability": "Magical_Armor_Medium_Eager",
+  "stats": [
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    0.05
+   ],
+   [
+    "attack_speed",
+    "mult",
+    0.03
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.007
+   ],
+   [
+    "safe_dodge_angle_bonus",
+    "add",
+    -7.5
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MAGICAL_MEDIUM",
+  "ability": "Magical_Armor_Medium_WellFitted",
+  "stats": [
+   [
+    "armor_speed",
+    "mult",
+    0.01
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    0.005
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MAGICAL_MEDIUM",
+  "ability": "Magical_Armor_Medium_WellTempered",
+  "stats": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.015
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.013
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.012
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MAGICAL_MEDIUM",
+  "ability": "Magical_Armor_Medium_Trickster",
+  "stats": [
+   [
+    "safe_dodge_angle_bonus",
+    "add",
+    4.5
+   ],
+   [
+    "graze_damage_reduction",
+    "mult",
+    0.045
+   ],
+   [
+    "slashing_resistance_perc",
+    "base",
+    -0.02
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    -0.02
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    -0.02
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MAGICAL_MEDIUM",
+  "ability": "Magical_Armor_Medium_Noble",
+  "stats": [
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    0.04
+   ],
+   [
+    "damage_from_behind_def",
+    "mult",
+    0.075
+   ],
+   [
+    "evade_speed",
+    "mult",
+    -0.015
+   ],
+   [
+    "safe_dodge_angle_bonus",
+    "add",
+    -7.5
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MAGICAL_HEAVY",
+  "ability": "Magical_Armor_Heavy_Stalwart",
+  "stats": [
+   [
+    "poise_bonus",
+    "add",
+    7.5
+   ],
+   [
+    "damage_negation_defense",
+    "mult",
+    0.155
+   ],
+   [
+    "safe_dodge_angle_bonus",
+    "add",
+    -12.5
+   ],
+   [
+    "evade_speed",
+    "mult",
+    -0.035
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MAGICAL_HEAVY",
+  "ability": "Magical_Armor_Heavy_Eager",
+  "stats": [
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    0.05
+   ],
+   [
+    "attack_speed",
+    "mult",
+    0.03
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    -0.016
+   ],
+   [
+    "safe_dodge_angle_bonus",
+    "add",
+    -7.5
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MAGICAL_HEAVY",
+  "ability": "Magical_Armor_Heavy_WellFitted",
+  "stats": [
+   [
+    "armor_speed",
+    "mult",
+    0.01
+   ],
+   [
+    "armor_stamina_efficiency",
+    "mult",
+    0.008
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MAGICAL_HEAVY",
+  "ability": "Magical_Armor_Heavy_WellTempered",
+  "stats": [
+   [
+    "slashing_resistance_perc",
+    "base",
+    0.018
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    0.017
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    0.014
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MAGICAL_HEAVY",
+  "ability": "Magical_Armor_Heavy_Trickster",
+  "stats": [
+   [
+    "safe_dodge_angle_bonus",
+    "add",
+    4
+   ],
+   [
+    "graze_damage_reduction",
+    "mult",
+    0.04
+   ],
+   [
+    "slashing_resistance_perc",
+    "base",
+    -0.025
+   ],
+   [
+    "piercing_resistance_perc",
+    "base",
+    -0.025
+   ],
+   [
+    "bludgeoning_resistance_perc",
+    "base",
+    -0.025
+   ]
+  ]
+ },
+ {
+  "pool": "ARMOR_MAGICAL_HEAVY",
+  "ability": "Magical_Armor_Heavy_Noble",
+  "stats": [
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    0.04
+   ],
+   [
+    "damage_from_behind_def",
+    "mult",
+    0.075
+   ],
+   [
+    "evade_speed",
+    "mult",
+    -0.015
+   ],
+   [
+    "safe_dodge_angle_bonus",
+    "add",
+    -7.5
+   ]
+  ]
+ }
+]

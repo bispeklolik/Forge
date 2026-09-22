@@ -1,0 +1,15 @@
+;meta[language=zh]
+; id      |key(hex)|key(str)| text
+2114471000|        |w3eeredux_root|W3EE Redux 扩展
+2114471001|        |ssht_menu|法印撕裂
+2114471002|        |ssht_humanpoise|撕裂失去平衡的人类
+2114471003|        |ssht_humanhp|   ...仅在此生命值%以下
+2114471004|        |ssht_shatterscale|   ...概率随伤势增长的速度 (100 = 正常)
+2114471005|        |ssht_killshatter|撕裂被亚克席杀死的一切
+2114471006|        |ssht_killshatterhumans|   ...包括人类
+2114471007|        |ssht_ignipoise|伊格尼同样撕裂人类
+2114471008|        |ssht_ignikill|撕裂被伊格尼杀死的一切
+2114471009|        |ssht_burnkill|撕裂被灼烧烧死的一切
+2114471010|        |ssht_slomochance|撕裂时的慢动作概率
+2114471011|        |ssht_slomoscale|   ...强度 (越低越强)
+2114471012|        |ssht_slomotime|   ...持续时间, 秒

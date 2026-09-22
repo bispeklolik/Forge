@@ -1,0 +1,370 @@
+[
+ {
+  "name": "TW2 Heavy armor 02",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_heavy_lvl2_01_64x128.png",
+  "lockey": "frgtw2_t_01_mg__tw2cmn_heavy_lvl2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy armor 03",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_heavy_lvl3_01_64x128.png",
+  "lockey": "frgtw2_t_01_mg__tw2cmn_heavy_lvl3",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Light armor 01",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl1_01_64x128.png",
+  "lockey": "frgtw2_t_01_mg__tw2cmn_light_lvl1",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Light armor 02",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl2_01_64x128.png",
+  "lockey": "frgtw2_t_01_mg__tw2cmn_light_lvl2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Light armor 03",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl3_01_64x128.png",
+  "lockey": "frgtw2_t_01_mg__tw2cmn_light_lvl3",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Light armor 04",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl4_01_64x128.png",
+  "lockey": "frgtw2_t_01_mg__tw2cmn_light_lvl4",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Medium armor 01",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_medium_lvl1_01_64x128.png",
+  "lockey": "frgtw2_t_01_mg__tw2cmn_medium_lvl1",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Medium armor 04",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_medium_lvl4_01_64x128.png",
+  "lockey": "frgtw2_t_01_mg__tw2cmn_medium_lvl4",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Zireael armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_heavy_lvl2_02_64x128.png",
+  "lockey": "frgtw2_t_02_mg__tw2cmn_heavy_lvl2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Shadaal armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_heavy_lvl3_02_64x128.png",
+  "lockey": "frgtw2_t_02_mg__tw2cmn_heavy_lvl3",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Shiadhal armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl1_02_64x128.png",
+  "lockey": "frgtw2_t_02_mg__tw2cmn_light_lvl1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Light armor 06",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl2_02_64x128.png",
+  "lockey": "frgtw2_t_02_mg__tw2cmn_light_lvl2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Light armor 07",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl3_02_64x128.png",
+  "lockey": "frgtw2_t_02_mg__tw2cmn_light_lvl3",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Light armor 08",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl4_02_64x128.png",
+  "lockey": "frgtw2_t_02_mg__tw2cmn_light_lvl4",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Medium armor 05",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_medium_lvl1_02_64x128.png",
+  "lockey": "frgtw2_t_02_mg__tw2cmn_medium_lvl1",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Relic Heavy 3 armor",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_heavy_lvl3_02_64x128.png",
+  "lockey": "frgtw2_t_03_mg__tw2cmn_heavy_lvl3",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Light armor 09",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_light_lvl2_03_64x128.png",
+  "lockey": "frgtw2_t_03_mg__tw2cmn_light_lvl2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Medium armor 07",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/common_medium_lvl4_03_64x128.png",
+  "lockey": "frgtw2_t_03_mg__tw2cmn_medium_lvl4",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Nilfgaardian Casual Suit 01",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/nilfgaardian_casual_suit_01-64x128.png",
+  "lockey": "frgtw2_ta_01_mg__casual_tw2nilfgaard_suit",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Nilfgaardian Casual Suit 02",
+  "cat": "armor",
+  "icon": "icons/inventory/armors/nilfgaardian_casual_suit-02-64x128.png",
+  "lockey": "frgtw2_ta_02_mg__casual_tw2nilfgaard_suit",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy pants 03",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/common_heavy_pants_lvl4_64x128.png",
+  "lockey": "frgtw2_l_01_mg__tw2cmn_heavy_lvl3",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Pants 01",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/common_light_pants_lvl1_64x128.png",
+  "lockey": "frgtw2_l_01_mg__tw2cmn_light_lvl1",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Pants 02",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/skellige_casual_pants_01_64x128.png",
+  "lockey": "frgtw2_l_01_mg__tw2cmn_light_lvl2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Pants 03",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/common_light_pants_lvl3_64x128.png",
+  "lockey": "frgtw2_l_01_mg__tw2cmn_light_lvl3",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Pants 04",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/common_light_pants_lvl4_64x128.png",
+  "lockey": "frgtw2_l_01_mg__tw2cmn_light_lvl4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Lynx Pants 1",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/lynx_pants.png",
+  "lockey": "frgtw2_l_01_mg__tw2c_lvl1",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Lynx Pants 3",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/lynx_pants_1.png",
+  "lockey": "frgtw2_l_01_mg__tw2c_lvl2",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Temerian Pants",
+  "cat": "pants",
+  "icon": "icons/inventory/armors/temerian_pants_64x128.png",
+  "lockey": "frgtw2_l_01_mg__tw2temer",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy gloves 01",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/common_heavy_64x128.png",
+  "lockey": "frgtw2_g_01a_mg__tw2cmn_heavy_lvl1",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy gloves 02",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/common_heavy_64x128.png",
+  "lockey": "frgtw2_g_01a_mg__tw2cmn_heavy_lvl2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy gloves 03",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/common_heavy_lvl3_64x128.png",
+  "lockey": "frgtw2_g_01a_mg__tw2cmn_heavy_lvl3",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy gloves 04",
+  "cat": "gloves",
+  "icon": "icons/inventory/armors/common_heavy_lvl4_64x128.png",
+  "lockey": "frgtw2_g_01a_mg__tw2cmn_heavy_lvl4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy boots 01",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_heavy_boots_lvl1_64x128.png",
+  "lockey": "frgtw2_s_01_mg__tw2cmn_heavy_lvl1",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy boots 02",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_heavy_boots_lvl1_64x128.png",
+  "lockey": "frgtw2_s_01_mg__tw2cmn_heavy_lvl2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy boots 04",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_heavy_boots_lvl1_64x128.png",
+  "lockey": "frgtw2_s_01_mg__tw2cmn_heavy_lvl4",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Boots 01",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl1_64x218.png",
+  "lockey": "frgtw2_s_01_mg__tw2cmn_light_lvl1",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Boots 02",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl2_64x128.png",
+  "lockey": "frgtw2_s_01_mg__tw2cmn_light_lvl2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Boots 03",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl3_64x128.png",
+  "lockey": "frgtw2_s_01_mg__tw2cmn_light_lvl3",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Boots 04",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl4_64x128.png",
+  "lockey": "frgtw2_s_01_mg__tw2cmn_light_lvl4",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy boots 05",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_heavy_boots_lvl1_64x128.png",
+  "lockey": "frgtw2_s_02_mg__tw2cmn_heavy_lvl1",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy boots 06",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_heavy_boots_lvl1_64x128.png",
+  "lockey": "frgtw2_s_02_mg__tw2cmn_heavy_lvl2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Heavy boots 08",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_heavy_boots_lvl4_02_64x128.png",
+  "lockey": "frgtw2_s_02_mg__tw2cmn_heavy_lvl4",
+  "quality": 5,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Boots 01 q2",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl1_64x218.png",
+  "lockey": "frgtw2_s_02_mg__tw2cmn_light_lvl1",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Boots 05",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl1_64x218.png",
+  "lockey": "frgtw2_s_02_mg__tw2cmn_light_lvl2",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Boots 06",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl1_64x218.png",
+  "lockey": "frgtw2_s_02_mg__tw2cmn_light_lvl3",
+  "quality": 4,
+  "tags_effects": []
+ },
+ {
+  "name": "TW2 Boots 07",
+  "cat": "boots",
+  "icon": "icons/inventory/armors/common_light_boots_lvl1_64x218.png",
+  "lockey": "frgtw2_s_02_mg__tw2cmn_light_lvl4",
+  "quality": 5,
+  "tags_effects": []
+ }
+]

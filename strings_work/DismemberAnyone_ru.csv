@@ -1,0 +1,5 @@
+;meta[language=ru]
+; id      |key(hex)|key(str)| text
+2114472000|        |dsma_menu|Расчленять всех
+2114472001|        |dsma_armordism|Расчленять бронированных людей
+2114472002|        |dsma_armorchance|   ...шанс

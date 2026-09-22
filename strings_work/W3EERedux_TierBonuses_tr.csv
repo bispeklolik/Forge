@@ -1,0 +1,12 @@
+;meta[language=tr]
+; id      |key(hex)|key(str)| text
+2114477000|        |w3eeredux_root|W3EE Redux Eklentileri
+2114477001|        |tssb_menu|Seviyeye Göre Set Bonusları
+2114477002|        |tssb_enabled|Her seviyede büyük usta bonusu
+2114477003|        |tssb_tier1|   ...1. seviyede güç, %
+2114477004|        |tssb_tier2|   ...2. seviyede güç, %
+2114477005|        |tssb_tier3|   ...3. seviyede güç, %
+2114477006|        |tssb_tier4|   ...4. seviyede güç, %
+2114477007|        |tssb_descgm|Açıklamada: büyük usta değeri parantezde
+2114477008|        |tssb_descnote|Açıklamada: bonus gücü satırı
+2114477009|        |tssb_note|Seviyeye göre güç:

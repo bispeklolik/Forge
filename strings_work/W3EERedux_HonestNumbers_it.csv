@@ -1,0 +1,7 @@
+;meta[language=it]
+; id      |key(hex)|key(str)| text
+2114479000|        |w3eeredux_root|Componenti aggiuntivi W3EE Redux
+2114479001|        |hnum_menu|Numeri Onesti
+2114479002|        |hnum_enabled|Numeri onesti attivi
+2114479003|        |hnum_signrows|Righe dei Segni: mostra la potenza reale di ogni Segno
+2114479004|        |hnum_durability|Danno delle spade: conta l'usura della lama, come in combattimento

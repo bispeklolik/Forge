@@ -1,0 +1,13 @@
+;meta[language=br]
+; id      |key(hex)|key(str)| text
+2114471000|        |ssht_menu|Estilhaçar com Sinal
+2114471001|        |ssht_humanpoise|Estraçalhar humanos com postura quebrada
+2114471002|        |ssht_humanhp|   ...apenas abaixo desta % de vida
+2114471003|        |ssht_shatterscale|   ...curva de chance (100 = um para um)
+2114471004|        |ssht_killshatter|Estraçalhar tudo que Aard matar
+2114471005|        |ssht_killshatterhumans|   ...incluindo humanos
+2114471006|        |ssht_ignipoise|Igni também estraçalha humanos
+2114471007|        |ssht_ignikill|Estraçalhar tudo que Igni matar
+2114471008|        |ssht_slomochance|Chance de câmera lenta ao estraçalhar
+2114471009|        |ssht_slomoscale|   ...intensidade (menor = mais forte)
+2114471010|        |ssht_slomotime|   ...duração, seg

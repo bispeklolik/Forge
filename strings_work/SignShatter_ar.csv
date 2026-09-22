@@ -1,0 +1,13 @@
+;meta[language=ar]
+; id      |key(hex)|key(str)| text
+2114471000|        |ssht_menu|تمزيق بالإشارة
+2114471001|        |ssht_humanpoise|تمزيق البشر المختل توازنهم
+2114471002|        |ssht_humanhp|   ...فقط تحت نسبة الصحة هذه
+2114471003|        |ssht_shatterscale|   ...منحنى الفرصة (100 = واحد لواحد)
+2114471004|        |ssht_killshatter|تمزيق كل ما يقتله آرد
+2114471005|        |ssht_killshatterhumans|   ...بما في ذلك البشر
+2114471006|        |ssht_ignipoise|إغني يمزق البشر أيضًا
+2114471007|        |ssht_ignikill|تمزيق كل ما يقتله إغني
+2114471008|        |ssht_slomochance|فرصة الحركة البطيئة عند التمزيق
+2114471009|        |ssht_slomoscale|   ...القوة (أقل = أقوى)
+2114471010|        |ssht_slomotime|   ...المدة بالثواني

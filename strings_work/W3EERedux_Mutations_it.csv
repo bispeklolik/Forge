@@ -1,0 +1,14 @@
+;meta[language=it]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|Componenti aggiuntivi W3EE Redux
+2114478001|        |mutf_menu|Correzioni alle Mutazioni
+2114478002|        |mutf_enabled|Correzioni alle mutazioni attive
+2114478003|        |mutf_adrfloor|Insettoide: velocita di rimozione con adrenalina vuota, %
+2114478004|        |mutf_adrtop|Insettoide: velocita di rimozione con adrenalina piena, %
+2114478005|        |mutf_combatonly|Insettoide: attivo solo in combattimento
+2114478006|        |mutf_fixdesc|Mostra i valori reali nelle descrizioni delle mutazioni
+2114478007|        |insc_dmgredon|Insettoide: ripristina la riduzione danni rimossa
+2114478008|        |insc_dmgredperc|   ...quanto sono più deboli i colpi successivi, %
+2114478009|        |insc_dmgredwin|   ...quanti secondi dura
+2114478010|        |mutf_signbypass|Spettro: porta il bonus ai Segni al +50% promesso (0 = come nel gioco)
+2114478011|        |mutf_sheet|Scheda personaggio: mostra l'Intensità dei Segni dopo l'attenuazione

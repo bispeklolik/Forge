@@ -1,0 +1,14 @@
+;meta[language=zh]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|W3EE Redux 扩展
+2114478001|        |mutf_menu|突变修正
+2114478002|        |mutf_enabled|启用突变修正
+2114478003|        |mutf_adrfloor|虫类: 肾上腺素为空时的排毒速度 (%)
+2114478004|        |mutf_adrtop|虫类: 肾上腺素满时的排毒速度 (%)
+2114478005|        |mutf_combatonly|虫类: 仅在战斗中生效
+2114478006|        |mutf_fixdesc|在突变描述中显示真实数值
+2114478007|        |insc_dmgredon|虫类: 恢复被移除的伤害减免
+2114478008|        |insc_dmgredperc|   ...连续受击减弱多少, %
+2114478009|        |insc_dmgredwin|   ...持续多少秒
+2114478010|        |mutf_signbypass|幽灵: 将法印加成提升至承诺的 +50% (0 = 保持原样)
+2114478011|        |mutf_sheet|角色面板: 显示衰减后的法印强度

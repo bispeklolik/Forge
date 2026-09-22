@@ -1,0 +1,5 @@
+;meta[language=jp]
+; id      |key(hex)|key(str)| text
+2114472000|        |dsma_menu|全員を切断可能に
+2114472001|        |dsma_armordism|装甲した人間も切断する
+2114472002|        |dsma_armorchance|   ...確率

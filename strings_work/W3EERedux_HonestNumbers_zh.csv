@@ -1,0 +1,7 @@
+;meta[language=zh]
+; id      |key(hex)|key(str)| text
+2114479000|        |w3eeredux_root|W3EE Redux 擴充
+2114479001|        |hnum_menu|誠實的數值
+2114479002|        |hnum_enabled|啟用誠實數值
+2114479003|        |hnum_signrows|法印各行: 顯示每個法印的真實威力
+2114479004|        |hnum_durability|劍傷害: 像戰鬥中一樣計入刀刃磨損

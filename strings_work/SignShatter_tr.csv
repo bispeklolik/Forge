@@ -1,0 +1,13 @@
+;meta[language=tr]
+; id      |key(hex)|key(str)| text
+2114471000|        |ssht_menu|İşaretle Parçalama
+2114471001|        |ssht_humanpoise|Dengesi bozulan insanları parçala
+2114471002|        |ssht_humanhp|   ...yalnızca bu can yüzdesinin altında
+2114471003|        |ssht_shatterscale|   ...şans eğrisi (100 = bire bir)
+2114471004|        |ssht_killshatter|Aard'ın öldürdüğü her şeyi parçala
+2114471005|        |ssht_killshatterhumans|   ...insanlar dahil
+2114471006|        |ssht_ignipoise|Igni de insanları parçalar
+2114471007|        |ssht_ignikill|Igni'nin öldürdüğü her şeyi parçala
+2114471008|        |ssht_slomochance|Parçalamada ağır çekim şansı
+2114471009|        |ssht_slomoscale|   ...güç (düşük = daha güçlü)
+2114471010|        |ssht_slomotime|   ...süre, sn

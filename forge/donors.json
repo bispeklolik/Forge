@@ -1,0 +1,3162 @@
+[
+ {
+  "name": "Abarad",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_abarad_64x128.png"
+ },
+ {
+  "name": "Addandeith",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_addan_deith_64x128.png"
+ },
+ {
+  "name": "Adversary Silver Sword",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl5_64x128.png"
+ },
+ {
+  "name": "Aerondight",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_aerondight_64x128.png"
+ },
+ {
+  "name": "Aerondight EP2",
+  "cat": "silversword",
+  "icon": "icons\\inventory\\quests\\Aerondight EP2.png"
+ },
+ {
+  "name": "Anathema",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_anathema_64x128.png"
+ },
+ {
+  "name": "Angivare",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_angivare_64x128.png"
+ },
+ {
+  "name": "Anth",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_anth_64x128.png"
+ },
+ {
+  "name": "Arainne",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_arainne_64x128.png"
+ },
+ {
+  "name": "Arbitrator",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_arbitrator_64x128.png"
+ },
+ {
+  "name": "Arbitrator_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_arbitrator_64x128.png"
+ },
+ {
+  "name": "Ardaenye",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_ardaenye_64x128.png"
+ },
+ {
+  "name": "Ardaenye_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_ardaenye_64x128.png"
+ },
+ {
+  "name": "Ashrune",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_ashrune_64x128.png"
+ },
+ {
+  "name": "Autogen silver sword",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Autogen steel sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_rusty_64x128.png"
+ },
+ {
+  "name": "Axe 1",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/blunt-axe-64x64.png"
+ },
+ {
+  "name": "Axe 2",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/blunt-axe-64x64.png"
+ },
+ {
+  "name": "Azurewrath",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_azurewrath_64x128.png"
+ },
+ {
+  "name": "Azurewrath_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_azurewrath_64x128.png"
+ },
+ {
+  "name": "Barbersurgeon",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_barber_64x128.png"
+ },
+ {
+  "name": "Barbersurgeon_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_barber_64x128.png"
+ },
+ {
+  "name": "Beannshie",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_beanshie_64x128.png"
+ },
+ {
+  "name": "Beannshie_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_beanshie_64x128.png"
+ },
+ {
+  "name": "Bear School silver sword",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_bear_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Bear School silver sword 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_bear_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Bear School silver sword 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_bear_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Bear School silver sword 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_bear_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Bear School silver sword 4",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_bear_sword_lvl5_64x128.png"
+ },
+ {
+  "name": "Bear School steel sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_bear_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Bear School steel sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_bear_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Bear School steel sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_bear_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Bear School steel sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_bear_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Bear School steel sword 4",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_bear_sword_lvl5_64x128.png"
+ },
+ {
+  "name": "Blackjack",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/blackjack_01_64x128.png"
+ },
+ {
+  "name": "Blackunicorn",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_black_unicorn_64x128.png"
+ },
+ {
+  "name": "Blackunicorn_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_black_unicorn_64x128.png"
+ },
+ {
+  "name": "Bladeofys",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_blade_of_ys_64x128.png"
+ },
+ {
+  "name": "Bloedeaedd",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_bloede_aedd_64x128.png"
+ },
+ {
+  "name": "Bloodsword",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_blood_sword_64x128.png"
+ },
+ {
+  "name": "Bloodsword_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_blood_sword_64x128.png"
+ },
+ {
+  "name": "Breathofthenorth",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_legendary_breath_of_the_north_64x128.png"
+ },
+ {
+  "name": "Burning Rose Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/burning_rose_sword_64x128.png"
+ },
+ {
+  "name": "Burning Rose Sword B",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/burning_rose_sword_64x128.png"
+ },
+ {
+  "name": "Caerme",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_caerme_64x128.png"
+ },
+ {
+  "name": "Caerme_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_caerme_64x128.png"
+ },
+ {
+  "name": "Caranthil Staff",
+  "cat": "hammer2h",
+  "icon": "icons/inventory/weapons/staff_01_64x128.png"
+ },
+ {
+  "name": "Caretaker Shovel",
+  "cat": "axe2h",
+  "icon": "icons/inventory/weapons/wildhunt_axe_01_64x128.png"
+ },
+ {
+  "name": "Caroline",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_caroline_64x128.png"
+ },
+ {
+  "name": "Cheesecutter",
+  "cat": "steelsword",
+  "icon": "icons/inventory/quests/emmentaler_64x128.png"
+ },
+ {
+  "name": "Cleaver",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_cleaver_64x128.png"
+ },
+ {
+  "name": "Club",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/blunt-axe-64x64.png"
+ },
+ {
+  "name": "Crafted Burning Rose Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/burning_rose_sword_64x128.png"
+ },
+ {
+  "name": "Crafted Ofir Steel Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/ofir_steel_sabre_64x128.png"
+ },
+ {
+  "name": "DLC10_Remorse",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/gnomish_silver_sword_lvl2-64x128.png"
+ },
+ {
+  "name": "Damien sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/damien_sword_64x128.png"
+ },
+ {
+  "name": "Dancer",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_dancer_64x128.png"
+ },
+ {
+  "name": "Daystar",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_daystar_64x128.png"
+ },
+ {
+  "name": "Deargdeith",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_dearg_deith_64x128.png"
+ },
+ {
+  "name": "Deireadh",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_deireadh_64x128.png"
+ },
+ {
+  "name": "Deireadh_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_deireadh_64x128.png"
+ },
+ {
+  "name": "Deithwen",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_deithwen_64x128.png"
+ },
+ {
+  "name": "Devine",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_devine_64x128.png"
+ },
+ {
+  "name": "Devine_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_devine_64x128.png"
+ },
+ {
+  "name": "Dol Blathanna longsword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/dol_blathanna_steel_longsword_64x128.png"
+ },
+ {
+  "name": "Dwarven Axe",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/blunt-axe-64x64.png"
+ },
+ {
+  "name": "Dwarven Hammer",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/blunt-axe-64x64.png"
+ },
+ {
+  "name": "Dwarven silver sword 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/dwarven_silver_sword_lvl1-64x128.png"
+ },
+ {
+  "name": "Dwarven silver sword 1_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/dwarven_silver_sword_lvl1-64x128.png"
+ },
+ {
+  "name": "Dwarven silver sword 1_crafted 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/dwarven_silver_sword_lvl1-64x128.png"
+ },
+ {
+  "name": "Dwarven silver sword 1_crafted 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/dwarven_silver_sword_lvl1-64x128.png"
+ },
+ {
+  "name": "Dwarven silver sword 1_crafted 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/dwarven_silver_sword_lvl1-64x128.png"
+ },
+ {
+  "name": "Dwarven silver sword 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/dwarven_silver_sword_lvl2-64x128.png"
+ },
+ {
+  "name": "Dwarven silver sword 2_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/dwarven_silver_sword_lvl2-64x128.png"
+ },
+ {
+  "name": "Dwarven silver sword 2_crafted 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/dwarven_silver_sword_lvl2-64x128.png"
+ },
+ {
+  "name": "Dwarven silver sword 2_crafted 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/dwarven_silver_sword_lvl2-64x128.png"
+ },
+ {
+  "name": "Dwarven silver sword 2_crafted 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/dwarven_silver_sword_lvl2-64x128.png"
+ },
+ {
+  "name": "Dwarven sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/dwarven_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Dwarven sword 1_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/dwarven_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Dwarven sword 1_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/dwarven_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Dwarven sword 1_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/dwarven_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Dwarven sword 1_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/dwarven_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Dwarven sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/dwarven_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Dwarven sword 2_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/dwarven_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Dwarven sword 2_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/dwarven_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Dwarven sword 2_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/dwarven_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Dwarven sword 2_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/dwarven_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Dyaebl",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_dyaebl_64x128.png"
+ },
+ {
+  "name": "EP1 Crafted Witcher Silver Sword",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/ep1_silver_sword_64x128.png"
+ },
+ {
+  "name": "EP1 Standalone Starting Silver Sword",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/sword-02-b.png"
+ },
+ {
+  "name": "EP1 Standalone Starting Steel Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "EP1 Viper School silver sword",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/Viper_silver_lvl1_64x128.png"
+ },
+ {
+  "name": "EP1 Viper School steel sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/Viper_steel_lvl1_64x128.png"
+ },
+ {
+  "name": "EP2 Silver sword 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl7_64x128.png"
+ },
+ {
+  "name": "EP2 Silver sword 1R",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl7_64x128.png"
+ },
+ {
+  "name": "EP2 Silver sword 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/elven_silver_sword_lvl1-64x128.png"
+ },
+ {
+  "name": "EP2 Silver sword 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/dwarven_silver_sword_lvl1-64x128.png"
+ },
+ {
+  "name": "EP2 Silver sword 3R",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/dwarven_silver_sword_lvl1-64x128.png"
+ },
+ {
+  "name": "EP2 Standalone Starting Silver Sword",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/sword-02-b.png"
+ },
+ {
+  "name": "EP2 Standalone Starting Steel Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Elven silver sword 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/elven_silver_sword_lvl1-64x128.png"
+ },
+ {
+  "name": "Elven silver sword 1_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/elven_silver_sword_lvl1-64x128.png"
+ },
+ {
+  "name": "Elven silver sword 1_crafted 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/elven_silver_sword_lvl1-64x128.png"
+ },
+ {
+  "name": "Elven silver sword 1_crafted 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/elven_silver_sword_lvl1-64x128.png"
+ },
+ {
+  "name": "Elven silver sword 1_crafted 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/elven_silver_sword_lvl1-64x128.png"
+ },
+ {
+  "name": "Elven silver sword 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/elven_silver_sword_lvl2-264x128.png"
+ },
+ {
+  "name": "Elven silver sword 2_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/elven_silver_sword_lvl2-264x128.png"
+ },
+ {
+  "name": "Elven silver sword 2_crafted 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/elven_silver_sword_lvl2-264x128.png"
+ },
+ {
+  "name": "Elven silver sword 2_crafted 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/elven_silver_sword_lvl2-264x128.png"
+ },
+ {
+  "name": "Elven silver sword 2_crafted 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/elven_silver_sword_lvl2-264x128.png"
+ },
+ {
+  "name": "Eredin Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Fate",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_fate_64x128.png"
+ },
+ {
+  "name": "Forgottenvransword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_vran_64x128.png"
+ },
+ {
+  "name": "Gloryofthenorth",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/legendary_glory_of_the_north_64x128.png"
+ },
+ {
+  "name": "Gloryofthenorth_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/legendary_glory_of_the_north_64x128.png"
+ },
+ {
+  "name": "Gnomish silver sword 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/gnomish_silver_sword_lvl1-64x128.png"
+ },
+ {
+  "name": "Gnomish silver sword 1_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/gnomish_silver_sword_lvl1-64x128.png"
+ },
+ {
+  "name": "Gnomish silver sword 1_crafted 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/gnomish_silver_sword_lvl1-64x128.png"
+ },
+ {
+  "name": "Gnomish silver sword 1_crafted 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/gnomish_silver_sword_lvl1-64x128.png"
+ },
+ {
+  "name": "Gnomish silver sword 1_crafted 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/gnomish_silver_sword_lvl1-64x128.png"
+ },
+ {
+  "name": "Gnomish silver sword 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/gnomish_silver_sword_lvl2-64x128.png"
+ },
+ {
+  "name": "Gnomish silver sword 2_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/gnomish_silver_sword_lvl2-64x128.png"
+ },
+ {
+  "name": "Gnomish silver sword 2_crafted 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/gnomish_silver_sword_lvl2-64x128.png"
+ },
+ {
+  "name": "Gnomish silver sword 2_crafted 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/gnomish_silver_sword_lvl2-64x128.png"
+ },
+ {
+  "name": "Gnomish silver sword 2_crafted 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/gnomish_silver_sword_lvl2-64x128.png"
+ },
+ {
+  "name": "Gnomish sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/gnomish_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Gnomish sword 1_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/gnomish_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Gnomish sword 1_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/gnomish_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Gnomish sword 1_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/gnomish_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Gnomish sword 1_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/gnomish_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Gnomish sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/gnomish_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Gnomish sword 2_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/gnomish_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Gnomish sword 2_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/gnomish_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Gnomish sword 2_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/gnomish_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Gnomish sword 2_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/gnomish_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Great Axe 1",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/blunt-axe-64x64.png"
+ },
+ {
+  "name": "Great Axe 2",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/blunt-axe-64x64.png"
+ },
+ {
+  "name": "Gryphon School silver sword",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_gryphon_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Gryphon School silver sword 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_gryphon_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Gryphon School silver sword 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_gryphon_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Gryphon School silver sword 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_gryphon_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Gryphon School silver sword 4",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_gryphon_sword_lvl5_64x128.png"
+ },
+ {
+  "name": "Gryphon School steel sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_gryphon_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Gryphon School steel sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_gryphon_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Gryphon School steel sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_gryphon_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Gryphon School steel sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_gryphon_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Gryphon School steel sword 4",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_gryphon_sword_lvl5_64x128.png"
+ },
+ {
+  "name": "Guard Lvl1 steel sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/guard_1_steel_sword_64x128.png"
+ },
+ {
+  "name": "Guard Lvl1 steel sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/guard_1_steel_sword_64x128.png"
+ },
+ {
+  "name": "Guard Lvl2 steel sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/guard_2_steel_sword_64x128.png"
+ },
+ {
+  "name": "Guard Lvl2 steel sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/guard_2_steel_sword_64x128.png"
+ },
+ {
+  "name": "Guard lvl1 steel sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/guard_1_steel_sword_64x128.png"
+ },
+ {
+  "name": "Guard lvl1 steel sword 3 Autogen",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/guard_1_steel_sword_64x128.png"
+ },
+ {
+  "name": "Guard lvl1 steel sword 3 crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/guard_1_steel_sword_64x128.png"
+ },
+ {
+  "name": "Guard lvl1 steel sword 3 crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/guard_1_steel_sword_64x128.png"
+ },
+ {
+  "name": "Guard lvl1 steel sword 3 crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/guard_1_steel_sword_64x128.png"
+ },
+ {
+  "name": "Guard lvl2 steel sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/guard_2_steel_sword_64x128.png"
+ },
+ {
+  "name": "Guard lvl2 steel sword 3 crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/guard_2_steel_sword_64x128.png"
+ },
+ {
+  "name": "Guard lvl2 steel sword 3 crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/guard_2_steel_sword_64x128.png"
+ },
+ {
+  "name": "Guard lvl2 steel sword 3 crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/guard_2_steel_sword_64x128.png"
+ },
+ {
+  "name": "Guisarme 1",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/blunt-axe-64x64.png"
+ },
+ {
+  "name": "Guisarme 2",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/blunt-axe-64x64.png"
+ },
+ {
+  "name": "Gwent steel sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/gwent_steel_sword_1_64x128.png"
+ },
+ {
+  "name": "Gwestog",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_gwestog_64x128.png"
+ },
+ {
+  "name": "Gwyhyr",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_gwyhyr_64x128.png"
+ },
+ {
+  "name": "Gwyhyr_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_gwyhyr_64x128.png"
+ },
+ {
+  "name": "Gynvael",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_gynvael_64x128.png"
+ },
+ {
+  "name": "Gynvaelaedd",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_gynvael_aedd_64x128.png"
+ },
+ {
+  "name": "Hakland Sabre",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/ofir_steel_sabre_3_64x128.png"
+ },
+ {
+  "name": "Halberd 1",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/blunt-axe-64x64.png"
+ },
+ {
+  "name": "Halberd 2",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/blunt-axe-64x64.png"
+ },
+ {
+  "name": "Hanza steel sword 0",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/hanza_1_steel_sword_64x128.png"
+ },
+ {
+  "name": "Hanza steel sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/hanza_1_steel_sword_64x128.png"
+ },
+ {
+  "name": "Hanza steel sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/hanza_1_steel_sword_64x128.png"
+ },
+ {
+  "name": "Hanza steel sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/hanza_1_steel_sword_64x128.png"
+ },
+ {
+  "name": "Hanza steel sword 3 crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/hanza_1_steel_sword_64x128.png"
+ },
+ {
+  "name": "Hanza steel sword 3 crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/hanza_1_steel_sword_64x128.png"
+ },
+ {
+  "name": "Hanza steel sword 3 crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/hanza_1_steel_sword_64x128.png"
+ },
+ {
+  "name": "Harpy",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_harpy_64x128.png"
+ },
+ {
+  "name": "Harpy_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_harpy_64x128.png"
+ },
+ {
+  "name": "Harvall",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_harvall_64x128.png"
+ },
+ {
+  "name": "Hatchet",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/hatchet_01_64x128.png"
+ },
+ {
+  "name": "Havcaaren",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_havcaaren_64x128.png"
+ },
+ {
+  "name": "Havcaaren_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_havcaaren_64x128.png"
+ },
+ {
+  "name": "Headtaker",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_head_taker_64x128.png"
+ },
+ {
+  "name": "Headtaker_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_head_taker_64x128.png"
+ },
+ {
+  "name": "Hjalmar_Short_Steel_Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/skellige_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Imlerith Mace",
+  "cat": "blunt1h",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Inis",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_inis_64x128.png"
+ },
+ {
+  "name": "Inis_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_inis_64x128.png"
+ },
+ {
+  "name": "Inquisitor sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/inquisitor_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Inquisitor sword 1_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Inquisitor sword 1_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Inquisitor sword 1_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Inquisitor sword 1_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Inquisitor sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/inquisitor_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Inquisitor sword 2_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Inquisitor sword 2_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Inquisitor sword 2_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Inquisitor sword 2_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Iron Poker",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/poker_01_64x128.png"
+ },
+ {
+  "name": "Karabela",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_karabela_64x128.png"
+ },
+ {
+  "name": "Knight Mace 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/mace_knight_2_64x128.png"
+ },
+ {
+  "name": "Knight Mace 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/mace_knight_2_64x128.png"
+ },
+ {
+  "name": "Knight Mace 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/mace_knight_2_64x128.png"
+ },
+ {
+  "name": "Knights steel sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/knight_1_steel_sword_64x128.png"
+ },
+ {
+  "name": "Knights steel sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/knight_1_steel_sword_64x128.png"
+ },
+ {
+  "name": "Knights steel sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/knight_1_steel_sword_64x128.png"
+ },
+ {
+  "name": "Laundry pole",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/q705_item__stick_for_laundry_pressing_64x128.png"
+ },
+ {
+  "name": "Laundry stick",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/q705_item__laundry_stick_64x128.png"
+ },
+ {
+  "name": "Loathen",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_loathen_64x128.png"
+ },
+ {
+  "name": "Long Steel Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Long Steel Sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Longclaw",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Longclaw_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Lucerne Hammer",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/lucerne_hammer_01_64x128.png"
+ },
+ {
+  "name": "Lune",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_lune_64x128.png"
+ },
+ {
+  "name": "Lune_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_lune_64x128.png"
+ },
+ {
+  "name": "Lynx School silver sword",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_lynx_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Lynx School silver sword 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_lynx_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Lynx School silver sword 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_lynx_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Lynx School silver sword 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_lynx_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Lynx School silver sword 4",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_lynx_sword_lvl5_64x128.png"
+ },
+ {
+  "name": "Lynx School steel sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_lynx_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Lynx School steel sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_lynx_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Lynx School steel sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_lynx_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Lynx School steel sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_lynx_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Lynx School steel sword 4",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_lynx_sword_lvl5_64x128.png"
+ },
+ {
+  "name": "Mace 1",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/blunt-axe-64x64.png"
+ },
+ {
+  "name": "Mace 2",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/blunt-axe-64x64.png"
+ },
+ {
+  "name": "Moonblade",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_moonblade_64x128.png"
+ },
+ {
+  "name": "Mourner",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_mourner_64x128.png"
+ },
+ {
+  "name": "NPC Burning Rose Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "NPC CyprianWhorenson sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Dandelion Short Steel Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-02-b.png"
+ },
+ {
+  "name": "NPC EP1 Steel Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC EP1 Steel Sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Eredin Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Gregoire Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Guard lvl1 Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Guard lvl2 Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Hakland Spear",
+  "cat": "spear2h",
+  "icon": "icons/inventory/weapons/spear01_64x128.png"
+ },
+ {
+  "name": "NPC Hanza steel sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Hjalmar_Short_Steel_Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Inquisitor sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Knight steel sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Knights steel sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/knight_1_steel_sword_1_64x128.png"
+ },
+ {
+  "name": "NPC Nazairi Mace",
+  "cat": "blunt1h",
+  "icon": "icons/inventory/weapons/mace_01_64x128.png"
+ },
+ {
+  "name": "NPC Nilfgaardian sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Nilfgaardian sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Nilfgaardian sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Nilfgaardian sword 4",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC No Mans Land sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC No Mans Land sword 1 q2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC No Mans Land sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC No Mans Land sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC No Mans Land sword 4",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Novigraadan sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Novigraadan sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Novigraadan sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Novigraadan sword 4",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Olgierd Sabre",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "NPC Rusty Nilfgaardian sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Rusty No Mans Land sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Rusty Novigraadan sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Rusty Skellige sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Scoiatael sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "NPC Scoiatael sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "NPC Scoiatael sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "NPC Scoiatael sword 4",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "NPC Short Steel Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-02-b.png"
+ },
+ {
+  "name": "NPC Short sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Short sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Skellige sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Skellige sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Skellige sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Skellige sword 4",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Vesemir Silver Sword",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/sword-02-b.png"
+ },
+ {
+  "name": "NPC Vesemir Silver Sword q403 upgrade",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/sword-02-b.png"
+ },
+ {
+  "name": "NPC Vesemir Steel Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Wildhunt sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Witcher Silver Sword",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/sword-02-b.png"
+ },
+ {
+  "name": "NPC Witcher Silver Sword q403 upgrade",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/sword-02-b.png"
+ },
+ {
+  "name": "NPC Witcher Steel Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC Wooden sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "NPC q402 Skellige sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Naevdeseidhe",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_naevde_sedhe_64x128.png"
+ },
+ {
+  "name": "Naevdeseidhe_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_naevde_sedhe_64x128.png"
+ },
+ {
+  "name": "Nazairi Mace",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/mace_knight_1_64x128.png"
+ },
+ {
+  "name": "Negotiator",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_negotiator_64x128.png"
+ },
+ {
+  "name": "Negotiator_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_negotiator_64x128.png"
+ },
+ {
+  "name": "Netflix silver sword",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/netflix_silver_sword_64x128.png"
+ },
+ {
+  "name": "Netflix silver sword 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/netflix_silver_sword_64x128.png"
+ },
+ {
+  "name": "Netflix silver sword 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/netflix_silver_sword_64x128.png"
+ },
+ {
+  "name": "Netflix steel sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/netflix_steel_sword_64x128.png"
+ },
+ {
+  "name": "Netflix steel sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/netflix_steel_sword_64x128.png"
+ },
+ {
+  "name": "Netflix steel sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/netflix_steel_sword_64x128.png"
+ },
+ {
+  "name": "Nilfgaardian sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nilfgaardian_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Nilfgaardian sword 1_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nilfgaardian_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Nilfgaardian sword 1_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nilfgaardian_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Nilfgaardian sword 1_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nilfgaardian_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Nilfgaardian sword 1_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nilfgaardian_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Nilfgaardian sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nilfgaardian_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Nilfgaardian sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nilfgaardian_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Nilfgaardian sword 4",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nilfgaardian_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Nilfgaardian sword 4_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nilfgaardian_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Nilfgaardian sword 4_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nilfgaardian_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Nilfgaardian sword 4_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nilfgaardian_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Nilfgaardian sword 4_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nilfgaardian_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "No Mans Land sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "No Mans Land sword 1 q2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "No Mans Land sword 1_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "No Mans Land sword 1_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "No Mans Land sword 1_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "No Mans Land sword 1_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "No Mans Land sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "No Mans Land sword 2_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "No Mans Land sword 2_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "No Mans Land sword 2_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "No Mans Land sword 2_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "No Mans Land sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "No Mans Land sword 3_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "No Mans Land sword 3_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "No Mans Land sword 3_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "No Mans Land sword 3_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "No Mans Land sword 4",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "No Mans Land sword 4_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "No Mans Land sword 4_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "No Mans Land sword 4_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "No Mans Land sword 4_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Novigraadan sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Novigraadan sword 1_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Novigraadan sword 1_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Novigraadan sword 1_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Novigraadan sword 1_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Novigraadan sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Novigraadan sword 2_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Novigraadan sword 2_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Novigraadan sword 2_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Novigraadan sword 2_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Novigraadan sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Novigraadan sword 3_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Novigraadan sword 3_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Novigraadan sword 3_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Novigraadan sword 3_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Novigraadan sword 4",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Novigraadan sword 4_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Novigraadan sword 4_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Novigraadan sword 4_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Novigraadan sword 4_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Ofir Sabre 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/ofir_steel_sabre_2_64x128.png"
+ },
+ {
+  "name": "Ofir Sabre 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/ofir_steel_sabre_3_64x128.png"
+ },
+ {
+  "name": "Olgierd Sabre",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/olgierd_sabre_64x128.png"
+ },
+ {
+  "name": "PC Caretaker Shovel",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/caretaker_shovel_64x128.png"
+ },
+ {
+  "name": "Pickaxe",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/pickaxe_01_64x128.png"
+ },
+ {
+  "name": "Pitchfork",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/pitchfork_64x128.png"
+ },
+ {
+  "name": "Plank",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/q304_item_wooden_training_sword-64x128.png"
+ },
+ {
+  "name": "Poker",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/poker_01_64x128.png"
+ },
+ {
+  "name": "Princessxenthiasword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_xentia_64x128.png"
+ },
+ {
+  "name": "Princessxenthiasword_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_xentia_64x128.png"
+ },
+ {
+  "name": "Q1_Axe2h",
+  "cat": "axe2h",
+  "icon": "icons/inventory/weapons/great_axe_01_64x128.png"
+ },
+ {
+  "name": "Q1_Guisarme2h",
+  "cat": "halberd2h",
+  "icon": "icons/inventory/weapons/guisarme_01_64x128.png"
+ },
+ {
+  "name": "Q1_Halberd2h",
+  "cat": "halberd2h",
+  "icon": "icons/inventory/weapons/halberd_01_64x128.png"
+ },
+ {
+  "name": "Q1_Hammer2h",
+  "cat": "hammer2h",
+  "icon": "scabbard_steel11111111111111"
+ },
+ {
+  "name": "Q1_Mage_Staff2h",
+  "cat": "staff2h",
+  "icon": "icons/inventory/weapons/staff_01_64x128.png"
+ },
+ {
+  "name": "Q1_Pitchfork2h",
+  "cat": "spear2h",
+  "icon": "icons/inventory/weapons/pitchfork_01_64x128.png"
+ },
+ {
+  "name": "Q1_Spear2h",
+  "cat": "spear2h",
+  "icon": "icons/inventory/weapons/spear01_64x128.png"
+ },
+ {
+  "name": "Q1_ZoltanAxe2h",
+  "cat": "axe2h",
+  "icon": "icons/inventory/weapons/great_axe_01_64x128.png"
+ },
+ {
+  "name": "Q1_axe1h",
+  "cat": "axe1h",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Q1_axe1h_mq2024_spirit",
+  "cat": "axe1h",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Q1_cleaver1h",
+  "cat": "cleaver1h",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Q1_club1h",
+  "cat": "blunt1h",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Q1_mace1h",
+  "cat": "blunt1h",
+  "icon": "icons/inventory/weapons/mace_01_64x128.png"
+ },
+ {
+  "name": "Q1_pickaxe1h",
+  "cat": "axe1h",
+  "icon": "icons/inventory/weapons/pickaxe_01_64x128.png"
+ },
+ {
+  "name": "Q2_Axe2h",
+  "cat": "axe2h",
+  "icon": "icons/inventory/weapons/great_axe_02_64x128.png"
+ },
+ {
+  "name": "Q2_Guisarme2h",
+  "cat": "halberd2h",
+  "icon": "icons/inventory/weapons/guisarme_02_64x128.png"
+ },
+ {
+  "name": "Q2_Halberd2h",
+  "cat": "halberd2h",
+  "icon": "icons/inventory/weapons/halberd_02_64x128.png"
+ },
+ {
+  "name": "Q2_Hammer2h",
+  "cat": "hammer2h",
+  "icon": "scabbard_steel11111111111111"
+ },
+ {
+  "name": "Q2_Mage_Staff2h",
+  "cat": "staff2h",
+  "icon": "icons/inventory/weapons/staff_01_64x128.png"
+ },
+ {
+  "name": "Q2_Spear2h",
+  "cat": "spear2h",
+  "icon": "icons/inventory/weapons/spear02_64x128.png"
+ },
+ {
+  "name": "Q2_axe1h",
+  "cat": "axe1h",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Q2_cleaver1h",
+  "cat": "cleaver1h",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Q2_mace1h",
+  "cat": "blunt1h",
+  "icon": "icons/inventory/weapons/mace_02_64x128.png"
+ },
+ {
+  "name": "Q3_DwarvenAxe2h",
+  "cat": "axe2h",
+  "icon": "icons/inventory/weapons/dwarven_axe_01_64x128.png"
+ },
+ {
+  "name": "Q3_DwarvenHammer2h",
+  "cat": "hammer2h",
+  "icon": "icons/inventory/weapons/dwarven_hammer_01_64x128.png"
+ },
+ {
+  "name": "Q3_Mage_Staff2h",
+  "cat": "staff2h",
+  "icon": "icons/inventory/weapons/staff_01_64x128.png"
+ },
+ {
+  "name": "Q604 Olgierd Sabre",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Reachofthedamned",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_reach_of_the_damned_64x128.png"
+ },
+ {
+  "name": "Reachofthedamned_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_reach_of_the_damned_64x128.png"
+ },
+ {
+  "name": "Red Wolf School silver sword 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_manticora_ep2_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Red Wolf School silver sword 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_red_wolf_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Red Wolf School steel sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_manticora_ep2_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Red Wolf School steel sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_manticora_ep2_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Reinald Netflix silver sword",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/netflix_silver_sword_64x128.png"
+ },
+ {
+  "name": "Reinald Netflix steel sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/netflix_steel_sword_64x128.png"
+ },
+ {
+  "name": "Robustswordofdolblathanna",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_dol_blathana_64x128.png"
+ },
+ {
+  "name": "Robustswordofdolblathanna_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_dol_blathana_64x128.png"
+ },
+ {
+  "name": "Roseofaelirenn",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_rose_of_aelirenn_64x128.png"
+ },
+ {
+  "name": "Rusty Nilfgaardian sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nilfgaardian_sword_rusty_64x128.png"
+ },
+ {
+  "name": "Rusty No Mans Land sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/nomansland_sword_rusty_64x128.png"
+ },
+ {
+  "name": "Rusty Novigraadan sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_rusty_64x128.png"
+ },
+ {
+  "name": "Rusty Skellige sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/skellige_sword_rusty_64x128.png"
+ },
+ {
+  "name": "Scoiatael sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Scoiatael sword 1_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Scoiatael sword 1_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Scoiatael sword 1_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Scoiatael sword 1_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Scoiatael sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Scoiatael sword 2_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Scoiatael sword 2_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Scoiatael sword 2_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Scoiatael sword 2_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Scoiatael sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Scoiatael sword 3_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Scoiatael sword 3_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Scoiatael sword 3_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Scoiatael sword 3_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Scoiatael sword 4",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Scoiatael sword 4_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Scoiatael sword 4_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Scoiatael sword 4_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Scoiatael sword 4_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/scoiataels_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Scythe",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/scythe_01_64x128.png"
+ },
+ {
+  "name": "Serpent Silver Sword 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Serpent Silver Sword 1 Autogen",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Serpent Silver Sword 1 crafted 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_blade_of_ys_64x128.png"
+ },
+ {
+  "name": "Serpent Silver Sword 1 crafted 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_blade_of_ys_64x128.png"
+ },
+ {
+  "name": "Serpent Silver Sword 1 crafted 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_blade_of_ys_64x128.png"
+ },
+ {
+  "name": "Serpent Silver Sword 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Serpent Silver Sword 2 crafted 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_dearg_deith_64x128.png"
+ },
+ {
+  "name": "Serpent Silver Sword 2 crafted 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_dearg_deith_64x128.png"
+ },
+ {
+  "name": "Serpent Silver Sword 2 crafted 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_dearg_deith_64x128.png"
+ },
+ {
+  "name": "Serpent Silver Sword 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Serpent Silver Sword 3 crafted 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_moonblade_64x128.png"
+ },
+ {
+  "name": "Serpent Silver Sword 3 crafted 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_moonblade_64x128.png"
+ },
+ {
+  "name": "Serpent Silver Sword 3 crafted 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_moonblade_64x128.png"
+ },
+ {
+  "name": "Serpent Steel Sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_viper_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Serpent Steel Sword 1 crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_daystar_64x128.png"
+ },
+ {
+  "name": "Serpent Steel Sword 1 crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_daystar_64x128.png"
+ },
+ {
+  "name": "Serpent Steel Sword 1 crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_daystar_64x128.png"
+ },
+ {
+  "name": "Serpent Steel Sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_viper_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Serpent Steel Sword 2 crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_caroline_64x128.png"
+ },
+ {
+  "name": "Serpent Steel Sword 2 crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_caroline_64x128.png"
+ },
+ {
+  "name": "Serpent Steel Sword 2 crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_caroline_64x128.png"
+ },
+ {
+  "name": "Serpent Steel Sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_viper_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Serpent Steel Sword 3 crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_gwestog_64x128.png"
+ },
+ {
+  "name": "Serpent Steel Sword 3 crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_gwestog_64x128.png"
+ },
+ {
+  "name": "Serpent Steel Sword 3 crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_gwestog_64x128.png"
+ },
+ {
+  "name": "Short Steel Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/short_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Short sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/short_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Short sword 1_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/short_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Short sword 1_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/short_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Short sword 1_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/short_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Short sword 1_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/short_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Short sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/short_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Short sword 2_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Short sword 2_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Short sword 2_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Short sword 2_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Silver Vixen",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/vixen_silver_64x128.png"
+ },
+ {
+  "name": "Silver sword 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Silver sword 1_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Silver sword 1_crafted 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Silver sword 1_crafted 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Silver sword 1_crafted 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Silver sword 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Silver sword 2_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Silver sword 2_crafted 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Silver sword 2_crafted 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Silver sword 2_crafted 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Silver sword 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Silver sword 3_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Silver sword 3_crafted 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Silver sword 3_crafted 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Silver sword 3_crafted 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Silver sword 4",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Silver sword 4_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Silver sword 4_crafted 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Silver sword 4_crafted 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Silver sword 4_crafted 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Silver sword 5",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl5_64x128.png"
+ },
+ {
+  "name": "Silver sword 5_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl5_64x128.png"
+ },
+ {
+  "name": "Silver sword 5_crafted 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl5_64x128.png"
+ },
+ {
+  "name": "Silver sword 5_crafted 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl5_64x128.png"
+ },
+ {
+  "name": "Silver sword 5_crafted 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl5_64x128.png"
+ },
+ {
+  "name": "Silver sword 6",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl6_64x128.png"
+ },
+ {
+  "name": "Silver sword 6_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl6_64x128.png"
+ },
+ {
+  "name": "Silver sword 6_crafted 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl6_64x128.png"
+ },
+ {
+  "name": "Silver sword 6_crafted 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl6_64x128.png"
+ },
+ {
+  "name": "Silver sword 6_crafted 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl6_64x128.png"
+ },
+ {
+  "name": "Silver sword 7",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl7_64x128.png"
+ },
+ {
+  "name": "Silver sword 7_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl7_64x128.png"
+ },
+ {
+  "name": "Silver sword 7_crafted 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl7_64x128.png"
+ },
+ {
+  "name": "Silver sword 7_crafted 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl7_64x128.png"
+ },
+ {
+  "name": "Silver sword 7_crafted 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl7_64x128.png"
+ },
+ {
+  "name": "Silver sword 8",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl8_64x128.png"
+ },
+ {
+  "name": "Skellige sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/skellige_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Skellige sword 1_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/skellige_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Skellige sword 1_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/skellige_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Skellige sword 1_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/skellige_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Skellige sword 1_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/skellige_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Skellige sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/skellige_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Skellige sword 2_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/skellige_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Skellige sword 2_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/skellige_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Skellige sword 2_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/skellige_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Skellige sword 2_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/skellige_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Skellige sword 3_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/skellige_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Skellige sword 3_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/skellige_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Skellige sword 3_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/skellige_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Skellige sword 3_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/skellige_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Skellige sword 4",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/skellige_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Skellige sword 4_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/skellige_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Skellige sword 4_crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/skellige_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Skellige sword 4_crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/skellige_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Skellige sword 4_crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/skellige_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Small Blackjack",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/small_blackjack_01_64x128.png"
+ },
+ {
+  "name": "Spear 1",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/spear01_64x128.png"
+ },
+ {
+  "name": "Spear 2",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/spear02_64x128.png"
+ },
+ {
+  "name": "Squire steel sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/squire_1_steel_sword_64x128.png"
+ },
+ {
+  "name": "Squire steel sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/squire_1_steel_sword_64x128.png"
+ },
+ {
+  "name": "Squire steel sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/squire_1_steel_sword_64x128.png"
+ },
+ {
+  "name": "Staff",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/staff_01_64x128.png"
+ },
+ {
+  "name": "Steel Vixen",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/vixen_steel_64x128.png"
+ },
+ {
+  "name": "Test Player Override Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Tlareg",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_tlereg_64x128.png"
+ },
+ {
+  "name": "Tlareg_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_tlereg_64x128.png"
+ },
+ {
+  "name": "Top Notch Silver",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/top_notch_silver_sword.png"
+ },
+ {
+  "name": "Top Notch Steel",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/top_notch_steel_sword.png"
+ },
+ {
+  "name": "Torch Blunt",
+  "cat": "blunt1h",
+  "icon": "icons/inventory/torch.png"
+ },
+ {
+  "name": "Torlara",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_legendary_tor_lara_64x128.png"
+ },
+ {
+  "name": "Torlara_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_legendary_tor_lara_64x128.png"
+ },
+ {
+  "name": "Torzirael",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_legendary_tor_zirael_64x128.png"
+ },
+ {
+  "name": "Toussaint steel sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/toussaint_2_steel_sword_64x128.png"
+ },
+ {
+  "name": "Toussaint steel sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/toussaint_2_steel_sword_64x128.png"
+ },
+ {
+  "name": "Toussaint steel sword 3 crafted 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/toussaint_2_steel_sword_64x128.png"
+ },
+ {
+  "name": "Toussaint steel sword 3 crafted 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/toussaint_2_steel_sword_64x128.png"
+ },
+ {
+  "name": "Toussaint steel sword 3 crafted 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/toussaint_2_steel_sword_64x128.png"
+ },
+ {
+  "name": "Twohanded Hammer 1",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/twohanded_hammer_01_64x128.png"
+ },
+ {
+  "name": "Twohanded Hammer 2",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/twohanded_hammer_02_64x128.png"
+ },
+ {
+  "name": "Ultimatum",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_ultimatum_64x128.png"
+ },
+ {
+  "name": "Ultimatum_crafted",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_ultimatum_64x128.png"
+ },
+ {
+  "name": "Unique silver sword",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/unique_1_silver_sword_1_64x128.png"
+ },
+ {
+  "name": "Unique steel sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_1_steel_sword_1_64x128.png"
+ },
+ {
+  "name": "Viper School silver sword",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Viper School silver sword 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Viper School silver sword 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/Viper_silver_lvl1_64x128.png"
+ },
+ {
+  "name": "Viper School silver sword 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Viper School silver sword 4",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Viper School steel sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/inquisitor_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Viper School steel sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_viper_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Viper School steel sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/Viper_steel_lvl1_64x128.png"
+ },
+ {
+  "name": "Viper School steel sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_viper_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Viper School steel sword 4",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_viper_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Virgin",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_virgin_64x128.png"
+ },
+ {
+  "name": "Virgin_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_virgin_64x128.png"
+ },
+ {
+  "name": "Vynbleidd",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/steel_unique_vynbleidd_64x128.png"
+ },
+ {
+  "name": "W_Axe01",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/axe_01_64x128.png"
+ },
+ {
+  "name": "W_Axe02",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/axe_02_64x128.png"
+ },
+ {
+  "name": "W_Axe03",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/great_axe_1h_01_64x128.png"
+ },
+ {
+  "name": "W_Axe04",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/great_axe_1h_02_64x128.png"
+ },
+ {
+  "name": "W_Axe05",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/dwarven_axe_01_64x128.png"
+ },
+ {
+  "name": "W_Axe06",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/wildhunt_axe_1h_01_64x128.png"
+ },
+ {
+  "name": "W_Club",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/club_01_64x128.png"
+ },
+ {
+  "name": "W_Mace01",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/mace_01_64x128.png"
+ },
+ {
+  "name": "W_Mace02",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/mace_02_64x128.png"
+ },
+ {
+  "name": "W_Pickaxe",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/w_pickaxe_64x128.png"
+ },
+ {
+  "name": "W_Poker",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/poker_01_64x128.png"
+ },
+ {
+  "name": "Wand",
+  "cat": "secondary",
+  "icon": "icons/inventory/weapons/wand_01_64x128.png"
+ },
+ {
+  "name": "Weeper",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_weeper_64x128.png"
+ },
+ {
+  "name": "Weeper_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_weeper_64x128.png"
+ },
+ {
+  "name": "White Widow of Dol Blathanna",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/dol_blathanna_white_widow_silver_sword_64x128.png"
+ },
+ {
+  "name": "Wild Hunt Axe",
+  "cat": "axe2h",
+  "icon": "icons/inventory/weapons/wildhunt_axe_01_64x128.png"
+ },
+ {
+  "name": "Wild Hunt Halberd",
+  "cat": "halberd2h",
+  "icon": "icons/inventory/weapons/wildhunt_halbred_01_64x128.png"
+ },
+ {
+  "name": "Wild Hunt Hammer",
+  "cat": "hammer2h",
+  "icon": "icons/inventory/weapons/wildhunt_hammer_01_64x128.png"
+ },
+ {
+  "name": "Wild Hunt Spear",
+  "cat": "spear2h",
+  "icon": "icons/inventory/weapons/wildhunt_spear_01_64x128.png"
+ },
+ {
+  "name": "Wild Hunt sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/wildhunt_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Wild Hunt sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/wildhunt_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Wild Hunt sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/wildhunt_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Wild Hunt sword 4",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/wildhunt_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Witcher Silver Sword",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/sword-02-b.png"
+ },
+ {
+  "name": "Witcher Silver Sword 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/sword-02-b.png"
+ },
+ {
+  "name": "WitcherSilverWolf",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/wolf_school_steel_sword_1.png"
+ },
+ {
+  "name": "Wolf",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/unique_black_wolf_64x128.png"
+ },
+ {
+  "name": "Wolf School silver sword",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_wolf_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Wolf School silver sword 1",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_wolf_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Wolf School silver sword 2",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_wolf_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Wolf School silver sword 3",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_wolf_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Wolf School silver sword 4",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_wolf_sword_lvl5_64x128.png"
+ },
+ {
+  "name": "Wolf School steel sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_wolf_sword_lvl1_64x128.png"
+ },
+ {
+  "name": "Wolf School steel sword 1",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_wolf_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "Wolf School steel sword 2",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_wolf_sword_lvl3_64x128.png"
+ },
+ {
+  "name": "Wolf School steel sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_wolf_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "Wolf School steel sword 4",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_wolf_sword_lvl5_64x128.png"
+ },
+ {
+  "name": "Wooden sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/q304_item_wooden_training_sword-64x128.png"
+ },
+ {
+  "name": "Zerrikanterment",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_zerrikanterment_64x128.png"
+ },
+ {
+  "name": "Zerrikanterment_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_unique_zerrikanterment_64x128.png"
+ },
+ {
+  "name": "Zireael Phantom Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "Zireael Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "blavikensilversword",
+  "cat": "silversword",
+  "icon": "icons/inventory/blaviken/blaviken_silver_01_64x128.png"
+ },
+ {
+  "name": "blavikensteelsword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/blaviken/blaviken_steel_01_64x128.png"
+ },
+ {
+  "name": "geralt_axe_01",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/axe_01_64x128.png"
+ },
+ {
+  "name": "geralt_axe_02",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/great_axe_1h_02_64x128.png"
+ },
+ {
+  "name": "geralt_axe_03",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/wildhunt_axe_1h_01_64x128.png"
+ },
+ {
+  "name": "geralt_hammer_01",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/lucerne_hammer_01_64x128.png"
+ },
+ {
+  "name": "geralt_hammer_02",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/lucerne_hammer_01_64x128.png"
+ },
+ {
+  "name": "geralt_hammer_03",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/lucerne_hammer_01_64x128.png"
+ },
+ {
+  "name": "geralt_mace_01",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/mace_01_64x128.png"
+ },
+ {
+  "name": "geralt_mace_02",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/mace_01_64x128.png"
+ },
+ {
+  "name": "geralt_mace_03",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/mace_01_64x128.png"
+ },
+ {
+  "name": "kotw_vampire_silver_sword",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/witcher_silver_manticora_ep2_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "kotw_vampire_steel_sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/witcher_steel_manticora_ep2_sword_lvl2_64x128.png"
+ },
+ {
+  "name": "maw",
+  "cat": "steelsword",
+  "icon": "b.png"
+ },
+ {
+  "name": "mq1058_cat_school_sword",
+  "cat": "steelsword",
+  "icon": "icons\\inventory\\quests\\cat_school_sword_64x128.png"
+ },
+ {
+  "name": "mq2038_headsman_sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/quests/mq2038_headsman_sword.png"
+ },
+ {
+  "name": "mq4005 Silver sword 6_crafted",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl6_64x128.png"
+ },
+ {
+  "name": "mq7001 Toussaint steel sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/toussaint_1_steel_sword_64x128.png"
+ },
+ {
+  "name": "mq7007 Elven Sword",
+  "cat": "steelsword",
+  "icon": "icons\\inventory\\quests\\mq7007_ancient_elven_sword_64x128.png"
+ },
+ {
+  "name": "mq7011 Cianfanelli steel sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/quests/Cianfanelli Sword.png"
+ },
+ {
+  "name": "q203 Ghost Human Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "q203 Ghost Sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "q302_Mace",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/mace_01_64x128.png"
+ },
+ {
+  "name": "q308 Iron Poker",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/poker_01_64x128.png"
+ },
+ {
+  "name": "q402 Skellige sword 3",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/q402_item_epic_sword-64x128.png"
+ },
+ {
+  "name": "q505 crafted sword",
+  "cat": "silversword",
+  "icon": "icons/inventory/quests/q505_crafted_sword-64x128.png"
+ },
+ {
+  "name": "q603_dwarf_wooden_sword",
+  "cat": "blunt1h",
+  "icon": "icons/inventory/weapons/sword-01-b.png"
+ },
+ {
+  "name": "q702 vampire steel sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/vampire_steel_sword_64x128.png"
+ },
+ {
+  "name": "q704 vampire silver sword",
+  "cat": "silversword",
+  "icon": "icons/inventory/weapons/vampire_silver_sword_64x128.png"
+ },
+ {
+  "name": "q704 vampire steel sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/q704_vampire_steel_sword_64x128.png"
+ },
+ {
+  "name": "sq303_blunt_sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/quests/sq303_blunt_sword.png"
+ },
+ {
+  "name": "sq304 Novigraadan sword 4",
+  "cat": "steelsword",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl4_64x128.png"
+ },
+ {
+  "name": "sq701 Geralt of Rivia sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/quests/sq701_sword_geralt_of_rivia.png"
+ },
+ {
+  "name": "sq701 Ravix of Fourhorn sword",
+  "cat": "steelsword",
+  "icon": "icons/inventory/quests/sq701_sword_ravix_of_fourhorn.png"
+ }
+]

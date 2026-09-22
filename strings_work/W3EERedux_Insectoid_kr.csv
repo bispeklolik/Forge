@@ -1,0 +1,10 @@
+;meta[language=kr]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|W3EE Redux 애드온
+2114478001|        |insc_menu|곤충형 돌연변이 수정
+2114478002|        |insc_enabled|독성 교환 비율 수정
+2114478003|        |insc_rate|   ...포인트당 1/100초 (원본 10)
+2114478004|        |insc_fixdesc|설명에 실제 비율 표시
+2114478005|        |insc_dmgredon|바닐라 피해 감소 복원
+2114478006|        |insc_dmgredperc|   ...연속 피격 시 감소, %
+2114478007|        |insc_dmgredwin|   ...유지 시간, 초

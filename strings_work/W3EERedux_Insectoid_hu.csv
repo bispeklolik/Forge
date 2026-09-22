@@ -1,0 +1,10 @@
+;meta[language=hu]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|W3EE Redux kiegészítők
+2114478001|        |insc_menu|Rovarmutáció javítás
+2114478002|        |insc_enabled|A toxicitás átváltásának javítása
+2114478003|        |insc_rate|   ...századmásodperc pontonként (eredetileg 10)
+2114478004|        |insc_fixdesc|A valós átváltás mutatása a leírásban
+2114478005|        |insc_dmgredon|Az eredeti sebzéscsökkentés visszaállítása
+2114478006|        |insc_dmgredperc|   ...csökkentés ismételt találatokra, %
+2114478007|        |insc_dmgredwin|   ...ablak hossza, mp

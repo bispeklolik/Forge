@@ -1,0 +1,15 @@
+;meta[language=it]
+; id      |key(hex)|key(str)| text
+2114471000|        |w3eeredux_root|Componenti aggiuntivi W3EE Redux
+2114471001|        |ssht_menu|Frantumazione da Segno
+2114471002|        |ssht_humanpoise|Fai a pezzi gli umani con equilibrio rotto
+2114471003|        |ssht_humanhp|   ...solo sotto questa % di salute
+2114471004|        |ssht_shatterscale|   ...quanto in fretta cresce la probabilità con le ferite (100 = normale)
+2114471005|        |ssht_killshatter|Fai a pezzi tutto ciò che uccide Aard
+2114471006|        |ssht_killshatterhumans|   ...umani inclusi
+2114471007|        |ssht_ignipoise|Anche Igni fa a pezzi gli umani
+2114471008|        |ssht_ignikill|Fai a pezzi tutto ciò che uccide Igni
+2114471009|        |ssht_burnkill|Fai a pezzi tutto ciò che uccide il fuoco
+2114471010|        |ssht_slomochance|Probabilità di rallentatore
+2114471011|        |ssht_slomoscale|   ...intensità (più basso = più forte)
+2114471012|        |ssht_slomotime|   ...durata, sec

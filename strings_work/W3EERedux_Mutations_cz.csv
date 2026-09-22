@@ -1,0 +1,14 @@
+;meta[language=cz]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|Doplňky pro W3EE Redux
+2114478001|        |mutf_menu|Opravy Mutací
+2114478002|        |mutf_enabled|Opravy mutací zapnuty
+2114478003|        |mutf_adrfloor|Hmyzak: rychlost odbouravani pri prazdnem adrenalinu, %
+2114478004|        |mutf_adrtop|Hmyzak: rychlost odbouravani pri plnem adrenalinu, %
+2114478005|        |mutf_combatonly|Hmyzak: funguje jen v boji
+2114478006|        |mutf_fixdesc|Zobrazit skutečná čísla v popisech mutací
+2114478007|        |insc_dmgredon|Hmyzák: obnovit odstraněné snížení poškození
+2114478008|        |insc_dmgredperc|   ...o kolik slabší jsou další zásahy, %
+2114478009|        |insc_dmgredwin|   ...kolik sekund to trvá
+2114478010|        |mutf_signbypass|Přízrak: zvýšit bonus ke Znamením na slíbených +50% (0 = jako ve hře)
+2114478011|        |mutf_sheet|Karta postavy: zobrazit Sílu Znamení po útlumu

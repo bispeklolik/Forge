@@ -1,0 +1,13 @@
+;meta[language=de]
+; id      |key(hex)|key(str)| text
+2114471000|        |ssht_menu|Zeichen-Zerfetzen
+2114471001|        |ssht_humanpoise|Menschen mit gebrochener Haltung zerfetzen
+2114471002|        |ssht_humanhp|   ...nur unterhalb dieses Lebens-%
+2114471003|        |ssht_shatterscale|   ...Chancenkurve (100 = eins zu eins)
+2114471004|        |ssht_killshatter|Alles zerfetzen, was Aard tötet
+2114471005|        |ssht_killshatterhumans|   ...auch Menschen
+2114471006|        |ssht_ignipoise|Igni zerfetzt Menschen ebenso
+2114471007|        |ssht_ignikill|Alles zerfetzen, was Igni tötet
+2114471008|        |ssht_slomochance|Zeitlupen-Chance beim Zerfetzen
+2114471009|        |ssht_slomoscale|   ...Stärke (niedriger = stärker)
+2114471010|        |ssht_slomotime|   ...Dauer, Sek.

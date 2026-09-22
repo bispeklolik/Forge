@@ -1,0 +1,12 @@
+;meta[language=cz]
+; id      |key(hex)|key(str)| text
+2114477000|        |w3eeredux_root|Doplňky pro W3EE Redux
+2114477001|        |tssb_menu|Bonusy Sad podle Úrovně
+2114477002|        |tssb_enabled|Velmistrovský bonus na všech úrovních
+2114477003|        |tssb_tier1|   ...síla na úrovni 1, %
+2114477004|        |tssb_tier2|   ...síla na úrovni 2, %
+2114477005|        |tssb_tier3|   ...síla na úrovni 3, %
+2114477006|        |tssb_tier4|   ...síla na úrovni 4, %
+2114477007|        |tssb_descgm|V popisu: velmistrovská hodnota v závorce
+2114477008|        |tssb_descnote|V popisu: řádek o síle bonusu
+2114477009|        |tssb_note|Síla podle úrovně:

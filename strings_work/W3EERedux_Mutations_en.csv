@@ -1,0 +1,14 @@
+;meta[language=en]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|W3EE Redux Add-ons
+2114478001|        |mutf_menu|Mutation Fixes
+2114478002|        |mutf_enabled|Mutation fixes enabled
+2114478003|        |mutf_adrfloor|Insectoid: purge speed on an empty Adrenaline bar, %
+2114478004|        |mutf_adrtop|Insectoid: purge speed on a full Adrenaline bar, %
+2114478005|        |mutf_combatonly|Insectoid: only works in combat
+2114478006|        |mutf_fixdesc|Show real numbers in mutation descriptions
+2114478007|        |insc_dmgredon|Insectoid: restore the removed damage reduction
+2114478008|        |insc_dmgredperc|   ...how much weaker repeat hits are, %
+2114478009|        |insc_dmgredwin|   ...how many seconds it lasts
+2114478010|        |mutf_signbypass|Specter: raise the Sign bonus toward the promised +50% (0 = as in game)
+2114478011|        |mutf_sheet|Character sheet: show Sign Intensity after falloff

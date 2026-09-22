@@ -1,0 +1,10 @@
+;meta[language=esmx]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|Complementos de W3EE Redux
+2114478001|        |insc_menu|Arreglo de la Mutación Insectoide
+2114478002|        |insc_enabled|Corregir la tasa de conversión de toxicidad
+2114478003|        |insc_rate|   ...centésimas de segundo por punto (original 10)
+2114478004|        |insc_fixdesc|Mostrar la tasa real en la descripción
+2114478005|        |insc_dmgredon|Restaurar la reducción de daño original
+2114478006|        |insc_dmgredperc|   ...reducción en golpes repetidos, %
+2114478007|        |insc_dmgredwin|   ...duración de la ventana, seg

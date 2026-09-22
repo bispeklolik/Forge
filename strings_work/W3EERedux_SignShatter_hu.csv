@@ -1,0 +1,15 @@
+;meta[language=hu]
+; id      |key(hex)|key(str)| text
+2114471000|        |w3eeredux_root|W3EE Redux kiegészítők
+2114471001|        |ssht_menu|Jelrobbantás
+2114471002|        |ssht_humanpoise|Megtört egyensúlyú emberek szétszaggatása
+2114471003|        |ssht_humanhp|   ...csak ezen életerő % alatt
+2114471004|        |ssht_shatterscale|   ...milyen gyorsan nő az esély a sebekkel (100 = normál)
+2114471005|        |ssht_killshatter|Szaggasd szét, amit az Aard megöl
+2114471006|        |ssht_killshatterhumans|   ...embereket is
+2114471007|        |ssht_ignipoise|Az Igni is szétszaggatja az embereket
+2114471008|        |ssht_ignikill|Szaggasd szét, amit az Igni megöl
+2114471009|        |ssht_burnkill|Szaggasd szét, akit az égés öl meg
+2114471010|        |ssht_slomochance|Lassítás esélye szétszaggatáskor
+2114471011|        |ssht_slomoscale|   ...erősség (kisebb = erősebb)
+2114471012|        |ssht_slomotime|   ...időtartam, mp

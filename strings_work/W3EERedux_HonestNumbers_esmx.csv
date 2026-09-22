@@ -1,0 +1,7 @@
+;meta[language=esmx]
+; id      |key(hex)|key(str)| text
+2114479000|        |w3eeredux_root|Complementos de W3EE Redux
+2114479001|        |hnum_menu|Cifras Honestas
+2114479002|        |hnum_enabled|Cifras honestas activadas
+2114479003|        |hnum_signrows|Filas de Signos: mostrar la potencia real de cada Signo
+2114479004|        |hnum_durability|Daño de espadas: contar el desgaste de la hoja, como en combate

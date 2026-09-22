@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<UserConfig>
+	<Group id="SetBonusTransfer" displayName="Mods.sbt_menu">
+		<PresetsArray>
+			<Preset id="0" displayName="default">
+				<Entry varId="ShowMessages" value="true" />
+				<Entry varId="AllowSwords" value="true" />
+				<Entry varId="AllowSetPieces" value="true" />
+				<Entry varId="ConsumeStone" value="false" />
+				<Entry varId="GrantSchematics" value="true" />
+			</Preset>
+		</PresetsArray>
+		<VisibleVars>
+			<Var overrideGroup="SetBonusTransfer" id="ShowMessages" displayName="sbt_messages" displayType="TOGGLE"/>
+			<Var overrideGroup="SetBonusTransfer" id="AllowSwords" displayName="sbt_swords" displayType="TOGGLE"/>
+			<Var overrideGroup="SetBonusTransfer" id="AllowSetPieces" displayName="sbt_setpieces" displayType="TOGGLE"/>
+			<Var overrideGroup="SetBonusTransfer" id="ConsumeStone" displayName="sbt_consume" displayType="TOGGLE"/>
+			<Var overrideGroup="SetBonusTransfer" id="GrantSchematics" displayName="sbt_grant" displayType="TOGGLE"/>
+		</VisibleVars>
+	</Group>
+</UserConfig>

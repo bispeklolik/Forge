@@ -1,0 +1,13 @@
+;meta[language=zh]
+; id      |key(hex)|key(str)| text
+2114471000|        |ssht_menu|法印撕裂
+2114471001|        |ssht_humanpoise|撕裂失去平衡的人類
+2114471002|        |ssht_humanhp|   ...僅在此生命值%以下
+2114471003|        |ssht_shatterscale|   ...機率曲線 (100 = 一比一)
+2114471004|        |ssht_killshatter|撕裂被亞克席殺死的一切
+2114471005|        |ssht_killshatterhumans|   ...包括人類
+2114471006|        |ssht_ignipoise|伊格尼同樣撕裂人類
+2114471007|        |ssht_ignikill|撕裂被伊格尼殺死的一切
+2114471008|        |ssht_slomochance|撕裂時的慢動作機率
+2114471009|        |ssht_slomoscale|   ...強度 (越低越強)
+2114471010|        |ssht_slomotime|   ...持續時間, 秒

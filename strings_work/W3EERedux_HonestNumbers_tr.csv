@@ -1,0 +1,7 @@
+;meta[language=tr]
+; id      |key(hex)|key(str)| text
+2114479000|        |w3eeredux_root|W3EE Redux Eklentileri
+2114479001|        |hnum_menu|Dürüst Sayılar
+2114479002|        |hnum_enabled|Dürüst sayılar açık
+2114479003|        |hnum_signrows|İşaret satırları: her İşaretin gerçek gücünü göster
+2114479004|        |hnum_durability|Kılıç hasarı: savaştaki gibi bıçak aşınmasını hesaba kat

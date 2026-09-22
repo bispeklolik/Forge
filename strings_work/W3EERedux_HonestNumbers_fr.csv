@@ -1,0 +1,7 @@
+;meta[language=fr]
+; id      |key(hex)|key(str)| text
+2114479000|        |w3eeredux_root|Modules W3EE Redux
+2114479001|        |hnum_menu|Chiffres Honnêtes
+2114479002|        |hnum_enabled|Chiffres honnêtes activés
+2114479003|        |hnum_signrows|Lignes de Signes : afficher la puissance réelle de chaque Signe
+2114479004|        |hnum_durability|Dégâts des épées : compter l'usure de la lame, comme en combat

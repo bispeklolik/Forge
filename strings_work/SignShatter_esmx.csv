@@ -1,0 +1,13 @@
+;meta[language=esmx]
+; id      |key(hex)|key(str)| text
+2114471000|        |ssht_menu|Estallido por Signo
+2114471001|        |ssht_humanpoise|Despedazar humanos con aplomo roto
+2114471002|        |ssht_humanhp|   ...solo por debajo de este % de salud
+2114471003|        |ssht_shatterscale|   ...curva de probabilidad (100 = uno a uno)
+2114471004|        |ssht_killshatter|Despedazar todo lo que mate Aard
+2114471005|        |ssht_killshatterhumans|   ...incluidos los humanos
+2114471006|        |ssht_ignipoise|Igni también despedaza humanos
+2114471007|        |ssht_ignikill|Despedazar todo lo que mate Igni
+2114471008|        |ssht_slomochance|Probabilidad de cámara lenta
+2114471009|        |ssht_slomoscale|   ...intensidad (menor = más fuerte)
+2114471010|        |ssht_slomotime|   ...duración, seg

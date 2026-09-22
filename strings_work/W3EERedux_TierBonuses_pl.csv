@@ -1,0 +1,12 @@
+;meta[language=pl]
+; id      |key(hex)|key(str)| text
+2114477000|        |w3eeredux_root|Dodatki do W3EE Redux
+2114477001|        |tssb_menu|Bonusy Zestawów wg Poziomu
+2114477002|        |tssb_enabled|Bonus arcymistrzowski na każdym poziomie
+2114477003|        |tssb_tier1|   ...siła na poziomie 1, %
+2114477004|        |tssb_tier2|   ...siła na poziomie 2, %
+2114477005|        |tssb_tier3|   ...siła na poziomie 3, %
+2114477006|        |tssb_tier4|   ...siła na poziomie 4, %
+2114477007|        |tssb_descgm|W opisie: wartość arcymistrzowska w nawiasie
+2114477008|        |tssb_descnote|W opisie: wiersz o sile bonusu
+2114477009|        |tssb_note|Siła wg poziomu:

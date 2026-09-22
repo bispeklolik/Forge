@@ -1,0 +1,542 @@
+[
+  {
+    "step": 1,
+    "id": "1.1",
+    "title": "Firestream: softened penalty against already-burning targets",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\game\\gameplay\\projectile\\signs\\signProjectiles.ws",
+    "encoding": "utf16",
+    "before": "\t\t\t\t//Kolaris - Firestream\n\t\t\t\tif(actorVictim.HasBuff(EET_Burning))\n\t\t\t\t\tdmg *= 0.5f + 0.1f * GetSignEntity().GetActualOwner().GetSkillLevel(S_Magic_s02, GetSignEntity());",
+    "after": "\t\t\t\t//Kolaris - Firestream //Redux - softened penalty vs burning targets\n\t\t\t\tif(actorVictim.HasBuff(EET_Burning))\n\t\t\t\t\tdmg *= 0.85f + 0.05f * GetSignEntity().GetActualOwner().GetSkillLevel(S_Magic_s02, GetSignEntity());",
+    "note": "Ранее струя по уже горящему врагу била в половину силы. Теперь почти в полную."
+  },
+  {
+    "step": 1,
+    "id": "1.2",
+    "title": "Firestream: base damage 800 -> 1000, per-level 80 -> 100",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\game\\gameplay\\projectile\\signs\\signProjectiles.ws",
+    "encoding": "utf16",
+    "before": "\t\t\t\tdmg = 800.f + GetSignEntity().GetActualOwner().GetSkillLevel(S_Magic_s09, GetSignEntity()) * 80;",
+    "after": "\t\t\t\tdmg = 1000.f + GetSignEntity().GetActualOwner().GetSkillLevel(S_Magic_s09, GetSignEntity()) * 100;",
+    "note": "Базовый урон струи Игни поднят на четверть, прирост за уровень навыка Пиромана - тоже."
+  },
+  {
+    "step": 1,
+    "id": "1.3",
+    "title": "Firestream: burn chance divisor 5 -> 2.5",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\game\\gameplay\\effects\\effectManager.ws",
+    "encoding": "utf16",
+    "before": "\t\telse\n\t\tif( signType == ST_Igni )\n\t\t\tchance = MaxF(0, rawChance + bonusChance - resPt/100) * (1 - res) * (1 - (owner.GetBurnCounter() * 0.1f) ) / 5;",
+    "after": "\t\telse\n\t\tif( signType == ST_Igni )\n\t\t\tchance = MaxF(0, rawChance + bonusChance - resPt/100) * (1 - res) * (1 - (owner.GetBurnCounter() * 0.1f) ) / 2.5f;",
+    "note": "Шанс поджига струёй вырастает в 2.5 раза. Обычную Игни не трогает - она отсекается выше по коду."
+  },
+  {
+    "step": 1,
+    "id": "1.4",
+    "title": "Firestream: burn roll frequency 0.2s -> 0.15s",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\game\\gameplay\\items\\spells\\igniEntity.ws",
+    "encoding": "utf16",
+    "before": "\t\tdefault CHANNELLING_BURN_TEST_FREQUENCY = 0.2;",
+    "after": "\t\tdefault CHANNELLING_BURN_TEST_FREQUENCY = 0.15;",
+    "note": "Бросков на поджиг было 5 в секунду, стало 6.7."
+  },
+  {
+    "step": 2,
+    "id": "2.1",
+    "title": "Poisebreak branch must not force-crit signs",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\game\\gameplay\\damage\\damageManagerProcessor.ws",
+    "encoding": "utf16",
+    "before": "\t\t\t\tif( !action.IsDoTDamage() && ((W3Effect_NPCPoise)actorVictim.GetBuff(EET_NPCPoise)).IsPoiseBroken() && ((CNewNPC)actorVictim).GetNPCCustomStat(theGame.params.DAMAGE_NAME_INJURY) >= 1.f && ((CNewNPC)actorVictim).GetNPCCustomStat(theGame.params.DAMAGE_NAME_BLEEDING) >= 1.f )",
+    "after": "\t\t\t\tif( !signCrit && !action.IsDoTDamage() && ((W3Effect_NPCPoise)actorVictim.GetBuff(EET_NPCPoise)).IsPoiseBroken() && ((CNewNPC)actorVictim).GetNPCCustomStat(theGame.params.DAMAGE_NAME_INJURY) >= 1.f && ((CNewNPC)actorVictim).GetNPCCustomStat(theGame.params.DAMAGE_NAME_BLEEDING) >= 1.f )",
+    "note": "ОБЯЗАТЕЛЬНА. Без неё знаки проваливаются в ветку 'сломанная стойкость' и критуют всегда, ползунок теряет смысл."
+  },
+  {
+    "step": 2,
+    "id": "2.2",
+    "title": "Add the sign crit chance into the crit roll",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\game\\gameplay\\damage\\damageManagerProcessor.ws",
+    "encoding": "utf16",
+    "before": "\t\t\t\telse\n\t\t\t\t{\n\t\t\t\t\t\n\t\t\t\t\tcritChance += playerAttacker.GetCriticalHitChance(false, false, actorVictim, victimMonsterCategory, (W3BoltProjectile)action.causer || (W3ThrowingKnife)action.causer );\n\t\t\t\t}",
+    "after": "\t\t\t\telse\n\t\t\t\t{\n\t\t\t\t\t\n\t\t\t\t\tcritChance += playerAttacker.GetCriticalHitChance(false, false, actorVictim, victimMonsterCategory, (W3BoltProjectile)action.causer || (W3ThrowingKnife)action.causer );\n\t\t\t\t\t//SignCrit - base sign crit chance from the mod menu\n\t\t\t\t\tcritChance += signCritChance;\n\t\t\t\t}",
+    "note": "Собственно прибавка шанса крита знаку. Эта ветка else в W3EE раньше никогда не исполнялась."
+  },
+  {
+    "step": 2,
+    "id": "2.3",
+    "title": "Let signs enter the crit calculation at all",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\game\\gameplay\\damage\\damageManagerProcessor.ws",
+    "encoding": "utf16",
+    "before": "\t\tmutation2 = false; //( W3PlayerWitcher )actorAttacker && GetWitcherPlayer().IsMutationActive(EPMT_Mutation2) && action.IsActionWitcherSign(); //Kolaris - Mutation Rework\n\t\t\n\t\tif( meleeOrRanged || redWolfSet || mutation2 )",
+    "after": "\t\tmutation2 = false; //( W3PlayerWitcher )actorAttacker && GetWitcherPlayer().IsMutationActive(EPMT_Mutation2) && action.IsActionWitcherSign(); //Kolaris - Mutation Rework\n\t\t//SignCrit - Begin\n\t\tif( playerAttacker && !attackAction && action.IsActionWitcherSign() && !action.IsDoTDamage() )\n\t\t\tsignCritChance = Options().SignCritChance();\n\t\tsignCrit = signCritChance > 0.f;\n\t\t//SignCrit - End\n\t\t\n\t\tif( meleeOrRanged || redWolfSet || mutation2 || signCrit )",
+    "note": "Открытие двери: раньше знаки в расчёт крита не входили вообще. Настройка читается один раз на попадание."
+  },
+  {
+    "step": 2,
+    "id": "2.4",
+    "title": "Declare signCrit : bool",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\game\\gameplay\\damage\\damageManagerProcessor.ws",
+    "encoding": "utf16",
+    "before": "\t\tvar\tcanLog, meleeOrRanged, redWolfSet, isLightAttack, isHeavyAttack, mutation2 : bool;",
+    "after": "\t\tvar\tcanLog, meleeOrRanged, redWolfSet, isLightAttack, isHeavyAttack, mutation2, signCrit : bool;",
+    "note": "Объявление переменной. После var стоит ТАБ, а не пробел."
+  },
+  {
+    "step": 2,
+    "id": "2.5",
+    "title": "Declare signCritChance : float",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\game\\gameplay\\damage\\damageManagerProcessor.ws",
+    "encoding": "utf16",
+    "before": "\t\tvar critChance, critDamageBonus, rendLoad : float;",
+    "after": "\t\tvar critChance, critDamageBonus, rendLoad, signCritChance : float;",
+    "note": "Объявление переменной."
+  },
+  {
+    "step": 2,
+    "id": "2.6",
+    "title": "Options: SignCritChance() accessor",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Options.ws",
+    "encoding": "utf16",
+    "before": "\tpublic function PlayerDamageSign() : float\n\t{\n\t\treturn StringToFloat( theGame.GetInGameConfigWrapper().GetVarValue('SCOptionD', 'PDamS') );\n\t}",
+    "after": "\tpublic function PlayerDamageSign() : float\n\t{\n\t\treturn StringToFloat( theGame.GetInGameConfigWrapper().GetVarValue('SCOptionD', 'PDamS') );\n\t}\n\t\n\tpublic function SignCritChance() : float\n\t{\n\t\treturn StringToFloat( theGame.GetInGameConfigWrapper().GetVarValue('SCOptionD', 'SignCritChance') );\n\t}",
+    "note": "Чтение нового ползунка из меню мода."
+  },
+  {
+    "step": 2,
+    "id": "2.7",
+    "title": "XML: SignCritChance slider in VisibleVars (SCOptionD)",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\bin\\config\\r4game\\user_config_matrix\\pc\\W3EnhancedEdition.xml",
+    "encoding": "utf8-nobom",
+    "before": "\t\t\t<Var id=\"PDamS\" \t\t\t displayName=\"W3EE_PSigns\"\t\t\t\t\t\t\t\tdisplayType=\"SLIDER;0.1;50.0;499\" \t\t />",
+    "after": "\t\t\t<Var id=\"PDamS\" \t\t\t displayName=\"W3EE_PSigns\"\t\t\t\t\t\t\t\tdisplayType=\"SLIDER;0.1;50.0;499\" \t\t />\n\t\t\t<Var id=\"SignCritChance\" \t displayName=\"Sign Critical Hit Chance\"\t\t\t\t\t\tdisplayType=\"SLIDER;0;1;20\" \t\t />",
+    "note": "Ползунок 0-100% шагом 5%. Дефолт 0 = фича выключена."
+  },
+  {
+    "step": 2,
+    "id": "2.8",
+    "title": "XML: SignCritChance default in preset 1 (W3EE_KolRedux)",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\bin\\config\\r4game\\user_config_matrix\\pc\\W3EnhancedEdition.xml",
+    "encoding": "utf8-nobom",
+    "before": "\t\t\t\t<Entry varId=\"PDam\"\t\t\t\t\tvalue=\"1.0\"\t/>\n\t\t\t\t<Entry varId=\"PDamC\"\t\t\t\tvalue=\"1.0\"/>\n\t\t\t\t<Entry varId=\"PDamS\"\t\t\t\tvalue=\"1.0\"\t/>\n\t\t\t\t<Entry varId=\"PDamB\"\t\t\t\tvalue=\"1.0\"\t/>",
+    "after": "\t\t\t\t<Entry varId=\"PDam\"\t\t\t\t\tvalue=\"1.0\"\t/>\n\t\t\t\t<Entry varId=\"PDamC\"\t\t\t\tvalue=\"1.0\"/>\n\t\t\t\t<Entry varId=\"PDamS\"\t\t\t\tvalue=\"1.0\"\t/>\n\t\t\t\t<Entry varId=\"SignCritChance\"\t\tvalue=\"0.0\"\t/>\n\t\t\t\t<Entry varId=\"PDamB\"\t\t\t\tvalue=\"1.0\"\t/>",
+    "note": "Дефолт пресета: выключено."
+  },
+  {
+    "step": 2,
+    "id": "2.9",
+    "title": "XML: SignCritChance default in preset 0 (W3EE_w3ee)",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\bin\\config\\r4game\\user_config_matrix\\pc\\W3EnhancedEdition.xml",
+    "encoding": "utf8-nobom",
+    "before": "\t\t\t\t<Entry varId=\"PDam\"\t\t\t\t\tvalue=\"1.5\"\t/>\n\t\t\t\t<Entry varId=\"PDamC\"\t\t\t\tvalue=\"1.0\"/>\n\t\t\t\t<Entry varId=\"PDamS\"\t\t\t\tvalue=\"1.0\"\t/>\n\t\t\t\t<Entry varId=\"PDamB\"\t\t\t\tvalue=\"1.0\"\t/>",
+    "after": "\t\t\t\t<Entry varId=\"PDam\"\t\t\t\t\tvalue=\"1.5\"\t/>\n\t\t\t\t<Entry varId=\"PDamC\"\t\t\t\tvalue=\"1.0\"/>\n\t\t\t\t<Entry varId=\"PDamS\"\t\t\t\tvalue=\"1.0\"\t/>\n\t\t\t\t<Entry varId=\"SignCritChance\"\t\tvalue=\"0.0\"\t/>\n\t\t\t\t<Entry varId=\"PDamB\"\t\t\t\tvalue=\"1.0\"\t/>",
+    "note": "Дефолт пресета: выключено. Отличается от 2.8 одним символом (PDam=1.5 против 1.0)."
+  },
+  {
+    "step": 3,
+    "id": "3.1",
+    "title": "Frozen victims shatter: branch placed above the W3EE overrides",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\game\\gameplay\\damage\\damageManagerProcessor.ws",
+    "encoding": "utf16",
+    "before": "\t\telse if (actorVictim.WillBeUnconscious())\n\t\t{\n\t\t\tdismember = false;\t\t\n\t\t}\n\t\t// W3EE - Begin",
+    "after": "\t\telse if (actorVictim.WillBeUnconscious())\n\t\t{\n\t\t\tdismember = false;\t\t\n\t\t}\n\t\t// FrostShatter - Begin\n\t\telse if( wasFrozen )\n\t\t{\n\t\t\tdismember = true;\n\t\t\tdismemberExplosion = action.HasForceExplosionDismemberment();\n\t\t}\n\t\t// FrostShatter - End\n\t\t// W3EE - Begin",
+    "note": "Ветка 'замороженный' поднимается выше шести вставок W3EE, которые её сегодня перехватывают."
+  },
+  {
+    "step": 3,
+    "id": "3.2",
+    "title": "Feed the mod's own wasFrozen flag into the reaction chain",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\game\\gameplay\\damage\\damageManagerProcessor.ws",
+    "encoding": "utf16",
+    "before": "\t\tProcessActionReaction(isFrozen, wasAlive);",
+    "after": "\t\tProcessActionReaction(isFrozen || action.GetWasFrozen(), wasAlive);",
+    "note": "Мод сам вычисляет нужный флаг (озноб/заморозка + Аард), но нигде им для расчленения не пользуется."
+  },
+  {
+    "step": 4,
+    "id": "4.1",
+    "title": "Options: SetBonusAllTiers() switch + SetBonusTierPower() table",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Options.ws",
+    "encoding": "utf16",
+    "before": "\t\tif( inv.ItemHasTag( silverSword, 'Aerondight' ) )\n\t\t\treturn Max(1, (StringToInt(theGame.GetInGameConfigWrapper().GetVarValue('SCOptionInv', 'SBC2')) - 1));\n\t\telse\n\t\t\treturn Max(1, StringToInt(theGame.GetInGameConfigWrapper().GetVarValue('SCOptionInv', 'SBC2')));\n\t}",
+    "after": "\t\tif( inv.ItemHasTag( silverSword, 'Aerondight' ) )\n\t\t\treturn Max(1, (StringToInt(theGame.GetInGameConfigWrapper().GetVarValue('SCOptionInv', 'SBC2')) - 1));\n\t\telse\n\t\t\treturn Max(1, StringToInt(theGame.GetInGameConfigWrapper().GetVarValue('SCOptionInv', 'SBC2')));\n\t}\n\t\n\t//Tier-Scaled Set Bonuses - master switch\n\tpublic function SetBonusAllTiers() : bool\n\t{\n\t\treturn theGame.GetInGameConfigWrapper().GetVarValue('SCOptionInv', 'SBAllTiers');\n\t}\n\t\n\t//Tier-Scaled Set Bonuses - power coefficient by average gear tier\n\tpublic function SetBonusTierPower( tier : int ) : float\n\t{\n\t\tif( tier <= 1 )\n\t\t\treturn 0.40f;\n\t\telse if( tier == 2 )\n\t\t\treturn 0.55f;\n\t\telse if( tier == 3 )\n\t\t\treturn 0.70f;\n\t\telse if( tier == 4 )\n\t\t\treturn 0.85f;\n\t\telse\n\t\t\treturn 1.00f;\n\t}",
+    "note": "ЕДИНСТВЕННОЕ место, где крутится баланс всей хотелки D. Пять чисел: сила бонуса по среднему тиру снаряжения."
+  },
+  {
+    "step": 4,
+    "id": "4.2a",
+    "title": "MERGED playerWitcher: invalidate set-bonus power cache",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\mod0000_MergedFiles\\content\\scripts\\game\\player\\playerWitcher.ws",
+    "encoding": "utf16",
+    "before": "\tpublic function ManageActiveSetBonuses( setType : EItemSetType )\n\t{\n\t\tvar l_i\t\t\t\t: int;\n\t\t",
+    "after": "\tpublic function ManageActiveSetBonuses( setType : EItemSetType )\n\t{\n\t\tvar l_i\t\t\t\t: int;\n\t\t\n\t\t//Tier-Scaled Set Bonuses - invalidate the cache, recalculated lazily on first use\n\t\tsetBonusPower = 0.f;\n\t\t",
+    "note": "Сброс кэша силы бонуса при смене снаряжения. Пересчёт ленивый - при следующем обращении. ГЛАВНЫЙ адрес - компилируется именно merged-версия."
+  },
+  {
+    "step": 4,
+    "id": "4.2b",
+    "title": "MERGED playerWitcher: tier helpers + all-tier unlock",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\mod0000_MergedFiles\\content\\scripts\\game\\player\\playerWitcher.ws",
+    "encoding": "utf16",
+    "before": "\t//Kolaris - Armor Set Bonus Setup, Kolaris - Set Bonus Count Option\n\tpublic function IsSetBonusActive( bonus : EItemSetBonus ) : bool\n\t{\n\t\tswitch(bonus)\n\t\t{",
+    "after": "\t//Tier-Scaled Set Bonuses - tier of a single equipped set piece, 1..5 (5 = grandmaster)\n\tpublic function GetSetPieceTier( item : SItemUniqueId ) : int\n\t{\n\t\tvar itemName\t: string;\n\t\tvar cat\t\t\t: name;\n\t\tvar tier\t\t: int;\n\t\t\n\t\tif( !inv.IsIdValid(item) || !inv.IsItemSetItem(item) )\n\t\t\treturn 0;\n\t\t\n\t\tif( inv.IsItemGrandmasterItem(item) )\n\t\t\treturn 5;\n\t\t\n\t\titemName = NameToString( inv.GetItemName(item) );\n\t\tcat = inv.GetItemCategory( item );\n\t\ttier = StringToInt( StrRight(itemName, 1) );\n\t\t\n\t\tif( (cat == 'armor' || cat == 'steelsword' || cat == 'silversword') && !StrContains(itemName, 'Starting') && !StrContains(itemName, 'Red Wolf') )\n\t\t\ttier += 1;\n\t\telse if( StrContains(itemName, 'Netflix') )\n\t\t\ttier += 1;\n\t\t\n\t\treturn Clamp(tier, 1, 4);\n\t}\n\t\n\t//Tier-Scaled Set Bonuses - full recalculation, runs only when the cache is invalid\n\tpublic function RefreshSetBonusPower()\n\t{\n\t\tvar item\t\t\t: SItemUniqueId;\n\t\tvar sum, count, t\t: int;\n\t\t\n\t\tsum = 0;\n\t\tcount = 0;\n\t\t\n\t\tif( GetItemEquippedOnSlot( EES_SteelSword, item ) )\n\t\t{\n\t\t\tt = GetSetPieceTier(item);\n\t\t\tif( t > 0 )\n\t\t\t{\n\t\t\t\tsum += t;\n\t\t\t\tcount += 1;\n\t\t\t}\n\t\t}\n\t\tif( GetItemEquippedOnSlot( EES_SilverSword, item ) )\n\t\t{\n\t\t\tt = GetSetPieceTier(item);\n\t\t\tif( t > 0 )\n\t\t\t{\n\t\t\t\tsum += t;\n\t\t\t\tcount += 1;\n\t\t\t}\n\t\t}\n\t\tif( GetItemEquippedOnSlot( EES_Armor, item ) )\n\t\t{\n\t\t\tt = GetSetPieceTier(item);\n\t\t\tif( t > 0 )\n\t\t\t{\n\t\t\t\tsum += t;\n\t\t\t\tcount += 1;\n\t\t\t}\n\t\t}\n\t\tif( GetItemEquippedOnSlot( EES_Gloves, item ) )\n\t\t{\n\t\t\tt = GetSetPieceTier(item);\n\t\t\tif( t > 0 )\n\t\t\t{\n\t\t\t\tsum += t;\n\t\t\t\tcount += 1;\n\t\t\t}\n\t\t}\n\t\tif( GetItemEquippedOnSlot( EES_Pants, item ) )\n\t\t{\n\t\t\tt = GetSetPieceTier(item);\n\t\t\tif( t > 0 )\n\t\t\t{\n\t\t\t\tsum += t;\n\t\t\t\tcount += 1;\n\t\t\t}\n\t\t}\n\t\tif( GetItemEquippedOnSlot( EES_Boots, item ) )\n\t\t{\n\t\t\tt = GetSetPieceTier(item);\n\t\t\tif( t > 0 )\n\t\t\t{\n\t\t\t\tsum += t;\n\t\t\t\tcount += 1;\n\t\t\t}\n\t\t}\n\t\t\n\t\tif( count <= 0 )\n\t\t\tsetBonusPower = 1.f;\n\t\telse\n\t\t\tsetBonusPower = Options().SetBonusTierPower( RoundMath( ((float)sum) / ((float)count) ) );\n\t}\n\t\n\t//Tier-Scaled Set Bonuses - cheap accessor for the magnitude call sites; zero means invalid\n\tpublic function GetSetBonusPower() : float\n\t{\n\t\tif( setBonusPower <= 0.f )\n\t\t\tRefreshSetBonusPower();\n\t\t\n\t\tif( setBonusPower <= 0.f )\n\t\t\treturn 1.f;\n\t\t\n\t\treturn setBonusPower;\n\t}\n\t\n\t//Tier-Scaled Set Bonuses - bonus -> set family, only families that have Minor tiers\n\tpublic function SetBonusToSetType( bonus : EItemSetBonus ) : EItemSetType\n\t{\n\t\tswitch( bonus )\n\t\t{\n\t\t\tcase EISB_Lynx_1:\n\t\t\tcase EISB_Lynx_2:\t\t\treturn EIST_Lynx;\n\t\t\tcase EISB_Gryphon_1:\n\t\t\tcase EISB_Gryphon_2:\t\treturn EIST_Gryphon;\n\t\t\tcase EISB_Bear_1:\n\t\t\tcase EISB_Bear_2:\t\t\treturn EIST_Bear;\n\t\t\tcase EISB_Wolf_1:\n\t\t\tcase EISB_Wolf_2:\t\t\treturn EIST_Wolf;\n\t\t\tcase EISB_RedWolf_1:\n\t\t\tcase EISB_RedWolf_2:\t\treturn EIST_RedWolf;\n\t\t\tcase EISB_Viper1:\n\t\t\tcase EISB_Viper2:\t\t\treturn EIST_Viper;\n\t\t\tcase EISB_Netflix_1:\n\t\t\tcase EISB_Netflix_2:\t\treturn EIST_Netflix;\n\t\t\tdefault:\t\t\t\t\treturn EIST_Undefined;\n\t\t}\n\t}\n\t\n\t//Kolaris - Armor Set Bonus Setup, Kolaris - Set Bonus Count Option\n\tpublic function IsSetBonusActive( bonus : EItemSetBonus ) : bool\n\t{\n\t\tvar famType : EItemSetType;\n\t\t\n\t\t//Tier-Scaled Set Bonuses - grandmaster bonus unlocked on every tier\n\t\tif( Options().SetBonusAllTiers() )\n\t\t{\n\t\t\tfamType = SetBonusToSetType( bonus );\n\t\t\tif( famType != EIST_Undefined && bonus == ItemSetTypeToItemSetBonus( famType, 2 ) )\n\t\t\t\treturn GetSetPartsEquipped( famType ) >= Options().SetBonusCountSecond();\n\t\t}\n\t\t\n\t\tswitch(bonus)\n\t\t{",
+    "note": "Ядро хотелки D: тир предмета, средний тир сборки, кэш, и разблокировка 'второго' (гроссмейстерского) бонуса на всех тирах. ГЛАВНЫЙ адрес."
+  },
+  {
+    "step": 4,
+    "id": "4.2c",
+    "title": "MERGED playerWitcher: setBonusPower field",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\mod0000_MergedFiles\\content\\scripts\\game\\player\\playerWitcher.ws",
+    "encoding": "utf16",
+    "before": "\tprotected saved\t\t\tvar amountOfSetPiecesEquipped\t\t\t: array<int>;",
+    "after": "\tprotected saved\t\t\tvar amountOfSetPiecesEquipped\t\t\t: array<int>;\n\t//Tier-Scaled Set Bonuses\n\tprivate\t\t\t\t\tvar setBonusPower\t\t\t\t\t\t: float;",
+    "note": "Поле кэша. НЕ saved намеренно: старые сейвы грузятся нормально, ноль после загрузки сам запускает пересчёт. ГЛАВНЫЙ адрес."
+  },
+  {
+    "step": 4,
+    "id": "4.3a",
+    "title": "MIRROR modW3EE playerWitcher: invalidate cache",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\game\\player\\playerWitcher.ws",
+    "encoding": "utf16",
+    "before": "\tpublic function ManageActiveSetBonuses( setType : EItemSetType )\n\t{\n\t\tvar l_i\t\t\t\t: int;\n\t\t",
+    "after": "\tpublic function ManageActiveSetBonuses( setType : EItemSetType )\n\t{\n\t\tvar l_i\t\t\t\t: int;\n\t\t\n\t\t//Tier-Scaled Set Bonuses - invalidate the cache, recalculated lazily on first use\n\t\tsetBonusPower = 0.f;\n\t\t",
+    "note": "Сброс кэша силы бонуса при смене снаряжения. Пересчёт ленивый - при следующем обращении. ЗЕРКАЛО: на игру не влияет, но без него Script Merger сотрёт шаг 4."
+  },
+  {
+    "step": 4,
+    "id": "4.3b",
+    "title": "MIRROR modW3EE playerWitcher: tier helpers + all-tier unlock",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\game\\player\\playerWitcher.ws",
+    "encoding": "utf16",
+    "before": "\t//Kolaris - Armor Set Bonus Setup, Kolaris - Set Bonus Count Option\n\tpublic function IsSetBonusActive( bonus : EItemSetBonus ) : bool\n\t{\n\t\tswitch(bonus)\n\t\t{",
+    "after": "\t//Tier-Scaled Set Bonuses - tier of a single equipped set piece, 1..5 (5 = grandmaster)\n\tpublic function GetSetPieceTier( item : SItemUniqueId ) : int\n\t{\n\t\tvar itemName\t: string;\n\t\tvar cat\t\t\t: name;\n\t\tvar tier\t\t: int;\n\t\t\n\t\tif( !inv.IsIdValid(item) || !inv.IsItemSetItem(item) )\n\t\t\treturn 0;\n\t\t\n\t\tif( inv.IsItemGrandmasterItem(item) )\n\t\t\treturn 5;\n\t\t\n\t\titemName = NameToString( inv.GetItemName(item) );\n\t\tcat = inv.GetItemCategory( item );\n\t\ttier = StringToInt( StrRight(itemName, 1) );\n\t\t\n\t\tif( (cat == 'armor' || cat == 'steelsword' || cat == 'silversword') && !StrContains(itemName, 'Starting') && !StrContains(itemName, 'Red Wolf') )\n\t\t\ttier += 1;\n\t\telse if( StrContains(itemName, 'Netflix') )\n\t\t\ttier += 1;\n\t\t\n\t\treturn Clamp(tier, 1, 4);\n\t}\n\t\n\t//Tier-Scaled Set Bonuses - full recalculation, runs only when the cache is invalid\n\tpublic function RefreshSetBonusPower()\n\t{\n\t\tvar item\t\t\t: SItemUniqueId;\n\t\tvar sum, count, t\t: int;\n\t\t\n\t\tsum = 0;\n\t\tcount = 0;\n\t\t\n\t\tif( GetItemEquippedOnSlot( EES_SteelSword, item ) )\n\t\t{\n\t\t\tt = GetSetPieceTier(item);\n\t\t\tif( t > 0 )\n\t\t\t{\n\t\t\t\tsum += t;\n\t\t\t\tcount += 1;\n\t\t\t}\n\t\t}\n\t\tif( GetItemEquippedOnSlot( EES_SilverSword, item ) )\n\t\t{\n\t\t\tt = GetSetPieceTier(item);\n\t\t\tif( t > 0 )\n\t\t\t{\n\t\t\t\tsum += t;\n\t\t\t\tcount += 1;\n\t\t\t}\n\t\t}\n\t\tif( GetItemEquippedOnSlot( EES_Armor, item ) )\n\t\t{\n\t\t\tt = GetSetPieceTier(item);\n\t\t\tif( t > 0 )\n\t\t\t{\n\t\t\t\tsum += t;\n\t\t\t\tcount += 1;\n\t\t\t}\n\t\t}\n\t\tif( GetItemEquippedOnSlot( EES_Gloves, item ) )\n\t\t{\n\t\t\tt = GetSetPieceTier(item);\n\t\t\tif( t > 0 )\n\t\t\t{\n\t\t\t\tsum += t;\n\t\t\t\tcount += 1;\n\t\t\t}\n\t\t}\n\t\tif( GetItemEquippedOnSlot( EES_Pants, item ) )\n\t\t{\n\t\t\tt = GetSetPieceTier(item);\n\t\t\tif( t > 0 )\n\t\t\t{\n\t\t\t\tsum += t;\n\t\t\t\tcount += 1;\n\t\t\t}\n\t\t}\n\t\tif( GetItemEquippedOnSlot( EES_Boots, item ) )\n\t\t{\n\t\t\tt = GetSetPieceTier(item);\n\t\t\tif( t > 0 )\n\t\t\t{\n\t\t\t\tsum += t;\n\t\t\t\tcount += 1;\n\t\t\t}\n\t\t}\n\t\t\n\t\tif( count <= 0 )\n\t\t\tsetBonusPower = 1.f;\n\t\telse\n\t\t\tsetBonusPower = Options().SetBonusTierPower( RoundMath( ((float)sum) / ((float)count) ) );\n\t}\n\t\n\t//Tier-Scaled Set Bonuses - cheap accessor for the magnitude call sites; zero means invalid\n\tpublic function GetSetBonusPower() : float\n\t{\n\t\tif( setBonusPower <= 0.f )\n\t\t\tRefreshSetBonusPower();\n\t\t\n\t\tif( setBonusPower <= 0.f )\n\t\t\treturn 1.f;\n\t\t\n\t\treturn setBonusPower;\n\t}\n\t\n\t//Tier-Scaled Set Bonuses - bonus -> set family, only families that have Minor tiers\n\tpublic function SetBonusToSetType( bonus : EItemSetBonus ) : EItemSetType\n\t{\n\t\tswitch( bonus )\n\t\t{\n\t\t\tcase EISB_Lynx_1:\n\t\t\tcase EISB_Lynx_2:\t\t\treturn EIST_Lynx;\n\t\t\tcase EISB_Gryphon_1:\n\t\t\tcase EISB_Gryphon_2:\t\treturn EIST_Gryphon;\n\t\t\tcase EISB_Bear_1:\n\t\t\tcase EISB_Bear_2:\t\t\treturn EIST_Bear;\n\t\t\tcase EISB_Wolf_1:\n\t\t\tcase EISB_Wolf_2:\t\t\treturn EIST_Wolf;\n\t\t\tcase EISB_RedWolf_1:\n\t\t\tcase EISB_RedWolf_2:\t\treturn EIST_RedWolf;\n\t\t\tcase EISB_Viper1:\n\t\t\tcase EISB_Viper2:\t\t\treturn EIST_Viper;\n\t\t\tcase EISB_Netflix_1:\n\t\t\tcase EISB_Netflix_2:\t\treturn EIST_Netflix;\n\t\t\tdefault:\t\t\t\t\treturn EIST_Undefined;\n\t\t}\n\t}\n\t\n\t//Kolaris - Armor Set Bonus Setup, Kolaris - Set Bonus Count Option\n\tpublic function IsSetBonusActive( bonus : EItemSetBonus ) : bool\n\t{\n\t\tvar famType : EItemSetType;\n\t\t\n\t\t//Tier-Scaled Set Bonuses - grandmaster bonus unlocked on every tier\n\t\tif( Options().SetBonusAllTiers() )\n\t\t{\n\t\t\tfamType = SetBonusToSetType( bonus );\n\t\t\tif( famType != EIST_Undefined && bonus == ItemSetTypeToItemSetBonus( famType, 2 ) )\n\t\t\t\treturn GetSetPartsEquipped( famType ) >= Options().SetBonusCountSecond();\n\t\t}\n\t\t\n\t\tswitch(bonus)\n\t\t{",
+    "note": "Ядро хотелки D: тир предмета, средний тир сборки, кэш, и разблокировка 'второго' (гроссмейстерского) бонуса на всех тирах. ЗЕРКАЛО."
+  },
+  {
+    "step": 4,
+    "id": "4.3c",
+    "title": "MIRROR modW3EE playerWitcher: setBonusPower field",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\game\\player\\playerWitcher.ws",
+    "encoding": "utf16",
+    "before": "\tprotected saved\t\t\tvar amountOfSetPiecesEquipped\t\t\t: array<int>;",
+    "after": "\tprotected saved\t\t\tvar amountOfSetPiecesEquipped\t\t\t: array<int>;\n\t//Tier-Scaled Set Bonuses\n\tprivate\t\t\t\t\tvar setBonusPower\t\t\t\t\t\t: float;",
+    "note": "Поле кэша. НЕ saved намеренно: старые сейвы грузятся нормально, ноль после загрузки сам запускает пересчёт. ЗЕРКАЛО."
+  },
+  {
+    "step": 4,
+    "id": "4.4a",
+    "title": "Viper set: scale the extra oil potency by tier",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Combat.ws",
+    "encoding": "utf16",
+    "before": "\t\t\t\t\t\t\tif( GetWitcherPlayer().IsSetBonusActive(EISB_Viper1) )\n\t\t\t\t\t\t\t\toilPotency *= 0.75f + (0.05f * playerAttacker.GetSkillLevel(S_Alchemy_s07));\n\t\t\t\t\t\t\telse\n\t\t\t\t\t\t\t\toilPotency *= 0.50f + (0.05f * playerAttacker.GetSkillLevel(S_Alchemy_s07));",
+    "after": "\t\t\t\t\t\t\tif( GetWitcherPlayer().IsSetBonusActive(EISB_Viper1) )\n\t\t\t\t\t\t\t\toilPotency *= 0.50f + 0.25f * GetWitcherPlayer().GetSetBonusPower() + (0.05f * playerAttacker.GetSkillLevel(S_Alchemy_s07));\n\t\t\t\t\t\t\telse\n\t\t\t\t\t\t\t\toilPotency *= 0.50f + (0.05f * playerAttacker.GetSkillLevel(S_Alchemy_s07));",
+    "note": "Гадюка: масштабируется ПРИБАВКА к базовой потенции второго масла, не абсолют."
+  },
+  {
+    "step": 4,
+    "id": "4.4b",
+    "title": "Wolf set: scale the Quen shock damage by tier",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Combat.ws",
+    "encoding": "utf16",
+    "before": "\t\t\ttotalDmg = attackAction.GetDamageDealt() * 0.125f;",
+    "after": "\t\t\ttotalDmg = attackAction.GetDamageDealt() * 0.125f * witcher.GetSetBonusPower();",
+    "note": "Волк: шоковый урон под Квеном слабее на низких тирах."
+  },
+  {
+    "step": 4,
+    "id": "4.4c",
+    "title": "Gryphon set: scale the Yrden slowdown by tier",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Combat.ws",
+    "encoding": "utf16",
+    "before": "\t\t\t\t\tif( witcher.IsSetBonusActive(EISB_Gryphon_1) )\n\t\t\t\t\t\tslowdownAmount -= 0.1f;",
+    "after": "\t\t\t\t\tif( witcher.IsSetBonusActive(EISB_Gryphon_1) )\n\t\t\t\t\t\tslowdownAmount -= 0.1f * witcher.GetSetBonusPower();",
+    "note": "Грифон: замедление в Ирдене слабее на низких тирах."
+  },
+  {
+    "step": 4,
+    "id": "4.4d",
+    "title": "Bear set: scale the attack-speed bonus by tier",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Combat.ws",
+    "encoding": "utf16",
+    "before": "\t\t\tif( witcher.IsSetBonusActive(EISB_Bear_2) )\n\t\t\t\tbaseSpeed += ((W3Effect_Poise)witcher.GetBuff(EET_Poise)).GetMissingPoiseWithMult() * 0.002f;",
+    "after": "\t\t\tif( witcher.IsSetBonusActive(EISB_Bear_2) )\n\t\t\t\tbaseSpeed += ((W3Effect_Poise)witcher.GetBuff(EET_Poise)).GetMissingPoiseWithMult() * 0.002f * witcher.GetSetBonusPower();",
+    "note": "Медведь: прибавка скорости атаки от потерянной стойкости слабее на низких тирах."
+  },
+  {
+    "step": 4,
+    "id": "4.4e",
+    "title": "Bear set: scale the damage reduction by tier",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Combat.ws",
+    "encoding": "utf16",
+    "before": "\t\t\tif( ((W3PlayerWitcher)playerVictim).IsSetBonusActive(EISB_Bear_2) )\n\t\t\t\tdamageReduction.valueMultiplicative += playerPoise.GetCurrentPoise() * 0.003f;",
+    "after": "\t\t\tif( ((W3PlayerWitcher)playerVictim).IsSetBonusActive(EISB_Bear_2) )\n\t\t\t\tdamageReduction.valueMultiplicative += playerPoise.GetCurrentPoise() * 0.003f * ((W3PlayerWitcher)playerVictim).GetSetBonusPower();",
+    "note": "Медведь: снижение входящего урона слабее на низких тирах."
+  },
+  {
+    "step": 4,
+    "id": "4.5a",
+    "title": "Bear set: scale the poise damage bonus by tier",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Effects.ws",
+    "encoding": "utf16",
+    "before": "\t\tif( witcherCauser.IsSetBonusActive(EISB_Bear_2) )\n\t\t\tpoise *= 1.f + ((W3Effect_Poise)witcherCauser.GetBuff(EET_Poise)).GetMissingPoiseWithMult() * 0.003f;",
+    "after": "\t\tif( witcherCauser.IsSetBonusActive(EISB_Bear_2) )\n\t\t\tpoise *= 1.f + ((W3Effect_Poise)witcherCauser.GetBuff(EET_Poise)).GetMissingPoiseWithMult() * 0.003f * witcherCauser.GetSetBonusPower();",
+    "note": "Медведь, урон по стойкости. Форма 1.f + X: множитель ставится ВНУТРЬ, к X."
+  },
+  {
+    "step": 4,
+    "id": "4.5b",
+    "title": "Wolf set: scale the adrenaline cap bonus by tier",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Effects.ws",
+    "encoding": "utf16",
+    "before": "\t\tif( playerWitcher.IsSetBonusActive(EISB_Wolf_2) )\n\t\t\treturn 150.f;\n\t\telse\n\t\t\treturn 100.f;",
+    "after": "\t\tif( playerWitcher.IsSetBonusActive(EISB_Wolf_2) )\n\t\t\treturn 100.f + 50.f * playerWitcher.GetSetBonusPower();\n\t\telse\n\t\t\treturn 100.f;",
+    "note": "Волк, потолок адреналина. Масштабируется ПРИБАВКА (базовый тир даст 120, а не 150)."
+  },
+  {
+    "step": 4,
+    "id": "4.6",
+    "title": "Bear set: scale the armour-piercing reduction by tier",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\game\\gameplay\\damage\\damageManagerProcessor.ws",
+    "encoding": "utf16",
+    "before": "\t\t\t\tif( ((W3PlayerWitcher)playerVictim).IsSetBonusActive(EISB_Bear_2) )\n\t\t\t\t\tarmorPiercing *= MaxF(0.f, 1.f - ((W3Effect_Poise)playerVictim.GetBuff(EET_Poise)).GetCurrentPoise() * 0.002f);",
+    "after": "\t\t\t\tif( ((W3PlayerWitcher)playerVictim).IsSetBonusActive(EISB_Bear_2) )\n\t\t\t\t\tarmorPiercing *= MaxF(0.f, 1.f - ((W3Effect_Poise)playerVictim.GetBuff(EET_Poise)).GetCurrentPoise() * 0.002f * ((W3PlayerWitcher)playerVictim).GetSetBonusPower());",
+    "note": "Медведь, бронебойность. Форма 1.f - X: множитель к вычитаемому, ВНУТРЬ MaxF."
+  },
+  {
+    "step": 4,
+    "id": "4.7",
+    "title": "Netflix set: scale the per-sign adrenaline by tier",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\game\\gameplay\\items\\spells\\signEntity.ws",
+    "encoding": "utf16",
+    "before": "\t\tif( l_player.IsSetBonusActive(EISB_Netflix_2) )\n\t\t\tl_player.GetAdrenalineEffect().AddAdrenalineWithMult(5.f);",
+    "after": "\t\tif( l_player.IsSetBonusActive(EISB_Netflix_2) )\n\t\t\tl_player.GetAdrenalineEffect().AddAdrenalineWithMult(5.f * l_player.GetSetBonusPower());",
+    "note": "Netflix: адреналин за каждый знак слабее на низких тирах."
+  },
+  {
+    "step": 4,
+    "id": "4.8",
+    "title": "Lynx set: scale the enemy debuff by tier",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Injuries.ws",
+    "encoding": "utf16",
+    "before": "\t\t\t\t\t\t((CNewNPC)cachedActor).SetAnimationSpeedMultiplier(0.95f);\n\t\t\t\t\t\t((CNewNPC)cachedActor).CatReduceDamage(0.95f);",
+    "after": "\t\t\t\t\t\t((CNewNPC)cachedActor).SetAnimationSpeedMultiplier(1.f - 0.05f * playerAttacker.GetSetBonusPower());\n\t\t\t\t\t\t((CNewNPC)cachedActor).CatReduceDamage(1.f - 0.05f * playerAttacker.GetSetBonusPower());",
+    "note": "Рысь. Форма 1.f - X обязательна: CatReduceDamage делает damageValue *= amount, множитель накапливается и не откатывается. Умножить саму 0.95 значило бы УСИЛИТЬ врага."
+  },
+  {
+    "step": 4,
+    "id": "4.9a",
+    "title": "XML: SBAllTiers toggle in VisibleVars (SCOptionInv)",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\bin\\config\\r4game\\user_config_matrix\\pc\\W3EnhancedEdition.xml",
+    "encoding": "utf8-nobom",
+    "before": "\t\t\t<Var id=\"SBC2\" \t\t\t \t displayName=\"Redux_SetBonus2\"\t\t\t\t\t\t\t\t\t\t\t\tdisplayType=\"SLIDER;1;6;5\" \t\t />",
+    "after": "\t\t\t<Var id=\"SBC2\" \t\t\t \t displayName=\"Redux_SetBonus2\"\t\t\t\t\t\t\t\t\t\t\t\tdisplayType=\"SLIDER;1;6;5\" \t\t />\n\t\t\t<Var id=\"SBAllTiers\" \t displayName=\"Set Bonuses - Unlock On All Tiers\"\t\t\tdisplayType=\"TOGGLE\" \t\t\t\t\t />",
+    "note": "Тумблер хотелки D в меню: Инвентарь."
+  },
+  {
+    "step": 4,
+    "id": "4.9b",
+    "title": "XML: SBAllTiers default in preset 2 (W3EE_KolRedux)",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\bin\\config\\r4game\\user_config_matrix\\pc\\W3EnhancedEdition.xml",
+    "encoding": "utf8-nobom",
+    "before": "\t\t\t\t<Entry varId=\"SBC2\"\t\t\t\t\tvalue=\"6\"\t/>\n\t\t\t\t<Entry varId=\"LootRadius\"\t\t\tvalue=\"5\"\t/>",
+    "after": "\t\t\t\t<Entry varId=\"SBC2\"\t\t\t\t\tvalue=\"6\"\t/>\n\t\t\t\t<Entry varId=\"SBAllTiers\"\t\t\t\tvalue=\"1\"\t/>\n\t\t\t\t<Entry varId=\"LootRadius\"\t\t\tvalue=\"5\"\t/>",
+    "note": "Дефолт пресета: включено."
+  },
+  {
+    "step": 4,
+    "id": "4.9c",
+    "title": "XML: SBAllTiers default in preset 1 (W3EE_Vanilla)",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\bin\\config\\r4game\\user_config_matrix\\pc\\W3EnhancedEdition.xml",
+    "encoding": "utf8-nobom",
+    "before": "\t\t\t\t<Entry varId=\"SBC2\"\t\t\t\t\tvalue=\"6\"\t/>\n\t\t\t\t<Entry varId=\"LootRadius\"\t\t\tvalue=\"0\"\t/>",
+    "after": "\t\t\t\t<Entry varId=\"SBC2\"\t\t\t\t\tvalue=\"6\"\t/>\n\t\t\t\t<Entry varId=\"SBAllTiers\"\t\t\t\tvalue=\"0\"\t/>\n\t\t\t\t<Entry varId=\"LootRadius\"\t\t\tvalue=\"0\"\t/>",
+    "note": "Ванильный пресет: ВЫКЛЮЧЕНО - он не должен менять поведение."
+  },
+  {
+    "step": 4,
+    "id": "4.9d",
+    "title": "XML: SBAllTiers default in preset 0 (W3EE_w3ee)",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\bin\\config\\r4game\\user_config_matrix\\pc\\W3EnhancedEdition.xml",
+    "encoding": "utf8-nobom",
+    "before": "\t\t\t\t<Entry varId=\"SBC2\"\t\t\t\t\tvalue=\"5\"\t/>",
+    "after": "\t\t\t\t<Entry varId=\"SBC2\"\t\t\t\t\tvalue=\"5\"\t/>\n\t\t\t\t<Entry varId=\"SBAllTiers\"\t\t\t\tvalue=\"1\"\t/>",
+    "note": "Дефолт пресета: включено."
+  },
+  {
+    "step": 5,
+    "id": "5.1",
+    "title": "Corpse explosion: configurable damage, distance falloff, no reflect",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Combat.ws",
+    "encoding": "utf16",
+    "before": "\t\t\t\t\texplosion.AddDamage(theGame.params.DAMAGE_NAME_FIRE, 1500 * sp.valueMultiplicative);",
+    "after": "\t\t\t\t\tfalloff = MaxF( 0.35f, 1.f - VecDistance2D(actorVictim.GetWorldPosition(), actors[i].GetWorldPosition()) / MaxF(radius, 0.1f) );\n\t\t\t\t\texplosion.AddDamage(theGame.params.DAMAGE_NAME_FIRE, Options().IgniCorpseExplosionDamage() * sp.valueMultiplicative * falloff);\n\t\t\t\t\texplosion.SetCannotReturnDamage(true);",
+    "note": "Урон берётся из меню, спадает с расстоянием. SetCannotReturnDamage обязателен и обязательно ДО ProcessAction на следующей строке."
+  },
+  {
+    "step": 5,
+    "id": "5.2",
+    "title": "Corpse explosion: configurable radius",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Combat.ws",
+    "encoding": "utf16",
+    "before": "\t\t\tactors = GetActorsInRange(actorVictim, 5, 100,, true);",
+    "after": "\t\t\tradius = Options().IgniCorpseExplosionRadius();\n\t\t\tactors = GetActorsInRange(actorVictim, radius, 100,, true);",
+    "note": "Радиус берётся из меню. onlyAlive=true уже стоял - мёртвые в выборку не попадают, это одна из трёх защит от каскада."
+  },
+  {
+    "step": 5,
+    "id": "5.3",
+    "title": "Corpse explosion: NULL-safe causer + do not set the sticky finisher-killing flag",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Combat.ws",
+    "encoding": "utf16",
+    "before": "\t\t\tgetShouldIgniExplode = true;\n\t\t\tsp = ((W3IgniProjectile)action.causer).GetSignEntity().GetTotalSignIntensity();",
+    "after": "\t\t\tlastIgniEruptionTime = theGame.GetEngineTimeAsSeconds();\n\t\t\tif( igniProj )\n\t\t\t{\n\t\t\t\tgetShouldIgniExplode = true;\n\t\t\t\tsp = igniProj.GetSignEntity().GetTotalSignIntensity();\n\t\t\t}\n\t\t\telse\n\t\t\t\tsp = witcher.GetTotalSignSpellPower(S_Magic_s02);",
+    "note": "Две починки. 1) При смерти от тика горения causer - это эффект, а не снаряд; каст дал бы NULL и взрыв ударил бы на ноль. 2) getShouldIgniExplode нигде не сбрасывается и НАВСЕГДА отключает финишеры - новый путь его не трогает."
+  },
+  {
+    "step": 5,
+    "id": "5.4",
+    "title": "Corpse explosion: any fire death + cascade cooldown",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Combat.ws",
+    "encoding": "utf16",
+    "before": "\t\t//Kolaris - Purgation\n\t\tif( action.attacker == witcher && (witcher.HasAbility('Glyphword 11 _Stats', true) || witcher.HasAbility('Glyphword 12 _Stats', true)) && ((W3IgniProjectile)action.causer || actorVictim.HasBuff(EET_Burning)) )\n\t\t{\n\t\t\ttheGame.GetSurfacePostFX().AddSurfacePostFXGroup(actorVictim.GetWorldPosition(), 0.5f, 40, 10, 5, 1);",
+    "after": "\t\t//Kolaris - Purgation\n\t\t//Redux - burning corpse explosion: any fire death + chain reaction guard\n\t\tigniProj = (W3IgniProjectile)action.causer;\n\t\tburnedToDeath = ( (W3Effect_Burning)action.causer || igniProj || (actorVictim && actorVictim.HasBuff(EET_Burning)) );\n\t\tif( actorVictim && action.attacker == witcher && burnedToDeath && !actorVictim.WillBeUnconscious()\n\t\t\t&& theGame.GetEngineTimeAsSeconds() > lastIgniEruptionTime + 0.75f\n\t\t\t&& ( Options().IgniCorpseExplosion() || witcher.HasAbility('Glyphword 11 _Stats', true) || witcher.HasAbility('Glyphword 12 _Stats', true) ) )\n\t\t{\n\t\t\ttheGame.GetSurfacePostFX().AddSurfacePostFXGroup(actorVictim.GetWorldPosition(), 0.5f, 40, 10, 5, 1);",
+    "note": "Кулдаун 0.75 с - ЕДИНСТВЕННАЯ реальная защита от каскада взрывов. Таймштамп ставится ДО цикла, поэтому вложенные вызовы отсекаются. ВНИМАНИЕ: точно такое же условие есть в соседней функции EruptionEffect (строка 2781) - блок before намеренно удлинён на две строки, чтобы попасть только в EruptionGlyphword."
+  },
+  {
+    "step": 5,
+    "id": "5.5",
+    "title": "Corpse explosion: new locals",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Combat.ws",
+    "encoding": "utf16",
+    "before": "\t\tvar explosion : W3DamageAction;\n\t\tvar sp : SAbilityAttributeValue;",
+    "after": "\t\tvar explosion : W3DamageAction;\n\t\tvar sp : SAbilityAttributeValue;\n\t\tvar igniProj : W3IgniProjectile;\n\t\tvar radius, falloff : float;\n\t\tvar burnedToDeath : bool;",
+    "note": "Объявления. WitcherScript требует все объявления в начале функции."
+  },
+  {
+    "step": 5,
+    "id": "5.6",
+    "title": "Corpse explosion: cooldown timestamp field",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Combat.ws",
+    "encoding": "utf16",
+    "before": "\tprivate var getShouldIgniExplode : bool;",
+    "after": "\tprivate var getShouldIgniExplode : bool;\n\tprivate var lastIgniEruptionTime : float;",
+    "note": "Поле для кулдауна каскада."
+  },
+  {
+    "step": 5,
+    "id": "5.7a",
+    "title": "Options: first-time defaults for the corpse explosion",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Options.ws",
+    "encoding": "utf16",
+    "before": "\t\t\t//Kolaris - Poise Damage Options\n\t\t\twrapper.SetVarValue('SCOptionD', 'PPDam', \"1\");\n\t\t\twrapper.SetVarValue('SCOptionD', 'EPDam', \"1\");",
+    "after": "\t\t\t//Kolaris - Poise Damage Options\n\t\t\twrapper.SetVarValue('SCOptionD', 'PPDam', \"1\");\n\t\t\twrapper.SetVarValue('SCOptionD', 'EPDam', \"1\");\n\t\t\t//Redux - Igni corpse explosion\n\t\t\twrapper.SetVarValue('SCOptionD', 'IgniCorpseBoom', \"1\");\n\t\t\twrapper.SetVarValue('SCOptionD', 'IgniCorpseBoomRadius', \"5\");\n\t\t\twrapper.SetVarValue('SCOptionD', 'IgniCorpseBoomDamage', \"1500\");",
+    "note": "Дефолты для НОВОЙ игры. На уже начатой не сработает - там спасает фолбэк в аксессорах ниже."
+  },
+  {
+    "step": 5,
+    "id": "5.7b",
+    "title": "Options: corpse explosion accessors with empty-value fallback",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Options.ws",
+    "encoding": "utf16",
+    "before": "\tpublic function EnemyDOTDamage() : float\n\t{\n\t\treturn StringToFloat( theGame.GetInGameConfigWrapper().GetVarValue('SCOptionD', 'EDOT') );\n\t}",
+    "after": "\tpublic function EnemyDOTDamage() : float\n\t{\n\t\treturn StringToFloat( theGame.GetInGameConfigWrapper().GetVarValue('SCOptionD', 'EDOT') );\n\t}\n\t\n\t//Redux - Igni corpse explosion\n\tpublic function IgniCorpseExplosion() : bool\n\t{\n\t\tvar s : string;\n\t\t\n\t\ts = theGame.GetInGameConfigWrapper().GetVarValue('SCOptionD', 'IgniCorpseBoom');\n\t\tif( s == \"0\" )\n\t\t\treturn false;\n\t\treturn true;\n\t}\n\t\n\tpublic function IgniCorpseExplosionRadius() : float\n\t{\n\t\tvar s : string;\n\t\t\n\t\ts = theGame.GetInGameConfigWrapper().GetVarValue('SCOptionD', 'IgniCorpseBoomRadius');\n\t\tif( s == \"\" )\n\t\t\treturn 5.f;\n\t\treturn ClampF( StringToFloat(s), 1.f, 20.f );\n\t}\n\t\n\tpublic function IgniCorpseExplosionDamage() : float\n\t{\n\t\tvar s : string;\n\t\t\n\t\ts = theGame.GetInGameConfigWrapper().GetVarValue('SCOptionD', 'IgniCorpseBoomDamage');\n\t\tif( s == \"\" )\n\t\t\treturn 1500.f;\n\t\treturn ClampF( StringToFloat(s), 100.f, 10000.f );\n\t}",
+    "note": "Логика 'пустая строка = дефолт' ОБЯЗАТЕЛЬНА: на уже начатой игре новых ключей в dx12user.settings нет, без фолбэка фича молча не включилась бы."
+  },
+  {
+    "step": 5,
+    "id": "5.8a",
+    "title": "XML: three corpse-explosion widgets in VisibleVars (SCOptionD)",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\bin\\config\\r4game\\user_config_matrix\\pc\\W3EnhancedEdition.xml",
+    "encoding": "utf8-nobom",
+    "before": "\t\t\t<Var id=\"EPDam\" \t\t\t displayName=\"W3EE_EPDam\"\t\t\t\t\t\t\t\tdisplayType=\"SLIDER;0.1;5.0;49\" \t\t />",
+    "after": "\t\t\t<Var id=\"EPDam\" \t\t\t displayName=\"W3EE_EPDam\"\t\t\t\t\t\t\t\tdisplayType=\"SLIDER;0.1;5.0;49\" \t\t />\n\t\t\t<Var id=\"IgniCorpseBoom\" \t displayName=\"Igni - Burning Corpse Explosion\"\t\t\tdisplayType=\"TOGGLE\" \t\t\t\t\t />\n\t\t\t<Var id=\"IgniCorpseBoomRadius\" \t displayName=\"Igni - Corpse Explosion Radius\"\t\tdisplayType=\"SLIDER;2.0;12.0;100\" \t />\n\t\t\t<Var id=\"IgniCorpseBoomDamage\" \t displayName=\"Igni - Corpse Explosion Damage\"\t\tdisplayType=\"SLIDER;200;5000;480\" \t />",
+    "note": "Тумблер + два ползунка взрыва трупа."
+  },
+  {
+    "step": 5,
+    "id": "5.8b",
+    "title": "XML: corpse-explosion defaults in preset 1 (W3EE_KolRedux)",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\bin\\config\\r4game\\user_config_matrix\\pc\\W3EnhancedEdition.xml",
+    "encoding": "utf8-nobom",
+    "before": "\t\t\t\t<Entry varId=\"EPDam\"\t\t\t\tvalue=\"1.0\"\t/>\n\t\t\t</Preset>\n\t\t</PresetsArray>",
+    "after": "\t\t\t\t<Entry varId=\"EPDam\"\t\t\t\tvalue=\"1.0\"\t/>\n\t\t\t\t<Entry varId=\"IgniCorpseBoom\"\t\tvalue=\"1\"\t/>\n\t\t\t\t<Entry varId=\"IgniCorpseBoomRadius\"\tvalue=\"5.0\"\t/>\n\t\t\t\t<Entry varId=\"IgniCorpseBoomDamage\"\tvalue=\"1500\"\t/>\n\t\t\t</Preset>\n\t\t</PresetsArray>",
+    "note": "Дефолты пресета."
+  },
+  {
+    "step": 5,
+    "id": "5.8c",
+    "title": "XML: corpse-explosion defaults in preset 0 (W3EE_w3ee)",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\bin\\config\\r4game\\user_config_matrix\\pc\\W3EnhancedEdition.xml",
+    "encoding": "utf8-nobom",
+    "before": "\t\t\t\t<Entry varId=\"EPDam\"\t\t\t\tvalue=\"1.0\"\t/>\n\t\t\t</Preset>\n\t\t\t<Preset id=\"1\" displayName=\"W3EE_KolRedux\" >",
+    "after": "\t\t\t\t<Entry varId=\"EPDam\"\t\t\t\tvalue=\"1.0\"\t/>\n\t\t\t\t<Entry varId=\"IgniCorpseBoom\"\t\tvalue=\"1\"\t/>\n\t\t\t\t<Entry varId=\"IgniCorpseBoomRadius\"\tvalue=\"5.0\"\t/>\n\t\t\t\t<Entry varId=\"IgniCorpseBoomDamage\"\tvalue=\"1500\"\t/>\n\t\t\t</Preset>\n\t\t\t<Preset id=\"1\" displayName=\"W3EE_KolRedux\" >",
+    "note": "Дефолты пресета."
+  },
+  {
+    "step": 6,
+    "id": "6.A1",
+    "title": "AardShatter: gib instead of knockdown",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Combat.ws",
+    "encoding": "utf16",
+    "before": "\t\t\t\t\taction.MultiplyAllDamageBy(2.f);\n\t\t\t\t\tif( actorVictim.IsImmuneToBuff(EET_Knockdown) || actorVictim.HasAbility('mon_werewolf_base') )\n\t\t\t\t\t\tactorVictim.AddEffectDefault(EET_LongStagger, actorAttacker, \"PoiseBreak\");\n\t\t\t\t\telse",
+    "after": "\t\t\t\t\taction.MultiplyAllDamageBy(2.f);\n\t\t\t\t\t//AardShatter - Aard blows a broken-poise target apart instead of knocking it down\n\t\t\t\t\tif( AardShatterAllowed(actorVictim, action) )\n\t\t\t\t\t{\n\t\t\t\t\t\taction.SetInstantKill();\n\t\t\t\t\t\taction.SetForceExplosionDismemberment();\n\t\t\t\t\t}\n\t\t\t\t\telse if( actorVictim.IsImmuneToBuff(EET_Knockdown) || actorVictim.HasAbility('mon_werewolf_base') )\n\t\t\t\t\t\tactorVictim.AddEffectDefault(EET_LongStagger, actorAttacker, \"PoiseBreak\");\n\t\t\t\t\telse",
+    "note": "Аард при сломе стойки разносит цель вместо нокдауна"
+  },
+  {
+    "step": 6,
+    "id": "6.A2",
+    "title": "AardShatter: gate predicate",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Combat.ws",
+    "encoding": "utf16",
+    "before": "\tpublic function ProcessPoisebreak( actorVictim : CActor, actorAttacker : CActor, out action : W3DamageAction )\n\t{",
+    "after": "\t//AardShatter - gate for the Aard poise-break gib\n\tpublic function AardShatterAllowed( actorVictim : CActor, action : W3DamageAction ) : bool\n\t{\n\t\tvar npcVictim : CNewNPC;\n\t\tvar dismemberComp : CDismembermentComponent;\n\t\tvar wounds : array< name >;\n\t\tvar chance : int;\n\t\tvar hp, healthLimit : float;\n\t\t\n\t\tif( !(W3AardProjectile)action.causer )\n\t\t\treturn false;\n\t\t\n\t\tnpcVictim = (CNewNPC)actorVictim;\n\t\tif( !npcVictim )\n\t\t\treturn false;\n\t\t\n\t\tchance = Options().AardShatterChance();\n\t\tif( chance <= 0 )\n\t\t\treturn false;\n\t\t\n\t\tif( npcVictim.IsHuge() || npcVictim.HasTag('IsBoss') || npcVictim.HasTag('MonsterHuntTarget') )\n\t\t\treturn false;\n\t\t\n\t\tif( npcVictim.HasAbility('Boss') || npcVictim.HasAbility('SkillBoss') || npcVictim.HasAbility('DisableFinishers') )\n\t\t\treturn false;\n\t\t\n\t\tif( npcVictim.IsImmuneToInstantKill() )\n\t\t\treturn false;\n\t\t\n\t\tif( npcVictim.HasAbility('DisableDismemberment') || npcVictim.HasTag('DisableDismemberment') )\n\t\t\treturn false;\n\t\t\n\t\thealthLimit = Options().AardShatterHealth();\n\t\thp = npcVictim.GetHealthPercents();\n\t\tif( hp < 0.f || hp * 100.f > healthLimit )\n\t\t\treturn false;\n\t\t\n\t\tif( RandRange(100) >= chance )\n\t\t\treturn false;\n\t\t\n\t\tdismemberComp = (CDismembermentComponent)npcVictim.GetComponentByClassName( 'CDismembermentComponent' );\n\t\tif( !dismemberComp )\n\t\t\treturn false;\n\t\t\n\t\tdismemberComp.GetWoundsNames( wounds, WTF_Explosion );\n\t\tif( wounds.Size() == 0 )\n\t\t\treturn false;\n\t\t\n\t\treturn true;\n\t}\n\t\n\tpublic function ProcessPoisebreak( actorVictim : CActor, actorAttacker : CActor, out action : W3DamageAction )\n\t{",
+    "note": "Предикат: только Аард, не huge, не босс, есть модели кусков, порог HP, бросок кубика"
+  },
+  {
+    "step": 6,
+    "id": "6.C1",
+    "title": "AardShatter: CanDismember branch",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\game\\gameplay\\damage\\damageManagerProcessor.ws",
+    "encoding": "utf16",
+    "before": "\t\telse if (actorVictim.WillBeUnconscious())\n\t\t{\n\t\t\tdismember = false;\t\t\n\t\t}\n\t\t// W3EE - Begin",
+    "after": "\t\telse if (actorVictim.WillBeUnconscious())\n\t\t{\n\t\t\tdismember = false;\t\t\n\t\t}\n\t\t//AardShatter - flagged in ProcessPoisebreak, must win over weapon and armour filters\n\t\telse if( (W3AardProjectile)action.causer && action.HasForceExplosionDismemberment() )\n\t\t{\n\t\t\tdismember = true;\n\t\t\tdismemberExplosion = true;\n\t\t}\n\t\t// W3EE - Begin",
+    "note": "Без неё расчленение не вызовется — знак уходит в чужую ветку"
+  },
+  {
+    "step": 6,
+    "id": "6.E1",
+    "title": "AardShatter: defaults for new installs",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Options.ws",
+    "encoding": "utf16",
+    "before": "\t\t\twrapper.SetVarValue('SCOptionCR', 'KHPF', 0);\n\t\t\t",
+    "after": "\t\t\twrapper.SetVarValue('SCOptionCR', 'KHPF', 0);\n\t\t\t//AardShatter - Aard poise-break gib\n\t\t\twrapper.SetVarValue('SCOptionCR', 'AGChance', \"35\");\n\t\t\twrapper.SetVarValue('SCOptionCR', 'AGHealth', \"50\");\n\t\t\t",
+    "note": "Дефолты 35/50 для тех, кто ставит мод с нуля"
+  },
+  {
+    "step": 6,
+    "id": "6.D1",
+    "title": "AardShatter: option getters",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\local\\W3EE - Options.ws",
+    "encoding": "utf16",
+    "before": "\t//Kolaris - Human Poise Finisher Options\n\tpublic function KDisableHumanPoiseFinish() : bool\n\t{\n\t\treturn theGame.GetInGameConfigWrapper().GetVarValue('SCOptionCR', 'KHPF');\n\t}\t\n\t",
+    "after": "\t//Kolaris - Human Poise Finisher Options\n\tpublic function KDisableHumanPoiseFinish() : bool\n\t{\n\t\treturn theGame.GetInGameConfigWrapper().GetVarValue('SCOptionCR', 'KHPF');\n\t}\t\n\t\n\t//AardShatter - Aard poise-break gib options\n\tpublic function AardShatterChance() : int\n\t{\n\t\tvar value : string;\n\t\t\n\t\tvalue = theGame.GetInGameConfigWrapper().GetVarValue('SCOptionCR', 'AGChance');\n\t\tif( value == \"\" )\n\t\t\treturn 35;\n\t\t\n\t\treturn StringToInt( value );\n\t}\n\t\n\tpublic function AardShatterHealth() : float\n\t{\n\t\tvar value : string;\n\t\t\n\t\tvalue = theGame.GetInGameConfigWrapper().GetVarValue('SCOptionCR', 'AGHealth');\n\t\tif( value == \"\" )\n\t\t\treturn 50.f;\n\t\t\n\t\treturn StringToFloat( value );\n\t}\n\t",
+    "note": "Геттеры с фолбэком 35/50, если ключей ещё нет в настройках"
+  },
+  {
+    "step": 6,
+    "id": "6.F1",
+    "title": "AardShatter: two sliders in menu",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\bin\\config\\r4game\\user_config_matrix\\pc\\W3EnhancedEdition.xml",
+    "encoding": "utf8-nobom",
+    "before": "\t\t\t<Var id=\"KHPF\" \t\t\t\t \t displayName=\"Kol_HumanPoiseFinish\" \t\t\t\t\t\tdisplayType=\"TOGGLE\" \t\t\t\t\t />\n\t\t</VisibleVars>",
+    "after": "\t\t\t<Var id=\"KHPF\" \t\t\t\t \t displayName=\"Kol_HumanPoiseFinish\" \t\t\t\t\t\tdisplayType=\"TOGGLE\" \t\t\t\t\t />\n\t\t\t<Var id=\"AGChance\" displayName=\"Aard Shatter - Chance\" displayType=\"SLIDER;0;100;100\" />\n\t\t\t<Var id=\"AGHealth\" displayName=\"Aard Shatter - Target Health\" displayType=\"SLIDER;0;100;100\" />\n\t\t</VisibleVars>",
+    "note": "Ползунки шанса и порога здоровья в разделе Finishers"
+  },
+  {
+    "step": 7,
+    "id": "7.1",
+    "title": "Insectoid (Mut5): hand the toxicity drain to modW3EERedux_Mutations",
+    "file": "F:\\SteamLibrary\\steamapps\\common\\The Witcher 3\\mods\\modW3EE\\content\\scripts\\game\\gameplay\\effects\\effects\\drain\\toxicity.ws",
+    "encoding": "utf16",
+    "before": "\t\t\t//Kolaris - Mutation 5\n\t\t\tif( witcher.IsMutationActive(EPMT_Mutation5) && witcher.GetCurrentStateName() != 'W3EEMeditation' )\n\t\t\t\tdrainVal = 0.f;",
+    "after": "\t\t\t//Kolaris - Mutation 5 //Redux - moved into modW3EERedux_Mutations, which scales GetToxicityDrain() by the Adrenaline bar",
+    "note": "Снимает жёсткое обнуление слива. Вместо него наш аддон множит GetToxicityDrain() на процент адреналина. Без аддона мутация перестанет что-либо делать - они ставятся вместе."
+  }
+]

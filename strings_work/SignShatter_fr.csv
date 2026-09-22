@@ -1,0 +1,13 @@
+;meta[language=fr]
+; id      |key(hex)|key(str)| text
+2114471000|        |ssht_menu|Éclatement par Signe
+2114471001|        |ssht_humanpoise|Déchiqueter les humains à l'aplomb brisé
+2114471002|        |ssht_humanhp|   ...seulement sous ce % de santé
+2114471003|        |ssht_shatterscale|   ...courbe de chance (100 = un pour un)
+2114471004|        |ssht_killshatter|Déchiqueter tout ce qu'Aard tue
+2114471005|        |ssht_killshatterhumans|   ...y compris les humains
+2114471006|        |ssht_ignipoise|Igni déchiquette aussi les humains
+2114471007|        |ssht_ignikill|Déchiqueter tout ce qu'Igni tue
+2114471008|        |ssht_slomochance|Chance de ralenti lors de l'éclatement
+2114471009|        |ssht_slomoscale|   ...intensité (plus bas = plus fort)
+2114471010|        |ssht_slomotime|   ...durée, sec

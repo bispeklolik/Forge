@@ -1,0 +1,14 @@
+;meta[language=tr]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|W3EE Redux Eklentileri
+2114478001|        |mutf_menu|Mutasyon Düzeltmeleri
+2114478002|        |mutf_enabled|Mutasyon düzeltmeleri açık
+2114478003|        |mutf_adrfloor|Boceksi: adrenalin bosken toksisite giderme hizi, %
+2114478004|        |mutf_adrtop|Boceksi: adrenalin doluyken toksisite giderme hizi, %
+2114478005|        |mutf_combatonly|Boceksi: sadece savasta calisir
+2114478006|        |mutf_fixdesc|Mutasyon açıklamalarında gerçek sayıları göster
+2114478007|        |insc_dmgredon|Böceksi: kaldırılan hasar azaltmayı geri getir
+2114478008|        |insc_dmgredperc|   ...tekrar eden vuruşlar ne kadar zayıf, %
+2114478009|        |insc_dmgredwin|   ...kaç saniye sürer
+2114478010|        |mutf_signbypass|Hayalet: İşaret bonusunu vaat edilen +50% düzeyine çıkar (0 = oyundaki gibi)
+2114478011|        |mutf_sheet|Karakter sayfası: İşaret Gücünü azalma sonrası göster

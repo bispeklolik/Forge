@@ -1,0 +1,7 @@
+;meta[language=en]
+; id      |key(hex)|key(str)| text
+2114479000|        |w3eeredux_root|W3EE Redux Add-ons
+2114479001|        |hnum_menu|Honest Numbers
+2114479002|        |hnum_enabled|Honest numbers enabled
+2114479003|        |hnum_signrows|Sign rows: show what each Sign really fires at
+2114479004|        |hnum_durability|Sword damage: count blade wear, as combat does

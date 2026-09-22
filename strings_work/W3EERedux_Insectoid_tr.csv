@@ -1,0 +1,10 @@
+;meta[language=tr]
+; id      |key(hex)|key(str)| text
+2114478000|        |w3eeredux_root|W3EE Redux Eklentileri
+2114478001|        |insc_menu|Böceksi Mutasyon Düzeltmesi
+2114478002|        |insc_enabled|Toksisite dönüşüm oranını düzelt
+2114478003|        |insc_rate|   ...puan başına saniyenin yüzde biri (orijinal 10)
+2114478004|        |insc_fixdesc|Gerçek oranı açıklamada göster
+2114478005|        |insc_dmgredon|Orijinal hasar azaltmayı geri getir
+2114478006|        |insc_dmgredperc|   ...tekrar eden vuruşlarda azaltma, %
+2114478007|        |insc_dmgredwin|   ...pencere süresi, sn

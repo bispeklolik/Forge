@@ -1,0 +1,12 @@
+;meta[language=jp]
+; id      |key(hex)|key(str)| text
+2114477000|        |w3eeredux_root|W3EE Redux アドオン
+2114477001|        |tssb_menu|ティア連動セットボーナス
+2114477002|        |tssb_enabled|全ティアでグランドマスター効果
+2114477003|        |tssb_tier1|   ...ティア1の強さ, %
+2114477004|        |tssb_tier2|   ...ティア2の強さ, %
+2114477005|        |tssb_tier3|   ...ティア3の強さ, %
+2114477006|        |tssb_tier4|   ...ティア4の強さ, %
+2114477007|        |tssb_descgm|説明にグランドマスター値を括弧で表示
+2114477008|        |tssb_descnote|説明に効果の強さの行を追加
+2114477009|        |tssb_note|ティアによる強さ:
