@@ -93,6 +93,19 @@ import ui_data
 import io as _io
 import json as _json
 
+# ── двойники кросс-обликов (ножны) ────────────────────────────────────────────
+# У кросс-меча ножны гейтятся свойством swordType в сущности .w2ent, поэтому
+# equip_template кросс-карточки перенаправляем на ДВОЙНИКА (оболочка целевого
+# металла + геометрия донора). Подробно — forge_twins.py.
+_TWINS = {}
+_TWIN_MAKER_INST = None
+def _twin_maker():
+    global _TWIN_MAKER_INST
+    if _TWIN_MAKER_INST is None:
+        import forge_twins
+        _TWIN_MAKER_INST = forge_twins.TwinMaker()
+    return _TWIN_MAKER_INST
+
 # доноры-броня (этап Б): 337 предметов armor/pants/gloves/boots
 try:
     ARMOR_DONORS = _json.load(_io.open(
@@ -277,6 +290,43 @@ def dec(b):
         except Exception:
             pass
     return None
+
+
+_SCAB_SET = None
+
+
+def all_scabbards():
+    """Имена всех ножен игры (scabbard_steel_* / scabbard_silver_*). Нужно,
+    чтобы при кросс-облике подменить ножны на нужный металл ТОЙ ЖЕ ступени и не
+    промахнуться в несуществующий предмет (стальные и серебряные наборы НЕ
+    симметричны). Скан один раз, результат кешируется."""
+    global _SCAB_SET
+    if _SCAB_SET is not None:
+        return _SCAB_SET
+    s = set()
+    for r in ("content", "dlc"):
+        base = GAME / r
+        for f in sorted(base.rglob("*.bundle")):
+            if "~" in str(f) or "Tools" in f.parts:
+                continue
+            try:
+                idx = B.read_index(f)
+            except Exception:
+                continue
+            for e in idx:
+                n = str(getattr(e, "name", "")).replace("\\", "/")
+                if not n.endswith(".xml") or "items_plus" in n or not B.can_extract(e):
+                    continue
+                try:
+                    t = dec(B.extract(f, e))
+                except Exception:
+                    continue
+                if not t:
+                    continue
+                for m in re.finditer(r'name="(scabbard_(?:steel|silver)_[A-Za-z0-9_]+)"', t):
+                    s.add(m.group(1))
+    _SCAB_SET = s
+    return s
 
 
 def live_templates():
@@ -651,6 +701,44 @@ def forged_card(donor_name, donor_xml, cat, cross=False):
     c = re.sub(r'(name\s*=\s*")[^"]+(")', r"\g<1>%s%s\g<2>" % (prefix, donor_name), c, count=1)
     c = re.sub(r'(category\s*=\s*")[^"]+(")', r"\g<1>%s\g<2>" % out_cat, c, count=1)
     cat = out_cat
+    want_metal = "silver" if out_cat == "silversword" else "steel"
+    other_slot = "steel_sword_back_slot" if want_metal == "silver" else "silver_sword_back_slot"
+    new_slot = "%s_sword_back_slot" % want_metal
+    # ГДЕ МЕЧ ВИСИТ НА СПИНЕ — атрибут equip_slot шапки (не модель и не категория;
+    # проверено 22.09). Кросс: всегда на сторону НОВОГО металла. Родная карточка:
+    # только если у донора стоял слот ЧУЖОГО меча (у W3EE есть «серебряные» мечи на
+    # стальной модели); прочие слоты (например axe_back_slot) не трогаем.
+    # equip_slot внутри anim_switches — переходы анимаций, металл-нейтральны: не трогаем.
+    _slot = re.search(r'equip_slot\s*=\s*"([^"]+)"', c)
+    if cross or (_slot and _slot.group(1) == other_slot):
+        c = re.sub(r'(equip_slot\s*=\s*")[^"]+(")', r"\g<1>%s\g<2>" % new_slot, c, count=1)
+    # НОЖНЫ — по ОПИСАНИЮ предмета (категория + шаблон), а не по имени: у многих
+    # мечей ножны зовутся «Long Steel Sword Scabbard», «Sabre Scabbard 02»… (23.09:
+    # старый поиск по имени scabbard_steel_* пропускал 200 кросс-карточек из 565).
+    # Ножны уже нужной стороны не трогаем; иначе пара того же стиля другого металла
+    # → ДВОЙНИК ножен (тот же меш, кости другой стороны) → обычные нужной стороны.
+
+    def _swap_scab(m, _wm=want_metal):
+        return "<item>" + _twin_maker().cross_scabbard(m.group(1).strip(), _wm) + "</item>"
+
+    c = re.sub(r'<bound_items>.*?</bound_items>',
+               lambda mb: re.sub(r'<item>\s*([^<]+?)\s*</item>', _swap_scab, mb.group(0)),
+               c, flags=re.S)
+    # ОБЛИК+НОЖНЫ: показ ножен у игрока гейтит swordType в сущности клинка. Если
+    # металл МОДЕЛИ донора не совпадает с металлом КАРТОЧКИ (кросс — всегда; у W3EE
+    # бывает и в родной: «серебряные» гномьи/краснолюдские на стальной модели) —
+    # перенаправляем equip_template на ДВОЙНИКА: оболочка нужного металла + меш
+    # донора (правка всей «матрёшки» CR2W). Подробно — forge_twins.py.
+    _mt = re.search(r'equip_template\s*=\s*"([^"]+)"', c)
+    if _mt and _mt.group(1):
+        _em = _twin_maker().entity_metal(_mt.group(1))
+        if _em and _em != want_metal:
+            _tw = _twin_maker().make(_mt.group(1), want_metal)
+            if _tw:
+                _twn, _twb = _tw
+                _TWINS[_twn] = _twb
+                c = re.sub(r'(equip_template\s*=\s*")[^"]+(")',
+                           r"\g<1>%s\g<2>" % _twn, c, count=1)
     # имя вещи остаётся донорским (localisation_key_name не трогаем): игрок
     # ВОССОЗДАЛ Эмменталь; описание — своё
     c = re.sub(r'(localisation_key_description\s*=\s*")[^"]+(")',
@@ -798,6 +886,9 @@ for d in ui_data.DONORS:
             continue
         cards.append(forged_card(d["name"], samples[d["name"]], d["cat"]))
         cards.append(forged_card(d["name"], samples[d["name"]], d["cat"], cross=True))
+# двойники ножен кросс-мечей (новые предметы-ножны) — рядом с кованными картами
+if _TWIN_MAKER_INST is not None:
+    cards.extend(_TWIN_MAKER_INST.scab_defs_new)
 for d in ARMOR_DONORS:
     if d["name"] in samples:
         _fc = forged_armor_card(d["name"], samples[d["name"]], d["cat"])
@@ -1047,6 +1138,10 @@ ITEMXML = (
     + armor_res_cards()
     + armor_pool_token_cards()
     + ui_data.ui_cards(_donor_icons)
+    # ВРЕМЕННО (мини-пруф 22.09): невидимый маркер для теста <variant>.
+    + (T * 3 + '<item name="frg_swtest" category="frg_swtest" equip_template="" attachment_type="skinning">\n'
+       + T * 4 + "<tags>NoShow, NoDrop, EncumbranceOff</tags>\n"
+       + T * 3 + "</item>\n")
     + T * 2 + "</items>\n" + T + "</definitions>\n"
     + T + "<custom>\n" + T * 2 + "<crafting_schematics>\n"
     + "".join(schematic(nm, ct, ing) for nm, _s, _k, ct, ing, _r, _e in BLANKS)
@@ -1056,6 +1151,21 @@ ITEMXML = (
 
 EMPTY_XML = ('<?xml version="1.0" encoding="UTF-16"?>\r\n<redxml>\r\n\t<definitions>\r\n'
              '\t\t<items>\r\n\t\t</items>\r\n\t</definitions>\r\n</redxml>\r\n')
+
+# ВРЕМЕННО (мини-пруф 22.09): даём ванильному Аэрондиту (серебряный меч) вариант
+# со стальной моделью Дикой Охоты. Пока надет маркер frg_swtest — движок должен
+# нарисовать у Аэрондита стальную модель В СЕРЕБРЯНОЙ позиции (проверка кросс-металла).
+TEST_EXTS = ('<?xml version="1.0" encoding="UTF-16"?>\r\n<redxml>\r\n\t<definitions>\r\n'
+             '\t\t<items_extensions>\r\n'
+             '\t\t\t<item_extension name="Aerondight">\r\n'
+             '\t\t\t\t<variants>\r\n'
+             '\t\t\t\t\t<variant equip_template="wildhunt_sword_lvl1">\r\n'
+             '\t\t\t\t\t\t<item>frg_swtest</item>\r\n'
+             '\t\t\t\t\t</variant>\r\n'
+             '\t\t\t\t</variants>\r\n'
+             '\t\t\t</item_extension>\r\n'
+             '\t\t</items_extensions>\r\n'
+             '\t</definitions>\r\n</redxml>\r\n')
 
 # Проверка разметки ДО упаковки: обрубленный <item> ломает весь файл целиком,
 # и игра просто не выдаёт НИ ОДНОГО предмета мода — без ошибки и без лога.
@@ -1139,10 +1249,34 @@ for branch in ("items", "items_plus"):
     d.mkdir(parents=True)
     (d / ITEMS).write_bytes(payload)
     (d / SHOP).write_bytes(shop_payload)
-    (d / EXTS).write_bytes(empty)
+    # ВРЕМЕННО (мини-пруф): item_extension живёт в ветке items_plus
+    (d / EXTS).write_bytes(TEST_EXTS.encode("utf-16") if branch == "items_plus" else empty)
 (base / "data" / "items").mkdir(parents=True)
 (base / "data" / "items" / "readme.txt").write_bytes(b"placeholder\n")
 say("   [ok] карточки: %d болванок + %d чертежей, %d Б" % (len(BLANKS), len(BLANKS), len(payload)))
+
+# ---- двойники кросс-обликов (ножны) -------------------------------------------
+# Сущности-двойники кладём в дерево игры по depot-пути items/weapons/swords/frg/,
+# чтобы equip_template кросс-карточек их резолвил. RAW-корень (не под dlc/MOUNT),
+# как обычные ассеты (проверено мини-пруфом modFRGScabTest).
+if _TWINS:
+    tw_dir = RAW / "items" / "weapons" / "swords" / "frg"
+    tw_dir.mkdir(parents=True, exist_ok=True)
+    for _twn, _twb in _TWINS.items():
+        (tw_dir / (_twn + ".w2ent")).write_bytes(_twb)
+    # волна 2: скопированные меши (геометрия донора на новый путь длины оболочки)
+    _extra = getattr(_twin_maker(), "extra", {})
+    for _dp, _mb in _extra.items():
+        _p = RAW / _dp.replace("/", os.sep)
+        _p.parent.mkdir(parents=True, exist_ok=True)
+        _p.write_bytes(_mb)
+    _tm = _twin_maker()
+    say("   [ok] двойников клинков: %d; ножны кросс-мечей: пара %d, двойник %d, запас %d; файлов ножен %d; сбоев %s"
+        % (len(_TWINS),
+           sum(1 for v in _tm.scab_log.values() if v.startswith("пара")),
+           sum(1 for v in _tm.scab_log.values() if v.startswith("двойник")),
+           sum(1 for v in _tm.scab_log.values() if v.startswith("запас")),
+           len(_tm.extra), dict((k, v) for k, v in _tm.stats.items() if k != "ok" and v)))
 
 # ---- подписи ------------------------------------------------------------------
 keys = ([ky for _n, _s, ky, _c, _i, _r, _e in BLANKS]

@@ -1217,6 +1217,35 @@ exec function frgarmfix()
 \ttheGame.GetGuiManager().ShowNotification( "FRG: armour looks swept, gear re-equipped", 9000 );
 }
 
+// ВРЕМЕННО (мини-пруф 22.09): проверка техники <variant>+маркер. Надевает/снимает
+// невидимый маркер frg_swtest. Пока надет — у ванильного Аэрондита (серебряный меч)
+// должна появиться СТАЛЬНАЯ модель Дикой Охоты В СЕРЕБРЯНОЙ позиции. Работает —
+// значит технику можно строить по-крупному; после проверки эту команду убрать.
+exec function frgvtest( on : int )
+{
+\tvar inv : CInventoryComponent;
+\tvar ids : array< SItemUniqueId >;
+\tvar i : int;
+
+\tinv = thePlayer.GetInventory();
+\tids = inv.GetItemsByCategory( 'frg_swtest' );
+\tfor( i = 0; i < ids.Size(); i += 1 )
+\t{
+\t\tif( inv.IsItemMounted( ids[i] ) )
+\t\t\tinv.UnmountItem( ids[i], true );
+\t\tinv.RemoveItem( ids[i], 1 );
+\t}
+\tif( on > 0 )
+\t{
+\t\tids = inv.AddAnItem( 'frg_swtest', 1, true, true );
+\t\tif( ids.Size() > 0 )
+\t\t\tinv.MountItem( ids[0] );
+\t\ttheGame.GetGuiManager().ShowNotification( "FRG: marker ON - look at Aerondight (silver slot)", 9000 );
+\t}
+\telse
+\t\ttheGame.GetGuiManager().ShowNotification( "FRG: marker OFF", 6000 );
+}
+
 // Putting a piece on: the game mounts it itself, asynchronously - swap the
 // carrier in a moment later, the same delay the sword look uses.
 // ⛔ СНЯТИЕ СИММЕТРИЧНО НАДЕВАНИЮ: всё ПОСЛЕ wrappedMethod, когда слот
