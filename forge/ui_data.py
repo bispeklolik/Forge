@@ -539,7 +539,7 @@ def ui_loc_keys():
             "frgu_s_result",
             "frgu_rl_forged", "frgu_rl_home", "frgu_rl_metal", "frgu_rl_same",
             "frgu_rl_sheathe", "frgu_rl_fail", "frgu_rl_done", "frgu_rl_to",
-            "frgu_rl_pick", "frgu_rl_bag",
+            "frgu_rl_pick", "frgu_rl_bag", "frgu_rl_done_v",
             "frgu_farmor", "frgu_farmor_sc", "frgu_fpants", "frgu_fpants_sc",
             "frgu_fgloves", "frgu_fgloves_sc", "frgu_fboots", "frgu_fboots_sc",
             "frgu_fside", "frgu_fside_sc",
@@ -602,18 +602,15 @@ def ui_text_for(key, ru):
                 "all stay; only the look is worn over it. Dyes take on it too. "
                 "Leave the look square empty to get the native look back.")
     if key == "frgu_reskin_desc":
-        return ("Тот же кованый клинок — другой вид. Урон, стихийный урон, "
-                "свойства, чары, изъян, клеймо, руны, зачарование, износ и "
-                "масло переходят вместе с ним. Данное тобой имя остаётся; "
-                "без своего имени клинок зовётся по новому виду. Метка "
-                "«родной облик» или пустой квадрат облика вернут вид, с "
-                "которым клинок выкован.") if ru else \
-               ("The same forged blade in another shape. Damage, elemental "
-                "damage, properties, the red line, flaw, mark, runes, "
-                "enchantment, wear and oil all come along. A name you gave it "
-                "stays; without one the blade is called after its new shape. "
-                "The native-look mark or an empty look square brings back "
-                "the shape it was forged in.")
+        return ("Меняет вид меча. Обычный меч остаётся собой — имя, качество, "
+                "зачарование, руны и путь улучшения при нём, меняется только "
+                "облик. Кованый клинок переезжает в новый облик со всем, что на "
+                "нём есть. Метка «родной облик» или пустой квадрат облика вернут "
+                "прежний вид.") if ru else                ("Changes how a sword looks. A regular sword stays itself - name, "
+                "quality, enchantment, runes and upgrade path all stay, only the "
+                "look changes. A forged blade moves into the new look with "
+                "everything it carries. The native-look mark or an empty look "
+                "square brings the old look back.")
     if key == "frgu_measure_desc":
         return ("Изучить вещь целиком, не ломая её: облик, урон, свойства, "
                 "а у брони ещё защиту и сопротивления. Вещь остаётся у тебя, "
@@ -784,8 +781,10 @@ def ui_text_for(key, ru):
         "frgu_s_result": ("Итог: реликтовое качество, 4 места свойств, 3 гнезда рун",
                           "Result: relic quality, 4 property slots, 3 rune sockets"),
         # смена облика меча (карточная пересадка, 23.09)
-        "frgu_rl_forged": ("Облик меняет только кованый меч",
-                           "Only a forged sword changes its look here"),
+        "frgu_rl_forged": ("Облик меняется только у меча — не у заготовки, топора или булавы",
+                           "Only a sword changes its look - not a blank, an axe or a mace"),
+        "frgu_rl_done_v": ("Меч сменил облик. Сам меч не тронут: имя, качество, зачарование и руны при нём.",
+                           "The sword wears a new look. The sword itself is untouched: name, quality, enchantment and runes stay."),
         "frgu_rl_home": ("Клинок и так в родном облике — выбери другой облик",
                          "The blade already wears its own look - pick another one"),
         "frgu_rl_metal": ("Для этого облика нет клинка такого металла",

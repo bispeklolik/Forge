@@ -474,21 +474,19 @@ WS = """// modForgeLab - forge core, stages 1-2. Console commands only.
 
 \twrappedMethod( witcher, item, equip );
 
-\t// A sword swap tears down the item entity the fake look hangs on. Drop
-\t// the fake on unequip; on equip re-mount after the game settles.
+\t// A drawn sword gets its look re-mounted once the game settles. It is
+\t// NOT dropped here on equip=false: W3EE calls this on EVERY sheathe too
+\t// (SetCurrentMeleWeapon, before the holster animation) and the look was
+\t// gone for the whole sheathing (review 23.09). A real unequip drops it
+\t// in the UnequipItemFromSlot wrap.
 \tcat = witcher.inv.GetItemCategory( item );
 \tlookSlot = -1;
 \tif( cat == 'steelsword' )
 \t\tlookSlot = 4;
 \tif( cat == 'silversword' )
 \t\tlookSlot = 5;
-\tif( lookSlot >= 0 && witcher.inv.GetItemModifierInt( item, 'FRG_Look', 0 ) > 0 )
-\t{
-\t\tif( equip )
-\t\t\twitcher.AddTimer( 'FRG_LookRestore', 0.5, false );
-\t\telse
-\t\t\twitcher.FRG_DropLookEnt( lookSlot );
-\t}
+\tif( lookSlot >= 0 && equip && witcher.inv.GetItemModifierInt( item, 'FRG_Look', 0 ) > 0 )
+\t\twitcher.AddTimer( 'FRG_LookRestore', 0.5, false );
 \t// ⛔ Снятие носителя ПЕРЕЕХАЛО в свой хук на UnequipItemFromSlot
 \t// (17.09). Здесь оно срабатывало за 80 строк ДО того, как игра
 \t// уберёт вещь и очистит слот: мы дёргали предмет из слота, для
@@ -735,49 +733,118 @@ var FRG_LookEnts : array< CEntity >;
 \t\tFRG_LookEnts[i].Destroy();
 }
 
-// Dresses the REAL sword in the donor's model: the real mesh is switched off,
-// a fresh entity of the donor's template is attached to the SWORD'S entity -
-// not to Geralt - so it rides scabbard->hand->scabbard by itself. AMM's exact
-// technique (SwordsChange), including the unchecked Destroy of the previous
-// fake.
+@addField( W3PlayerWitcher )
+var FRG_LookMode : int;     // 0 = ride the real sword; 1 = ride Geralt's hook/hand (test)
+@addField( W3PlayerWitcher )
+var FRG_LookDebug : bool;   // TEMP 23.09: report where the look sits on every mount
+@addField( W3PlayerWitcher )
+var FRG_LookWhyS : array< string >;   // why a slot's look failed to mount
+@addField( W3PlayerWitcher )
+var FRG_LookFail : string;            // the last failed re-look, for the craft message
+
+@addMethod( W3PlayerWitcher ) function FRG_LookWhySet( slot : int, why : string )
+{
+\twhile( FRG_LookWhyS.Size() < 6 )
+\t\tFRG_LookWhyS.PushBack( "" );
+\tif( slot >= 0 && slot < 6 )
+\t\tFRG_LookWhyS[slot] = why;
+}
+
+@addMethod( W3PlayerWitcher ) function FRG_LookWhyOf( slot : int ) : string
+{
+\tif( slot >= 0 && slot < FRG_LookWhyS.Size() )
+\t\treturn FRG_LookWhyS[slot];
+\treturn "";
+}
+
+// Dresses the REAL sword in another model (stage A, AMM's technique - it
+// worked in game 15.08): a fresh entity of the look's template is attached
+// to the SWORD'S entity, the real meshes are switched off. The engine hangs
+// the real sword on the side its own card says and moves it into the hand;
+// the fake just rides it. A look of the OTHER metal uses the forge's twin of
+// the sword's own metal (the "FRG CrossForged X" card), so nothing of the
+// donor's metal is left in it. The sword itself is never touched.
 @addMethod( W3PlayerWitcher ) function FRG_ApplyLookVisual( slot : int ) : bool
 {
 \tvar item : SItemUniqueId;
-\tvar ent : CEntity;
-\tvar comp : CAppearanceComponent;
-\tvar tpl : CEntityTemplate;
+\tvar ent, fake, empty : CEntity;
+\tvar temp : CEntityTemplate;
+\tvar comp : CComponent;
 \tvar path : string;
-\tvar names : array< name >;
+\tvar ok : bool;
 
 \tif( slot < 4 || slot > 5 )
 \t\treturn false;
 \tif( !FRG_Slot( slot, item ) )
 \t\treturn false;
+\t// a FORGED sword's look is its card: an overlay key on one (older
+\t// builds, a sword from the stash, the frgapply console) is dropped
+\tif( inv.ItemHasTag( item, 'FRG_Forge' ) && inv.GetItemModifierInt( item, 'FRG_Look', 0 ) > 0 )
+\t{
+\t\tinv.SetItemModifierInt( item, 'FRG_Look', 0 );
+\t\tFRG_ClearLookVisual( slot );
+\t\treturn false;
+\t}
 \tpath = FRG_LookRead( "frg_look_", inv.GetItemModifierInt( item, 'FRG_Look', 0 ) );
 \tif( path == "" )
 \t\treturn false;
-\t// ⛔ ПРАВИЛЬНЫЙ ПРИЁМ (22.09, по разведке). Меняем облик у САМОГО надетого
-\t// меча через его CAppearanceComponent — предмет остаётся в слоте, поэтому
-\t// позиция ножен, крюк сталь/серебро и анимации РОДНЫЕ. Двойник-сущность
-\t// (заходы 1-4) всегда садился по своему металлу — тупик. Рецепт:
-\t// modSetBonusTransfer.sbtlook + ванильный лук (GetItemEntityUnsafe(bow).ApplyAppearance).
+\tFRG_LookWhySet( slot, "" );
+
 \tent = inv.GetItemEntityUnsafe( item );
 \tif( !ent )
+\t{
+\t\tFRG_LookWhySet( slot, "no sword entity" );
 \t\treturn false;
-\tcomp = (CAppearanceComponent)ent.GetComponentByClassName( 'CAppearanceComponent' );
-\tif( !comp )
+\t}
+
+\twhile( FRG_LookEnts.Size() < 6 )
+\t\tFRG_LookEnts.PushBack( empty );
+\tFRG_LookEnts[slot].Destroy();
+
+\ttemp = (CEntityTemplate)LoadResource( path, true );
+\tif( !temp )
+\t{
+\t\tFRG_LookWhySet( slot, "LoadResource " + path );
+\t\tFRG_MeshShow( ent );
 \t\treturn false;
-\ttpl = (CEntityTemplate)LoadResource( path, true );
-\tif( !tpl )
+\t}
+\tfake = theGame.CreateEntity( temp, ent.GetWorldPosition(), ent.GetWorldRotation() );
+\tif( !fake )
+\t{
+\t\tFRG_LookWhySet( slot, "CreateEntity " + path );
+\t\tFRG_MeshShow( ent );
 \t\treturn false;
-\tGetAppearanceNames2( path, names );
-\tif( names.Size() <= 0 )
+\t}
+\tif( FRG_LookMode == 1 )
+\t{
+\t\t// test fallback: Geralt's own hook while sheathed, his hand when drawn
+\t\tif( inv.IsItemHeld( item ) )
+\t\t\tok = fake.CreateAttachment( this, 'r_weapon' );
+\t\telse if( slot == 5 )
+\t\t\tok = fake.CreateAttachment( this, 'silver_sword_back_slot' );
+\t\telse
+\t\t\tok = fake.CreateAttachment( this, 'steel_sword_back_slot' );
+\t}
+\telse
+\t\tok = fake.CreateAttachment( ent );
+\tif( !ok )
+\t{
+\t\tFRG_LookWhySet( slot, "CreateAttachment" );
+\t\tfake.Destroy();
+\t\tFRG_MeshShow( ent );
 \t\treturn false;
-\tcomp.IncludeAppearanceTemplate( tpl );
-\tcomp.ApplyAppearance( NameToString( names[0] ) );
+\t}
+\t// scenery: no water splashes of its own (CWitcherSword switches the real
+\t// sword's collider the same way)
+\tcomp = fake.GetComponent( "sword_water_collider" );
+\tif( comp )
+\t\tcomp.SetEnabled( false );
+\tFRG_LookEnts[slot] = fake;
+\tFRG_MeshVis( ent, false );
+\tif( FRG_LookDebug )
+\t\tAddTimer( 'FRG_LookReport', 0.4, false );
 \treturn true;
 }
-
 // Спрятать/показать ВСЮ модель вещи. Одной детали мало: доспех собран
 // из нескольких мешей (торс, рукава, пояс, ткань), и пряча только
 // первый, мы получали чужой облик ПОВЕРХ родного (жалоба ГД 15.09).
@@ -827,28 +894,100 @@ function FRG_MeshVis( ent : CEntity, on : bool )
 @addMethod( W3PlayerWitcher ) function FRG_ClearLookVisual( slot : int )
 {
 \tvar item : SItemUniqueId;
-\tvar ent : CEntity;
-\tvar comp : CAppearanceComponent;
-\tvar path : string;
-\tvar names : array< name >;
 
-\tif( !FRG_Slot( slot, item ) )
-\t\treturn;
-\tent = inv.GetItemEntityUnsafe( item );
-\tif( !ent )
-\t\treturn;
-\tcomp = (CAppearanceComponent)ent.GetComponentByClassName( 'CAppearanceComponent' );
-\tif( !comp )
-\t\treturn;
-\t// вернуть РОДНОЙ облик = облик собственного equip_template меча
-\tpath = theGame.GetDefinitionsManager().GetItemEquipTemplate( inv.GetItemName( item ) );
-\tif( path == "" )
-\t\treturn;
-\tGetAppearanceNames2( path, names );
-\tif( names.Size() > 0 )
-\t\tcomp.ApplyAppearance( NameToString( names[0] ) );
+\tFRG_DropLookEnt( slot );
+\tif( FRG_Slot( slot, item ) )
+\t\tFRG_MeshShow( inv.GetItemEntityUnsafe( item ) );
 }
 
+// ---- TEMP 23.09: where does the look sit? (vanilla-sword overlay test) ----
+// the nearest of Geralt's two back hooks and his hand
+@addMethod( W3PlayerWitcher ) function FRG_WhereIs( p : Vector ) : string
+{
+\tvar m : Matrix;
+\tvar dS, dT, dH : float;
+
+\tdS = 1000;
+\tdT = 1000;
+\tdH = 1000;
+\tif( CalcEntitySlotMatrix( 'silver_sword_back_slot', m ) )
+\t\tdS = VecDistance( p, MatrixGetTranslation( m ) );
+\tif( CalcEntitySlotMatrix( 'steel_sword_back_slot', m ) )
+\t\tdT = VecDistance( p, MatrixGetTranslation( m ) );
+\tif( CalcEntitySlotMatrix( 'r_weapon', m ) )
+\t\tdH = VecDistance( p, MatrixGetTranslation( m ) );
+\tif( dS <= dT && dS <= dH )
+\t\treturn "SILVER hook";
+\tif( dT <= dS && dT <= dH )
+\t\treturn "STEEL hook";
+\treturn "HAND";
+}
+
+@addMethod( W3PlayerWitcher )
+timer function FRG_LookReport( dt : float, id : int )
+{
+\tvar s : int;
+\tvar item : SItemUniqueId;
+\tvar ent : CEntity;
+\tvar line : string;
+\tvar d : float;
+
+\tline = "";
+\tfor( s = 4; s <= 5; s += 1 )
+\t{
+\t\tif( !FRG_Slot( s, item ) || inv.GetItemModifierInt( item, 'FRG_Look', 0 ) <= 0 )
+\t\t\tcontinue;
+\t\tif( s == 4 )
+\t\t\tline += "STEEL sword: ";
+\t\telse
+\t\t\tline += "SILVER sword: ";
+\t\tent = inv.GetItemEntityUnsafe( item );
+\t\tif( !ent )
+\t\t{
+\t\t\tline += "no entity<br>";
+\t\t\tcontinue;
+\t\t}
+\t\tline += "real on " + FRG_WhereIs( ent.GetWorldPosition() );
+\t\tif( s < FRG_LookEnts.Size() && FRG_LookEnts[s] )
+\t\t{
+\t\t\td = VecDistance( ent.GetWorldPosition(), FRG_LookEnts[s].GetWorldPosition() );
+\t\t\tline += ", look on " + FRG_WhereIs( FRG_LookEnts[s].GetWorldPosition() )
+\t\t\t\t+ ", " + RoundMath( 100 * d ) + " cm apart";
+\t\t\tif( d < 0.05 )
+\t\t\t\tline += " - OK";
+\t\t\telse
+\t\t\t\tline += " - WRONG";
+\t\t}
+\t\telse
+\t\t\tline += ", NO LOOK " + FRG_LookWhyOf( s );
+\t\tline += "<br>";
+\t}
+\tif( line != "" )
+\t\ttheGame.GetGuiManager().ShowNotification( line, 10000 );
+}
+
+// frglookdebug(1): every look mount (craft, draw, sheathe, load, bomb)
+// prints where the real sword and its look sit; frglookdebug(0) = quiet
+exec function frglookdebug( on : int )
+{
+\tvar w : W3PlayerWitcher;
+
+\tw = GetWitcherPlayer();
+\tw.FRG_LookDebug = on > 0;
+\tif( on > 0 )
+\t\tw.AddTimer( 'FRG_LookReport', 0.1, false );
+}
+
+// frglookmode(1): the look rides Geralt's own hook/hand instead of the sword
+// (a fallback to try if the report says WRONG); frglookmode(0) = default
+exec function frglookmode( m : int )
+{
+\tvar w : W3PlayerWitcher;
+
+\tw = GetWitcherPlayer();
+\tw.FRG_LookMode = m;
+\tw.FRG_RefreshAllLooks();
+}
 // Показать НАСТОЯЩИЕ клинки обоих слотов: затычка на те доли секунды,
 // пока игра пересоздаёт сущность меча и фейк ещё не перемонтирован.
 @addMethod( W3PlayerWitcher ) function FRG_ShowRealBlades()
@@ -864,6 +1003,9 @@ function FRG_MeshVis( ent : CEntity, on : bool )
 \t\t\tcontinue;
 \t\tif( inv.GetItemModifierInt( item, 'FRG_Look', 0 ) <= 0 )
 \t\t\tcontinue;
+\t\t// a look still riding its sword needs no stand-in
+\t\tif( FRG_LookMode == 0 && s < FRG_LookEnts.Size() && FRG_LookEnts[s] && FRG_LookEnts[s].HasAttachment() )
+\t\t\tcontinue;
 \t\tFRG_MeshShow( inv.GetItemEntityUnsafe( item ) );
 \t}
 }
@@ -876,43 +1018,6 @@ function FRG_MeshVis( ent : CEntity, on : bool )
 \t\tFRG_ApplyLookVisual( s );
 \t// armour looks are OFF (13.09) - whatever is left of them is swept
 \tFRG_ArmLookRefresh();
-}
-
-// ЗАХОД 2 (21.09): держим двойник-облик клинка НА ПОЗИЦИИ реального меча.
-// Стальная модель сама висит на стальной точке ножен, поэтому облик на
-// мече другого металла уезжает; сторож каждый тик дотягивает его до ent
-// (реальный меч всегда в правильной точке — и в ножнах, и в руке).
-@addMethod( W3PlayerWitcher )
-timer function FRG_BladeLookGuard( dt : float, id : int )
-{
-\tvar s : int;
-\tvar item : SItemUniqueId;
-\tvar ent : CEntity;
-\tvar busy : bool;
-
-\tfor( s = 4; s <= 5; s += 1 )
-\t{
-\t\tif( !FRG_Slot( s, item ) )
-\t\t\tcontinue;
-\t\tif( inv.GetItemModifierInt( item, 'FRG_Look', 0 ) <= 0 )
-\t\t\tcontinue;
-\t\tif( s >= FRG_LookEnts.Size() )
-\t\t\tcontinue;
-\t\tif( !FRG_LookEnts[s] )
-\t\t\tcontinue;
-\t\tent = inv.GetItemEntityUnsafe( item );
-\t\tif( !ent )
-\t\t\tcontinue;
-\t\tbusy = true;
-\t\t// ЗАХОД 4 (21.09): двойник САМ цепляется к крюку своего металла, и цепка
-\t\t// перебивает телепорт (заходы 2-3 не сдвинули). Рвём его цепку и только
-\t\t// потом тащим на позицию реального меча.
-\t\tif( FRG_LookEnts[s].HasAttachment() )
-\t\t\tFRG_LookEnts[s].BreakAttachment();
-\t\tFRG_LookEnts[s].TeleportWithRotation( ent.GetWorldPosition(), ent.GetWorldRotation() );
-\t}
-\tif( !busy )
-\t\tRemoveTimer( 'FRG_BladeLookGuard' );
 }
 
 // The carrier bound to a piece, if any (by the shared number).
@@ -1268,6 +1373,11 @@ exec function frgvtest( on : int )
 \t// the live buff went down with it. Re-state the truth, it is idempotent.
 \tif( ok && ( slot == EES_SteelSword || slot == EES_SilverSword ) )
 \t\tFRG_FxRefresh();
+\t// the sword entity left with the slot - its look fake goes too
+\tif( ok && slot == EES_SteelSword )
+\t\tFRG_DropLookEnt( 4 );
+\tif( ok && slot == EES_SilverSword )
+\t\tFRG_DropLookEnt( 5 );
 \tif( !ok || !hadLook )
 \t\treturn ok;
 \tif( FRG_ArmLookCarrier( lookKey, carrier ) )
@@ -1285,7 +1395,8 @@ exec function frgvtest( on : int )
 \tvar ok : bool;
 
 \tok = wrappedMethod( item, slot, ignoreMounting, toHand );
-\tif( ok && inv.GetItemModifierInt( item, 'FRG_ArmLook', 0 ) > 0 )
+\tif( ok && ( inv.GetItemModifierInt( item, 'FRG_ArmLook', 0 ) > 0
+\t\t|| inv.GetItemModifierInt( item, 'FRG_Look', 0 ) > 0 ) )
 \t\tAddTimer( 'FRG_LookRestore', 0.5, false );
 \treturn ok;
 }
@@ -1302,11 +1413,24 @@ timer function FRG_LookRestore( deltaTime : float, id : int )
 @wrapMethod( CThrowable ) function StartAiming()
 {
 \tvar w : W3PlayerWitcher;
+\tvar item : SItemUniqueId;
+\tvar s : int;
 
 \twrappedMethod();
 \tw = GetWitcherPlayer();
-\tif( w )
-\t\tw.FRG_DropLookEnts();
+\tif( !w )
+\t\treturn;
+\t// only SHEATHED blades wearing a look: the one in hand is not rebuilt by
+\t// aiming and keeps its look (AMM checks IsWeaponHeld the same way) -
+\t// dropping it too left the drawn sword invisible (review 23.09)
+\tfor( s = 4; s <= 5; s += 1 )
+\t{
+\t\tif( !w.FRG_Slot( s, item ) || w.inv.GetItemModifierInt( item, 'FRG_Look', 0 ) <= 0 )
+\t\t\tcontinue;
+\t\tif( w.inv.IsItemHeld( item ) )
+\t\t\tcontinue;
+\t\tw.FRG_ClearLookVisual( s );
+\t}
 }
 
 @wrapMethod( CThrowable ) function StopAiming( flag : bool )
@@ -1323,14 +1447,17 @@ timer function FRG_LookRestore( deltaTime : float, id : int )
 // mesh stays hidden - the scabbard shows EMPTINESS (caught by the user in
 // game). Re-mount the fake after both grab and put; the timer gives the game
 // a beat to finish remounting. Event wrappers must return a flag (known rake).
-@wrapMethod( CWitcherSword ) function OnGrab()
+@wrapMethod( CItemEntity ) function OnGrab()
 {
 \tvar w : W3PlayerWitcher;
 \tvar r : bool;
 
 \tr = wrappedMethod();
 \tw = GetWitcherPlayer();
-\tif( w )
+\t// CItemEntity, not CWitcherSword: Blood and Wine's Aerondight is a plain
+\t// item entity and never passed the sword wrap (CWitcherSword calls super,
+\t// so this one covers both). Only Geralt's blades wearing a look care.
+\tif( w && GetParentEntity() == w && w.FRG_BladeEntWantsLook( this ) )
 \t{
 \t\t// drawing REBUILDS the sword entity, and the fake dies with the old
 \t\t// one - the blade vanished for a moment (user 14.09). Show the real
@@ -1341,14 +1468,14 @@ timer function FRG_LookRestore( deltaTime : float, id : int )
 \treturn r;
 }
 
-@wrapMethod( CWitcherSword ) function OnPut()
+@wrapMethod( CItemEntity ) function OnPut()
 {
 \tvar w : W3PlayerWitcher;
 \tvar r : bool;
 
 \tr = wrappedMethod();
 \tw = GetWitcherPlayer();
-\tif( w )
+\tif( w && GetParentEntity() == w && w.FRG_BladeEntWantsLook( this ) )
 \t{
 \t\tw.FRG_ShowRealBlades();
 \t\tw.AddTimer( 'FRG_LookRestore', 0.1, false );
@@ -1356,6 +1483,35 @@ timer function FRG_LookRestore( deltaTime : float, id : int )
 \treturn r;
 }
 
+// Is this item entity a blade wearing a look? (torches, the crossbow and the
+// potion props W3EE mounts into the hand pass the same event.) If the entity
+// cannot be told, re-arm anyway - it is cheap and safe.
+@addMethod( W3PlayerWitcher ) function FRG_BladeEntWantsLook( e : CItemEntity ) : bool
+{
+\tvar id : SItemUniqueId;
+\tvar cat : name;
+
+\tid = inv.GetItemByItemEntity( e );
+\tif( !inv.IsIdValid( id ) )
+\t\treturn FRG_AnyBladeLook();
+\tcat = inv.GetItemCategory( id );
+\treturn ( cat == 'steelsword' || cat == 'silversword' )
+\t\t&& inv.GetItemModifierInt( id, 'FRG_Look', 0 ) > 0;
+}
+
+// does any worn blade wear a look overlay?
+@addMethod( W3PlayerWitcher ) function FRG_AnyBladeLook() : bool
+{
+\tvar item : SItemUniqueId;
+\tvar s : int;
+
+\tfor( s = 4; s <= 5; s += 1 )
+\t{
+\t\tif( FRG_Slot( s, item ) && inv.GetItemModifierInt( item, 'FRG_Look', 0 ) > 0 )
+\t\t\treturn true;
+\t}
+\treturn false;
+}
 // The inventory GRID icon: the cell builder takes the INSTANCE, so an item
 // wearing a look gets the donor's picture. One wrap on the base class covers
 // the bag grid, the paperdoll, chests and shops - every subclass calls super.
@@ -2586,7 +2742,7 @@ function FRGP_Deficit( tier : int ) : int
 \tvar i, t : int;
 \tvar migAb, guessFD : name;
 \tvar guessD : string;
-\tvar wiped, maxK : int;
+\tvar maxK : int;
 
 \t// NEW GAME+ starts an empty facts database, but carried items keep
 \t// their keys (free-text name, token looks): never hand out a number an
@@ -2598,27 +2754,8 @@ function FRGP_Deficit( tier : int ) : int
 \t\tFactsSet( "FRG_LookSeq", maxK );
 
 \tinv.GetAllItems( items );
-\t// the old OVERLAY look of blades (FRG_Look) is retired: a look is the
-\t// CARD now (re-look = a new card, user 23.09). The overlay never showed
-\t// in game; the key is simply dropped (its facts are left alone - after
-\t// New Game+ that number may belong to a token). Shape tokens are misc -
-\t// untouched, they keep their key and icon.
-\twiped = 0;
-\tfor( i = 0; i < items.Size(); i += 1 )
-\t{
-\t\tif( !inv.IsIdValid( items[i] ) )
-\t\t\tcontinue;
-\t\tt = inv.GetItemModifierInt( items[i], 'FRG_Look', 0 );
-\t\tif( t <= 0 )
-\t\t\tcontinue;
-\t\tif( inv.GetItemCategory( items[i] ) != 'steelsword' && inv.GetItemCategory( items[i] ) != 'silversword' )
-\t\t\tcontinue;
-\t\tinv.SetItemModifierInt( items[i], 'FRG_Look', 0 );
-\t\twiped += 1;
-\t}
-\tif( wiped > 0 )
-\t\ttheGame.GetGuiManager().ShowNotification( "FRG: " + wiped + " blade(s) dropped the old look overlay "
-\t\t\t+ "(it never showed). A forged blade changes its look at a smith now.", 15000 );
+\t// FRG_Look (the overlay look of a sword) is KEPT: the Reskin recipe is
+\t// for VANILLA swords above all (user 23.09) - their look lives there.
 \tfor( i = 0; i < items.Size(); i += 1 )
 \t{
 \t\tif( !inv.IsIdValid( items[i] ) || !inv.ItemHasTag( items[i], 'FRG_Forge' ) )
@@ -2626,6 +2763,11 @@ function FRGP_Deficit( tier : int ) : int
 \t\t// a look carrier is scenery - no quality, no sockets, no pour
 \t\tif( inv.ItemHasTag( items[i], 'FRG_LookItem' ) )
 \t\t\tcontinue;
+\t\t// a FORGED sword's look is its card (the recipe moves it to another
+\t\t// one): an overlay key left by older builds is dropped (facts kept)
+\t\tif( ( inv.GetItemCategory( items[i] ) == 'steelsword' || inv.GetItemCategory( items[i] ) == 'silversword' )
+\t\t\t&& inv.GetItemModifierInt( items[i], 'FRG_Look', 0 ) > 0 )
+\t\t\tinv.SetItemModifierInt( items[i], 'FRG_Look', 0 );
 \t\t// instance tags do not survive a save: the weight class is stored as
 \t\t// a NUMBER and the tag is re-applied on every spawn (set-mod pattern)
 \t\tt = inv.GetItemModifierInt( items[i], 'FRG_Weight', 0 );
@@ -3385,17 +3527,16 @@ var FRG_HashCacheN : array< name >;
 
 \twhy = "";
 \tcard = '';
-\tif( !inv.IsIdValid( blade ) || !inv.ItemHasTag( blade, 'FRG_Forge' ) )
+\tif( !FRG_IsReskinnable( blade ) )
 \t{
 \t\twhy = "frgu_rl_forged";
 \t\treturn '';
 \t}
 \tcat = inv.GetItemCategory( blade );
-\tif( cat != 'steelsword' && cat != 'silversword' )
-\t{
-\t\twhy = "frgu_rl_forged";
-\t\treturn '';
-\t}
+\t// a VANILLA sword never changes its card (the Griffin rule): its look
+\t// is an overlay - the recipe exists for these above all (user 23.09)
+\tif( !inv.ItemHasTag( blade, 'FRG_Forge' ) )
+\t\treturn FRG_OverlayTarget( blade, shapeTok, why );
 \tif( FRGW_IsPlaceholder( shapeTok ) || shapeTok == 'FRG Shape Native' )
 \t{
 \t\tcard = FRG_OrigCardOf( blade );
@@ -3425,6 +3566,141 @@ var FRG_HashCacheN : array< name >;
 \treturn card;
 }
 
+// Can this item change its look in the sword recipe? A sword - forged or
+// vanilla - never an axe or a mace W3EE files as a steel sword
+// (SecondaryWeapon), a raw blank, a look carrier or a hidden quest item.
+@addMethod( W3PlayerWitcher ) function FRG_IsReskinnable( id : SItemUniqueId ) : bool
+{
+\tvar cat : name;
+
+\tif( !inv.IsIdValid( id ) )
+\t\treturn false;
+\tcat = inv.GetItemCategory( id );
+\tif( cat != 'steelsword' && cat != 'silversword' )
+\t\treturn false;
+\tif( inv.ItemHasTag( id, 'SecondaryWeapon' ) || inv.ItemHasTag( id, 'FRG_LookItem' )
+\t\t|| inv.ItemHasTag( id, 'NoShow' ) || inv.ItemHasTag( id, 'Artifact_weapon' ) )
+\t\treturn false;
+\tif( theGame.GetDefinitionsManager().GetItemEquipTemplate( inv.GetItemName( id ) ) == "" )
+\t\treturn false;
+\tif( inv.ItemHasTag( id, 'FRG_Blank' ) && !inv.ItemHasTag( id, 'FRG_Forge' ) )
+\t\treturn false;
+\treturn true;
+}
+
+// The look a VANILLA sword would wear: the forge card of that look of the
+// sword's OWN metal (the cross-metal twin for a look of the other metal) -
+// only its model is borrowed. The native mark / an empty square answers
+// with the sword's own name (= take the overlay off). '' + why when nothing
+// would change.
+@addMethod( W3PlayerWitcher ) function FRG_OverlayTarget( blade : SItemUniqueId, shapeTok : name, out why : string ) : name
+{
+\tvar dm : CDefinitionsManagerAccessor;
+\tvar card, cat : name;
+\tvar cur, path : string;
+
+\tdm = theGame.GetDefinitionsManager();
+\twhy = "";
+\tcard = '';
+\tcat = inv.GetItemCategory( blade );
+\tcur = FRG_LookRead( "frg_look_", inv.GetItemModifierInt( blade, 'FRG_Look', 0 ) );
+\tif( FRGW_IsPlaceholder( shapeTok ) || shapeTok == 'FRG Shape Native' )
+\t{
+\t\tif( cur == "" )
+\t\t{
+\t\t\twhy = "frgu_rl_home";
+\t\t\treturn '';
+\t\t}
+\t\treturn inv.GetItemName( blade );
+\t}
+\tFRGW_ForgedFor( StrAfterFirst( NameToString( shapeTok ), "FRG Shape " ), cat, card );
+\tpath = "";
+\tif( card != '' )
+\t\tpath = dm.GetItemEquipTemplate( card );
+\tif( card == '' || dm.GetItemCategory( card ) != cat || path == "" )
+\t{
+\t\twhy = "frgu_rl_metal";
+\t\treturn '';
+\t}
+\tif( path == cur )
+\t{
+\t\twhy = "frgu_rl_same";
+\t\treturn '';
+\t}
+\t// its own model: nothing to put on - with an overlay on, take it off
+\tif( path == dm.GetItemEquipTemplate( inv.GetItemName( blade ) ) )
+\t{
+\t\tif( cur == "" )
+\t\t{
+\t\t\twhy = "frgu_rl_same";
+\t\t\treturn '';
+\t\t}
+\t\treturn inv.GetItemName( blade );
+\t}
+\treturn card;
+}
+
+// which worn sword slot (4 steel, 5 silver) holds this item; -1 if none
+@addMethod( W3PlayerWitcher ) function FRG_SlotOfBlade( blade : SItemUniqueId ) : int
+{
+\tvar id : SItemUniqueId;
+\tvar s : int;
+
+\tfor( s = 4; s <= 5; s += 1 )
+\t{
+\t\tif( FRG_Slot( s, id ) && id == blade )
+\t\t\treturn s;
+\t}
+\treturn -1;
+}
+
+// Put a look on a VANILLA sword (or take it off: card == the sword's own
+// name). The template and icon paths of the look card go to save facts under
+// a new key; the old key is erased only after the new one is stored.
+@addMethod( W3PlayerWitcher ) function FRG_OverlaySet( blade : SItemUniqueId, card : name ) : bool
+{
+\tvar dm : CDefinitionsManagerAccessor;
+\tvar path, icon : string;
+\tvar k, k2, s : int;
+
+\tdm = theGame.GetDefinitionsManager();
+\ts = FRG_SlotOfBlade( blade );
+\tk = inv.GetItemModifierInt( blade, 'FRG_Look', 0 );
+\tif( card == inv.GetItemName( blade ) )
+\t{
+\t\tif( s >= 0 )
+\t\t\tFRG_ClearLookVisual( s );
+\t\tFRG_LookEraseAll( k );
+\t\tinv.SetItemModifierInt( blade, 'FRG_Look', 0 );
+\t\treturn true;
+\t}
+\tpath = dm.GetItemEquipTemplate( card );
+\tif( path == "" )
+\t\treturn false;
+\ticon = dm.GetItemIconPath( card );
+\tk2 = FactsQuerySum( "FRG_LookSeq" ) + 1;
+\tFactsSet( "FRG_LookSeq", k2 );
+\tif( !FRG_LookPack( "frg_look_", k2, path ) )
+\t{
+\t\tFRG_LookEraseAll( k2 );
+\t\treturn false;
+\t}
+\tif( icon != "" )
+\t\tFRG_LookPack( "frg_icon_", k2, icon );
+\tinv.SetItemModifierInt( blade, 'FRG_Look', k2 );
+\t// the new look must really mount before the old one is let go (a sword
+\t// without an entity right now mounts on the next draw/load - not fatal)
+\tif( s >= 0 && !FRG_ApplyLookVisual( s ) && FRG_LookWhyOf( s ) != "no sword entity" )
+\t{
+\t\tFRG_LookFail = FRG_LookWhyOf( s );
+\t\tinv.SetItemModifierInt( blade, 'FRG_Look', k );
+\t\tFRG_LookEraseAll( k2 );
+\t\tFRG_ApplyLookVisual( s );    // the old look back on (none: stays native)
+\t\treturn false;
+\t}
+\tFRG_LookEraseAll( k );
+\treturn true;
+}
 // Why a sword re-look cannot go (a loc key), or "" when it can - or when
 // only ordinary materials/money are missing (the window says that itself).
 // The blade must be ON Geralt or in his bag: the stash is out of reach.
@@ -4293,6 +4569,10 @@ var FRG_InCraft : bool;
 \t\t\t}
 \t\t}
 \t}
+\t// W3EE checks money only after its ingredient loop, and a placeholder
+\t// square (an empty look square) ends that loop early - check it here
+\tif( !bad && checkMerchant && thePlayer.GetMoney() < GetCraftingCost( schematicName ) )
+\t\treturn ECE_NotEnoughMoney;
 \tif( !bad )
 \t\treturn ECE_NoException;
 \twit = GetWitcherPlayer();
@@ -4392,8 +4672,15 @@ var FRG_InCraft : bool;
 \t\t\t\t+ GetLocStringByKeyExt( _inv.GetItemLocalizedNameByName( ing ) );
 \t\t\ting = w.FRG_ReskinTarget( target, schem.ingredients[1].itemName, nm );
 \t\t\tif( ing != '' )
-\t\t\t\ts += "<br>" + GetLocStringByKeyExt( "frgu_rl_to" ) + ": <font color='#ca610c'>"
-\t\t\t\t\t+ GetLocStringByKeyExt( _inv.GetItemLocalizedNameByName( ing ) ) + "</font>";
+\t\t\t{
+\t\t\t\t// a forged blade BECOMES the new card; a vanilla sword keeps
+\t\t\t\t// its card and name - only its look changes
+\t\t\t\tif( _inv.ItemHasTag( target, 'FRG_Forge' ) )
+\t\t\t\t\ts += "<br>" + GetLocStringByKeyExt( "frgu_rl_to" ) + ": <font color='#ca610c'>";
+\t\t\t\telse
+\t\t\t\t\ts += "<br>" + GetLocStringByKeyExt( "frgu_s_look" ) + ": <font color='#ca610c'>";
+\t\t\t\ts += GetLocStringByKeyExt( _inv.GetItemLocalizedNameByName( ing ) ) + "</font>";
+\t\t\t}
 \t\t\telse
 \t\t\t\ts += "<br><font color='#c83232'>" + GetLocStringByKeyExt( nm ) + "</font>";
 \t\t}
@@ -4714,17 +5001,21 @@ var FRG_InCraft : bool;
 \t\t\t// ⛔ ТОЛЬКО НАШЕ (требование ГД 18.09: «в том окошке должна быть
 \t\t\t// только одна вещь: кованая заготовка»). Прежде кольцо ходило по
 \t\t\t// всему гардеробу, и в него валились сапоги, поножи и вилы.
-\t\t\tif( !w.inv.ItemHasTag( bagIds[i], 'FRG_Blank' )
+\t\t\tif( selectedSchematic.schemName == 'FRG Reskin schematic' )
+\t\t\t{
+\t\t\t\t// ...except the look of a SWORD: VANILLA swords too (an
+\t\t\t\t// overlay, user 23.09) - never a raw blank, an axe or a mace
+\t\t\t\tif( !w.FRG_IsReskinnable( bagIds[i] ) )
+\t\t\t\t\tcontinue;
+\t\t\t}
+\t\t\telse if( !w.inv.ItemHasTag( bagIds[i], 'FRG_Blank' )
 \t\t\t\t&& !w.inv.ItemHasTag( bagIds[i], 'FRG_Forge' ) )
 \t\t\t\tcontinue;
 \t\t\t// a raw blank has no look worth changing - forge it instead
 \t\t\tif( FRGW_IsArmorReskin( selectedSchematic.schemName )
 \t\t\t\t&& StrFindFirst( NameToString( w.inv.GetItemName( bagIds[i] ) ), "FRG Blank " ) == 0 )
 \t\t\t\tcontinue;
-\t\t\t// a sword's look is its CARD: only a forged blade can change it
-\t\t\tif( selectedSchematic.schemName == 'FRG Reskin schematic'
-\t\t\t\t&& !w.inv.ItemHasTag( bagIds[i], 'FRG_Forge' ) )
-\t\t\t\tcontinue;
+
 \t\t\t// enchanting: only relics, witcher blades and our own forgings
 \t\t\tif( selectedSchematic.schemName == 'FRG Enchant schematic'
 \t\t\t\t&& !FRGW_IsWorthyBlade( w, bagIds[i] ) )
@@ -5011,7 +5302,7 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 \tvar i, j, id : int;
 \tvar w : W3PlayerWitcher;
 \tvar blankId : SItemUniqueId;
-\tvar haveTarget, gearArmed : bool;
+\tvar haveTarget, gearArmed, orTags : bool;
 
 \torig = m_schematicListOriginal[selectedSchematicIndex].ingredients[selectedIngredient].itemName;
 \tif( !FRGW_IsPlaceholder( orig ) )
@@ -5019,7 +5310,24 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 \t\twrappedMethod();
 \t\treturn;
 \t}
-\ttags.PushBack( FRGW_AxisTag( orig ) );
+\torTags = false;
+\tif( selectedSchematic.schemName == 'FRG Reskin schematic' && orig == 'frg_slot_blade' )
+\t{
+\t\t// the sword look recipe takes VANILLA swords too (user 23.09), and
+\t\t// FRG_Blank sits only on our own cards: list by the sword tags, keep
+\t\t// out axes/maces, raw blanks, look carriers, relic parts, hidden items
+\t\ttags.PushBack( 'PlayerSteelWeapon' );
+\t\ttags.PushBack( 'PlayerSilverWeapon' );
+\t\torTags = true;
+\t\tforbiddenTags.PushBack( 'SecondaryWeapon' );
+\t\tforbiddenTags.PushBack( 'FRG_LookItem' );
+\t\tforbiddenTags.PushBack( 'NoShow' );
+\t\tforbiddenTags.PushBack( 'FRG_BlankRaw' );
+\t\tforbiddenTags.PushBack( 'FRG_BlankRawS' );
+\t\tforbiddenTags.PushBack( 'Artifact_weapon' );
+\t}
+\telse
+\t\ttags.PushBack( FRGW_AxisTag( orig ) );
 \tforbiddenItems.PushBack( selectedSchematic.craftedItemName );
 \tfor( i = 0; i < itemsNames.Size(); i += 1 )
 \t{
@@ -5072,7 +5380,7 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 \tpopupData.filterTagsList = tags;
 \tpopupData.filterForbiddenTagsList = forbiddenTags;
 \tpopupData.forbiddenItems = forbiddenItems;
-\tpopupData.checkTagsOR = false;
+\tpopupData.checkTagsOR = orTags;
 \tframe = new W3PopupData in theGame.GetGuiManager();
 \tpopupData.craftingMenuCallBack = this;
 \tpopupData.frame = frame;
@@ -5134,13 +5442,15 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 \t\t\treturn;
 \t\t}
 \t}
-\t// a sword's look is its CARD: only a forged sword sits in that square
-\t// (the popup lists every FRG_Blank item - raw blanks and armour too)
+\t// only a SWORD sits in that square - forged or vanilla; never a raw
+\t// blank, an axe or a mace (the popup may list any of them)
 \tif( selectedSchematic.schemName == 'FRG Reskin schematic' && selectedIngredient == 0
 \t\t&& !FRGW_IsPlaceholder( itemName )
-\t\t&& ( !theGame.GetDefinitionsManager().ItemHasTag( itemName, 'FRG_Forge' )
-\t\t\t|| ( theGame.GetDefinitionsManager().GetItemCategory( itemName ) != 'steelsword'
-\t\t\t\t&& theGame.GetDefinitionsManager().GetItemCategory( itemName ) != 'silversword' ) ) )
+\t\t&& ( ( theGame.GetDefinitionsManager().GetItemCategory( itemName ) != 'steelsword'
+\t\t\t\t&& theGame.GetDefinitionsManager().GetItemCategory( itemName ) != 'silversword' )
+\t\t\t|| theGame.GetDefinitionsManager().ItemHasTag( itemName, 'SecondaryWeapon' )
+\t\t\t|| ( theGame.GetDefinitionsManager().ItemHasTag( itemName, 'FRG_Blank' )
+\t\t\t\t&& !theGame.GetDefinitionsManager().ItemHasTag( itemName, 'FRG_Forge' ) ) ) )
 \t{
 \t\tshowNotification( GetLocStringByKeyExt( "frgu_rl_forged" ) );
 \t\tOnPlaySoundEvent( "gui_global_denied" );
@@ -5883,13 +6193,31 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 \t// the blade moves onto the forged card of that look - of ITS metal: a
 \t// steel blade takes the cross-metal twin of a silver donor. The native
 \t// mark (or an empty look square) takes it back to the card it was forged
-\t// as. Forged blades only; a vanilla item never changes its card (the
-\t// Griffin rule, narrowed by the user 23.09).
+\t// as. A VANILLA sword never changes its card (the Griffin rule): it
+\t// wears an overlay instead (below).
 \tforgedName = w.FRG_ReskinTarget( blankId, shapeTok, why );
 \tif( forgedName == '' )
 \t{
 \t\tw.FRG_ReskinMsg = GetLocStringByKeyExt( why );
 \t\treturn ECE_TooFewIngredients;
+\t}
+\t// a VANILLA sword (the recipe's main use, user 23.09): the look is an
+\t// OVERLAY - card, name, quality, enchantment, runes and the upgrade path
+\t// stay exactly as they are
+\tif( !w.inv.ItemHasTag( blankId, 'FRG_Forge' ) )
+\t{
+\t\tw.FRG_LookFail = "";
+\t\tif( !w.FRG_OverlaySet( blankId, forgedName ) )
+\t\t{
+\t\t\tw.FRG_ReskinMsg = GetLocStringByKeyExt( "frgu_rl_fail" );
+\t\t\tif( w.FRG_LookFail != "" )
+\t\t\t\tw.FRG_ReskinMsg += " (" + w.FRG_LookFail + ")";
+\t\t\treturn ECE_TooFewIngredients;
+\t\t}
+\t\titem = blankId;
+\t\tw.RemoveMoney( GetCraftingCost( schemName ) );
+\t\tw.FRG_ReskinMsg = GetLocStringByKeyExt( "frgu_rl_done_v" );
+\t\treturn ECE_NoException;
 \t}
 \twhy = w.FRG_ReCard( blankId, forgedName, nw );
 \tif( why != "" )
