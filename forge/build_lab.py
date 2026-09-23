@@ -2584,9 +2584,41 @@ function FRGP_Deficit( tier : int ) : int
 \tvar slotGuard : int;
 \tvar items : array< SItemUniqueId >;
 \tvar i, t : int;
-\tvar migAb : name;
+\tvar migAb, guessFD : name;
+\tvar guessD : string;
+\tvar wiped, maxK : int;
+
+\t// NEW GAME+ starts an empty facts database, but carried items keep
+\t// their keys (free-text name, token looks): never hand out a number an
+\t// item in the bag or the stash still holds
+\tmaxK = FRG_MaxFactsKey( inv );
+\tif( GetHorseManager() )
+\t\tmaxK = Max( maxK, FRG_MaxFactsKey( GetHorseManager().GetInventoryComponent() ) );
+\tif( FactsQuerySum( "FRG_LookSeq" ) < maxK )
+\t\tFactsSet( "FRG_LookSeq", maxK );
 
 \tinv.GetAllItems( items );
+\t// the old OVERLAY look of blades (FRG_Look) is retired: a look is the
+\t// CARD now (re-look = a new card, user 23.09). The overlay never showed
+\t// in game; the key is simply dropped (its facts are left alone - after
+\t// New Game+ that number may belong to a token). Shape tokens are misc -
+\t// untouched, they keep their key and icon.
+\twiped = 0;
+\tfor( i = 0; i < items.Size(); i += 1 )
+\t{
+\t\tif( !inv.IsIdValid( items[i] ) )
+\t\t\tcontinue;
+\t\tt = inv.GetItemModifierInt( items[i], 'FRG_Look', 0 );
+\t\tif( t <= 0 )
+\t\t\tcontinue;
+\t\tif( inv.GetItemCategory( items[i] ) != 'steelsword' && inv.GetItemCategory( items[i] ) != 'silversword' )
+\t\t\tcontinue;
+\t\tinv.SetItemModifierInt( items[i], 'FRG_Look', 0 );
+\t\twiped += 1;
+\t}
+\tif( wiped > 0 )
+\t\ttheGame.GetGuiManager().ShowNotification( "FRG: " + wiped + " blade(s) dropped the old look overlay "
+\t\t\t+ "(it never showed). A forged blade changes its look at a smith now.", 15000 );
 \tfor( i = 0; i < items.Size(); i += 1 )
 \t{
 \t\tif( !inv.IsIdValid( items[i] ) || !inv.ItemHasTag( items[i], 'FRG_Forge' ) )
@@ -2608,9 +2640,30 @@ function FRGP_Deficit( tier : int ) : int
 \t\t}
 \t\tinv.SetItemModifierInt( items[i], 'FRG_Tier', 4 );
 \t\tFRGP_PourTier( items[i] );
-\t\tmigAb = FRGFD_AbilityByText( FRGW_DonorOfForged( inv.GetItemName( items[i] ) ) );
-\t\tif( migAb != '' && FRG_CountAb( items[i], migAb ) <= 0 )
-\t\t\tinv.AddItemCraftedAbility( items[i], migAb, false );
+\t\t// the flat/elemental add-on belongs to the DAMAGE donor (user 23.09).
+\t\t// A blade forged before that took it from the LOOK (Bug 1) and kept
+\t\t// no note of its damage donor - but the damage token it was forged
+\t\t// with is still in the bag with the very same six counters. Matching
+\t\t// tokens settle the add-on (all must agree); a single match also
+\t\t// names the donor. Settled once (FRG_FDv) - never re-derived.
+\t\tif( inv.GetItemModifierInt( items[i], 'FRG_FDv', 0 ) <= 0
+\t\t\t&& ( inv.GetItemCategory( items[i] ) == 'steelsword' || inv.GetItemCategory( items[i] ) == 'silversword' )
+\t\t\t&& FRG_GuessDmg( items[i], guessD, guessFD ) )
+\t\t{
+\t\t\t// nothing was settled yet (FDv 0): a donor stamped as a fallback
+\t\t\t// by a re-look gives way to the token that really matches
+\t\t\tif( guessD != "" )
+\t\t\t\tFRG_SetDmgDonor( items[i], guessD );
+\t\t\tFRG_SetFD( items[i], guessFD );
+\t\t\tinv.SetItemModifierInt( items[i], 'FRG_FDv', 1 );
+\t\t}
+\t\t// not settled: the old rule - the add-on of the card, never twice
+\t\tif( inv.GetItemModifierInt( items[i], 'FRG_FDv', 0 ) <= 0 )
+\t\t{
+\t\t\tmigAb = FRGFD_AbilityByText( FRG_DmgDonorOf( items[i] ) );
+\t\t\tif( migAb != '' && !FRG_HasAnyFD( items[i] ) )
+\t\t\t\tinv.AddItemCraftedAbility( items[i], migAb, false );
+\t\t}
 \t\t// the engine may refuse more sockets (armour often does): a plain
 \t\t// while() here hung the whole game (user 05.09) - bail out instead
 \t\tslotGuard = inv.GetItemEnhancementSlotsCount( items[i] );
@@ -2783,7 +2836,7 @@ function FRGW_FindTokCard( tag : name, wantText : string, out tok : name ) : boo
 // template and icon).
 @addMethod( W3PlayerWitcher ) function FRG_MintTokens( donor : name, isForged : bool,
 \tst : int, sv : int, stB : int, stD : int, svB : int, svD : int, fx : int,
-\tabilities : array< name >, optional silent : bool ) : int
+\tabilities : array< name >, optional silent : bool, optional dmgWant : string ) : int
 {
 \tvar made : array< SItemUniqueId >;
 \tvar seenL : array< int >;
@@ -2822,8 +2875,12 @@ function FRGW_FindTokCard( tag : name, wantText : string, out tok : name ) : boo
 \t\t}
 \t}
 
+\t// the damage token is named after the DAMAGE donor: a re-looked blade's
+\t// card names its look, not its damage (user 23.09)
+\tif( dmgWant == "" )
+\t\tdmgWant = want;
 \tif( ( st > 0 || sv > 0 )
-\t\t&& FRGW_FindTokCard( 'FRG_DmgTok', "FRG Dmg " + want, tokName )
+\t\t&& FRGW_FindTokCard( 'FRG_DmgTok', "FRG Dmg " + dmgWant, tokName )
 \t\t&& inv.GetItemQuantityByName( tokName ) <= 0 )
 \t{
 \t\tmade = inv.AddAnItem( tokName, 1 );
@@ -3122,7 +3179,8 @@ exec function frgstock( optional force : int )
 \tvar want : string;
 \tvar lk : int;
 
-\twant = NameToString( donor );
+\t// a worn FORGED blade names its look through the card ("FRG Forged X")
+\twant = FRGW_DonorOfForged( donor );
 \tif( StrFindFirst( want, "NGP " ) == 0 )
 \t\twant = StrAfterFirst( want, "NGP " );
 \tif( !FRGW_FindTokCard( FRGW_ShapeTagFor( cat ), "FRG Shape " + want, tokName ) )
@@ -3209,76 +3267,633 @@ exec function frgstock( optional force : int )
 \treturn left;
 }
 
-// Move everything that makes a blade what it is onto another card: its
-// crafted properties, damage counters, red line, tier, quality, flaw and
-// name, plus its runes (handed back to the bag - sockets are not carried).
-@addMethod( W3PlayerWitcher ) function FRG_CarryOver( from : SItemUniqueId, to : SItemUniqueId ) : bool
+// Names are kept on a blade as NUMBERS - two independent hashes of a card
+// name - never in facts: the facts database starts EMPTY in New Game+,
+// while the blade and its numbers carry over (review 23.09). The name is
+// found again by hashing the cards that can carry it.
+@addMethod( W3PlayerWitcher ) function FRG_NameHash( s : string, alpha : string, out h1 : int, out h2 : int )
 {
-\tvar abilities, runes : array< name >;
-\tvar i, k, slots : int;
+\tvar i, n, c : int;
 
-\tif( !inv.IsIdValid( from ) || !inv.IsIdValid( to ) )
+\th1 = 0;
+\th2 = 0;
+\tn = StrLen( s );
+\tfor( i = 0; i < n; i += 1 )
+\t{
+\t\tc = StrFindFirst( alpha, StrMid( s, i, 1 ) );
+\t\tif( c < 0 )
+\t\t\tc = 95;
+\t\t// both products stay below 2^31: 16000057 * 131, 15485863 * 137
+\t\th1 = ( h1 * 131 + c + 1 ) % 16000057;
+\t\th2 = ( h2 * 137 + c + 7 ) % 15485863;
+\t}
+}
+
+@addMethod( W3PlayerWitcher ) function FRG_HashOfCard( card : name, out h1 : int, out h2 : int )
+{
+\tFRG_NameHash( NameToString( card ), FRG_LookAlphabet(), h1, h2 );
+}
+
+// the found names are remembered for the session: the crafting window asks
+// on every scroll
+@addField( W3PlayerWitcher )
+var FRG_HashCacheA : array< int >;
+@addField( W3PlayerWitcher )
+var FRG_HashCacheB : array< int >;
+@addField( W3PlayerWitcher )
+var FRG_HashCacheN : array< name >;
+
+// the card with this tag whose name hashes to (h1, h2); '' if none
+@addMethod( W3PlayerWitcher ) function FRG_CardByHash( tag : name, h1 : int, h2 : int ) : name
+{
+\tvar all : array< name >;
+\tvar alpha : string;
+\tvar i, a, b : int;
+
+\tif( h1 == 0 && h2 == 0 )
+\t\treturn '';
+\tfor( i = 0; i < FRG_HashCacheN.Size(); i += 1 )
+\t{
+\t\tif( FRG_HashCacheA[i] == h1 && FRG_HashCacheB[i] == h2 )
+\t\t\treturn FRG_HashCacheN[i];
+\t}
+\talpha = FRG_LookAlphabet();
+\tall = theGame.GetDefinitionsManager().GetItemsWithTag( tag );
+\tfor( i = 0; i < all.Size(); i += 1 )
+\t{
+\t\tFRG_NameHash( NameToString( all[i] ), alpha, a, b );
+\t\tif( a == h1 && b == h2 )
+\t\t{
+\t\t\tFRG_HashCacheA.PushBack( h1 );
+\t\t\tFRG_HashCacheB.PushBack( h2 );
+\t\t\tFRG_HashCacheN.PushBack( all[i] );
+\t\t\treturn all[i];
+\t\t}
+\t}
+\treturn '';
+}
+
+// DAMAGE DONOR of a forged blade: the donor of the damage token it was
+// forged with. The flat/elemental add-on (FRG_FD_*) belongs to it, not to
+// the look (user 23.09: "the blade's - it stays"). Kept as the hash of the
+// damage token card (FRG_DmgH1/H2); a blade without one is counted as its
+// card donor - what it always was.
+@addMethod( W3PlayerWitcher ) function FRG_DmgDonorOf( item : SItemUniqueId ) : string
+{
+\tvar card : name;
+
+\tif( !inv.IsIdValid( item ) )
+\t\treturn "";
+\tcard = FRG_CardByHash( 'FRG_DmgTok', inv.GetItemModifierInt( item, 'FRG_DmgH1', 0 ),
+\t\tinv.GetItemModifierInt( item, 'FRG_DmgH2', 0 ) );
+\tif( card != '' )
+\t\treturn StrAfterFirst( NameToString( card ), "FRG Dmg " );
+\treturn FRGW_DonorOfForged( inv.GetItemName( item ) );
+}
+
+@addMethod( W3PlayerWitcher ) function FRG_SetDmgDonor( item : SItemUniqueId, donor : string ) : bool
+{
+\tvar card : name;
+\tvar h1, h2 : int;
+
+\tif( !inv.IsIdValid( item ) || donor == ""
+\t\t|| !FRGW_FindTokCard( 'FRG_DmgTok', "FRG Dmg " + donor, card ) )
 \t\treturn false;
+\tFRG_HashOfCard( card, h1, h2 );
+\tinv.SetItemModifierInt( item, 'FRG_DmgH1', h1 );
+\tinv.SetItemModifierInt( item, 'FRG_DmgH2', h2 );
+\treturn true;
+}
 
-\t// properties: only OUR registry abilities travel - vanilla card stats
-\t// belong to the card itself
-\tinv.GetItemAbilities( from, abilities );
+// the card a blade was forged as (its NATIVE look); '' while it wears it
+@addMethod( W3PlayerWitcher ) function FRG_OrigCardOf( item : SItemUniqueId ) : name
+{
+\tif( !inv.IsIdValid( item ) )
+\t\treturn '';
+\treturn FRG_CardByHash( 'FRG_Forge', inv.GetItemModifierInt( item, 'FRG_OrigH1', 0 ),
+\t\tinv.GetItemModifierInt( item, 'FRG_OrigH2', 0 ) );
+}
+
+// Where would a re-look take this blade? The forged card of the chosen look
+// (of the blade's own metal), or - for the native mark / an empty look
+// square - the card it was forged as. '' plus the reason (a loc key) when
+// the re-look would change nothing or cannot happen. One rule for the
+// window's gate, the preview, the build panel and the craft itself.
+@addMethod( W3PlayerWitcher ) function FRG_ReskinTarget( blade : SItemUniqueId, shapeTok : name, out why : string ) : name
+{
+\tvar card, cat : name;
+
+\twhy = "";
+\tcard = '';
+\tif( !inv.IsIdValid( blade ) || !inv.ItemHasTag( blade, 'FRG_Forge' ) )
+\t{
+\t\twhy = "frgu_rl_forged";
+\t\treturn '';
+\t}
+\tcat = inv.GetItemCategory( blade );
+\tif( cat != 'steelsword' && cat != 'silversword' )
+\t{
+\t\twhy = "frgu_rl_forged";
+\t\treturn '';
+\t}
+\tif( FRGW_IsPlaceholder( shapeTok ) || shapeTok == 'FRG Shape Native' )
+\t{
+\t\tcard = FRG_OrigCardOf( blade );
+\t\tif( card == '' )
+\t\t{
+\t\t\twhy = "frgu_rl_home";
+\t\t\treturn '';
+\t\t}
+\t}
+\telse
+\t\tFRGW_ForgedFor( StrAfterFirst( NameToString( shapeTok ), "FRG Shape " ), cat, card );
+\tif( card == '' || theGame.GetDefinitionsManager().GetItemCategory( card ) != cat )
+\t{
+\t\twhy = "frgu_rl_metal";
+\t\treturn '';
+\t}
+\tif( card == inv.GetItemName( blade ) )
+\t{
+\t\twhy = "frgu_rl_same";
+\t\treturn '';
+\t}
+\tif( inv.IsItemHeld( blade ) )
+\t{
+\t\twhy = "frgu_rl_sheathe";
+\t\treturn '';
+\t}
+\treturn card;
+}
+
+// Why a sword re-look cannot go (a loc key), or "" when it can - or when
+// only ordinary materials/money are missing (the window says that itself).
+// The blade must be ON Geralt or in his bag: the stash is out of reach.
+@addMethod( W3PlayerWitcher ) function FRG_ReskinWhyNot( lineTok : name, shapeTok : name ) : string
+{
+\tvar bid : SItemUniqueId;
+\tvar why : string;
+
+\tif( FRGW_IsPlaceholder( lineTok ) )
+\t\treturn "frgu_rl_pick";
+\tif( !FRG_FindBladeWornFirst( lineTok, bid ) )
+\t\treturn "frgu_rl_bag";
+\tFRG_ReskinTarget( bid, shapeTok, why );
+\treturn why;
+}
+
+// the highest facts key an inventory's items still hold (free-text name,
+// token looks) - New Game+ must not hand those numbers out again
+@addMethod( W3PlayerWitcher ) function FRG_MaxFactsKey( ic : CInventoryComponent ) : int
+{
+\tvar all : array< SItemUniqueId >;
+\tvar i, m : int;
+
+\tm = 0;
+\tif( !ic )
+\t\treturn 0;
+\tic.GetAllItems( all );
+\tfor( i = 0; i < all.Size(); i += 1 )
+\t{
+\t\tm = Max( m, ic.GetItemModifierInt( all[i], 'FRG_Look', 0 ) );
+\t\tm = Max( m, ic.GetItemModifierInt( all[i], 'FRG_Name', 0 ) );
+\t}
+\treturn m;
+}
+// does the blade carry a flat add-on at all (any FRG_FD_*)?
+@addMethod( W3PlayerWitcher ) function FRG_HasAnyFD( item : SItemUniqueId ) : bool
+{
+\tvar abilities : array< name >;
+\tvar i : int;
+
+\tinv.GetItemAbilities( item, abilities );
 \tfor( i = 0; i < abilities.Size(); i += 1 )
 \t{
-\t\tif( FRGL_FromAbility( abilities[i] ) > 0 )
-\t\t\tinv.AddItemCraftedAbility( to, abilities[i], false );
+\t\tif( StrFindFirst( NameToString( abilities[i] ), "FRG_FD_" ) == 0 )
+\t\t\treturn true;
 \t}
-\t// the flaw mark, if the blade was born with one
-\tfor( i = 1; i <= FRGF_Count(); i += 1 )
-\t{
-\t\tk = FRGF_IdAt( i );
-\t\tif( FRG_CountAb( from, FRGF_Ability( k ) ) > 0 )
-\t\t\tinv.AddItemCraftedAbility( to, FRGF_Ability( k ), false );
-\t}
-\tfor( i = 1; i <= 4; i += 1 )
-\t{
-\t\tif( FRG_CountAb( from, FRGD_Ability( i ) ) > 0 )
-\t\t\tinv.AddItemCraftedAbility( to, FRGD_Ability( i ), false );
-\t\tif( FRG_CountAb( from, FRGT_Ability( i ) ) > 0 )
-\t\t\tinv.AddItemCraftedAbility( to, FRGT_Ability( i ), false );
-\t}
-\t// numbers on the instance: damage pour, effect, tier, flaw, name
-\tinv.SetItemModifierInt( to, 'FRG_St', inv.GetItemModifierInt( from, 'FRG_St', 0 ) );
-\tinv.SetItemModifierInt( to, 'FRG_Sv', inv.GetItemModifierInt( from, 'FRG_Sv', 0 ) );
-\tinv.SetItemModifierInt( to, 'FRG_StB', inv.GetItemModifierInt( from, 'FRG_StB', 0 ) );
-\tinv.SetItemModifierInt( to, 'FRG_StD', inv.GetItemModifierInt( from, 'FRG_StD', 0 ) );
-\tinv.SetItemModifierInt( to, 'FRG_SvB', inv.GetItemModifierInt( from, 'FRG_SvB', 0 ) );
-\tinv.SetItemModifierInt( to, 'FRG_SvD', inv.GetItemModifierInt( from, 'FRG_SvD', 0 ) );
-\tinv.SetItemModifierInt( to, 'FRG_Fx', inv.GetItemModifierInt( from, 'FRG_Fx', 0 ) );
-\tFRG_FxStamp( to );\t// tag-gated charms (2, 4) travel with the tag, not the number
-\tinv.SetItemModifierInt( to, 'FRG_Flaw', inv.GetItemModifierInt( from, 'FRG_Flaw', 0 ) );
-\tinv.SetItemModifierInt( to, 'FRG_Nm1', inv.GetItemModifierInt( from, 'FRG_Nm1', 0 ) );
-\tinv.SetItemModifierInt( to, 'FRG_Nm2', inv.GetItemModifierInt( from, 'FRG_Nm2', 0 ) );
-\tinv.SetItemModifierInt( to, 'FRG_Tier', 4 );
-\tinv.SetItemModifierInt( to, 'ItemQualityModified', 1 );
-\tfor( i = 2; i <= 4; i += 1 )
-\t{
-\t\tif( FRG_CountAb( to, FRGP_QAbility( i ) ) <= 0 )
-\t\t\tinv.AddItemCraftedAbility( to, FRGP_QAbility( i ), false );
-\t}
-\tFRGP_PourTier( to );
+\treturn false;
+}
 
-\t// runes go back to the bag: sockets of the new card start empty
-\tinv.GetItemEnhancementItems( from, runes );
-\tfor( i = 0; i < runes.Size(); i += 1 )
-\t\tinv.AddAnItem( runes[i], 1 );
-\tslots = inv.GetItemEnhancementSlotsCount( from );
-\tk = inv.GetItemEnhancementSlotsCount( to );
-\twhile( k < slots )
+// exactly this flat add-on (or none): every other FRG_FD_* goes
+@addMethod( W3PlayerWitcher ) function FRG_SetFD( item : SItemUniqueId, fd : name )
+{
+\tvar abilities : array< name >;
+\tvar i : int;
+
+\tinv.GetItemAbilities( item, abilities );
+\tfor( i = 0; i < abilities.Size(); i += 1 )
 \t{
-\t\tinv.AddSlot( to );
-\t\tif( inv.GetItemEnhancementSlotsCount( to ) <= k )
-\t\t\tbreak;
-\t\tk = inv.GetItemEnhancementSlotsCount( to );
+\t\tif( abilities[i] != fd && StrFindFirst( NameToString( abilities[i] ), "FRG_FD_" ) == 0 )
+\t\t\tFRG_StripAb( item, abilities[i] );
+\t}
+\tif( fd != '' && FRG_CountAb( item, fd ) <= 0 )
+\t\tinv.AddItemCraftedAbility( item, fd, false );
+}
+
+// A blade forged before 23.09: which damage token was it forged with? The
+// token is knowledge (never spent) and carries the very same six counters
+// the blade got from it. Returns true when the add-on is settled: every
+// matching token agrees on it. The donor is any agreeing match (they carry
+// the same counters and add-on) - the card's own donor when it is one.
+@addMethod( W3PlayerWitcher ) function FRG_GuessDmg( item : SItemUniqueId, out donor : string, out fd : name ) : bool
+{
+\tvar all : array< SItemUniqueId >;
+\tvar nm, d : string;
+\tvar ab : name;
+\tvar i, hits : int;
+\tvar agree : bool;
+
+\tdonor = "";
+\tfd = '';
+\tif( inv.GetItemModifierInt( item, 'FRG_St', 0 ) <= 0 && inv.GetItemModifierInt( item, 'FRG_Sv', 0 ) <= 0 )
+\t\treturn false;
+\tinv.GetAllItems( all );
+\thits = 0;
+\tagree = true;
+\tfor( i = 0; i < all.Size(); i += 1 )
+\t{
+\t\tif( !inv.IsIdValid( all[i] ) || inv.GetItemModifierInt( all[i], 'FRG_Part', 0 ) != 2 )
+\t\t\tcontinue;
+\t\tnm = NameToString( inv.GetItemName( all[i] ) );
+\t\tif( StrFindFirst( nm, "FRG Dmg " ) != 0 )
+\t\t\tcontinue;
+\t\tif( inv.GetItemModifierInt( all[i], 'FRG_St', 0 ) != inv.GetItemModifierInt( item, 'FRG_St', 0 )
+\t\t\t|| inv.GetItemModifierInt( all[i], 'FRG_Sv', 0 ) != inv.GetItemModifierInt( item, 'FRG_Sv', 0 )
+\t\t\t|| inv.GetItemModifierInt( all[i], 'FRG_StB', 0 ) != inv.GetItemModifierInt( item, 'FRG_StB', 0 )
+\t\t\t|| inv.GetItemModifierInt( all[i], 'FRG_StD', 0 ) != inv.GetItemModifierInt( item, 'FRG_StD', 0 )
+\t\t\t|| inv.GetItemModifierInt( all[i], 'FRG_SvB', 0 ) != inv.GetItemModifierInt( item, 'FRG_SvB', 0 )
+\t\t\t|| inv.GetItemModifierInt( all[i], 'FRG_SvD', 0 ) != inv.GetItemModifierInt( item, 'FRG_SvD', 0 ) )
+\t\t\tcontinue;
+\t\td = StrAfterFirst( nm, "FRG Dmg " );
+\t\tab = FRGFD_AbilityByText( d );
+\t\tif( hits == 0 )
+\t\t{
+\t\t\tdonor = d;
+\t\t\tfd = ab;
+\t\t}
+\t\telse
+\t\t{
+\t\t\tif( ab != fd )
+\t\t\t\tagree = false;
+\t\t\telse if( d == FRGW_DonorOfForged( inv.GetItemName( item ) ) )
+\t\t\t\tdonor = d;    // the card's own token matches too - prefer it
+\t\t}
+\t\thits += 1;
+\t}
+\tif( hits <= 0 || !agree )
+\t{
+\t\tdonor = "";
+\t\tfd = '';
+\t\treturn false;
 \t}
 \treturn true;
 }
 
+// the blade a re-look works on: the one WORN first (a re-look is almost
+// always about what hangs on Geralt), then the bag
+@addMethod( W3PlayerWitcher ) function FRG_FindBladeWornFirst( wanted : name, out item : SItemUniqueId ) : bool
+{
+\tvar worn : SItemUniqueId;
+\tvar i : int;
+
+\tfor( i = 4; i <= 5; i += 1 )
+\t{
+\t\tif( FRG_Slot( i, worn ) && inv.GetItemName( worn ) == wanted )
+\t\t{
+\t\t\titem = worn;
+\t\t\treturn true;
+\t\t}
+\t}
+\treturn FRG_FindInBag( wanted, item );
+}
+
+// Oil and whetstone buffs know their blade by id (a saved field): on a
+// re-look they are pointed at the new blade - charges and order untouched.
+@addMethod( W3Effect_Oil ) function FRG_MoveToSword( nw : SItemUniqueId )
+{
+\tsword = nw;
+}
+
+@addMethod( W3RepairObjectEnhancement ) function FRG_MoveToItem( nw : SItemUniqueId, nwName : name )
+{
+\titem = nw;
+\tsourceName = NameToString( nwName );
+}
+
+// RE-CARD A FORGED BLADE (user 23.09: "for forged blades - yes"; a vanilla
+// item - never, the Griffin rule stands). A look IS the card: template,
+// icon, sheath and the side of the back all live there. So the blade moves
+// onto the forged card of the new look and EVERYTHING that makes it this
+// blade moves along: damage, properties, flaw, mark, charm, add-on, name,
+// sockets, runes, enchantment, wear, oil, whetstone, other mods' marks.
+// Nothing dies before the new blade is complete, checked and in the old
+// one's place. Returns "" on success, or why nothing changed.
+@addMethod( W3PlayerWitcher ) function FRG_ReCard( old : SItemUniqueId, card : name, out nw : SItemUniqueId ) : string
+{
+\tvar abilities, runes, runes2, tags, seen : array< name >;
+\tvar made, got : array< SItemUniqueId >;
+\tvar oils : array< W3Effect_Oil >;
+\tvar rbuffs : array< CBaseGameplayEffect >;
+\tvar rb : W3RepairObjectEnhancement;
+\tvar cat, ench : name;
+\tvar slot : EEquipmentSlots;
+\tvar st, sv, stB, stD, svB, svD, nSlots, i, j, n, k : int;
+\tvar dur, perm : float;
+\tvar hasDur : bool;
+\tvar why : string;
+\tvar oh1, oh2, ch1, ch2 : int;
+
+\tif( !inv.IsIdValid( old ) )
+\t\treturn "the blade is gone";
+\tif( !inv.ItemHasTag( old, 'FRG_Forge' ) || inv.ItemHasTag( old, 'FRG_LookItem' ) )
+\t\treturn "only a FORGED blade changes its look - forge the blank first";
+\tcat = inv.GetItemCategory( old );
+\tif( cat != 'steelsword' && cat != 'silversword' )
+\t\treturn "only a sword changes its look here";
+\tif( card == '' || theGame.GetDefinitionsManager().GetItemCategory( card ) != cat )
+\t\treturn "no card of this metal for that look";
+\tif( card == inv.GetItemName( old ) )
+\t\treturn "the blade already wears this look";
+\t// a DRAWN blade is wired into the holster and its buffs - never swap it
+\tif( inv.IsItemHeld( old ) )
+\t\treturn "sheathe the blade first";
+\tslot = GetItemSlot( old );
+
+\t// ---- what the old blade is ----
+\tst = inv.GetItemModifierInt( old, 'FRG_St', 0 );
+\tsv = inv.GetItemModifierInt( old, 'FRG_Sv', 0 );
+\tstB = inv.GetItemModifierInt( old, 'FRG_StB', 0 );
+\tstD = inv.GetItemModifierInt( old, 'FRG_StD', 0 );
+\tsvB = inv.GetItemModifierInt( old, 'FRG_SvB', 0 );
+\tsvD = inv.GetItemModifierInt( old, 'FRG_SvD', 0 );
+\tif( st <= 0 && sv <= 0 )
+\t{
+\t\t// forged before the counters existed: the damage lives only as
+\t\t// stacks - read them, or the new card would come out bare
+\t\tst = FRG_CountAb( old, 'autogen_fixed_steel_dmg' );
+\t\tsv = FRG_CountAb( old, 'autogen_fixed_silver_dmg' );
+\t\tstB = FRG_CountAb( old, 'autogen_steel_base' );
+\t\tstD = FRG_CountAb( old, 'autogen_steel_dmg' );
+\t\tsvB = FRG_CountAb( old, 'autogen_silver_base' );
+\t\tsvD = FRG_CountAb( old, 'autogen_silver_dmg' );
+\t}
+\tinv.GetItemAbilities( old, abilities );
+\tinv.GetItemTags( old, tags );
+\tinv.GetItemEnhancementItems( old, runes );
+\tnSlots = inv.GetItemEnhancementSlotsCount( old );
+\tench = '';
+\tif( inv.IsItemEnchanted( old ) )
+\t\tench = inv.GetEnchantment( old );
+\thasDur = inv.HasItemDurability( old );
+\tif( hasDur )
+\t\tdur = inv.GetItemDurability( old );
+\tperm = inv.GetItemModifierFloat( old, 'PermDamageBoost', 0.f );
+
+\t// ---- the new blade ----
+\tmade = inv.AddAnItem( card, 1, true, true );
+\tif( made.Size() <= 0 || !inv.IsIdValid( made[0] ) )
+\t\treturn "the new card refused to spawn (" + card + ")";
+\tnw = made[0];
+
+\tinv.SetItemModifierInt( nw, 'FRG_St', st );
+\tinv.SetItemModifierInt( nw, 'FRG_Sv', sv );
+\tinv.SetItemModifierInt( nw, 'FRG_StB', stB );
+\tinv.SetItemModifierInt( nw, 'FRG_StD', stD );
+\tinv.SetItemModifierInt( nw, 'FRG_SvB', svB );
+\tinv.SetItemModifierInt( nw, 'FRG_SvD', svD );
+\tinv.SetItemModifierInt( nw, 'FRG_Fx', inv.GetItemModifierInt( old, 'FRG_Fx', 0 ) );
+\tinv.SetItemModifierInt( nw, 'FRG_Flaw', inv.GetItemModifierInt( old, 'FRG_Flaw', 0 ) );
+\tinv.SetItemModifierInt( nw, 'FRG_Nm1', inv.GetItemModifierInt( old, 'FRG_Nm1', 0 ) );
+\tinv.SetItemModifierInt( nw, 'FRG_Nm2', inv.GetItemModifierInt( old, 'FRG_Nm2', 0 ) );
+\t// the free-text name: its facts key MOVES with the blade
+\tinv.SetItemModifierInt( nw, 'FRG_Name', inv.GetItemModifierInt( old, 'FRG_Name', 0 ) );
+\tinv.SetItemModifierInt( nw, 'FRG_Weight', inv.GetItemModifierInt( old, 'FRG_Weight', 0 ) );
+\tinv.SetItemModifierInt( nw, 'FRG_Tier', 4 );
+\tinv.SetItemModifierInt( nw, 'ItemQualityModified', 1 );
+\t// the add-on travels as an ability (below); whether it is SETTLED
+\t// travels too - an unsettled legacy blade may still be matched to its
+\t// damage token later
+\tinv.SetItemModifierInt( nw, 'FRG_FDv', inv.GetItemModifierInt( old, 'FRG_FDv', 0 ) );
+\t// other mods' marks on this blade (charm / set transfer) - by name only,
+\t// so the forge compiles and runs without those mods
+\tinv.SetItemModifierInt( nw, 'CHT_Fx', inv.GetItemModifierInt( old, 'CHT_Fx', 0 ) );
+\tinv.SetItemModifierInt( nw, 'SBT_Set', inv.GetItemModifierInt( old, 'SBT_Set', 0 ) );
+\tif( perm > 0 )
+\t\tinv.SetItemModifierFloat( nw, 'PermDamageBoost', perm );
+
+\t// every FRG_ ability, as many copies as the old blade had: property
+\t// lines, flaw, mark, grooves, add-on, quality. The card's own stats,
+\t// damage stacks, runewords and oils are not ours and stay behind.
+\tfor( i = 0; i < abilities.Size(); i += 1 )
+\t{
+\t\tif( seen.Contains( abilities[i] ) )
+\t\t\tcontinue;
+\t\tseen.PushBack( abilities[i] );
+\t\tif( StrFindFirst( NameToString( abilities[i] ), "FRG_" ) != 0 )
+\t\t\tcontinue;
+\t\tn = FRG_CountAb( old, abilities[i] ) - FRG_CountAb( nw, abilities[i] );
+\t\tfor( j = 0; j < n; j += 1 )
+\t\t\tinv.AddItemCraftedAbility( nw, abilities[i], true );
+\t}
+\tfor( i = 2; i <= 4; i += 1 )
+\t{
+\t\tif( FRG_CountAb( nw, FRGP_QAbility( i ) ) <= 0 )
+\t\t\tinv.AddItemCraftedAbility( nw, FRGP_QAbility( i ), false );
+\t}
+\tFRGP_PourTier( nw );
+
+\t// instance tags (set bonuses, weight, charm tags); the repair-kit tag
+\t// belongs to a live buff, which is moved over below
+\tfor( i = 0; i < tags.Size(); i += 1 )
+\t{
+\t\tif( tags[i] != 'ItemEnhanced' && !inv.ItemHasTag( nw, tags[i] ) )
+\t\t\tinv.AddItemTag( nw, tags[i] );
+\t}
+\tFRG_FxStamp( nw );
+
+\t// the new blade takes the old one's place FIRST: if the game refuses,
+\t// the new one goes and the old one never noticed
+\tif( slot != EES_InvalidSlot && !EquipItemInGivenSlot( nw, slot, false ) )
+\t{
+\t\tinv.RemoveItem( nw, 1 );
+\t\tnw = GetInvalidUniqueId();
+\t\treturn "the game would not equip the new blade";
+\t}
+
+\t// sockets, then the enchantment, then the runes - the order the game
+\t// itself swaps an item in (NewGamePlusReplaceItem)
+\tk = inv.GetItemEnhancementSlotsCount( nw );
+\twhile( k < nSlots )
+\t{
+\t\tinv.AddSlot( nw );
+\t\tif( inv.GetItemEnhancementSlotsCount( nw ) <= k )
+\t\t\tbreak;
+\t\tk = inv.GetItemEnhancementSlotsCount( nw );
+\t}
+\tif( ench != '' )
+\t\tinv.EnchantItem( nw, ench, getEnchamtmentStatName( ench ) );
+\tfor( i = 0; i < runes.Size(); i += 1 )
+\t{
+\t\tgot = inv.AddAnItem( runes[i], 1, true, true );
+\t\tif( got.Size() > 0 && inv.IsIdValid( got[0] ) && !inv.EnhanceItemScript( nw, got[0] ) )
+\t\t\tinv.RemoveItem( got[0], 1 );    // never leave a free rune behind
+\t}
+\tif( hasDur )
+\t\tinv.SetItemDurabilityScript( nw, dur );
+
+\t// ---- check everything BEFORE the old blade dies ----
+\twhy = "";
+\tif( inv.GetItemEnhancementSlotsCount( nw ) < nSlots )
+\t\twhy = "rune sockets";
+\tinv.GetItemEnhancementItems( nw, runes2 );
+\tif( runes2.Size() != runes.Size() )
+\t\twhy = "runes";
+\tif( ench != '' && inv.GetEnchantment( nw ) != ench )
+\t\twhy = "enchantment";
+\tfor( i = 0; i < seen.Size(); i += 1 )
+\t{
+\t\tif( StrFindFirst( NameToString( seen[i] ), "FRG_" ) == 0
+\t\t\t&& FRG_CountAb( nw, seen[i] ) < FRG_CountAb( old, seen[i] ) )
+\t\t\twhy = "properties";
+\t}
+\tif( why != "" )
+\t{
+\t\t// roll back: the old blade returns to its place, the new one goes
+\t\tif( slot != EES_InvalidSlot )
+\t\t\tEquipItemInGivenSlot( old, slot, false );
+\t\tinv.RemoveItem( nw, 1 );
+\t\tnw = GetInvalidUniqueId();
+\t\treturn "could not carry the " + why;
+\t}
+
+\t// ---- commit: the blade's notes move over ----
+\t// the NATIVE look: the card the blade was forged as, remembered once
+\t// (as a hash - it survives New Game+); a blade coming home drops it
+\toh1 = inv.GetItemModifierInt( old, 'FRG_OrigH1', 0 );
+\toh2 = inv.GetItemModifierInt( old, 'FRG_OrigH2', 0 );
+\tif( oh1 == 0 && oh2 == 0 )
+\t\tFRG_HashOfCard( inv.GetItemName( old ), oh1, oh2 );
+\tFRG_HashOfCard( card, ch1, ch2 );
+\tif( ch1 == oh1 && ch2 == oh2 )
+\t{
+\t\toh1 = 0;
+\t\toh2 = 0;
+\t}
+\tinv.SetItemModifierInt( nw, 'FRG_OrigH1', oh1 );
+\tinv.SetItemModifierInt( nw, 'FRG_OrigH2', oh2 );
+
+\t// the damage donor moves; a blade that never had one is stamped with
+\t// the donor it has been counted as all along (its card)
+\toh1 = inv.GetItemModifierInt( old, 'FRG_DmgH1', 0 );
+\toh2 = inv.GetItemModifierInt( old, 'FRG_DmgH2', 0 );
+\tif( oh1 != 0 || oh2 != 0 )
+\t{
+\t\tinv.SetItemModifierInt( nw, 'FRG_DmgH1', oh1 );
+\t\tinv.SetItemModifierInt( nw, 'FRG_DmgH2', oh2 );
+\t}
+\telse
+\t\tFRG_SetDmgDonor( nw, FRGW_DonorOfForged( inv.GetItemName( old ) ) );
+
+\t// oil and whetstone: pointed at the new blade, charges as they were
+\toils = inv.GetOilsAppliedOnItem( old );
+\tfor( i = 0; i < oils.Size(); i += 1 )
+\t{
+\t\toils[i].FRG_MoveToSword( nw );
+\t\tinv.AddItemCraftedAbility( nw, oils[i].GetAbilityName(), false );
+\t}
+\trbuffs = GetBuffs( EET_EnhancedWeapon, NameToString( inv.GetItemName( old ) ) );
+\tfor( i = 0; i < rbuffs.Size(); i += 1 )
+\t{
+\t\trb = (W3RepairObjectEnhancement)rbuffs[i];
+\t\tif( rb && rb.GetItemID() == old )
+\t\t\trb.FRG_MoveToItem( nw, card );
+\t}
+
+\t// (a retired overlay key on the old blade is not carried; its facts are
+\t// left alone - after New Game+ that number may belong to a token)
+\tinv.RemoveItem( old, 1 );
+\tFRG_FxStamp( nw );
+\tFRG_FxRefresh();
+\treturn "";
+}
+
+// After a re-look the blade square still names the OLD card (it is gone):
+// point it at the new one and repaint the row and the Craft button - the
+// craft's own repaint ran while the recipe still named the removed card.
+// Our own word is shown LAST: the window's generic line would cover it.
+@addField( W3PlayerWitcher )
+var FRG_ReskinNew : name;
+@addField( W3PlayerWitcher )
+var FRG_ReskinMsg : string;
+
+@wrapMethod( CR4CraftingMenu ) function CreateItem( schematic : name )
+{
+\tvar w : W3PlayerWitcher;
+\tvar keep : int;
+
+\tw = GetWitcherPlayer();
+\tif( w )
+\t{
+\t\tw.FRG_ReskinNew = '';
+\t\tw.FRG_ReskinMsg = "";
+\t}
+\twrappedMethod( schematic );
+\tif( !w || schematic != 'FRG Reskin schematic' )
+\t\treturn;
+\tif( w.FRG_ReskinNew != '' )
+\t{
+\t\tkeep = selectedIngredient;
+\t\tselectedIngredient = 0;
+\t\tIngredientSelectionPopupChangeIngredient( w.FRG_ReskinNew );
+\t\tselectedIngredient = keep;
+\t\tw.FRG_ReskinNew = '';
+\t\tcraftingException = m_craftingManager.CanCraftSchematic( schematic, bCouldCraft );
+\t\tPopulateData();
+\t\tShowSelectedItemInfo( schematic );
+\t}
+\tif( w.FRG_ReskinMsg != "" )
+\t\ttheGame.GetGuiManager().ShowNotification( w.FRG_ReskinMsg, 12000 );
+\tw.FRG_ReskinMsg = "";
+}
+// What a worn blade carries, in one notification (re-look diagnostics).
+exec function frgdump( slot : int )
+{
+\tvar w : W3PlayerWitcher;
+\tvar id : SItemUniqueId;
+\tvar abilities, runes : array< name >;
+\tvar oils : array< W3Effect_Oil >;
+\tvar s : string;
+\tvar i : int;
+
+\tw = GetWitcherPlayer();
+\tif( !w.FRG_Slot( slot, id ) )
+\t{
+\t\ttheGame.GetGuiManager().ShowNotification( "frgdump: slot " + slot + " is empty", 6000 );
+\t\treturn;
+\t}
+\ts = NameToString( w.inv.GetItemName( id ) )
+\t\t+ "<br>St/Sv " + w.inv.GetItemModifierInt( id, 'FRG_St', 0 ) + "/" + w.inv.GetItemModifierInt( id, 'FRG_Sv', 0 )
+\t\t+ " Fx " + w.inv.GetItemModifierInt( id, 'FRG_Fx', 0 )
+\t\t+ " Flaw " + w.inv.GetItemModifierInt( id, 'FRG_Flaw', 0 )
+\t\t+ " Name " + w.inv.GetItemModifierInt( id, 'FRG_Name', 0 )
+\t\t+ " Look " + w.inv.GetItemModifierInt( id, 'FRG_Look', 0 )
+\t\t+ "<br>native [" + NameToString( w.FRG_OrigCardOf( id ) ) + "]"
+\t\t+ " damage [" + w.FRG_DmgDonorOf( id ) + "] FDv " + w.inv.GetItemModifierInt( id, 'FRG_FDv', 0 )
+\t\t+ "<br>add-on:";
+\tw.inv.GetItemAbilities( id, abilities );
+\tfor( i = 0; i < abilities.Size(); i += 1 )
+\t{
+\t\tif( StrFindFirst( NameToString( abilities[i] ), "FRG_FD_" ) == 0 )
+\t\t\ts += " " + NameToString( abilities[i] );
+\t}
+\tw.inv.GetItemEnhancementItems( id, runes );
+\toils = w.inv.GetOilsAppliedOnItem( id );
+\ts += "<br>sockets " + w.inv.GetItemEnhancementSlotsCount( id ) + ", runes " + runes.Size()
+\t\t+ ", enchant [" + NameToString( w.inv.GetEnchantment( id ) ) + "]"
+\t\t+ ", wear " + FloatToString( w.inv.GetItemDurability( id ) )
+\t\t+ ", oils " + oils.Size();
+\ttheGame.GetGuiManager().ShowNotification( s, 25000 );
+}
 // TAKE MEASUREMENTS: read an item exactly like a dismantle would and mint
 // its knowledge - but leave the item ITSELF untouched (user's call 07.09:
 // "copy the sword's tokens without destroying it, free for now").
@@ -3287,10 +3902,14 @@ exec function frgstock( optional force : int )
 \tvar abilities : array< name >;
 \tvar donor : name;
 \tvar st, sv, stB, stD, svB, svD, fx : int;
+\tvar dmgWant : string;
 
 \tif( !inv.IsIdValid( item ) )
 \t\treturn 0;
 \tdonor = inv.GetItemName( item );
+\tdmgWant = "";
+\tif( inv.ItemHasTag( item, 'FRG_Forge' ) )
+\t\tdmgWant = FRG_DmgDonorOf( item );
 \tinv.GetItemAbilities( item, abilities );
 \tst = FRG_CountAb( item, 'autogen_fixed_steel_dmg' );
 \tsv = FRG_CountAb( item, 'autogen_fixed_silver_dmg' );
@@ -3302,7 +3921,7 @@ exec function frgstock( optional force : int )
 \tif( fx <= 0 )
 \t\tfx = FRG_FxCodeOf( donor );
 \treturn FRG_MintTokens( donor, inv.ItemHasTag( item, 'FRG_Forge' ),
-\t\tst, sv, stB, stD, svB, svD, fx, abilities );
+\t\tst, sv, stB, stD, svB, svD, fx, abilities, false, dmgWant );
 }
 
 // The DISASSEMBLE tab at a craftsman: the instance is read BEFORE the vanilla
@@ -3317,12 +3936,16 @@ exec function frgstock( optional force : int )
 \tvar parts2 : array< SItemParts >;
 \tvar prevName : name;
 \tvar made2 : array< SItemUniqueId >;
+\tvar dmgWant : string;
 
 \tw = GetWitcherPlayer();
+\tdmgWant = "";
 \tif( w && _inv.IsIdValid( item ) )
 \t{
 \t\tdonor = _inv.GetItemName( item );
 \t\tisForged = _inv.ItemHasTag( item, 'FRG_Forge' );
+\t\tif( isForged )
+\t\t\tdmgWant = w.FRG_DmgDonorOf( item );
 \t\t_inv.GetItemAbilities( item, abilities );
 \t\tst = w.FRG_CountAb( item, 'autogen_fixed_steel_dmg' );
 \t\tsv = w.FRG_CountAb( item, 'autogen_fixed_silver_dmg' );
@@ -3349,7 +3972,7 @@ exec function frgstock( optional force : int )
 
 \tif( w && donor != '' && !_inv.IsIdValid( item ) )
 \t{
-\t\tminted = w.FRG_MintTokens( donor, isForged, st, sv, stB, stD, svB, svD, fx, abilities );
+\t\tminted = w.FRG_MintTokens( donor, isForged, st, sv, stB, stD, svB, svD, fx, abilities, false, dmgWant );
 \t\t// the tier ladder: the upgrade was forged FROM the previous version
 \t\t// of the item - dismantling frees it whole (user's call 02.09)
 \t\tprevName = w.FRG_GivePrevTier( donor );
@@ -3590,6 +4213,7 @@ var FRG_InCraft : bool;
 \tvar i, have, need : int;
 \tvar bad : bool;
 \tvar wit : W3PlayerWitcher;
+\tvar why : string;
 
 \tr = wrappedMethod( schematicName, checkMerchant );
 \tif( !FRGW_IsOurSchem( schematicName ) )
@@ -3626,7 +4250,8 @@ var FRG_InCraft : bool;
 \t\t\t\tcontinue;
 \t\t\t// armour look: an EMPTY look square means "give the native look back",
 \t\t\t// so only the piece itself is mandatory
-\t\t\tif( FRGW_IsArmorReskin( schematicName ) && i == 1 )
+\t\t\t// (a sword's re-look likewise: empty = back to its forged look)
+\t\t\tif( ( FRGW_IsArmorReskin( schematicName ) || schematicName == 'FRG Reskin schematic' ) && i == 1 )
 \t\t\t\tcontinue;
 \t\t\tbad = true;
 \t\t\tmsg = msg + " slot " + i + " not picked;";
@@ -3650,6 +4275,22 @@ var FRG_InCraft : bool;
 \t\t{
 \t\t\tbad = true;
 \t\t\tmsg = msg + " " + schem.ingredients[i].itemName + " " + have + "/" + need + ";";
+\t\t}
+\t}
+\t// a sword re-look that would change nothing (the look it already wears,
+\t// the native mark on a blade at home, a raw blank) is greyed out HERE,
+\t// not refused on the press; the build panel says why
+\tif( !bad && schematicName == 'FRG Reskin schematic' )
+\t{
+\t\twit = GetWitcherPlayer();
+\t\tif( wit )
+\t\t{
+\t\t\twhy = wit.FRG_ReskinWhyNot( schem.ingredients[0].itemName, schem.ingredients[1].itemName );
+\t\t\tif( why != "" )
+\t\t\t{
+\t\t\t\tbad = true;
+\t\t\t\tmsg = msg + " " + GetLocStringByKeyExt( why ) + ";";
+\t\t\t}
 \t\t}
 \t}
 \tif( !bad )
@@ -3736,6 +4377,25 @@ var FRG_InCraft : bool;
 \t\t\thasTarget = true;
 \t\t\ts += "<br>" + GetLocStringByKeyExt( "frgu_s_target" ) + ": "
 \t\t\t\t+ GetLocStringByKeyExt( _inv.GetItemLocalizedNameByName( ing ) );
+\t\t}
+\t}
+\t// re-look: which blade, and what it becomes - or why it cannot
+\tif( tag == 'FRG Reskin schematic' )
+\t{
+\t\ting = schem.ingredients[0].itemName;
+\t\tif( !FRGW_IsPlaceholder( ing ) && !w.FRG_FindBladeWornFirst( ing, target ) )
+\t\t\ts += "<br><font color='#c83232'>" + GetLocStringByKeyExt( "frgu_rl_bag" ) + "</font>";
+\t\tif( !FRGW_IsPlaceholder( ing ) && w.FRG_FindBladeWornFirst( ing, target ) )
+\t\t{
+\t\t\thasTarget = true;
+\t\t\ts += "<br>" + GetLocStringByKeyExt( "frgu_s_target" ) + ": "
+\t\t\t\t+ GetLocStringByKeyExt( _inv.GetItemLocalizedNameByName( ing ) );
+\t\t\ting = w.FRG_ReskinTarget( target, schem.ingredients[1].itemName, nm );
+\t\t\tif( ing != '' )
+\t\t\t\ts += "<br>" + GetLocStringByKeyExt( "frgu_rl_to" ) + ": <font color='#ca610c'>"
+\t\t\t\t\t+ GetLocStringByKeyExt( _inv.GetItemLocalizedNameByName( ing ) ) + "</font>";
+\t\t\telse
+\t\t\t\ts += "<br><font color='#c83232'>" + GetLocStringByKeyExt( nm ) + "</font>";
 \t\t}
 \t}
 
@@ -4060,6 +4720,10 @@ var FRG_InCraft : bool;
 \t\t\t// a raw blank has no look worth changing - forge it instead
 \t\t\tif( FRGW_IsArmorReskin( selectedSchematic.schemName )
 \t\t\t\t&& StrFindFirst( NameToString( w.inv.GetItemName( bagIds[i] ) ), "FRG Blank " ) == 0 )
+\t\t\t\tcontinue;
+\t\t\t// a sword's look is its CARD: only a forged blade can change it
+\t\t\tif( selectedSchematic.schemName == 'FRG Reskin schematic'
+\t\t\t\t&& !w.inv.ItemHasTag( bagIds[i], 'FRG_Forge' ) )
 \t\t\t\tcontinue;
 \t\t\t// enchanting: only relics, witcher blades and our own forgings
 \t\t\tif( selectedSchematic.schemName == 'FRG Enchant schematic'
@@ -4423,6 +5087,7 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 {
 \tvar orig : name;
 \tvar deny : int;
+\tvar popBlade : SItemUniqueId;
 
 \torig = m_schematicListOriginal[selectedSchematicIndex].ingredients[selectedIngredient].itemName;
 \tif( FRGW_IsPlaceholder( orig ) )
@@ -4469,6 +5134,28 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 \t\t\treturn;
 \t\t}
 \t}
+\t// a sword's look is its CARD: only a forged sword sits in that square
+\t// (the popup lists every FRG_Blank item - raw blanks and armour too)
+\tif( selectedSchematic.schemName == 'FRG Reskin schematic' && selectedIngredient == 0
+\t\t&& !FRGW_IsPlaceholder( itemName )
+\t\t&& ( !theGame.GetDefinitionsManager().ItemHasTag( itemName, 'FRG_Forge' )
+\t\t\t|| ( theGame.GetDefinitionsManager().GetItemCategory( itemName ) != 'steelsword'
+\t\t\t\t&& theGame.GetDefinitionsManager().GetItemCategory( itemName ) != 'silversword' ) ) )
+\t{
+\t\tshowNotification( GetLocStringByKeyExt( "frgu_rl_forged" ) );
+\t\tOnPlaySoundEvent( "gui_global_denied" );
+\t\treturn;
+\t}
+\t// ...and it must be on Geralt or in his bag (the popup lists the
+\t// saddlebags too)
+\tif( selectedSchematic.schemName == 'FRG Reskin schematic' && selectedIngredient == 0
+\t\t&& !FRGW_IsPlaceholder( itemName )
+\t\t&& !GetWitcherPlayer().FRG_FindBladeWornFirst( itemName, popBlade ) )
+\t{
+\t\tshowNotification( GetLocStringByKeyExt( "frgu_rl_bag" ) );
+\t\tOnPlaySoundEvent( "gui_global_denied" );
+\t\treturn;
+\t}
 \twrappedMethod( itemName );
 }
 
@@ -4478,6 +5165,8 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 {
 \tvar shapeTok, forgedName, pcat : name;
 \tvar want : string;
+\tvar wit : W3PlayerWitcher;
+\tvar bid : SItemUniqueId;
 
 \tif( selectedSchematic.schemName == 'FRG Engrave schematic'
 \t\t|| selectedSchematic.schemName == 'FRG Upgrade2 schematic'
@@ -4542,6 +5231,31 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 \t\t\tif( !FRGW_IsPlaceholder( selectedSchematic.ingredients[0].itemName ) )
 \t\t\t\tpcat = theGame.GetDefinitionsManager().GetItemCategory( selectedSchematic.ingredients[0].itemName );
 \t\t\tif( FRGW_ForgedFor( StrAfterFirst( NameToString( shapeTok ), "FRG Shape " ), pcat, forgedName ) )
+\t\t\t\titemAdjustedName = forgedName;
+\t\t}
+\t\treturn;
+\t}
+\tif( selectedSchematic.schemName == 'FRG Reskin schematic' )
+\t{
+\t\twit = GetWitcherPlayer();
+\t\t// inside the craft, right after a re-look: the card the blade moved
+\t\t// ONTO (the square still names the removed one) - the "crafted" line
+\t\tif( wit && wit.FRG_ReskinNew != '' )
+\t\t{
+\t\t\titemAdjustedName = wit.FRG_ReskinNew;
+\t\t\treturn;
+\t\t}
+\t\t// otherwise the blade in its NEW look - or as it is, when the
+\t\t// re-look would change nothing (the same rule as the craft)
+\t\titemAdjustedName = 'FRG Blank Steel Sword';
+\t\tshapeTok = selectedSchematic.ingredients[0].itemName;
+\t\tif( FRGW_IsPlaceholder( shapeTok ) )
+\t\t\treturn;
+\t\titemAdjustedName = shapeTok;
+\t\tif( wit && wit.FRG_FindBladeWornFirst( shapeTok, bid ) )
+\t\t{
+\t\t\tforgedName = wit.FRG_ReskinTarget( bid, selectedSchematic.ingredients[1].itemName, want );
+\t\t\tif( forgedName != '' )
 \t\t\t\titemAdjustedName = forgedName;
 \t\t}
 \t\treturn;
@@ -5140,111 +5854,56 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 \tvar w : W3PlayerWitcher;
 \tvar schem : SCraftingSchematic;
 \tvar error : ECraftingException;
-\tvar blankId : SItemUniqueId;
+\tvar blankId, nw : SItemUniqueId;
 \tvar lineTok, shapeTok, forgedName : name;
-\tvar want, path : string;
-\tvar k, oldK : int;
+\tvar why : string;
 
 \tw = GetWitcherPlayer();
 \tw.FRG_LastWhy = "";
-\tw.FRG_InCraft = true;
-\terror = CanCraftSchematic( schemName, true );
-\tw.FRG_InCraft = false;
-\tif( error != ECE_NoException )
-\t{
-\t\ttheGame.GetGuiManager().ShowNotification( "FRG gate: the window itself refuses, code " + error, 9000 );
-\t\treturn error;
-\t}
+\tw.FRG_ReskinNew = '';
 \tGetSchematic( schemName, schem );
-\tlineTok = schem.ingredients[0].itemName;	// the blade
-\tshapeTok = schem.ingredients[1].itemName;	// the look it should wear
-\tif( FRGW_IsPlaceholder( lineTok ) )
+\tlineTok = schem.ingredients[0].itemName;    // the blade
+\tshapeTok = schem.ingredients[1].itemName;   // the look it should wear
+\t// the reason is OURS to tell - in words, and shown LAST by the
+\t// CreateItem wrap (the window's generic line would cover anything else)
+\twhy = w.FRG_ReskinWhyNot( lineTok, shapeTok );
+\tif( why != "" )
 \t{
-\t\ttheGame.GetGuiManager().ShowNotification( "Pick the blade first - scroll the first square", 10000 );
+\t\tw.FRG_ReskinMsg = GetLocStringByKeyExt( why );
 \t\treturn ECE_TooFewIngredients;
 \t}
-\tif( !w.FRG_FindForWork( lineTok, blankId ) )
+\t// what is left for the gate: materials and money - the window says so
+\terror = CanCraftSchematic( schemName, true );
+\tif( error != ECE_NoException )
+\t\treturn error;
+\tif( !w.FRG_FindBladeWornFirst( lineTok, blankId ) )
 \t\treturn ECE_TooFewIngredients;
 
-\t// the "native look" mark - the same one the armour recipes use: the
-\t// blade goes back to its own shape (user 13.09)
-\tif( FRGW_IsPlaceholder( shapeTok ) || shapeTok == 'FRG Shape Native' )
-\t{
-\t\toldK = w.inv.GetItemModifierInt( blankId, 'FRG_Look', 0 );
-\t\tif( oldK <= 0 )
-\t\t{
-\t\t\ttheGame.GetGuiManager().ShowNotification( "This blade already wears its own look - scroll the look square to another one", 11000 );
-\t\t\treturn ECE_TooFewIngredients;
-\t\t}
-\t\tif( w.inv.GetItemCategory( blankId ) == 'steelsword' )
-\t\t\tw.FRG_ClearLookVisual( 4 );
-\t\telse if( w.inv.GetItemCategory( blankId ) == 'silversword' )
-\t\t\tw.FRG_ClearLookVisual( 5 );
-\t\tw.FRG_LookEraseAll( oldK );
-\t\tw.inv.SetItemModifierInt( blankId, 'FRG_Look', 0 );
-\t\titem = blankId;
-\t\ttheGame.GetGuiManager().ShowNotification( "The blade wears its own face again", 9000 );
-\t\treturn ECE_NoException;
-\t}
-
-\t// ⛔ THE BLADE ITSELF IS NEVER TOUCHED (user 09.09, paid for with a lost
-\t// Griffin cuirass). Moving an item onto another card takes its identity
-\t// with it: witcher-gear quality is read from the CARD NAME, the glyph
-\t// enchantment does not travel, the name changes and the upgrade recipes
-\t// stop recognising it. So the look is MOUNTED instead - the AMM trick of
-\t// stage A: a fake entity of the donor is attached to the blade's own
-\t// entity and the real mesh is hidden. Everything else stays untouched.
-\twant = StrAfterFirst( NameToString( shapeTok ), "FRG Shape " );
-\tforgedName = '';
-\tFRGW_ForgedFor( want, w.inv.GetItemCategory( blankId ), forgedName );
+\t// A look IS a card (template, icon, sheath, the side of the back), so
+\t// the blade moves onto the forged card of that look - of ITS metal: a
+\t// steel blade takes the cross-metal twin of a silver donor. The native
+\t// mark (or an empty look square) takes it back to the card it was forged
+\t// as. Forged blades only; a vanilla item never changes its card (the
+\t// Griffin rule, narrowed by the user 23.09).
+\tforgedName = w.FRG_ReskinTarget( blankId, shapeTok, why );
 \tif( forgedName == '' )
 \t{
-\t\ttheGame.GetGuiManager().ShowNotification( "FRG gate: no card for the look [" + want + "]", 11000 );
+\t\tw.FRG_ReskinMsg = GetLocStringByKeyExt( why );
 \t\treturn ECE_TooFewIngredients;
 \t}
-\t// the forged card is a clone of the donor, so its equip template is the
-\t// donor's own - and a template path is all the mounted look needs
-\tpath = theGame.GetDefinitionsManager().GetItemEquipTemplate( forgedName );
-\tif( path == "" )
+\twhy = w.FRG_ReCard( blankId, forgedName, nw );
+\tif( why != "" )
 \t{
-\t\ttheGame.GetGuiManager().ShowNotification( "FRG gate: that look has no equip template - nothing to wear", 11000 );
+\t\tw.FRG_ReskinMsg = GetLocStringByKeyExt( "frgu_rl_fail" ) + " (" + why + ")";
 \t\treturn ECE_TooFewIngredients;
 \t}
 
-\t// a blade wears one look at a time: the old one is dropped first
-\toldK = w.inv.GetItemModifierInt( blankId, 'FRG_Look', 0 );
-\tif( oldK > 0 )
-\t{
-\t\tw.FRG_LookEraseAll( oldK );
-\t\tw.inv.SetItemModifierInt( blankId, 'FRG_Look', 0 );
-\t}
-
-\tk = FactsQuerySum( "FRG_LookSeq" ) + 1;
-\tFactsSet( "FRG_LookSeq", k );
-\tif( !w.FRG_LookPack( "frg_look_", k, path ) )
-\t{
-\t\tw.FRG_LookEraseAll( k );
-\t\ttheGame.GetGuiManager().ShowNotification( "FRG gate: could not store the look - nothing changed", 10000 );
-\t\treturn ECE_TooFewIngredients;
-\t}
-\tpath = theGame.GetDefinitionsManager().GetItemIconPath( forgedName );
-\tif( path != "" )
-\t\tw.FRG_LookPack( "frg_icon_", k, path );
-\tw.inv.SetItemModifierInt( blankId, 'FRG_Look', k );
-
-\t// mount it now if the blade is in hand; otherwise the equip hook does it
-\tif( w.inv.GetItemCategory( blankId ) == 'steelsword' )
-\t\tw.FRG_ApplyLookVisual( 4 );
-\tif( w.inv.GetItemCategory( blankId ) == 'silversword' )
-\t\tw.FRG_ApplyLookVisual( 5 );
-
-\titem = blankId;
+\titem = nw;
+\tw.FRG_ReskinNew = forgedName;
 \tw.RemoveMoney( GetCraftingCost( schemName ) );
-\ttheGame.GetGuiManager().ShowNotification( "The blade wears a new face. It is the SAME blade - name, quality, "
-\t\t+ "enchantment, runes and upgrades all untouched. Undo: frglook0(4) or frglook0(5)", 15000 );
+\tw.FRG_ReskinMsg = GetLocStringByKeyExt( "frgu_rl_done" );
 \treturn ECE_NoException;
 }
-
 @addMethod( W3CraftingManager ) function FRG_CraftStudy( schemName : name, out item : SItemUniqueId ) : ECraftingException
 {
 \tvar flawId, k2 : int;
@@ -5426,9 +6085,14 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 \t\t// the relic tier awakens the donor's flat damage add-ons (§3)
 \t\tif( k == 4 )
 \t\t{
-\t\t\tfdab = FRGFD_AbilityByText( StrAfterFirst( NameToString( w.inv.GetItemName( blankId ) ), "FRG Forged " ) );
-\t\t\tif( fdab != '' && w.FRG_CountAb( blankId, fdab ) <= 0 )
-\t\t\t\tw.inv.AddItemCraftedAbility( blankId, fdab, false );
+\t\t\t// the add-on of the DAMAGE donor, unless the blade already
+\t\t\t// settled its own (FRG_FDv)
+\t\t\tif( w.inv.GetItemModifierInt( blankId, 'FRG_FDv', 0 ) <= 0 )
+\t\t\t{
+\t\t\t\tfdab = FRGFD_AbilityByText( w.FRG_DmgDonorOf( blankId ) );
+\t\t\t\tif( fdab != '' && !w.FRG_HasAnyFD( blankId ) )
+\t\t\t\t\tw.inv.AddItemCraftedAbility( blankId, fdab, false );
+\t\t\t}
 \t\t}
 \t\t// materials burn; slot [0] is the blade itself and is skipped
 \t\tfor( i = 1; i < schem.ingredients.Size(); i += 1 )
@@ -5589,9 +6253,8 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 \t// ------- take a pattern: copy the LOOK of worn gear, no sacrifice ----
 \t// (user's call 03.09): shape tokens of everything equipped; the items
 \t// stay whole. Nothing new studied - nothing spent.
-\t// ------- change the look: the same blade in another shape -----------
-\t// (MVP call 07.09). Everything that makes the blade what it is moves
-\t// over: properties, damage counters, the red line, tier, runes.
+\t// ------- change the look: the blade moves onto its new look's card ---
+\t// (user 23.09). FRG_ReCard carries everything that makes it this blade.
 \tif( schemName == 'FRG Reskin schematic' )
 \t
 \t{
@@ -5764,36 +6427,28 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 \t\tw.FRGP_PourTier( item );
 \t}
 
-\t// the donor's flat damage add-ons arrive at once (no tiers any more)
-\tfdab = FRGFD_AbilityByText( StrAfterFirst( NameToString( shapeTok ), "FRG Shape " ) );
-\tif( fdab != '' && w.FRG_CountAb( item, fdab ) <= 0 )
-\t\tw.inv.AddItemCraftedAbility( item, fdab, false );
+\t// the flat/elemental add-on comes with the DAMAGE token (user 23.09,
+\t// Bug 1: it came with the look, and Gwyhyr's elemental damage went
+\t// missing). The damage donor is written on the blade, so a later
+\t// re-look and a dismantle both keep to it.
+\tif( schemName == 'FRG ForgeSide schematic' )
+\t{
+\t\t// a sidearm has no damage token of its own and no damage pour: its
+\t\t// whole damage IS its shape donor's flat ability (review 23.09)
+\t\tw.FRG_SetFD( item, FRGFD_AbilityByText( want ) );
+\t}
+\telse
+\t{
+\t\tw.FRG_SetDmgDonor( item, StrAfterFirst( NameToString( dmgTok ), "FRG Dmg " ) );
+\t\tw.FRG_SetFD( item, FRGFD_AbilityByText( StrAfterFirst( NameToString( dmgTok ), "FRG Dmg " ) ) );
+\t}
+\tw.inv.SetItemModifierInt( item, 'FRG_FDv', 1 );
 
 \t// lines and the effect join later on the path: engraving any time,
 \t// enchanting at the relic tier (phase 3)
 
-\t// shape as a FAKE-entity look: only the fallback path needs it - a real
-\t// forged card carries the donor's template natively. The token survives
-\t// either way (cosmetics are free to reuse - user's call).
-\tif( forgedName == '' && !FRGW_IsPlaceholder( shapeTok ) )
-\t{
-\t\ttoks = w.inv.GetItemsByName( shapeTok );
-\t\tif( toks.Size() > 0 )
-\t\t{
-\t\t\tk = w.inv.GetItemModifierInt( toks[0], 'FRG_Look', 0 );
-\t\t\tif( k > 0 )
-\t\t\t{
-\t\t\t\t// clone the key: the eternal token must not share fact storage
-\t\t\t\t// with the blade, or frglook0 on one would orphan the other
-\t\t\t\ti = FactsQuerySum( "FRG_LookSeq" ) + 1;
-\t\t\t\tFactsSet( "FRG_LookSeq", i );
-\t\t\t\tw.FRG_LookPack( "frg_look_", i, w.FRG_LookRead( "frg_look_", k ) );
-\t\t\t\tw.FRG_LookPack( "frg_icon_", i, w.FRG_LookRead( "frg_icon_", k ) );
-\t\t\t\tw.inv.SetItemModifierInt( item, 'FRG_Look', i );
-\t\t\t}
-\t\t}
-\t}
-
+\t// (no overlay look on the fallback path any more: the overlay never
+\t// showed in game and is retired - a look is the card, user 23.09)
 \tw.RemoveMoney( GetCraftingCost( schemName ) );
 \ttheGame.GetGuiManager().ShowNotification( "The blade is forged: RELIC quality, full donor damage, "
 \t\t+ w.FRGL_Limit( item ) + " property slots, 3 rune sockets. Tokens are knowledge - none were spent.", 15000 );

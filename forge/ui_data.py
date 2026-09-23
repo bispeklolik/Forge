@@ -537,6 +537,9 @@ def ui_loc_keys():
             "frgu_s_look", "frgu_s_metal", "frgu_s_dmg", "frgu_s_def",
             "frgu_s_name", "frgu_s_pickmore", "frgu_s_steel", "frgu_s_silver",
             "frgu_s_result",
+            "frgu_rl_forged", "frgu_rl_home", "frgu_rl_metal", "frgu_rl_same",
+            "frgu_rl_sheathe", "frgu_rl_fail", "frgu_rl_done", "frgu_rl_to",
+            "frgu_rl_pick", "frgu_rl_bag",
             "frgu_farmor", "frgu_farmor_sc", "frgu_fpants", "frgu_fpants_sc",
             "frgu_fgloves", "frgu_fgloves_sc", "frgu_fboots", "frgu_fboots_sc",
             "frgu_fside", "frgu_fside_sc",
@@ -599,14 +602,18 @@ def ui_text_for(key, ru):
                 "all stay; only the look is worn over it. Dyes take on it too. "
                 "Leave the look square empty to get the native look back.")
     if key == "frgu_reskin_desc":
-        return ("Тот же меч — другой вид. Свойства, урон, чары, руны и "
-                "ступень остаются при нём, меняется только облик. Имя "
-                "перейдёт от нового вида — переназови клинок, если хочешь "
-                "своё.") if ru else \
-               ("The same blade in another shape. Properties, damage, the "
-                "red line, runes and tier all stay; only the look changes. "
-                "The name comes with the new shape - rename the blade if you "
-                "want your own.")
+        return ("Тот же кованый клинок — другой вид. Урон, стихийный урон, "
+                "свойства, чары, изъян, клеймо, руны, зачарование, износ и "
+                "масло переходят вместе с ним. Данное тобой имя остаётся; "
+                "без своего имени клинок зовётся по новому виду. Метка "
+                "«родной облик» или пустой квадрат облика вернут вид, с "
+                "которым клинок выкован.") if ru else \
+               ("The same forged blade in another shape. Damage, elemental "
+                "damage, properties, the red line, flaw, mark, runes, "
+                "enchantment, wear and oil all come along. A name you gave it "
+                "stays; without one the blade is called after its new shape. "
+                "The native-look mark or an empty look square brings back "
+                "the shape it was forged in.")
     if key == "frgu_measure_desc":
         return ("Изучить вещь целиком, не ломая её: облик, урон, свойства, "
                 "а у брони ещё защиту и сопротивления. Вещь остаётся у тебя, "
@@ -776,6 +783,28 @@ def ui_text_for(key, ru):
         "frgu_s_silver": ("серебряный клинок", "silver blade"),
         "frgu_s_result": ("Итог: реликтовое качество, 4 места свойств, 3 гнезда рун",
                           "Result: relic quality, 4 property slots, 3 rune sockets"),
+        # смена облика меча (карточная пересадка, 23.09)
+        "frgu_rl_forged": ("Облик меняет только кованый меч",
+                           "Only a forged sword changes its look here"),
+        "frgu_rl_home": ("Клинок и так в родном облике — выбери другой облик",
+                         "The blade already wears its own look - pick another one"),
+        "frgu_rl_metal": ("Для этого облика нет клинка такого металла",
+                          "No blade of this metal for that look"),
+        "frgu_rl_same": ("Клинок уже в этом облике — прокрути квадрат облика",
+                         "The blade already wears this look - scroll the look square"),
+        "frgu_rl_sheathe": ("Сначала убери клинок в ножны",
+                            "Sheathe the blade first"),
+        "frgu_rl_fail": ("Облик не сменился, клинок не тронут",
+                         "The look did not change, the blade is untouched"),
+        "frgu_rl_done": ("Клинок сменил облик. Урон, стихийный урон, свойства, "
+                         "чары, руны, зачарование, износ и масло перешли вместе с ним.",
+                         "The blade takes the new look. Damage, elemental damage, "
+                         "properties, charm, runes, enchantment, wear and oil came along."),
+        "frgu_rl_to": ("Станет", "Becomes"),
+        "frgu_rl_pick": ("Сначала выбери клинок — прокрути первый квадрат",
+                         "Pick the blade first - scroll the first square"),
+        "frgu_rl_bag": ("Клинок должен быть на Геральте или в сумке, не в седельных сумках",
+                        "The blade must be on Geralt or in his bag, not in the saddlebags"),
     }
     if key in _summ:
         r, e = _summ[key]
