@@ -114,6 +114,46 @@ try:
                               encoding="utf-8"))
 except Exception:
     CUT = []
+# ⛔ ОТСТАВНЫЕ СТРОКИ (24.09): строка, чьи статы изменила перерезка, уходит
+# «на пенсию» под СВОИМ id и с ИСХОДНЫМИ статами. Её абилку FRG_C_<id> несут
+# уже выкованные клинки, её жетон может лежать в сумке — поэтому она
+# ОБЪЯВЛЯЕТСЯ дальше (абилка, карточка, текст), но не чеканится и не
+# предлагается: жетоны при загрузке меняются на новые строки донора.
+try:
+    CUT_RETIRED = _json.load(_io.open(_os.path.join(_HERE, "cut_retired.json"),
+                                      encoding="utf-8"))
+except Exception:
+    CUT_RETIRED = []
+# ⛔ реестр отставных несущий: пропал файл при живой отметке прилива —
+# старые клинки игрока потеряли бы свойства (движок не найдёт абилку)
+if not CUT_RETIRED and _os.path.exists(_os.path.join(_HERE, "cut_hwm.json")):
+    raise SystemExit("cut_retired.json пропал, а cut_hwm.json есть — сборку не продолжаю")
+for _r in CUT_RETIRED:
+    _r["retired"] = True
+    # старая «проклятая» строка несла вампиризм проклятья сама — клинку с
+    # ней чары не добавляют второй (иначе вышло бы +20%)
+    _r["vamp_line"] = bool(_r.get("cursed"))
+    _r["relic"] = True       # обычных свойств нет ни у кого (ГД 23.09)
+    _r["cursed"] = False     # вампиризм проклятья живёт в чарах (ГД 24.09)
+CUT = CUT + CUT_RETIRED
+
+# ⛔ Кузнице не поддаются (решение ГД 24.09): тяжёлые двуручные топоры,
+# молоты и булавы W3EE — «слишком жирные плюсы», разобрать/изучить их
+# через кузницу нельзя вовсе. Вся семья имени: X / X_crafted / NGP X.
+NO_FORGE_BASES = ["geralt_axe_01", "geralt_axe_02", "geralt_axe_03",
+                  "geralt_hammer_01", "geralt_hammer_02", "geralt_hammer_03",
+                  "geralt_mace_01", "geralt_mace_02", "geralt_mace_03"]
+
+
+def no_forge_family():
+    out = []
+    for b in NO_FORGE_BASES:
+        out += [b, b + "_crafted", "NGP " + b, "NGP " + b + "_crafted"]
+    return out
+
+
+def is_no_forge(name):
+    return name in set(no_forge_family())
 
 # Плоские урон-добавки карточек доноров (build_cut → flat_data.json):
 # {донор: {"num": N, "rows": [[атрибут, тип, значение]...]}}. Абилка в DLC —
@@ -275,8 +315,10 @@ _FLAW_SPECS = [
      [("poise_damage", "mult", -0.20)]),
 ]
 # имя жетона обязано объяснять себя само: что это и что даёт
-_RU_W = {1: "Порок: %s (+обычное место)", 2: "Порок: %s (+РЕЛИКТОВОЕ место)"}
-_EN_W = {1: "Flaw: %s (+ordinary slot)", 2: "Flaw: %s (+RELIC slot)"}
+# обычных свойств нет (ГД 23.09): тяжёлый порок даёт ТРЕТЬЕ место, лёгкий —
+# ничего (из выбора убран ещё 18.09, имя честно это говорит)
+_RU_W = {1: "Порок: %s (лёгкий, места не даёт)", 2: "Порок: %s (+1 место под свойство)"}
+_EN_W = {1: "Flaw: %s (light, gives no slot)", 2: "Flaw: %s (+1 property slot)"}
 for _i, (_key, _ru, _en, _tip, _light, _heavy) in enumerate(_FLAW_SPECS):
     for _w, _stats in ((1, _light), (2, _heavy)):
         FLAWS.append((

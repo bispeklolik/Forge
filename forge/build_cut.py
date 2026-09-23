@@ -263,7 +263,9 @@ def profile_of(donor):
 
 
 MAX_PLUS_PER_LINE = 3      # плюсов в одной строке-жетоне
-MAX_LINES_PER_DONOR = 5    # на сколько строк максимум рвём профиль
+# ⛔ ДВА (решение ГД 23.09): «с меча максимум два жетона». Первое свойство
+# идёт отдельной строкой, ВСЁ остальное — второй (ГД 24.09, интервью).
+MAX_LINES_PER_DONOR = 2    # на сколько строк максимум рвём профиль
 
 
 def cut_profile(rows, waste=0.0, whole=False):
@@ -326,42 +328,65 @@ def cut_profile(rows, waste=0.0, whole=False):
                 continue
             for ln in lines:
                 ln["minus"].append((a, ty, share))
-    for k, extra in enumerate(pluses[n:]):
-        lines[(n - 1) - (k % n)]["plus"].extend(extra)
+    # «первое отдельно, остальные вместе» (ГД 24.09): хвост плюсов — в
+    # ПОСЛЕДНЮЮ строку, а не вразнобой по всем
+    for extra in pluses[n:]:
+        lines[n - 1]["plus"].extend(extra)
     # не больше 2 плюс-групп визуально — мягкое правило, пропускаем жёсткую
     # проверку: связки уже сгруппированы
     return lines
 
 
 # ---- нарезка всех доноров ----------------------------------------------------
-# СТАБИЛЬНОСТЬ id: жетоны и абилки FRG_C_<id> живут на вещах игроков — id
-# НАСЛЕДУЮТСЯ из прежнего cut_data.json по ключу (донор, номер строки донора).
-# Новые строки получают следующие свободные id. Порядок в файле не важен.
+# ⛔ СТАБИЛЬНОСТЬ id (переделано 24.09). Жетоны и абилки FRG_C_<id> живут на
+# вещах игроков. Прежний ключ «(донор, номер строки)» при перерезке тихо
+# отдавал старый id строке с ДРУГИМИ статами — клинок игрока менял цифры.
+# Теперь ключ — СОДЕРЖИМОЕ: (донор, статы). Совпало точно — id прежний;
+# иначе новый id выше «отметки прилива» (cut_hwm.json, только растёт).
+# Прежняя строка без пары уходит в отставку (cut_retired.json, только
+# растёт) и объявляется дальше с исходными статами. id не выдаётся дважды.
+from lines_data import is_no_forge as _is_no_forge
+
+
+def _statkey(stats):
+    return tuple(sorted((a, t, round(float(v), 4)) for a, t, v in stats))
+
+
 try:
     _old_cut = json.load(io.open(os.path.join(HERE, "cut_data.json"),
                                  encoding="utf-8"))
 except Exception:
     _old_cut = []
-_prev_ids = {}
-_donor_seq = {}
+try:
+    _old_retired = json.load(io.open(os.path.join(HERE, "cut_retired.json"),
+                                     encoding="utf-8"))
+except Exception:
+    _old_retired = []
+try:
+    _hwm = int(json.load(io.open(os.path.join(HERE, "cut_hwm.json"),
+                                 encoding="utf-8"))["hwm"])
+except Exception:
+    _hwm = 0
+_hwm = max([_hwm, 26] + [_c["id"] for _c in _old_cut]
+           + [_c["id"] for _c in _old_retired])
+_retired_ids = {_c["id"] for _c in _old_retired}
+_prev_by_key = {}
 for _c in _old_cut:
-    _n = _donor_seq.get(_c["donor"], 0)
-    _donor_seq[_c["donor"]] = _n + 1
-    _prev_ids[(_c["donor"], _n)] = _c["id"]
-_free_id = max([_c["id"] for _c in _old_cut] + [26]) + 1
-_new_seq = {}
+    _prev_by_key.setdefault((_c["donor"], _statkey(_c["stats"])), _c["id"])
+_used_ids = set()
 
 
-def assign_id(donor):
-    """id строки: прежний по ключу (донор, номер), новым — следующий свободный."""
-    global _free_id
-    n = _new_seq.get(donor, 0)
-    _new_seq[donor] = n + 1
-    if (donor, n) in _prev_ids:
-        return _prev_ids[(donor, n)]
-    rid = _free_id
-    _free_id += 1
-    return rid
+def assign_id(donor, stats):
+    """id строки: прежний, если у донора была строка ровно с такими статами;
+    иначе — новый, выше отметки прилива."""
+    global _hwm
+    rid = _prev_by_key.get((donor, _statkey(stats)))
+    if rid is not None and rid not in _used_ids and rid not in _retired_ids:
+        _used_ids.add(rid)
+        return rid
+    _hwm += 1
+    _used_ids.add(_hwm)
+    return _hwm
 
 
 cut = []
@@ -394,7 +419,14 @@ deferred = []      # строки, чей ap-плюс срезан красны�
 for d in sorted(DONORS, key=lambda x: x["name"]) \
         + sorted(ARMOR_DONORS, key=lambda x: x["name"]):
     donor = d["name"]
+    # тяжёлые двуручники W3EE кузнице не поддаются (ГД 24.09)
+    if _is_no_forge(donor):
+        continue
     rows, waste = profile_of(donor)
+    # вампиризм проклятых реликтов (Плакальщица, Чёрный Единорог) живёт
+    # теперь В САМИХ ЧАРАХ «Тёмное проклятье» (ГД 24.09) — строкой не режется
+    if "SwordDarkCurseEffect" in card_abils.get(donor, {}).get("tags", []):
+        rows = [r for r in rows if r[0] != "lifesteal"]
     if d["cat"] in _ARMOR_CATS:
         skel = [(a, t, round(v, 4)) for a, t, v in rows
                 if a in ARMOR_SKEL_ATTRS]
@@ -452,7 +484,7 @@ for d in sorted(DONORS, key=lambda x: x["name"]) \
                 continue
             ap_used[d["cat"]] = True
         stats = ln["plus"] + ln["minus"]
-        rid = assign_id(donor)
+        rid = assign_id(donor, [(a, t, round(v, 4)) for a, t, v in stats])
         cut.append({
             "id": rid,
             "donor": donor,
@@ -463,19 +495,17 @@ for d in sorted(DONORS, key=lambda x: x["name"]) \
             "card": "frg_cut_%d" % rid,
             "stats": [(a, t, round(v, 4)) for a, t, v in stats],
             "junk": False,
-            "relic": line_is_relic(stats, quality=quality_of(donor)),
-            # Проклятая сцепка (Р-3а): строка вампиризма донора, чья карточка
-            # несёт Тёмное проклятье, требует это проклятье на клинке —
-            # «дар не отделить от проклятья»
-            "cursed": ("SwordDarkCurseEffect" in card_abils.get(donor, {}).get("tags", [])
-                       and any(a == "lifesteal" and v > 0 for a, _t, v in stats)),
+            # ⛔ ОБЫЧНЫХ свойств больше нет (ГД 23.09): каждая строка реликтовая
+            "relic": True,
+            # проклятой сцепки больше нет: вампиризм живёт в самих чарах
+            "cursed": False,
         })
 
 # добор: строки с вырезанным ap-плюсом — id наследуются тем же реестром
 for d, ln in deferred:
     donor = d["name"]
     stats = ln["plus"] + ln["minus"]
-    rid = assign_id(donor)
+    rid = assign_id(donor, [(a, t, round(v, 4)) for a, t, v in stats])
     cut.append({
         "id": rid,
         "donor": donor,
@@ -486,24 +516,51 @@ for d, ln in deferred:
         "card": "frg_cut_%d" % rid,
         "stats": [(a, t, round(v, 4)) for a, t, v in stats],
         "junk": False,
-        "relic": line_is_relic(stats, quality=quality_of(donor)),
-        "cursed": ("SwordDarkCurseEffect" in card_abils.get(donor, {}).get("tags", [])
-                   and any(a == "lifesteal" and v > 0 for a, _t, v in stats)),
+        "relic": True,
+        "cursed": False,
     })
 
 print("нарезано строк:", len(cut), "с", len({c['donor'] for c in cut}), "доноров")
 print("attack_power-плюсов срезано (красное правило):", skipped_ap,
       "| строк возвращено в хвост:", len(deferred))
-print("реликтовых строк (одна на клинок):", sum(1 for c in cut if c["relic"]))
+print("строк всего (все реликтовые с 23.09):", len(cut))
 
 # пулы брони живут с id 2001 — нарезка не должна дотянуться
 assert max(c["id"] for c in cut) < 2000, "нарезка упёрлась в диапазон пулов брони!"
 
-tmp = os.path.join(HERE, "cut_data.json.tmp")
-io.open(tmp, "w", encoding="utf-8").write(
-    json.dumps(cut, ensure_ascii=False, indent=1))
-os.replace(tmp, os.path.join(HERE, "cut_data.json"))
-print("сохранено: forge/cut_data.json")
+# ⛔ ОТСТАВКА (24.09): прежняя строка без точной пары уходит на пенсию под
+# своим id с ИСХОДНЫМИ статами; файл отставных только растёт
+_new_ids = {c["id"] for c in cut}
+assert len(_new_ids) == len(cut), "id выдан дважды!"
+assert not (_new_ids & _retired_ids), "выдан id отставной строки!"
+_retired = list(_old_retired)
+for _c in _old_cut:
+    if _c["id"] not in _new_ids and _c["id"] not in _retired_ids:
+        _r = dict(_c)
+        _r.pop("retired", None)
+        _retired.append(_r)
+        _retired_ids.add(_c["id"])
+_retired.sort(key=lambda c: c["id"])
+print("строк в отставке:", len(_retired), "(новых за эту сборку:",
+      len(_retired) - len(_old_retired), ")")
+# правило ГД: с донора не больше двух строк (броня — одна)
+_per = {}
+for _c in cut:
+    _per[_c["donor"]] = _per.get(_c["donor"], 0) + 1
+for _dn, _k in _per.items():
+    _cat = next(c["cat"] for c in cut if c["donor"] == _dn)
+    assert _k <= (1 if _cat in _ARMOR_CATS else 2), "у %s строк: %d" % (_dn, _k)
+
+for _nm, _data in (("cut_data.json", cut), ("cut_retired.json", _retired),
+                   ("cut_hwm.json", {"hwm": _hwm})):
+    tmp = os.path.join(HERE, _nm + ".tmp")
+    io.open(tmp, "w", encoding="utf-8").write(
+        json.dumps(_data, ensure_ascii=False, indent=1))
+    os.replace(tmp, os.path.join(HERE, _nm))
+print("сохранено: forge/cut_data.json, cut_retired.json, cut_hwm.json (прилив %d)" % _hwm)
+if 2000 - _hwm < 300:
+    print("⚠️ ВНИМАНИЕ: до диапазона пулов брони (2001) осталось %d id — следующая "
+          "крупная перерезка упрётся в assert" % (2000 - _hwm))
 
 # ---- И-3: конверт мира (осевые капы) -----------------------------------------
 # «Кованая вещь не может нести на одной оси больше, чем самая щедрая вещь

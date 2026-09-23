@@ -1,0 +1,11701 @@
+[
+ {
+  "id": 27,
+  "donor": "Adversary Silver Sword",
+  "cat": "silversword",
+  "lockey": "item_name_silver_sword_5",
+  "icon": "icons/inventory/weapons/silver_sword_lvl5_64x128.png",
+  "ability": "FRG_C_27",
+  "card": "frg_cut_27",
+  "stats": [
+   [
+    "lifesteal",
+    "add",
+    0.05
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    0.2
+   ],
+   [
+    "focus_gain",
+    "mult",
+    -0.25
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.25
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 28,
+  "donor": "Adversary Silver Sword",
+  "cat": "silversword",
+  "lockey": "item_name_silver_sword_5",
+  "icon": "icons/inventory/weapons/silver_sword_lvl5_64x128.png",
+  "ability": "FRG_C_28",
+  "card": "frg_cut_28",
+  "stats": [
+   [
+    "indestructible",
+    "add",
+    0.5
+   ],
+   [
+    "spell_power",
+    "mult",
+    0.2
+   ],
+   [
+    "poise_damage",
+    "mult",
+    0.2
+   ],
+   [
+    "focus_gain",
+    "mult",
+    -0.25
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.25
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 30,
+  "donor": "Arbitrator_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_arbitrator",
+  "icon": "icons/inventory/weapons/unique_arbitrator_64x128.png",
+  "ability": "FRG_C_30",
+  "card": "frg_cut_30",
+  "stats": [
+   [
+    "armor_reduction_heavy_style",
+    "mult",
+    0.1
+   ],
+   [
+    "poise_damage",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 31,
+  "donor": "Arbitrator_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_arbitrator",
+  "icon": "icons/inventory/weapons/unique_arbitrator_64x128.png",
+  "ability": "FRG_C_31",
+  "card": "frg_cut_31",
+  "stats": [
+   [
+    "attack_speed_fast_style",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 34,
+  "donor": "Azurewrath_crafted",
+  "cat": "silversword",
+  "lockey": "item_name_azurewrath",
+  "icon": "icons/inventory/weapons/silver_unique_azurewrath_64x128.png",
+  "ability": "FRG_C_34",
+  "card": "frg_cut_34",
+  "stats": [
+   [
+    "spell_power_yrden",
+    "mult",
+    0.3
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.1
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 35,
+  "donor": "Azurewrath_crafted",
+  "cat": "silversword",
+  "lockey": "item_name_azurewrath",
+  "icon": "icons/inventory/weapons/silver_unique_azurewrath_64x128.png",
+  "ability": "FRG_C_35",
+  "card": "frg_cut_35",
+  "stats": [
+   [
+    "spell_power_quen",
+    "mult",
+    0.3
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.1
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 36,
+  "donor": "Azurewrath_crafted",
+  "cat": "silversword",
+  "lockey": "item_name_azurewrath",
+  "icon": "icons/inventory/weapons/silver_unique_azurewrath_64x128.png",
+  "ability": "FRG_C_36",
+  "card": "frg_cut_36",
+  "stats": [
+   [
+    "vigor_regen",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.1
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 37,
+  "donor": "Barbersurgeon_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_barbersurgeon",
+  "icon": "icons/inventory/weapons/unique_barber_64x128.png",
+  "ability": "FRG_C_37",
+  "card": "frg_cut_37",
+  "stats": [
+   [
+    "buff_apply_chance",
+    "add",
+    0.2
+   ],
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.2
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.075
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 38,
+  "donor": "Barbersurgeon_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_barbersurgeon",
+  "icon": "icons/inventory/weapons/unique_barber_64x128.png",
+  "ability": "FRG_C_38",
+  "card": "frg_cut_38",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.1
+   ],
+   [
+    "injury_chance",
+    "mult",
+    0.1
+   ],
+   [
+    "dismember_stamina_gain",
+    "add",
+    15.0
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.075
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 41,
+  "donor": "Bear School silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_bear_school_silver_sword",
+  "icon": "icons/inventory/weapons/witcher_silver_bear_sword_lvl1_64x128.png",
+  "ability": "FRG_C_41",
+  "card": "frg_cut_41",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.03
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.01
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.01
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 42,
+  "donor": "Bear School silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_bear_school_silver_sword",
+  "icon": "icons/inventory/weapons/witcher_silver_bear_sword_lvl1_64x128.png",
+  "ability": "FRG_C_42",
+  "card": "frg_cut_42",
+  "stats": [
+   [
+    "poise_damage",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.01
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.01
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 43,
+  "donor": "Bear School silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_bear_school_silver_sword",
+  "icon": "icons/inventory/weapons/witcher_silver_bear_sword_lvl1_64x128.png",
+  "ability": "FRG_C_43",
+  "card": "frg_cut_43",
+  "stats": [
+   [
+    "damage_through_blocks",
+    "mult",
+    0.06
+   ],
+   [
+    "spell_power_quen",
+    "mult",
+    0.03
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.01
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.01
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 44,
+  "donor": "Bear School silver sword 1",
+  "cat": "silversword",
+  "lockey": "item_name_bear_school_silver_sword_1",
+  "icon": "icons/inventory/weapons/witcher_silver_bear_sword_lvl2_64x128.png",
+  "ability": "FRG_C_44",
+  "card": "frg_cut_44",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.06
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.02
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 45,
+  "donor": "Bear School silver sword 1",
+  "cat": "silversword",
+  "lockey": "item_name_bear_school_silver_sword_1",
+  "icon": "icons/inventory/weapons/witcher_silver_bear_sword_lvl2_64x128.png",
+  "ability": "FRG_C_45",
+  "card": "frg_cut_45",
+  "stats": [
+   [
+    "poise_damage",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.02
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 46,
+  "donor": "Bear School silver sword 1",
+  "cat": "silversword",
+  "lockey": "item_name_bear_school_silver_sword_1",
+  "icon": "icons/inventory/weapons/witcher_silver_bear_sword_lvl2_64x128.png",
+  "ability": "FRG_C_46",
+  "card": "frg_cut_46",
+  "stats": [
+   [
+    "damage_through_blocks",
+    "mult",
+    0.12
+   ],
+   [
+    "spell_power_quen",
+    "mult",
+    0.06
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.02
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 47,
+  "donor": "Bear School silver sword 2",
+  "cat": "silversword",
+  "lockey": "item_name_bear_school_silver_sword_2",
+  "icon": "icons/inventory/weapons/witcher_silver_bear_sword_lvl3_64x128.png",
+  "ability": "FRG_C_47",
+  "card": "frg_cut_47",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.09
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.03
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.03
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 48,
+  "donor": "Bear School silver sword 2",
+  "cat": "silversword",
+  "lockey": "item_name_bear_school_silver_sword_2",
+  "icon": "icons/inventory/weapons/witcher_silver_bear_sword_lvl3_64x128.png",
+  "ability": "FRG_C_48",
+  "card": "frg_cut_48",
+  "stats": [
+   [
+    "poise_damage",
+    "mult",
+    0.3
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.03
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.03
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 49,
+  "donor": "Bear School silver sword 2",
+  "cat": "silversword",
+  "lockey": "item_name_bear_school_silver_sword_2",
+  "icon": "icons/inventory/weapons/witcher_silver_bear_sword_lvl3_64x128.png",
+  "ability": "FRG_C_49",
+  "card": "frg_cut_49",
+  "stats": [
+   [
+    "damage_through_blocks",
+    "mult",
+    0.18
+   ],
+   [
+    "spell_power_quen",
+    "mult",
+    0.09
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.03
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.03
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 50,
+  "donor": "Bear School silver sword 3",
+  "cat": "silversword",
+  "lockey": "item_name_bear_school_silver_sword_3",
+  "icon": "icons/inventory/weapons/witcher_silver_bear_sword_lvl4_64x128.png",
+  "ability": "FRG_C_50",
+  "card": "frg_cut_50",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.12
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.04
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.04
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 51,
+  "donor": "Bear School silver sword 3",
+  "cat": "silversword",
+  "lockey": "item_name_bear_school_silver_sword_3",
+  "icon": "icons/inventory/weapons/witcher_silver_bear_sword_lvl4_64x128.png",
+  "ability": "FRG_C_51",
+  "card": "frg_cut_51",
+  "stats": [
+   [
+    "poise_damage",
+    "mult",
+    0.4
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.04
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.04
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 52,
+  "donor": "Bear School silver sword 3",
+  "cat": "silversword",
+  "lockey": "item_name_bear_school_silver_sword_3",
+  "icon": "icons/inventory/weapons/witcher_silver_bear_sword_lvl4_64x128.png",
+  "ability": "FRG_C_52",
+  "card": "frg_cut_52",
+  "stats": [
+   [
+    "damage_through_blocks",
+    "mult",
+    0.24
+   ],
+   [
+    "spell_power_quen",
+    "mult",
+    0.12
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.04
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.04
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 53,
+  "donor": "Bear School silver sword 4",
+  "cat": "silversword",
+  "lockey": "item_name_bear_school_silver_sword_4",
+  "icon": "icons/inventory/weapons/witcher_silver_bear_sword_lvl5_64x128.png",
+  "ability": "FRG_C_53",
+  "card": "frg_cut_53",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.05
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 54,
+  "donor": "Bear School silver sword 4",
+  "cat": "silversword",
+  "lockey": "item_name_bear_school_silver_sword_4",
+  "icon": "icons/inventory/weapons/witcher_silver_bear_sword_lvl5_64x128.png",
+  "ability": "FRG_C_54",
+  "card": "frg_cut_54",
+  "stats": [
+   [
+    "poise_damage",
+    "mult",
+    0.5
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.05
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 55,
+  "donor": "Bear School silver sword 4",
+  "cat": "silversword",
+  "lockey": "item_name_bear_school_silver_sword_4",
+  "icon": "icons/inventory/weapons/witcher_silver_bear_sword_lvl5_64x128.png",
+  "ability": "FRG_C_55",
+  "card": "frg_cut_55",
+  "stats": [
+   [
+    "damage_through_blocks",
+    "mult",
+    0.3
+   ],
+   [
+    "spell_power_quen",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.05
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 56,
+  "donor": "Bear School steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_bear_school_steel_sword",
+  "icon": "icons/inventory/weapons/witcher_steel_bear_sword_lvl1_64x128.png",
+  "ability": "FRG_C_56",
+  "card": "frg_cut_56",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.03
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.01
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.01
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 57,
+  "donor": "Bear School steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_bear_school_steel_sword",
+  "icon": "icons/inventory/weapons/witcher_steel_bear_sword_lvl1_64x128.png",
+  "ability": "FRG_C_57",
+  "card": "frg_cut_57",
+  "stats": [
+   [
+    "attack_power",
+    "mult",
+    0.03
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.03
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.01
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.01
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 58,
+  "donor": "Bear School steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_bear_school_steel_sword",
+  "icon": "icons/inventory/weapons/witcher_steel_bear_sword_lvl1_64x128.png",
+  "ability": "FRG_C_58",
+  "card": "frg_cut_58",
+  "stats": [
+   [
+    "poise_damage",
+    "mult",
+    0.1
+   ],
+   [
+    "counter_damage_bonus",
+    "mult",
+    0.06
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.01
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.01
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 59,
+  "donor": "Bear School steel sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_bear_school_steel_sword_1",
+  "icon": "icons/inventory/weapons/witcher_steel_bear_sword_lvl2_64x128.png",
+  "ability": "FRG_C_59",
+  "card": "frg_cut_59",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.06
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.02
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 60,
+  "donor": "Bear School steel sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_bear_school_steel_sword_1",
+  "icon": "icons/inventory/weapons/witcher_steel_bear_sword_lvl2_64x128.png",
+  "ability": "FRG_C_60",
+  "card": "frg_cut_60",
+  "stats": [
+   [
+    "poise_damage",
+    "mult",
+    0.2
+   ],
+   [
+    "counter_damage_bonus",
+    "add",
+    0.12
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.02
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 61,
+  "donor": "Bear School steel sword 2",
+  "cat": "steelsword",
+  "lockey": "item_name_bear_school_steel_sword_2",
+  "icon": "icons/inventory/weapons/witcher_steel_bear_sword_lvl3_64x128.png",
+  "ability": "FRG_C_61",
+  "card": "frg_cut_61",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.09
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.03
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.03
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 62,
+  "donor": "Bear School steel sword 2",
+  "cat": "steelsword",
+  "lockey": "item_name_bear_school_steel_sword_2",
+  "icon": "icons/inventory/weapons/witcher_steel_bear_sword_lvl3_64x128.png",
+  "ability": "FRG_C_62",
+  "card": "frg_cut_62",
+  "stats": [
+   [
+    "poise_damage",
+    "mult",
+    0.3
+   ],
+   [
+    "counter_damage_bonus",
+    "add",
+    0.18
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.03
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.03
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 63,
+  "donor": "Bear School steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_bear_school_steel_sword_3",
+  "icon": "icons/inventory/weapons/witcher_steel_bear_sword_lvl4_64x128.png",
+  "ability": "FRG_C_63",
+  "card": "frg_cut_63",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.12
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.04
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.04
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 64,
+  "donor": "Bear School steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_bear_school_steel_sword_3",
+  "icon": "icons/inventory/weapons/witcher_steel_bear_sword_lvl4_64x128.png",
+  "ability": "FRG_C_64",
+  "card": "frg_cut_64",
+  "stats": [
+   [
+    "poise_damage",
+    "mult",
+    0.4
+   ],
+   [
+    "counter_damage_bonus",
+    "add",
+    0.24
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.04
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.04
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 65,
+  "donor": "Bear School steel sword 4",
+  "cat": "steelsword",
+  "lockey": "item_name_bear_school_steel_sword_4",
+  "icon": "icons/inventory/weapons/witcher_steel_bear_sword_lvl5_64x128.png",
+  "ability": "FRG_C_65",
+  "card": "frg_cut_65",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.05
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 66,
+  "donor": "Bear School steel sword 4",
+  "cat": "steelsword",
+  "lockey": "item_name_bear_school_steel_sword_4",
+  "icon": "icons/inventory/weapons/witcher_steel_bear_sword_lvl5_64x128.png",
+  "ability": "FRG_C_66",
+  "card": "frg_cut_66",
+  "stats": [
+   [
+    "poise_damage",
+    "mult",
+    0.5
+   ],
+   [
+    "counter_damage_bonus",
+    "add",
+    0.3
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.05
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 67,
+  "donor": "Bloodsword_crafted",
+  "cat": "silversword",
+  "lockey": "item_name_bloodsword",
+  "icon": "icons/inventory/weapons/silver_unique_blood_sword_64x128.png",
+  "ability": "FRG_C_67",
+  "card": "frg_cut_67",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.2
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.2
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "focus_gain",
+    "mult",
+    0.2
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.1
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.15
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 68,
+  "donor": "Bloodsword_crafted",
+  "cat": "silversword",
+  "lockey": "item_name_bloodsword",
+  "icon": "icons/inventory/weapons/silver_unique_blood_sword_64x128.png",
+  "ability": "FRG_C_68",
+  "card": "frg_cut_68",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.15
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.1
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.15
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 69,
+  "donor": "Caerme_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_caerme",
+  "icon": "icons/inventory/weapons/steel_unique_caerme_64x128.png",
+  "ability": "FRG_C_69",
+  "card": "frg_cut_69",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.15
+   ],
+   [
+    "damage_through_blocks",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 70,
+  "donor": "Caerme_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_caerme",
+  "icon": "icons/inventory/weapons/steel_unique_caerme_64x128.png",
+  "ability": "FRG_C_70",
+  "card": "frg_cut_70",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.05
+   ],
+   [
+    "poise_damage",
+    "mult",
+    0.1
+   ],
+   [
+    "indestructible",
+    "add",
+    0.25
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 71,
+  "donor": "Cheesecutter",
+  "cat": "steelsword",
+  "lockey": "item_name_cheesecutter",
+  "icon": "icons/inventory/quests/emmentaler_64x128.png",
+  "ability": "FRG_C_71",
+  "card": "frg_cut_71",
+  "stats": [
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "poise_damage",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.075
+   ],
+   [
+    "focus_gain",
+    "mult",
+    -0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 72,
+  "donor": "Cheesecutter",
+  "cat": "steelsword",
+  "lockey": "item_name_cheesecutter",
+  "icon": "icons/inventory/quests/emmentaler_64x128.png",
+  "ability": "FRG_C_72",
+  "card": "frg_cut_72",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_speed",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.075
+   ],
+   [
+    "focus_gain",
+    "mult",
+    -0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 73,
+  "donor": "Crafted Burning Rose Sword",
+  "cat": "steelsword",
+  "lockey": "item_name_burning_rose_steel_sword",
+  "icon": "icons/inventory/weapons/burning_rose_sword_64x128.png",
+  "ability": "FRG_C_73",
+  "card": "frg_cut_73",
+  "stats": [
+   [
+    "BurningEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.1
+   ],
+   [
+    "desc_burningchance_mult",
+    "add",
+    0.1
+   ],
+   [
+    "focus_gain",
+    "mult",
+    0.15
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 74,
+  "donor": "Crafted Burning Rose Sword",
+  "cat": "steelsword",
+  "lockey": "item_name_burning_rose_steel_sword",
+  "icon": "icons/inventory/weapons/burning_rose_sword_64x128.png",
+  "ability": "FRG_C_74",
+  "card": "frg_cut_74",
+  "stats": [
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.1
+   ],
+   [
+    "damage_through_blocks",
+    "mult",
+    0.15
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 75,
+  "donor": "Crafted Ofir Steel Sword",
+  "cat": "steelsword",
+  "lockey": "item_name_ofir_steel_sabre",
+  "icon": "icons/inventory/weapons/ofir_steel_sabre_64x128.png",
+  "ability": "FRG_C_75",
+  "card": "frg_cut_75",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.2
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 76,
+  "donor": "Crafted Ofir Steel Sword",
+  "cat": "steelsword",
+  "lockey": "item_name_ofir_steel_sabre",
+  "icon": "icons/inventory/weapons/ofir_steel_sabre_64x128.png",
+  "ability": "FRG_C_76",
+  "card": "frg_cut_76",
+  "stats": [
+   [
+    "vigor_regen",
+    "mult",
+    0.2
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    0.2
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.2
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 77,
+  "donor": "Deireadh_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_deireadh",
+  "icon": "icons/inventory/weapons/unique_deireadh_64x128.png",
+  "ability": "FRG_C_77",
+  "card": "frg_cut_77",
+  "stats": [
+   [
+    "focus_gain",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.15
+   ],
+   [
+    "counter_damage_bonus",
+    "mult",
+    -0.075
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 78,
+  "donor": "Deireadh_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_deireadh",
+  "icon": "icons/inventory/weapons/unique_deireadh_64x128.png",
+  "ability": "FRG_C_78",
+  "card": "frg_cut_78",
+  "stats": [
+   [
+    "poise_damage",
+    "mult",
+    0.25
+   ],
+   [
+    "damage_through_blocks",
+    "mult",
+    0.25
+   ],
+   [
+    "counter_damage_bonus",
+    "mult",
+    -0.075
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 81,
+  "donor": "Dol Blathanna longsword",
+  "cat": "steelsword",
+  "lockey": "item_name_dol_blathanna_longsword",
+  "icon": "icons/inventory/weapons/dol_blathanna_steel_longsword_64x128.png",
+  "ability": "FRG_C_81",
+  "card": "frg_cut_81",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.1
+   ],
+   [
+    "critical_hit_chance",
+    "mult",
+    0.05
+   ],
+   [
+    "spell_power_quen",
+    "mult",
+    0.1
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.075
+   ],
+   [
+    "focus_gain",
+    "mult",
+    -0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 82,
+  "donor": "EP1 Crafted Witcher Silver Sword",
+  "cat": "silversword",
+  "lockey": "item_name_electrum_sword",
+  "icon": "icons/inventory/weapons/ep1_silver_sword_64x128.png",
+  "ability": "FRG_C_82",
+  "card": "frg_cut_82",
+  "stats": [
+   [
+    "vigor_regen",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 83,
+  "donor": "EP1 Crafted Witcher Silver Sword",
+  "cat": "silversword",
+  "lockey": "item_name_electrum_sword",
+  "icon": "icons/inventory/weapons/ep1_silver_sword_64x128.png",
+  "ability": "FRG_C_83",
+  "card": "frg_cut_83",
+  "stats": [
+   [
+    "spell_power",
+    "mult",
+    0.2
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    0.1
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 86,
+  "donor": "EP1 Viper School silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_hosviper_school_silver_sword",
+  "icon": "icons/inventory/weapons/Viper_silver_lvl1_64x128.png",
+  "ability": "FRG_C_86",
+  "card": "frg_cut_86",
+  "stats": [
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.25
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.25
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 87,
+  "donor": "EP1 Viper School silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_hosviper_school_silver_sword",
+  "icon": "icons/inventory/weapons/Viper_silver_lvl1_64x128.png",
+  "ability": "FRG_C_87",
+  "card": "frg_cut_87",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 88,
+  "donor": "EP1 Viper School silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_hosviper_school_silver_sword",
+  "icon": "icons/inventory/weapons/Viper_silver_lvl1_64x128.png",
+  "ability": "FRG_C_88",
+  "card": "frg_cut_88",
+  "stats": [
+   [
+    "spell_power_axii",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 89,
+  "donor": "EP1 Viper School steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_hosviper_school_steel_sword",
+  "icon": "icons/inventory/weapons/Viper_steel_lvl1_64x128.png",
+  "ability": "FRG_C_89",
+  "card": "frg_cut_89",
+  "stats": [
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 90,
+  "donor": "EP1 Viper School steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_hosviper_school_steel_sword",
+  "icon": "icons/inventory/weapons/Viper_steel_lvl1_64x128.png",
+  "ability": "FRG_C_90",
+  "card": "frg_cut_90",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.15
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 91,
+  "donor": "EP1 Viper School steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_hosviper_school_steel_sword",
+  "icon": "icons/inventory/weapons/Viper_steel_lvl1_64x128.png",
+  "ability": "FRG_C_91",
+  "card": "frg_cut_91",
+  "stats": [
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    0.3
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 92,
+  "donor": "EP2 Silver sword 2",
+  "cat": "silversword",
+  "lockey": "item_name_ep2_bonus_silver_sword_2",
+  "icon": "icons/inventory/weapons/elven_silver_sword_lvl1-64x128.png",
+  "ability": "FRG_C_92",
+  "card": "frg_cut_92",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.15
+   ],
+   [
+    "indestructible",
+    "add",
+    0.25
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.025
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.125
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 93,
+  "donor": "EP2 Silver sword 2",
+  "cat": "silversword",
+  "lockey": "item_name_ep2_bonus_silver_sword_2",
+  "icon": "icons/inventory/weapons/elven_silver_sword_lvl1-64x128.png",
+  "ability": "FRG_C_93",
+  "card": "frg_cut_93",
+  "stats": [
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.2
+   ],
+   [
+    "counter_damage_bonus",
+    "mult",
+    0.2
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    0.1
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.025
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.125
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 94,
+  "donor": "Eredin Sword",
+  "cat": "steelsword",
+  "lockey": "item_name_wild_hunt_sword_2",
+  "icon": "icons/inventory/weapons/sword-01-b.png",
+  "ability": "FRG_C_94",
+  "card": "frg_cut_94",
+  "stats": [
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    0.01
+   ],
+   [
+    "instant_kill_chance",
+    "add",
+    0.01
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 95,
+  "donor": "Fate",
+  "cat": "silversword",
+  "lockey": "item_name_fate",
+  "icon": "icons/inventory/weapons/silver_unique_fate_64x128.png",
+  "ability": "FRG_C_95",
+  "card": "frg_cut_95",
+  "stats": [
+   [
+    "buff_apply_chance",
+    "add",
+    0.1
+   ],
+   [
+    "desc_freezingchance_mult",
+    "add",
+    0.1
+   ],
+   [
+    "SlowdownFrostEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.0333
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.0333
+   ],
+   [
+    "spell_power_igni",
+    "mult",
+    -0.0833
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 96,
+  "donor": "Fate",
+  "cat": "silversword",
+  "lockey": "item_name_fate",
+  "icon": "icons/inventory/weapons/silver_unique_fate_64x128.png",
+  "ability": "FRG_C_96",
+  "card": "frg_cut_96",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.0333
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.0333
+   ],
+   [
+    "spell_power_igni",
+    "mult",
+    -0.0833
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 97,
+  "donor": "Fate",
+  "cat": "silversword",
+  "lockey": "item_name_fate",
+  "icon": "icons/inventory/weapons/silver_unique_fate_64x128.png",
+  "ability": "FRG_C_97",
+  "card": "frg_cut_97",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.1
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.0333
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.0333
+   ],
+   [
+    "spell_power_igni",
+    "mult",
+    -0.0833
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 100,
+  "donor": "Gnomish sword 2_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_gnomish_sword_2",
+  "icon": "icons/inventory/weapons/gnomish_sword_lvl2_64x128.png",
+  "ability": "FRG_C_100",
+  "card": "frg_cut_100",
+  "stats": [
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "dismember_chance",
+    "add",
+    0.01
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 101,
+  "donor": "Gryphon School silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_gryphon_school_silver_sword",
+  "icon": "icons/inventory/weapons/witcher_silver_gryphon_sword_lvl1_64x128.png",
+  "ability": "FRG_C_101",
+  "card": "frg_cut_101",
+  "stats": [
+   [
+    "buff_apply_chance",
+    "add",
+    0.03
+   ],
+   [
+    "desc_confusionchance_mult",
+    "add",
+    0.03
+   ],
+   [
+    "ConfusionEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.01
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.01
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 102,
+  "donor": "Gryphon School silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_gryphon_school_silver_sword",
+  "icon": "icons/inventory/weapons/witcher_silver_gryphon_sword_lvl1_64x128.png",
+  "ability": "FRG_C_102",
+  "card": "frg_cut_102",
+  "stats": [
+   [
+    "spell_power",
+    "mult",
+    0.05
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.01
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.01
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 103,
+  "donor": "Gryphon School silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_gryphon_school_silver_sword",
+  "icon": "icons/inventory/weapons/witcher_silver_gryphon_sword_lvl1_64x128.png",
+  "ability": "FRG_C_103",
+  "card": "frg_cut_103",
+  "stats": [
+   [
+    "spell_power_yrden",
+    "mult",
+    0.03
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.01
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.01
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 104,
+  "donor": "Gryphon School silver sword 1",
+  "cat": "silversword",
+  "lockey": "item_name_gryphon_school_silver_sword_1",
+  "icon": "icons/inventory/weapons/witcher_silver_gryphon_sword_lvl2_64x128.png",
+  "ability": "FRG_C_104",
+  "card": "frg_cut_104",
+  "stats": [
+   [
+    "buff_apply_chance",
+    "add",
+    0.06
+   ],
+   [
+    "desc_confusionchance_mult",
+    "add",
+    0.06
+   ],
+   [
+    "ConfusionEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.02
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.02
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 105,
+  "donor": "Gryphon School silver sword 1",
+  "cat": "silversword",
+  "lockey": "item_name_gryphon_school_silver_sword_1",
+  "icon": "icons/inventory/weapons/witcher_silver_gryphon_sword_lvl2_64x128.png",
+  "ability": "FRG_C_105",
+  "card": "frg_cut_105",
+  "stats": [
+   [
+    "spell_power",
+    "mult",
+    0.1
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.02
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.02
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 106,
+  "donor": "Gryphon School silver sword 1",
+  "cat": "silversword",
+  "lockey": "item_name_gryphon_school_silver_sword_1",
+  "icon": "icons/inventory/weapons/witcher_silver_gryphon_sword_lvl2_64x128.png",
+  "ability": "FRG_C_106",
+  "card": "frg_cut_106",
+  "stats": [
+   [
+    "spell_power_yrden",
+    "mult",
+    0.06
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.02
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.02
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 107,
+  "donor": "Gryphon School silver sword 2",
+  "cat": "silversword",
+  "lockey": "item_name_gryphon_school_silver_sword_2",
+  "icon": "icons/inventory/weapons/witcher_silver_gryphon_sword_lvl3_64x128.png",
+  "ability": "FRG_C_107",
+  "card": "frg_cut_107",
+  "stats": [
+   [
+    "buff_apply_chance",
+    "add",
+    0.09
+   ],
+   [
+    "desc_confusionchance_mult",
+    "add",
+    0.09
+   ],
+   [
+    "ConfusionEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.03
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.03
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 108,
+  "donor": "Gryphon School silver sword 2",
+  "cat": "silversword",
+  "lockey": "item_name_gryphon_school_silver_sword_2",
+  "icon": "icons/inventory/weapons/witcher_silver_gryphon_sword_lvl3_64x128.png",
+  "ability": "FRG_C_108",
+  "card": "frg_cut_108",
+  "stats": [
+   [
+    "spell_power",
+    "mult",
+    0.15
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.03
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.03
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 109,
+  "donor": "Gryphon School silver sword 2",
+  "cat": "silversword",
+  "lockey": "item_name_gryphon_school_silver_sword_2",
+  "icon": "icons/inventory/weapons/witcher_silver_gryphon_sword_lvl3_64x128.png",
+  "ability": "FRG_C_109",
+  "card": "frg_cut_109",
+  "stats": [
+   [
+    "spell_power_yrden",
+    "mult",
+    0.09
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.03
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.03
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 110,
+  "donor": "Gryphon School silver sword 3",
+  "cat": "silversword",
+  "lockey": "item_name_gryphon_school_silver_sword_3",
+  "icon": "icons/inventory/weapons/witcher_silver_gryphon_sword_lvl4_64x128.png",
+  "ability": "FRG_C_110",
+  "card": "frg_cut_110",
+  "stats": [
+   [
+    "buff_apply_chance",
+    "add",
+    0.12
+   ],
+   [
+    "desc_confusionchance_mult",
+    "add",
+    0.12
+   ],
+   [
+    "ConfusionEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.04
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.04
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 111,
+  "donor": "Gryphon School silver sword 3",
+  "cat": "silversword",
+  "lockey": "item_name_gryphon_school_silver_sword_3",
+  "icon": "icons/inventory/weapons/witcher_silver_gryphon_sword_lvl4_64x128.png",
+  "ability": "FRG_C_111",
+  "card": "frg_cut_111",
+  "stats": [
+   [
+    "spell_power",
+    "mult",
+    0.2
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.04
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.04
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 112,
+  "donor": "Gryphon School silver sword 3",
+  "cat": "silversword",
+  "lockey": "item_name_gryphon_school_silver_sword_3",
+  "icon": "icons/inventory/weapons/witcher_silver_gryphon_sword_lvl4_64x128.png",
+  "ability": "FRG_C_112",
+  "card": "frg_cut_112",
+  "stats": [
+   [
+    "spell_power_yrden",
+    "mult",
+    0.12
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.04
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.04
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 113,
+  "donor": "Gryphon School silver sword 4",
+  "cat": "silversword",
+  "lockey": "item_name_gryphon_school_silver_sword_4",
+  "icon": "icons/inventory/weapons/witcher_silver_gryphon_sword_lvl5_64x128.png",
+  "ability": "FRG_C_113",
+  "card": "frg_cut_113",
+  "stats": [
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "desc_confusionchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "ConfusionEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 114,
+  "donor": "Gryphon School silver sword 4",
+  "cat": "silversword",
+  "lockey": "item_name_gryphon_school_silver_sword_4",
+  "icon": "icons/inventory/weapons/witcher_silver_gryphon_sword_lvl5_64x128.png",
+  "ability": "FRG_C_114",
+  "card": "frg_cut_114",
+  "stats": [
+   [
+    "spell_power",
+    "mult",
+    0.25
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 115,
+  "donor": "Gryphon School silver sword 4",
+  "cat": "silversword",
+  "lockey": "item_name_gryphon_school_silver_sword_4",
+  "icon": "icons/inventory/weapons/witcher_silver_gryphon_sword_lvl5_64x128.png",
+  "ability": "FRG_C_115",
+  "card": "frg_cut_115",
+  "stats": [
+   [
+    "spell_power_yrden",
+    "mult",
+    0.15
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 116,
+  "donor": "Gryphon School steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_gryphon_school_steel_sword",
+  "icon": "icons/inventory/weapons/witcher_steel_gryphon_sword_lvl1_64x128.png",
+  "ability": "FRG_C_116",
+  "card": "frg_cut_116",
+  "stats": [
+   [
+    "spell_power",
+    "mult",
+    0.03
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.01
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.01
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 117,
+  "donor": "Gryphon School steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_gryphon_school_steel_sword",
+  "icon": "icons/inventory/weapons/witcher_steel_gryphon_sword_lvl1_64x128.png",
+  "ability": "FRG_C_117",
+  "card": "frg_cut_117",
+  "stats": [
+   [
+    "focus_gain",
+    "mult",
+    0.03
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.01
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.01
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 118,
+  "donor": "Gryphon School steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_gryphon_school_steel_sword",
+  "icon": "icons/inventory/weapons/witcher_steel_gryphon_sword_lvl1_64x128.png",
+  "ability": "FRG_C_118",
+  "card": "frg_cut_118",
+  "stats": [
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.03
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.01
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.01
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 119,
+  "donor": "Gryphon School steel sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_gryphon_school_steel_sword_1",
+  "icon": "icons/inventory/weapons/witcher_steel_gryphon_sword_lvl2_64x128.png",
+  "ability": "FRG_C_119",
+  "card": "frg_cut_119",
+  "stats": [
+   [
+    "spell_power",
+    "mult",
+    0.06
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.02
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.02
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 120,
+  "donor": "Gryphon School steel sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_gryphon_school_steel_sword_1",
+  "icon": "icons/inventory/weapons/witcher_steel_gryphon_sword_lvl2_64x128.png",
+  "ability": "FRG_C_120",
+  "card": "frg_cut_120",
+  "stats": [
+   [
+    "focus_gain",
+    "mult",
+    0.06
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.02
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.02
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 121,
+  "donor": "Gryphon School steel sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_gryphon_school_steel_sword_1",
+  "icon": "icons/inventory/weapons/witcher_steel_gryphon_sword_lvl2_64x128.png",
+  "ability": "FRG_C_121",
+  "card": "frg_cut_121",
+  "stats": [
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.06
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.02
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.02
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 122,
+  "donor": "Gryphon School steel sword 2",
+  "cat": "steelsword",
+  "lockey": "item_name_gryphon_school_steel_sword_2",
+  "icon": "icons/inventory/weapons/witcher_steel_gryphon_sword_lvl3_64x128.png",
+  "ability": "FRG_C_122",
+  "card": "frg_cut_122",
+  "stats": [
+   [
+    "spell_power",
+    "mult",
+    0.09
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.03
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.03
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 123,
+  "donor": "Gryphon School steel sword 2",
+  "cat": "steelsword",
+  "lockey": "item_name_gryphon_school_steel_sword_2",
+  "icon": "icons/inventory/weapons/witcher_steel_gryphon_sword_lvl3_64x128.png",
+  "ability": "FRG_C_123",
+  "card": "frg_cut_123",
+  "stats": [
+   [
+    "focus_gain",
+    "mult",
+    0.09
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.03
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.03
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 124,
+  "donor": "Gryphon School steel sword 2",
+  "cat": "steelsword",
+  "lockey": "item_name_gryphon_school_steel_sword_2",
+  "icon": "icons/inventory/weapons/witcher_steel_gryphon_sword_lvl3_64x128.png",
+  "ability": "FRG_C_124",
+  "card": "frg_cut_124",
+  "stats": [
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.09
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.03
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.03
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 125,
+  "donor": "Gryphon School steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_gryphon_school_steel_sword_3",
+  "icon": "icons/inventory/weapons/witcher_steel_gryphon_sword_lvl4_64x128.png",
+  "ability": "FRG_C_125",
+  "card": "frg_cut_125",
+  "stats": [
+   [
+    "spell_power",
+    "mult",
+    0.12
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.04
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.04
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 126,
+  "donor": "Gryphon School steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_gryphon_school_steel_sword_3",
+  "icon": "icons/inventory/weapons/witcher_steel_gryphon_sword_lvl4_64x128.png",
+  "ability": "FRG_C_126",
+  "card": "frg_cut_126",
+  "stats": [
+   [
+    "focus_gain",
+    "mult",
+    0.12
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.04
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.04
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 127,
+  "donor": "Gryphon School steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_gryphon_school_steel_sword_3",
+  "icon": "icons/inventory/weapons/witcher_steel_gryphon_sword_lvl4_64x128.png",
+  "ability": "FRG_C_127",
+  "card": "frg_cut_127",
+  "stats": [
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.12
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.04
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.04
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 128,
+  "donor": "Gryphon School steel sword 4",
+  "cat": "steelsword",
+  "lockey": "item_name_gryphon_school_steel_sword_4",
+  "icon": "icons/inventory/weapons/witcher_steel_gryphon_sword_lvl5_64x128.png",
+  "ability": "FRG_C_128",
+  "card": "frg_cut_128",
+  "stats": [
+   [
+    "spell_power",
+    "mult",
+    0.15
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 129,
+  "donor": "Gryphon School steel sword 4",
+  "cat": "steelsword",
+  "lockey": "item_name_gryphon_school_steel_sword_4",
+  "icon": "icons/inventory/weapons/witcher_steel_gryphon_sword_lvl5_64x128.png",
+  "ability": "FRG_C_129",
+  "card": "frg_cut_129",
+  "stats": [
+   [
+    "focus_gain",
+    "mult",
+    0.15
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 130,
+  "donor": "Gryphon School steel sword 4",
+  "cat": "steelsword",
+  "lockey": "item_name_gryphon_school_steel_sword_4",
+  "icon": "icons/inventory/weapons/witcher_steel_gryphon_sword_lvl5_64x128.png",
+  "ability": "FRG_C_130",
+  "card": "frg_cut_130",
+  "stats": [
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.15
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 131,
+  "donor": "Guard lvl1 steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_guard_lvl1_geralt_steel_sword",
+  "icon": "icons/inventory/weapons/guard_1_steel_sword_64x128.png",
+  "ability": "FRG_C_131",
+  "card": "frg_cut_131",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.1
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "desc_confusionchance_mult",
+    "add",
+    0.1
+   ],
+   [
+    "ConfusionEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.1
+   ],
+   [
+    "armor_reduction",
+    "base",
+    100.0
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 132,
+  "donor": "Guard lvl2 steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_guard_lvl2_geralt_steel_sword",
+  "icon": "icons/inventory/weapons/guard_2_steel_sword_64x128.png",
+  "ability": "FRG_C_132",
+  "card": "frg_cut_132",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.12
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "desc_confusionchance_mult",
+    "add",
+    0.12
+   ],
+   [
+    "ConfusionEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.12
+   ],
+   [
+    "armor_reduction",
+    "base",
+    150.0
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 133,
+  "donor": "Gwent steel sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_gwent_steel_sword_1",
+  "icon": "icons/inventory/weapons/gwent_steel_sword_1_64x128.png",
+  "ability": "FRG_C_133",
+  "card": "frg_cut_133",
+  "stats": [
+   [
+    "ConfusionEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.1
+   ],
+   [
+    "desc_confusionchance_mult",
+    "add",
+    0.1
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.075
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 134,
+  "donor": "Gwent steel sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_gwent_steel_sword_1",
+  "icon": "icons/inventory/weapons/gwent_steel_sword_1_64x128.png",
+  "ability": "FRG_C_134",
+  "card": "frg_cut_134",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.05
+   ],
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    0.15
+   ],
+   [
+    "spell_power_axii",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.075
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 137,
+  "donor": "Hanza steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_hanza_steel_sword_2",
+  "icon": "icons/inventory/weapons/hanza_1_steel_sword_64x128.png",
+  "ability": "FRG_C_137",
+  "card": "frg_cut_137",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "instant_kill_chance_mult",
+    "add",
+    0.03
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 138,
+  "donor": "Harpy_crafted",
+  "cat": "silversword",
+  "lockey": "item_name_harpy",
+  "icon": "icons/inventory/weapons/silver_unique_harpy_64x128.png",
+  "ability": "FRG_C_138",
+  "card": "frg_cut_138",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.1
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.1
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "spell_power_aard",
+    "mult",
+    0.15
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ],
+   [
+    "counter_damage_bonus",
+    "mult",
+    -0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 139,
+  "donor": "Harpy_crafted",
+  "cat": "silversword",
+  "lockey": "item_name_harpy",
+  "icon": "icons/inventory/weapons/silver_unique_harpy_64x128.png",
+  "ability": "FRG_C_139",
+  "card": "frg_cut_139",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.1
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    0.15
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    0.2
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ],
+   [
+    "counter_damage_bonus",
+    "mult",
+    -0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 140,
+  "donor": "Havcaaren_crafted",
+  "cat": "silversword",
+  "lockey": "item_name_havcaaren",
+  "icon": "icons/inventory/weapons/silver_unique_havcaaren_64x128.png",
+  "ability": "FRG_C_140",
+  "card": "frg_cut_140",
+  "stats": [
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "spell_power_axii",
+    "mult",
+    0.2
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.075
+   ],
+   [
+    "focus_gain",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 141,
+  "donor": "Havcaaren_crafted",
+  "cat": "silversword",
+  "lockey": "item_name_havcaaren",
+  "icon": "icons/inventory/weapons/silver_unique_havcaaren_64x128.png",
+  "ability": "FRG_C_141",
+  "card": "frg_cut_141",
+  "stats": [
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.15
+   ],
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    0.2
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.075
+   ],
+   [
+    "focus_gain",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 142,
+  "donor": "Headtaker_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_headtaker",
+  "icon": "icons/inventory/weapons/unique_head_taker_64x128.png",
+  "ability": "FRG_C_142",
+  "card": "frg_cut_142",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.3
+   ],
+   [
+    "dismember_stamina_gain",
+    "add",
+    25.0
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.075
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 143,
+  "donor": "Inis_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_inis",
+  "icon": "icons/inventory/weapons/steel_unique_inis_64x128.png",
+  "ability": "FRG_C_143",
+  "card": "frg_cut_143",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.15
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.2
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 144,
+  "donor": "Knights steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_knights_steel_sword",
+  "icon": "icons/inventory/weapons/knight_1_steel_sword_64x128.png",
+  "ability": "FRG_C_144",
+  "card": "frg_cut_144",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.15
+   ],
+   [
+    "damage_through_blocks",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.0833
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 145,
+  "donor": "Knights steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_knights_steel_sword",
+  "icon": "icons/inventory/weapons/knight_1_steel_sword_64x128.png",
+  "ability": "FRG_C_145",
+  "card": "frg_cut_145",
+  "stats": [
+   [
+    "attack_power_horseback",
+    "mult",
+    0.25
+   ],
+   [
+    "poise_damage",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.0833
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 148,
+  "donor": "Lune_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_lune",
+  "icon": "icons/inventory/weapons/unique_lune_64x128.png",
+  "ability": "FRG_C_148",
+  "card": "frg_cut_148",
+  "stats": [
+   [
+    "ConfusionEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.1
+   ],
+   [
+    "desc_confusionchance_mult",
+    "add",
+    0.1
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.125
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 149,
+  "donor": "Lune_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_lune",
+  "icon": "icons/inventory/weapons/unique_lune_64x128.png",
+  "ability": "FRG_C_149",
+  "card": "frg_cut_149",
+  "stats": [
+   [
+    "spell_power_yrden",
+    "mult",
+    0.3
+   ],
+   [
+    "spell_power_axii",
+    "mult",
+    0.3
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.125
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 150,
+  "donor": "Lynx School silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_lynx_school_silver_sword",
+  "icon": "icons/inventory/weapons/witcher_silver_lynx_sword_lvl1_64x128.png",
+  "ability": "FRG_C_150",
+  "card": "frg_cut_150",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.03
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.03
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.01
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0167
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 151,
+  "donor": "Lynx School silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_lynx_school_silver_sword",
+  "icon": "icons/inventory/weapons/witcher_silver_lynx_sword_lvl1_64x128.png",
+  "ability": "FRG_C_151",
+  "card": "frg_cut_151",
+  "stats": [
+   [
+    "damage_from_behind_off",
+    "mult",
+    0.06
+   ],
+   [
+    "focus_gain",
+    "mult",
+    0.03
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.01
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0167
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 152,
+  "donor": "Lynx School silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_lynx_school_silver_sword",
+  "icon": "icons/inventory/weapons/witcher_silver_lynx_sword_lvl1_64x128.png",
+  "ability": "FRG_C_152",
+  "card": "frg_cut_152",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.03
+   ],
+   [
+    "attack_speed",
+    "mult",
+    0.03
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.01
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0167
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 153,
+  "donor": "Lynx School silver sword 1",
+  "cat": "silversword",
+  "lockey": "item_name_lynx_school_silver_sword_1",
+  "icon": "icons/inventory/weapons/witcher_silver_lynx_sword_lvl2_64x128.png",
+  "ability": "FRG_C_153",
+  "card": "frg_cut_153",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.06
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.06
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.02
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0333
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 154,
+  "donor": "Lynx School silver sword 1",
+  "cat": "silversword",
+  "lockey": "item_name_lynx_school_silver_sword_1",
+  "icon": "icons/inventory/weapons/witcher_silver_lynx_sword_lvl2_64x128.png",
+  "ability": "FRG_C_154",
+  "card": "frg_cut_154",
+  "stats": [
+   [
+    "damage_from_behind_off",
+    "mult",
+    0.12
+   ],
+   [
+    "focus_gain",
+    "mult",
+    0.06
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.02
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0333
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 155,
+  "donor": "Lynx School silver sword 1",
+  "cat": "silversword",
+  "lockey": "item_name_lynx_school_silver_sword_1",
+  "icon": "icons/inventory/weapons/witcher_silver_lynx_sword_lvl2_64x128.png",
+  "ability": "FRG_C_155",
+  "card": "frg_cut_155",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.06
+   ],
+   [
+    "attack_speed",
+    "mult",
+    0.06
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.02
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0333
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 156,
+  "donor": "Lynx School silver sword 2",
+  "cat": "silversword",
+  "lockey": "item_name_lynx_school_silver_sword_2",
+  "icon": "icons/inventory/weapons/witcher_silver_lynx_sword_lvl3_64x128.png",
+  "ability": "FRG_C_156",
+  "card": "frg_cut_156",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.09
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.09
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.03
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.05
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 157,
+  "donor": "Lynx School silver sword 2",
+  "cat": "silversword",
+  "lockey": "item_name_lynx_school_silver_sword_2",
+  "icon": "icons/inventory/weapons/witcher_silver_lynx_sword_lvl3_64x128.png",
+  "ability": "FRG_C_157",
+  "card": "frg_cut_157",
+  "stats": [
+   [
+    "damage_from_behind_off",
+    "mult",
+    0.18
+   ],
+   [
+    "focus_gain",
+    "mult",
+    0.09
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.03
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.05
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 158,
+  "donor": "Lynx School silver sword 2",
+  "cat": "silversword",
+  "lockey": "item_name_lynx_school_silver_sword_2",
+  "icon": "icons/inventory/weapons/witcher_silver_lynx_sword_lvl3_64x128.png",
+  "ability": "FRG_C_158",
+  "card": "frg_cut_158",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.09
+   ],
+   [
+    "attack_speed",
+    "mult",
+    0.09
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.03
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.05
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 159,
+  "donor": "Lynx School silver sword 3",
+  "cat": "silversword",
+  "lockey": "item_name_lynx_school_silver_sword_3",
+  "icon": "icons/inventory/weapons/witcher_silver_lynx_sword_lvl4_64x128.png",
+  "ability": "FRG_C_159",
+  "card": "frg_cut_159",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.12
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.12
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.04
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0667
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 160,
+  "donor": "Lynx School silver sword 3",
+  "cat": "silversword",
+  "lockey": "item_name_lynx_school_silver_sword_3",
+  "icon": "icons/inventory/weapons/witcher_silver_lynx_sword_lvl4_64x128.png",
+  "ability": "FRG_C_160",
+  "card": "frg_cut_160",
+  "stats": [
+   [
+    "damage_from_behind_off",
+    "mult",
+    0.24
+   ],
+   [
+    "focus_gain",
+    "mult",
+    0.12
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.04
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0667
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 161,
+  "donor": "Lynx School silver sword 3",
+  "cat": "silversword",
+  "lockey": "item_name_lynx_school_silver_sword_3",
+  "icon": "icons/inventory/weapons/witcher_silver_lynx_sword_lvl4_64x128.png",
+  "ability": "FRG_C_161",
+  "card": "frg_cut_161",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.12
+   ],
+   [
+    "attack_speed",
+    "mult",
+    0.12
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.04
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0667
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 162,
+  "donor": "Lynx School silver sword 4",
+  "cat": "silversword",
+  "lockey": "item_name_lynx_school_silver_sword_4",
+  "icon": "icons/inventory/weapons/witcher_silver_lynx_sword_lvl5_64x128.png",
+  "ability": "FRG_C_162",
+  "card": "frg_cut_162",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0833
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 163,
+  "donor": "Lynx School silver sword 4",
+  "cat": "silversword",
+  "lockey": "item_name_lynx_school_silver_sword_4",
+  "icon": "icons/inventory/weapons/witcher_silver_lynx_sword_lvl5_64x128.png",
+  "ability": "FRG_C_163",
+  "card": "frg_cut_163",
+  "stats": [
+   [
+    "damage_from_behind_off",
+    "mult",
+    0.3
+   ],
+   [
+    "focus_gain",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0833
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 164,
+  "donor": "Lynx School silver sword 4",
+  "cat": "silversword",
+  "lockey": "item_name_lynx_school_silver_sword_4",
+  "icon": "icons/inventory/weapons/witcher_silver_lynx_sword_lvl5_64x128.png",
+  "ability": "FRG_C_164",
+  "card": "frg_cut_164",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_speed",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0833
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 165,
+  "donor": "Lynx School steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_lynx_school_steel_sword",
+  "icon": "icons/inventory/weapons/witcher_steel_lynx_sword_lvl1_64x128.png",
+  "ability": "FRG_C_165",
+  "card": "frg_cut_165",
+  "stats": [
+   [
+    "ConfusionEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.03
+   ],
+   [
+    "desc_confusionchance_mult",
+    "add",
+    0.03
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.01
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0167
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 166,
+  "donor": "Lynx School steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_lynx_school_steel_sword",
+  "icon": "icons/inventory/weapons/witcher_steel_lynx_sword_lvl1_64x128.png",
+  "ability": "FRG_C_166",
+  "card": "frg_cut_166",
+  "stats": [
+   [
+    "damage_from_behind_off",
+    "mult",
+    0.06
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    0.03
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.01
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0167
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 167,
+  "donor": "Lynx School steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_lynx_school_steel_sword",
+  "icon": "icons/inventory/weapons/witcher_steel_lynx_sword_lvl1_64x128.png",
+  "ability": "FRG_C_167",
+  "card": "frg_cut_167",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.03
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    0.03
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.01
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0167
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 168,
+  "donor": "Lynx School steel sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_lynx_school_steel_sword_1",
+  "icon": "icons/inventory/weapons/witcher_steel_lynx_sword_lvl2_64x128.png",
+  "ability": "FRG_C_168",
+  "card": "frg_cut_168",
+  "stats": [
+   [
+    "ConfusionEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.06
+   ],
+   [
+    "desc_confusionchance_mult",
+    "add",
+    0.06
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.02
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0333
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 169,
+  "donor": "Lynx School steel sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_lynx_school_steel_sword_1",
+  "icon": "icons/inventory/weapons/witcher_steel_lynx_sword_lvl2_64x128.png",
+  "ability": "FRG_C_169",
+  "card": "frg_cut_169",
+  "stats": [
+   [
+    "damage_from_behind_off",
+    "mult",
+    0.12
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    0.06
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.02
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0333
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 170,
+  "donor": "Lynx School steel sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_lynx_school_steel_sword_1",
+  "icon": "icons/inventory/weapons/witcher_steel_lynx_sword_lvl2_64x128.png",
+  "ability": "FRG_C_170",
+  "card": "frg_cut_170",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.06
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    0.06
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.02
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0333
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 171,
+  "donor": "Lynx School steel sword 2",
+  "cat": "steelsword",
+  "lockey": "item_name_lynx_school_steel_sword_2",
+  "icon": "icons/inventory/weapons/witcher_steel_lynx_sword_lvl3_64x128.png",
+  "ability": "FRG_C_171",
+  "card": "frg_cut_171",
+  "stats": [
+   [
+    "ConfusionEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.09
+   ],
+   [
+    "desc_confusionchance_mult",
+    "add",
+    0.09
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.03
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.05
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 172,
+  "donor": "Lynx School steel sword 2",
+  "cat": "steelsword",
+  "lockey": "item_name_lynx_school_steel_sword_2",
+  "icon": "icons/inventory/weapons/witcher_steel_lynx_sword_lvl3_64x128.png",
+  "ability": "FRG_C_172",
+  "card": "frg_cut_172",
+  "stats": [
+   [
+    "damage_from_behind_off",
+    "mult",
+    0.18
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    0.09
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.03
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.05
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 173,
+  "donor": "Lynx School steel sword 2",
+  "cat": "steelsword",
+  "lockey": "item_name_lynx_school_steel_sword_2",
+  "icon": "icons/inventory/weapons/witcher_steel_lynx_sword_lvl3_64x128.png",
+  "ability": "FRG_C_173",
+  "card": "frg_cut_173",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.09
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    0.09
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.03
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.05
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 174,
+  "donor": "Lynx School steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_lynx_school_steel_sword_3",
+  "icon": "icons/inventory/weapons/witcher_steel_lynx_sword_lvl4_64x128.png",
+  "ability": "FRG_C_174",
+  "card": "frg_cut_174",
+  "stats": [
+   [
+    "ConfusionEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.12
+   ],
+   [
+    "desc_confusionchance_mult",
+    "add",
+    0.12
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.04
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0667
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 175,
+  "donor": "Lynx School steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_lynx_school_steel_sword_3",
+  "icon": "icons/inventory/weapons/witcher_steel_lynx_sword_lvl4_64x128.png",
+  "ability": "FRG_C_175",
+  "card": "frg_cut_175",
+  "stats": [
+   [
+    "damage_from_behind_off",
+    "mult",
+    0.24
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    0.12
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.04
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0667
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 176,
+  "donor": "Lynx School steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_lynx_school_steel_sword_3",
+  "icon": "icons/inventory/weapons/witcher_steel_lynx_sword_lvl4_64x128.png",
+  "ability": "FRG_C_176",
+  "card": "frg_cut_176",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.12
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    0.12
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.04
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0667
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 177,
+  "donor": "Lynx School steel sword 4",
+  "cat": "steelsword",
+  "lockey": "item_name_lynx_school_steel_sword_4",
+  "icon": "icons/inventory/weapons/witcher_steel_lynx_sword_lvl5_64x128.png",
+  "ability": "FRG_C_177",
+  "card": "frg_cut_177",
+  "stats": [
+   [
+    "ConfusionEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "desc_confusionchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0833
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 178,
+  "donor": "Lynx School steel sword 4",
+  "cat": "steelsword",
+  "lockey": "item_name_lynx_school_steel_sword_4",
+  "icon": "icons/inventory/weapons/witcher_steel_lynx_sword_lvl5_64x128.png",
+  "ability": "FRG_C_178",
+  "card": "frg_cut_178",
+  "stats": [
+   [
+    "damage_from_behind_off",
+    "mult",
+    0.3
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    0.15
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0833
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 179,
+  "donor": "Lynx School steel sword 4",
+  "cat": "steelsword",
+  "lockey": "item_name_lynx_school_steel_sword_4",
+  "icon": "icons/inventory/weapons/witcher_steel_lynx_sword_lvl5_64x128.png",
+  "ability": "FRG_C_179",
+  "card": "frg_cut_179",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.15
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0833
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 180,
+  "donor": "Naevdeseidhe_crafted",
+  "cat": "silversword",
+  "lockey": "item_name_naevdeseidhe",
+  "icon": "icons/inventory/weapons/silver_unique_naevde_sedhe_64x128.png",
+  "ability": "FRG_C_180",
+  "card": "frg_cut_180",
+  "stats": [
+   [
+    "ConfusionEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.1
+   ],
+   [
+    "desc_confusionchance_mult",
+    "add",
+    0.1
+   ],
+   [
+    "spell_power_quen",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    -0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 181,
+  "donor": "Naevdeseidhe_crafted",
+  "cat": "silversword",
+  "lockey": "item_name_naevdeseidhe",
+  "icon": "icons/inventory/weapons/silver_unique_naevde_sedhe_64x128.png",
+  "ability": "FRG_C_181",
+  "card": "frg_cut_181",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.1
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    -0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 182,
+  "donor": "Negotiator_crafted",
+  "cat": "silversword",
+  "lockey": "item_name_negotiator",
+  "icon": "icons/inventory/weapons/silver_unique_negotiator_64x128.png",
+  "ability": "FRG_C_182",
+  "card": "frg_cut_182",
+  "stats": [
+   [
+    "attack_speed_heavy_style",
+    "mult",
+    0.1
+   ],
+   [
+    "counter_damage_bonus",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 183,
+  "donor": "Negotiator_crafted",
+  "cat": "silversword",
+  "lockey": "item_name_negotiator",
+  "icon": "icons/inventory/weapons/silver_unique_negotiator_64x128.png",
+  "ability": "FRG_C_183",
+  "card": "frg_cut_183",
+  "stats": [
+   [
+    "armor_reduction_fast_style",
+    "mult",
+    0.1
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 185,
+  "donor": "Princessxenthiasword_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_princessxenthiasword",
+  "icon": "icons/inventory/weapons/unique_xentia_64x128.png",
+  "ability": "FRG_C_185",
+  "card": "frg_cut_185",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.1
+   ],
+   [
+    "focus_gain",
+    "mult",
+    0.15
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 186,
+  "donor": "Princessxenthiasword_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_princessxenthiasword",
+  "icon": "icons/inventory/weapons/unique_xentia_64x128.png",
+  "ability": "FRG_C_186",
+  "card": "frg_cut_186",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.1
+   ],
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    0.2
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 189,
+  "donor": "Red Wolf School silver sword 1",
+  "cat": "silversword",
+  "lockey": "item_name_red_wolf_school_silver_sword_1",
+  "icon": "icons/inventory/weapons/witcher_silver_manticora_ep2_sword_lvl1_64x128.png",
+  "ability": "FRG_C_189",
+  "card": "frg_cut_189",
+  "stats": [
+   [
+    "BurningEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.25
+   ],
+   [
+    "desc_burningchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "counter_damage_bonus",
+    "mult",
+    -0.0833
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 190,
+  "donor": "Red Wolf School silver sword 1",
+  "cat": "silversword",
+  "lockey": "item_name_red_wolf_school_silver_sword_1",
+  "icon": "icons/inventory/weapons/witcher_silver_manticora_ep2_sword_lvl1_64x128.png",
+  "ability": "FRG_C_190",
+  "card": "frg_cut_190",
+  "stats": [
+   [
+    "spell_power_igni",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_speed",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "counter_damage_bonus",
+    "mult",
+    -0.0833
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 191,
+  "donor": "Red Wolf School silver sword 1",
+  "cat": "silversword",
+  "lockey": "item_name_red_wolf_school_silver_sword_1",
+  "icon": "icons/inventory/weapons/witcher_silver_manticora_ep2_sword_lvl1_64x128.png",
+  "ability": "FRG_C_191",
+  "card": "frg_cut_191",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "counter_damage_bonus",
+    "mult",
+    -0.0833
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 192,
+  "donor": "Red Wolf School silver sword 2",
+  "cat": "silversword",
+  "lockey": "item_name_newgame_red_wolf_school_silver_sword_1",
+  "icon": "icons/inventory/weapons/witcher_silver_red_wolf_sword_lvl2_64x128.png",
+  "ability": "FRG_C_192",
+  "card": "frg_cut_192",
+  "stats": [
+   [
+    "focus_gain",
+    "mult",
+    0.25
+   ],
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    0.25
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 193,
+  "donor": "Red Wolf School steel sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_red_wolf_school_steel_sword_1",
+  "icon": "icons/inventory/weapons/witcher_steel_manticora_ep2_sword_lvl1_64x128.png",
+  "ability": "FRG_C_193",
+  "card": "frg_cut_193",
+  "stats": [
+   [
+    "BurningEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "desc_burningchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "counter_damage_bonus",
+    "mult",
+    -0.0833
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 194,
+  "donor": "Red Wolf School steel sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_red_wolf_school_steel_sword_1",
+  "icon": "icons/inventory/weapons/witcher_steel_manticora_ep2_sword_lvl1_64x128.png",
+  "ability": "FRG_C_194",
+  "card": "frg_cut_194",
+  "stats": [
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "counter_damage_bonus",
+    "mult",
+    -0.0833
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 195,
+  "donor": "Red Wolf School steel sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_red_wolf_school_steel_sword_1",
+  "icon": "icons/inventory/weapons/witcher_steel_manticora_ep2_sword_lvl1_64x128.png",
+  "ability": "FRG_C_195",
+  "card": "frg_cut_195",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "counter_damage_bonus",
+    "mult",
+    -0.0833
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 196,
+  "donor": "Robustswordofdolblathanna_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_robustswordofdolblathanna",
+  "icon": "icons/inventory/weapons/unique_dol_blathana_64x128.png",
+  "ability": "FRG_C_196",
+  "card": "frg_cut_196",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.15
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    0.25
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 197,
+  "donor": "Roseofaelirenn",
+  "cat": "silversword",
+  "lockey": "item_name_roseofaelirenn",
+  "icon": "icons/inventory/weapons/silver_unique_rose_of_aelirenn_64x128.png",
+  "ability": "FRG_C_197",
+  "card": "frg_cut_197",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.1
+   ],
+   [
+    "focus_gain",
+    "mult",
+    0.2
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.075
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 198,
+  "donor": "Serpent Silver Sword 1",
+  "cat": "silversword",
+  "lockey": "item_name_serpent_silver_sword_1",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl2_64x128.png",
+  "ability": "FRG_C_198",
+  "card": "frg_cut_198",
+  "stats": [
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "nonhuman_exp_bonus_when_fatal",
+    "add",
+    0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 199,
+  "donor": "Serpent Silver Sword 2",
+  "cat": "silversword",
+  "lockey": "item_name_serpent_silver_sword_2",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl3_64x128.png",
+  "ability": "FRG_C_199",
+  "card": "frg_cut_199",
+  "stats": [
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "nonhuman_exp_bonus_when_fatal",
+    "add",
+    0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 200,
+  "donor": "Serpent Silver Sword 3",
+  "cat": "silversword",
+  "lockey": "item_name_serpent_silver_sword_3",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl4_64x128.png",
+  "ability": "FRG_C_200",
+  "card": "frg_cut_200",
+  "stats": [
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "nonhuman_exp_bonus_when_fatal",
+    "add",
+    0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 201,
+  "donor": "Serpent Steel Sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_serpent_steel_sword_1",
+  "icon": "icons/inventory/weapons/witcher_steel_viper_sword_lvl2_64x128.png",
+  "ability": "FRG_C_201",
+  "card": "frg_cut_201",
+  "stats": [
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "human_exp_bonus_when_fatal",
+    "add",
+    0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 202,
+  "donor": "Serpent Steel Sword 2",
+  "cat": "steelsword",
+  "lockey": "item_name_serpent_steel_sword_2",
+  "icon": "icons/inventory/weapons/witcher_steel_viper_sword_lvl3_64x128.png",
+  "ability": "FRG_C_202",
+  "card": "frg_cut_202",
+  "stats": [
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "human_exp_bonus_when_fatal",
+    "add",
+    0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 203,
+  "donor": "Serpent Steel Sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_serpent_steel_sword_3",
+  "icon": "icons/inventory/weapons/witcher_steel_viper_sword_lvl4_64x128.png",
+  "ability": "FRG_C_203",
+  "card": "frg_cut_203",
+  "stats": [
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "human_exp_bonus_when_fatal",
+    "add",
+    0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 204,
+  "donor": "Silver Vixen",
+  "cat": "silversword",
+  "lockey": "item_name_ngu_hwando_silver_sword",
+  "icon": "icons/inventory/weapons/vixen_silver_64x128.png",
+  "ability": "FRG_C_204",
+  "card": "frg_cut_204",
+  "stats": [
+   [
+    "BurningEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.1
+   ],
+   [
+    "desc_burningchance_mult",
+    "add",
+    0.1
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    0.2
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.0167
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 205,
+  "donor": "Silver Vixen",
+  "cat": "silversword",
+  "lockey": "item_name_ngu_hwando_silver_sword",
+  "icon": "icons/inventory/weapons/vixen_silver_64x128.png",
+  "ability": "FRG_C_205",
+  "card": "frg_cut_205",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.15
+   ],
+   [
+    "spell_power_igni",
+    "mult",
+    0.2
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.0167
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 206,
+  "donor": "Steel Vixen",
+  "cat": "steelsword",
+  "lockey": "item_name_ngu_hwando_steel_sword",
+  "icon": "icons/inventory/weapons/vixen_steel_64x128.png",
+  "ability": "FRG_C_206",
+  "card": "frg_cut_206",
+  "stats": [
+   [
+    "ConfusionEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.1
+   ],
+   [
+    "desc_confusionchance_mult",
+    "add",
+    0.1
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    0.2
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.0167
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 207,
+  "donor": "Steel Vixen",
+  "cat": "steelsword",
+  "lockey": "item_name_ngu_hwando_steel_sword",
+  "icon": "icons/inventory/weapons/vixen_steel_64x128.png",
+  "ability": "FRG_C_207",
+  "card": "frg_cut_207",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.15
+   ],
+   [
+    "spell_power_axii",
+    "mult",
+    0.2
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.0167
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 214,
+  "donor": "Toussaint steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_toussaint_steel_sword",
+  "icon": "icons/inventory/weapons/toussaint_2_steel_sword_64x128.png",
+  "ability": "FRG_C_214",
+  "card": "frg_cut_214",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "desc_burningchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "BurningEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "armor_reduction",
+    "base",
+    250.0
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 215,
+  "donor": "Ultimatum_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_ultimatum",
+  "icon": "icons/inventory/weapons/unique_ultimatum_64x128.png",
+  "ability": "FRG_C_215",
+  "card": "frg_cut_215",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.1
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.075
+   ],
+   [
+    "critical_hit_chance",
+    "mult",
+    -0.025
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 216,
+  "donor": "Ultimatum_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_ultimatum",
+  "icon": "icons/inventory/weapons/unique_ultimatum_64x128.png",
+  "ability": "FRG_C_216",
+  "card": "frg_cut_216",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.1
+   ],
+   [
+    "focus_gain",
+    "mult",
+    0.25
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.075
+   ],
+   [
+    "critical_hit_chance",
+    "mult",
+    -0.025
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 217,
+  "donor": "Unique silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_serpent_silver_sword_3",
+  "icon": "icons/inventory/weapons/unique_1_silver_sword_1_64x128.png",
+  "ability": "FRG_C_217",
+  "card": "frg_cut_217",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.05
+   ],
+   [
+    "poise_damage",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 218,
+  "donor": "Unique silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_serpent_silver_sword_3",
+  "icon": "icons/inventory/weapons/unique_1_silver_sword_1_64x128.png",
+  "ability": "FRG_C_218",
+  "card": "frg_cut_218",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.1
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    0.15
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    0.25
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 219,
+  "donor": "Unique steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_unique_steel_sword",
+  "icon": "icons/inventory/weapons/unique_1_steel_sword_1_64x128.png",
+  "ability": "FRG_C_219",
+  "card": "frg_cut_219",
+  "stats": [
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "toxicity_drain",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.075
+   ],
+   [
+    "focus_gain",
+    "mult",
+    -0.125
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 220,
+  "donor": "Unique steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_unique_steel_sword",
+  "icon": "icons/inventory/weapons/unique_1_steel_sword_1_64x128.png",
+  "ability": "FRG_C_220",
+  "card": "frg_cut_220",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.1
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    0.1
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.075
+   ],
+   [
+    "focus_gain",
+    "mult",
+    -0.125
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 221,
+  "donor": "Viper School silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_viper_school_silver_sword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl1_64x128.png",
+  "ability": "FRG_C_221",
+  "card": "frg_cut_221",
+  "stats": [
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.05
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.05
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.01
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 222,
+  "donor": "Viper School silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_viper_school_silver_sword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl1_64x128.png",
+  "ability": "FRG_C_222",
+  "card": "frg_cut_222",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.03
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.01
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 223,
+  "donor": "Viper School silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_viper_school_silver_sword",
+  "icon": "icons/inventory/weapons/silver_sword_lvl1_64x128.png",
+  "ability": "FRG_C_223",
+  "card": "frg_cut_223",
+  "stats": [
+   [
+    "spell_power_axii",
+    "mult",
+    0.03
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.01
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 224,
+  "donor": "Viper School silver sword 1",
+  "cat": "silversword",
+  "lockey": "item_name_redux_viper_silver_lvl2",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl2_64x128.png",
+  "ability": "FRG_C_224",
+  "card": "frg_cut_224",
+  "stats": [
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.1
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.1
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.02
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 225,
+  "donor": "Viper School silver sword 1",
+  "cat": "silversword",
+  "lockey": "item_name_redux_viper_silver_lvl2",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl2_64x128.png",
+  "ability": "FRG_C_225",
+  "card": "frg_cut_225",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.06
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.02
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 226,
+  "donor": "Viper School silver sword 1",
+  "cat": "silversword",
+  "lockey": "item_name_redux_viper_silver_lvl2",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl2_64x128.png",
+  "ability": "FRG_C_226",
+  "card": "frg_cut_226",
+  "stats": [
+   [
+    "spell_power_axii",
+    "mult",
+    0.06
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.02
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 227,
+  "donor": "Viper School silver sword 2",
+  "cat": "silversword",
+  "lockey": "item_name_redux_viper_silver_lvl3",
+  "icon": "icons/inventory/weapons/Viper_silver_lvl1_64x128.png",
+  "ability": "FRG_C_227",
+  "card": "frg_cut_227",
+  "stats": [
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.03
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 228,
+  "donor": "Viper School silver sword 2",
+  "cat": "silversword",
+  "lockey": "item_name_redux_viper_silver_lvl3",
+  "icon": "icons/inventory/weapons/Viper_silver_lvl1_64x128.png",
+  "ability": "FRG_C_228",
+  "card": "frg_cut_228",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.09
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.03
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 229,
+  "donor": "Viper School silver sword 2",
+  "cat": "silversword",
+  "lockey": "item_name_redux_viper_silver_lvl3",
+  "icon": "icons/inventory/weapons/Viper_silver_lvl1_64x128.png",
+  "ability": "FRG_C_229",
+  "card": "frg_cut_229",
+  "stats": [
+   [
+    "spell_power_axii",
+    "mult",
+    0.09
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.03
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 230,
+  "donor": "Viper School silver sword 3",
+  "cat": "silversword",
+  "lockey": "item_name_redux_viper_silver_lvl4",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl3_64x128.png",
+  "ability": "FRG_C_230",
+  "card": "frg_cut_230",
+  "stats": [
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.2
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.2
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.04
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 231,
+  "donor": "Viper School silver sword 3",
+  "cat": "silversword",
+  "lockey": "item_name_redux_viper_silver_lvl4",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl3_64x128.png",
+  "ability": "FRG_C_231",
+  "card": "frg_cut_231",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.12
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.04
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 232,
+  "donor": "Viper School silver sword 3",
+  "cat": "silversword",
+  "lockey": "item_name_redux_viper_silver_lvl4",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl3_64x128.png",
+  "ability": "FRG_C_232",
+  "card": "frg_cut_232",
+  "stats": [
+   [
+    "spell_power_axii",
+    "mult",
+    0.12
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.04
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 233,
+  "donor": "Viper School silver sword 4",
+  "cat": "silversword",
+  "lockey": "item_name_redux_viper_silver_lvl5",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl4_64x128.png",
+  "ability": "FRG_C_233",
+  "card": "frg_cut_233",
+  "stats": [
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.25
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.25
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 234,
+  "donor": "Viper School silver sword 4",
+  "cat": "silversword",
+  "lockey": "item_name_redux_viper_silver_lvl5",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl4_64x128.png",
+  "ability": "FRG_C_234",
+  "card": "frg_cut_234",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 235,
+  "donor": "Viper School silver sword 4",
+  "cat": "silversword",
+  "lockey": "item_name_redux_viper_silver_lvl5",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl4_64x128.png",
+  "ability": "FRG_C_235",
+  "card": "frg_cut_235",
+  "stats": [
+   [
+    "spell_power_axii",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 236,
+  "donor": "Viper School steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_viper_school_steel_sword",
+  "icon": "icons/inventory/weapons/inquisitor_sword_lvl1_64x128.png",
+  "ability": "FRG_C_236",
+  "card": "frg_cut_236",
+  "stats": [
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.03
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.03
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.01
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 237,
+  "donor": "Viper School steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_viper_school_steel_sword",
+  "icon": "icons/inventory/weapons/inquisitor_sword_lvl1_64x128.png",
+  "ability": "FRG_C_237",
+  "card": "frg_cut_237",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.03
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.01
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 238,
+  "donor": "Viper School steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_viper_school_steel_sword",
+  "icon": "icons/inventory/weapons/inquisitor_sword_lvl1_64x128.png",
+  "ability": "FRG_C_238",
+  "card": "frg_cut_238",
+  "stats": [
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    0.06
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.01
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.01
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 239,
+  "donor": "Viper School steel sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_redux_viper_steel_lvl2",
+  "icon": "icons/inventory/weapons/witcher_steel_viper_sword_lvl2_64x128.png",
+  "ability": "FRG_C_239",
+  "card": "frg_cut_239",
+  "stats": [
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.06
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.06
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.02
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 240,
+  "donor": "Viper School steel sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_redux_viper_steel_lvl2",
+  "icon": "icons/inventory/weapons/witcher_steel_viper_sword_lvl2_64x128.png",
+  "ability": "FRG_C_240",
+  "card": "frg_cut_240",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.06
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.02
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 241,
+  "donor": "Viper School steel sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_redux_viper_steel_lvl2",
+  "icon": "icons/inventory/weapons/witcher_steel_viper_sword_lvl2_64x128.png",
+  "ability": "FRG_C_241",
+  "card": "frg_cut_241",
+  "stats": [
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    0.12
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.02
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 242,
+  "donor": "Viper School steel sword 2",
+  "cat": "steelsword",
+  "lockey": "item_name_redux_viper_steel_lvl3",
+  "icon": "icons/inventory/weapons/Viper_steel_lvl1_64x128.png",
+  "ability": "FRG_C_242",
+  "card": "frg_cut_242",
+  "stats": [
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.09
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.09
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.03
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 243,
+  "donor": "Viper School steel sword 2",
+  "cat": "steelsword",
+  "lockey": "item_name_redux_viper_steel_lvl3",
+  "icon": "icons/inventory/weapons/Viper_steel_lvl1_64x128.png",
+  "ability": "FRG_C_243",
+  "card": "frg_cut_243",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.09
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.03
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 244,
+  "donor": "Viper School steel sword 2",
+  "cat": "steelsword",
+  "lockey": "item_name_redux_viper_steel_lvl3",
+  "icon": "icons/inventory/weapons/Viper_steel_lvl1_64x128.png",
+  "ability": "FRG_C_244",
+  "card": "frg_cut_244",
+  "stats": [
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    0.18
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.03
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.03
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 245,
+  "donor": "Viper School steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_redux_viper_steel_lvl4",
+  "icon": "icons/inventory/weapons/witcher_steel_viper_sword_lvl3_64x128.png",
+  "ability": "FRG_C_245",
+  "card": "frg_cut_245",
+  "stats": [
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.12
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.12
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.04
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 246,
+  "donor": "Viper School steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_redux_viper_steel_lvl4",
+  "icon": "icons/inventory/weapons/witcher_steel_viper_sword_lvl3_64x128.png",
+  "ability": "FRG_C_246",
+  "card": "frg_cut_246",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.12
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.04
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 247,
+  "donor": "Viper School steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_redux_viper_steel_lvl4",
+  "icon": "icons/inventory/weapons/witcher_steel_viper_sword_lvl3_64x128.png",
+  "ability": "FRG_C_247",
+  "card": "frg_cut_247",
+  "stats": [
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    0.24
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.04
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 248,
+  "donor": "Viper School steel sword 4",
+  "cat": "steelsword",
+  "lockey": "item_name_redux_viper_steel_lvl5",
+  "icon": "icons/inventory/weapons/witcher_steel_viper_sword_lvl4_64x128.png",
+  "ability": "FRG_C_248",
+  "card": "frg_cut_248",
+  "stats": [
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 249,
+  "donor": "Viper School steel sword 4",
+  "cat": "steelsword",
+  "lockey": "item_name_redux_viper_steel_lvl5",
+  "icon": "icons/inventory/weapons/witcher_steel_viper_sword_lvl4_64x128.png",
+  "ability": "FRG_C_249",
+  "card": "frg_cut_249",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.15
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 250,
+  "donor": "Viper School steel sword 4",
+  "cat": "steelsword",
+  "lockey": "item_name_redux_viper_steel_lvl5",
+  "icon": "icons/inventory/weapons/witcher_steel_viper_sword_lvl4_64x128.png",
+  "ability": "FRG_C_250",
+  "card": "frg_cut_250",
+  "stats": [
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    0.3
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 251,
+  "donor": "Virgin_crafted",
+  "cat": "silversword",
+  "lockey": "item_name_virgin",
+  "icon": "icons/inventory/weapons/silver_unique_virgin_64x128.png",
+  "ability": "FRG_C_251",
+  "card": "frg_cut_251",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "injury_chance",
+    "mult",
+    0.15
+   ],
+   [
+    "focus_gain",
+    "mult",
+    -0.1
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 252,
+  "donor": "Virgin_crafted",
+  "cat": "silversword",
+  "lockey": "item_name_virgin",
+  "icon": "icons/inventory/weapons/silver_unique_virgin_64x128.png",
+  "ability": "FRG_C_252",
+  "card": "frg_cut_252",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_speed",
+    "mult",
+    0.1
+   ],
+   [
+    "damage_through_blocks",
+    "mult",
+    0.2
+   ],
+   [
+    "focus_gain",
+    "mult",
+    -0.1
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 253,
+  "donor": "Weeper_crafted",
+  "cat": "silversword",
+  "lockey": "item_name_weeper",
+  "icon": "icons/inventory/weapons/silver_unique_weeper_64x128.png",
+  "ability": "FRG_C_253",
+  "card": "frg_cut_253",
+  "stats": [
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.1
+   ],
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.1
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.1
+   ],
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.1
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 254,
+  "donor": "Weeper_crafted",
+  "cat": "silversword",
+  "lockey": "item_name_weeper",
+  "icon": "icons/inventory/weapons/silver_unique_weeper_64x128.png",
+  "ability": "FRG_C_254",
+  "card": "frg_cut_254",
+  "stats": [
+   [
+    "lifesteal",
+    "add",
+    0.1
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": true
+ },
+ {
+  "id": 255,
+  "donor": "White Widow of Dol Blathanna",
+  "cat": "silversword",
+  "lockey": "item_name_dol_blathanna_white_widow_silver_sword",
+  "icon": "icons/inventory/weapons/dol_blathanna_white_widow_silver_sword_64x128.png",
+  "ability": "FRG_C_255",
+  "card": "frg_cut_255",
+  "stats": [
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.1
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.1
+   ],
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "SlowdownFrostEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.1
+   ],
+   [
+    "desc_freezingchance_mult",
+    "add",
+    0.1
+   ],
+   [
+    "spell_power_aard",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "focus_gain",
+    "mult",
+    -0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 256,
+  "donor": "White Widow of Dol Blathanna",
+  "cat": "silversword",
+  "lockey": "item_name_dol_blathanna_white_widow_silver_sword",
+  "icon": "icons/inventory/weapons/dol_blathanna_white_widow_silver_sword_64x128.png",
+  "ability": "FRG_C_256",
+  "card": "frg_cut_256",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.1
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "focus_gain",
+    "mult",
+    -0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 261,
+  "donor": "Wolf School steel sword 4",
+  "cat": "steelsword",
+  "lockey": "item_name_wolf_school_steel_sword_4",
+  "icon": "icons/inventory/weapons/witcher_steel_wolf_sword_lvl5_64x128.png",
+  "ability": "FRG_C_261",
+  "card": "frg_cut_261",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_speed",
+    "mult",
+    0.15
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.1
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 264,
+  "donor": "Zireael Phantom Sword",
+  "cat": "steelsword",
+  "lockey": "item_name_zireael_sword",
+  "icon": "icons/inventory/weapons/sword-01-b.png",
+  "ability": "FRG_C_264",
+  "card": "frg_cut_264",
+  "stats": [
+   [
+    "indestructible",
+    "add",
+    0.75
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 265,
+  "donor": "Zireael Sword",
+  "cat": "steelsword",
+  "lockey": "item_name_zireael_sword",
+  "icon": "icons/inventory/weapons/sword-01-b.png",
+  "ability": "FRG_C_265",
+  "card": "frg_cut_265",
+  "stats": [
+   [
+    "indestructible",
+    "add",
+    0.75
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 266,
+  "donor": "mq4005 Silver sword 6_crafted",
+  "cat": "silversword",
+  "lockey": "item_name_silver_sword_6",
+  "icon": "icons/inventory/weapons/silver_sword_lvl6_64x128.png",
+  "ability": "FRG_C_266",
+  "card": "frg_cut_266",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.0333
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0333
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 267,
+  "donor": "mq4005 Silver sword 6_crafted",
+  "cat": "silversword",
+  "lockey": "item_name_silver_sword_6",
+  "icon": "icons/inventory/weapons/silver_sword_lvl6_64x128.png",
+  "ability": "FRG_C_267",
+  "card": "frg_cut_267",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.0333
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0333
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 268,
+  "donor": "mq4005 Silver sword 6_crafted",
+  "cat": "silversword",
+  "lockey": "item_name_silver_sword_6",
+  "icon": "icons/inventory/weapons/silver_sword_lvl6_64x128.png",
+  "ability": "FRG_C_268",
+  "card": "frg_cut_268",
+  "stats": [
+   [
+    "damage_from_behind_off",
+    "mult",
+    0.15
+   ],
+   [
+    "injury_chance",
+    "mult",
+    0.1
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.0333
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.0333
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 271,
+  "donor": "q702 vampire steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_baw_vampire_steel_sword",
+  "icon": "icons/inventory/weapons/vampire_steel_sword_64x128.png",
+  "ability": "FRG_C_271",
+  "card": "frg_cut_271",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.25
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.25
+   ],
+   [
+    "focus_gain",
+    "mult",
+    0.15
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.125
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 272,
+  "donor": "q704 vampire silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_baw_silver_sword_bonus_2",
+  "icon": "icons/inventory/weapons/vampire_silver_sword_64x128.png",
+  "ability": "FRG_C_272",
+  "card": "frg_cut_272",
+  "stats": [
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.1
+   ],
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.1
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 273,
+  "donor": "q704 vampire silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_baw_silver_sword_bonus_2",
+  "icon": "icons/inventory/weapons/vampire_silver_sword_64x128.png",
+  "ability": "FRG_C_273",
+  "card": "frg_cut_273",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.1
+   ],
+   [
+    "poise_damage",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 274,
+  "donor": "q704 vampire steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_baw_vampire_steel_sword_2",
+  "icon": "icons/inventory/weapons/q704_vampire_steel_sword_64x128.png",
+  "ability": "FRG_C_274",
+  "card": "frg_cut_274",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "spell_power_axii",
+    "mult",
+    0.15
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.075
+   ],
+   [
+    "focus_gain",
+    "mult",
+    -0.125
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 275,
+  "donor": "q704 vampire steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_baw_vampire_steel_sword_2",
+  "icon": "icons/inventory/weapons/q704_vampire_steel_sword_64x128.png",
+  "ability": "FRG_C_275",
+  "card": "frg_cut_275",
+  "stats": [
+   [
+    "lifesteal",
+    "add",
+    0.1
+   ],
+   [
+    "attack_speed",
+    "mult",
+    0.1
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.075
+   ],
+   [
+    "focus_gain",
+    "mult",
+    -0.125
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 276,
+  "donor": "sq304 Novigraadan sword 4",
+  "cat": "steelsword",
+  "lockey": "item_name_novigraadan_sword_4",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl4_64x128.png",
+  "ability": "FRG_C_276",
+  "card": "frg_cut_276",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.1
+   ],
+   [
+    "indestructible",
+    "add",
+    0.5
+   ],
+   [
+    "focus_gain",
+    "mult",
+    -0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 277,
+  "donor": "sq701 Geralt of Rivia sword",
+  "cat": "steelsword",
+  "lockey": "item_name_geralt_of_rivia_sword",
+  "icon": "icons/inventory/quests/sq701_sword_geralt_of_rivia.png",
+  "ability": "FRG_C_277",
+  "card": "frg_cut_277",
+  "stats": [
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_power_horseback",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "indestructible",
+    "add",
+    -0.15
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 278,
+  "donor": "sq701 Ravix of Fourhorn sword",
+  "cat": "steelsword",
+  "lockey": "item_name_ravix_of_fourhorn_sword",
+  "icon": "icons/inventory/quests/sq701_sword_ravix_of_fourhorn.png",
+  "ability": "FRG_C_278",
+  "card": "frg_cut_278",
+  "stats": [
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_power_horseback",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "indestructible",
+    "add",
+    -0.15
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 279,
+  "donor": "Bear School steel sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_bear_school_steel_sword_1",
+  "icon": "icons/inventory/weapons/witcher_steel_bear_sword_lvl2_64x128.png",
+  "ability": "FRG_C_279",
+  "card": "frg_cut_279",
+  "stats": [
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.06
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.02
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 280,
+  "donor": "Bear School steel sword 2",
+  "cat": "steelsword",
+  "lockey": "item_name_bear_school_steel_sword_2",
+  "icon": "icons/inventory/weapons/witcher_steel_bear_sword_lvl3_64x128.png",
+  "ability": "FRG_C_280",
+  "card": "frg_cut_280",
+  "stats": [
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.09
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.03
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.03
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 281,
+  "donor": "Bear School steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_bear_school_steel_sword_3",
+  "icon": "icons/inventory/weapons/witcher_steel_bear_sword_lvl4_64x128.png",
+  "ability": "FRG_C_281",
+  "card": "frg_cut_281",
+  "stats": [
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.12
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.04
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.04
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.04
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 282,
+  "donor": "Bear School steel sword 4",
+  "cat": "steelsword",
+  "lockey": "item_name_bear_school_steel_sword_4",
+  "icon": "icons/inventory/weapons/witcher_steel_bear_sword_lvl5_64x128.png",
+  "ability": "FRG_C_282",
+  "card": "frg_cut_282",
+  "stats": [
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.05
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 283,
+  "donor": "Blackunicorn_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_blackunicorn",
+  "icon": "icons/inventory/weapons/unique_black_unicorn_64x128.png",
+  "ability": "FRG_C_283",
+  "card": "frg_cut_283",
+  "stats": [
+   [
+    "lifesteal",
+    "add",
+    0.1
+   ],
+   [
+    "damage_through_blocks",
+    "mult",
+    0.2
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.15
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": true
+ },
+ {
+  "id": 284,
+  "donor": "Dol Blathanna longsword",
+  "cat": "steelsword",
+  "lockey": "item_name_dol_blathanna_longsword",
+  "icon": "icons/inventory/weapons/dol_blathanna_steel_longsword_64x128.png",
+  "ability": "FRG_C_284",
+  "card": "frg_cut_284",
+  "stats": [
+   [
+    "counter_damage_bonus",
+    "mult",
+    0.2
+   ],
+   [
+    "poise_damage",
+    "mult",
+    -0.075
+   ],
+   [
+    "focus_gain",
+    "mult",
+    -0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 285,
+  "donor": "Headtaker_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_headtaker",
+  "icon": "icons/inventory/weapons/unique_head_taker_64x128.png",
+  "ability": "FRG_C_285",
+  "card": "frg_cut_285",
+  "stats": [
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.15
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.075
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 286,
+  "donor": "Inis_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_inis",
+  "icon": "icons/inventory/weapons/steel_unique_inis_64x128.png",
+  "ability": "FRG_C_286",
+  "card": "frg_cut_286",
+  "stats": [
+   [
+    "counter_damage_bonus",
+    "mult",
+    0.25
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 288,
+  "donor": "Longclaw_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_longclaw",
+  "icon": "icons/inventory/weapons/sword-01-b.png",
+  "ability": "FRG_C_288",
+  "card": "frg_cut_288",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 289,
+  "donor": "Ofir Sabre 1",
+  "cat": "steelsword",
+  "lockey": "item_name_ofir_steel_sabre_2",
+  "icon": "icons/inventory/weapons/ofir_steel_sabre_2_64x128.png",
+  "ability": "FRG_C_289",
+  "card": "frg_cut_289",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.15
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 290,
+  "donor": "Olgierd Sabre",
+  "cat": "steelsword",
+  "lockey": "item_name_olgierd_sabre",
+  "icon": "icons/inventory/weapons/olgierd_sabre_64x128.png",
+  "ability": "FRG_C_290",
+  "card": "frg_cut_290",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.25
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 291,
+  "donor": "Red Wolf School steel sword 2",
+  "cat": "steelsword",
+  "lockey": "item_name_newgame_red_wolf_school_steel_sword_1",
+  "icon": "icons/inventory/weapons/witcher_steel_manticora_ep2_sword_lvl1_64x128.png",
+  "ability": "FRG_C_291",
+  "card": "frg_cut_291",
+  "stats": [
+   [
+    "PoisonEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.2
+   ],
+   [
+    "desc_poinsonchance_mult",
+    "add",
+    0.2
+   ],
+   [
+    "attack_speed",
+    "mult",
+    0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 292,
+  "donor": "Roseofaelirenn",
+  "cat": "silversword",
+  "lockey": "item_name_roseofaelirenn",
+  "icon": "icons/inventory/weapons/silver_unique_rose_of_aelirenn_64x128.png",
+  "ability": "FRG_C_292",
+  "card": "frg_cut_292",
+  "stats": [
+   [
+    "poise_damage",
+    "mult",
+    0.15
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.075
+   ],
+   [
+    "damage_from_behind_off",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 293,
+  "donor": "Silver Vixen",
+  "cat": "silversword",
+  "lockey": "item_name_ngu_hwando_silver_sword",
+  "icon": "icons/inventory/weapons/vixen_silver_64x128.png",
+  "ability": "FRG_C_293",
+  "card": "frg_cut_293",
+  "stats": [
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.1
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.0167
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 294,
+  "donor": "Steel Vixen",
+  "cat": "steelsword",
+  "lockey": "item_name_ngu_hwando_steel_sword",
+  "icon": "icons/inventory/weapons/vixen_steel_64x128.png",
+  "ability": "FRG_C_294",
+  "card": "frg_cut_294",
+  "stats": [
+   [
+    "damage_from_behind_off",
+    "mult",
+    0.1
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.0167
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 295,
+  "donor": "Wolf School steel sword 4",
+  "cat": "steelsword",
+  "lockey": "item_name_wolf_school_steel_sword_4",
+  "icon": "icons/inventory/weapons/witcher_steel_wolf_sword_lvl5_64x128.png",
+  "ability": "FRG_C_295",
+  "card": "frg_cut_295",
+  "stats": [
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.25
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.1
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 297,
+  "donor": "q702 vampire steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_baw_vampire_steel_sword",
+  "icon": "icons/inventory/weapons/vampire_steel_sword_64x128.png",
+  "ability": "FRG_C_297",
+  "card": "frg_cut_297",
+  "stats": [
+   [
+    "lifesteal",
+    "add",
+    0.1
+   ],
+   [
+    "damage_through_blocks",
+    "mult",
+    0.2
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.125
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1116,
+  "donor": "Burning Rose Sword",
+  "cat": "steelsword",
+  "lockey": "item_name_burning_rose_steel_sword",
+  "icon": "icons/inventory/weapons/burning_rose_sword_64x128.png",
+  "ability": "FRG_C_1116",
+  "card": "frg_cut_1116",
+  "stats": [
+   [
+    "attack_power_fast_style",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_speed_fast_style",
+    "mult",
+    -0.0333
+   ],
+   [
+    "attack_speed_heavy_style",
+    "mult",
+    -0.0167
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.0333
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1117,
+  "donor": "Burning Rose Sword",
+  "cat": "steelsword",
+  "lockey": "item_name_burning_rose_steel_sword",
+  "icon": "icons/inventory/weapons/burning_rose_sword_64x128.png",
+  "ability": "FRG_C_1117",
+  "card": "frg_cut_1117",
+  "stats": [
+   [
+    "attack_power_heavy_style",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_speed_fast_style",
+    "mult",
+    -0.0333
+   ],
+   [
+    "attack_speed_heavy_style",
+    "mult",
+    -0.0167
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.0333
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1118,
+  "donor": "Burning Rose Sword",
+  "cat": "steelsword",
+  "lockey": "item_name_burning_rose_steel_sword",
+  "icon": "icons/inventory/weapons/burning_rose_sword_64x128.png",
+  "ability": "FRG_C_1118",
+  "card": "frg_cut_1118",
+  "stats": [
+   [
+    "damage_through_blocks",
+    "mult",
+    0.15
+   ],
+   [
+    "poise_damage",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_speed_fast_style",
+    "mult",
+    -0.0333
+   ],
+   [
+    "attack_speed_heavy_style",
+    "mult",
+    -0.0167
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.0333
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1181,
+  "donor": "Knight Mace 3",
+  "cat": "steelsword",
+  "lockey": "item_name_knight_mace",
+  "icon": "icons/inventory/weapons/mace_knight_2_64x128.png",
+  "ability": "FRG_C_1181",
+  "card": "frg_cut_1181",
+  "stats": [
+   [
+    "ConfusionEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "desc_confusionchance_mult",
+    "add",
+    0.05
+   ],
+   [
+    "StaggerEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.05
+   ],
+   [
+    "desc_staggerchance_mult",
+    "add",
+    0.05
+   ],
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1204,
+  "donor": "Netflix silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_netflix_silver_sword",
+  "icon": "icons/inventory/weapons/netflix_silver_sword_64x128.png",
+  "ability": "FRG_C_1204",
+  "card": "frg_cut_1204",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.04
+   ],
+   [
+    "focus_gain",
+    "add",
+    0.06
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1205,
+  "donor": "Netflix silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_netflix_silver_sword",
+  "icon": "icons/inventory/weapons/netflix_silver_sword_64x128.png",
+  "ability": "FRG_C_1205",
+  "card": "frg_cut_1205",
+  "stats": [
+   [
+    "indestructible",
+    "add",
+    0.1
+   ],
+   [
+    "attack_power",
+    "mult",
+    0.06
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1206,
+  "donor": "Netflix silver sword 1",
+  "cat": "silversword",
+  "lockey": "item_name_netflix_silver_sword_1",
+  "icon": "icons/inventory/weapons/netflix_silver_sword_64x128.png",
+  "ability": "FRG_C_1206",
+  "card": "frg_cut_1206",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.08
+   ],
+   [
+    "focus_gain",
+    "add",
+    0.12
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.04
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1207,
+  "donor": "Netflix silver sword 2",
+  "cat": "silversword",
+  "lockey": "item_name_netflix_silver_sword_2",
+  "icon": "icons/inventory/weapons/netflix_silver_sword_64x128.png",
+  "ability": "FRG_C_1207",
+  "card": "frg_cut_1207",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.1
+   ],
+   [
+    "focus_gain",
+    "add",
+    0.15
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.025
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1208,
+  "donor": "Netflix steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_netflix_steel_sword",
+  "icon": "icons/inventory/weapons/netflix_steel_sword_64x128.png",
+  "ability": "FRG_C_1208",
+  "card": "frg_cut_1208",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.04
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    0.06
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1209,
+  "donor": "Netflix steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_netflix_steel_sword",
+  "icon": "icons/inventory/weapons/netflix_steel_sword_64x128.png",
+  "ability": "FRG_C_1209",
+  "card": "frg_cut_1209",
+  "stats": [
+   [
+    "indestructible",
+    "add",
+    0.1
+   ],
+   [
+    "poise_damage",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1210,
+  "donor": "Netflix steel sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_netflix_steel_sword_1",
+  "icon": "icons/inventory/weapons/netflix_steel_sword_64x128.png",
+  "ability": "FRG_C_1210",
+  "card": "frg_cut_1210",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.08
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    0.12
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.04
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1211,
+  "donor": "Netflix steel sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_netflix_steel_sword_1",
+  "icon": "icons/inventory/weapons/netflix_steel_sword_64x128.png",
+  "ability": "FRG_C_1211",
+  "card": "frg_cut_1211",
+  "stats": [
+   [
+    "indestructible",
+    "add",
+    0.2
+   ],
+   [
+    "poise_damage",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.04
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1212,
+  "donor": "Netflix steel sword 2",
+  "cat": "steelsword",
+  "lockey": "item_name_netflix_steel_sword_2",
+  "icon": "icons/inventory/weapons/netflix_steel_sword_64x128.png",
+  "ability": "FRG_C_1212",
+  "card": "frg_cut_1212",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.1
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.025
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1213,
+  "donor": "Netflix steel sword 2",
+  "cat": "steelsword",
+  "lockey": "item_name_netflix_steel_sword_2",
+  "icon": "icons/inventory/weapons/netflix_steel_sword_64x128.png",
+  "ability": "FRG_C_1213",
+  "card": "frg_cut_1213",
+  "stats": [
+   [
+    "indestructible",
+    "add",
+    0.25
+   ],
+   [
+    "poise_damage",
+    "mult",
+    0.25
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.025
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1244,
+  "donor": "Ofir Sabre 2",
+  "cat": "steelsword",
+  "lockey": "item_name_ofir_steel_sabre_3",
+  "icon": "icons/inventory/weapons/ofir_steel_sabre_3_64x128.png",
+  "ability": "FRG_C_1244",
+  "card": "frg_cut_1244",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.1
+   ],
+   [
+    "injury_chance",
+    "mult",
+    0.15
+   ],
+   [
+    "poise_damage",
+    "mult",
+    0.1
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.075
+   ],
+   [
+    "counter_damage_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1246,
+  "donor": "Reinald Netflix silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_netflix_silver_sword",
+  "icon": "icons/inventory/weapons/netflix_silver_sword_64x128.png",
+  "ability": "FRG_C_1246",
+  "card": "frg_cut_1246",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.04
+   ],
+   [
+    "focus_gain",
+    "add",
+    0.06
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1247,
+  "donor": "Reinald Netflix steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_netflix_steel_sword",
+  "icon": "icons/inventory/weapons/netflix_steel_sword_64x128.png",
+  "ability": "FRG_C_1247",
+  "card": "frg_cut_1247",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.04
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    0.06
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1248,
+  "donor": "Reinald Netflix steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_netflix_steel_sword",
+  "icon": "icons/inventory/weapons/netflix_steel_sword_64x128.png",
+  "ability": "FRG_C_1248",
+  "card": "frg_cut_1248",
+  "stats": [
+   [
+    "indestructible",
+    "add",
+    0.1
+   ],
+   [
+    "poise_damage",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1325,
+  "donor": "Squire steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_squire_steel_sword",
+  "icon": "icons/inventory/weapons/squire_1_steel_sword_64x128.png",
+  "ability": "FRG_C_1325",
+  "card": "frg_cut_1325",
+  "stats": [
+   [
+    "disarm_chance",
+    "mult",
+    0.05
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.15
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1354,
+  "donor": "Wolf School steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_wolf_school_steel_sword",
+  "icon": "icons/inventory/weapons/witcher_steel_wolf_sword_lvl1_64x128.png",
+  "ability": "FRG_C_1354",
+  "card": "frg_cut_1354",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.03
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.03
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_speed",
+    "mult",
+    0.03
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.015
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1355,
+  "donor": "Wolf School steel sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_wolf_school_steel_sword_1",
+  "icon": "icons/inventory/weapons/witcher_steel_wolf_sword_lvl2_64x128.png",
+  "ability": "FRG_C_1355",
+  "card": "frg_cut_1355",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.06
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.06
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_speed",
+    "mult",
+    0.06
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1356,
+  "donor": "Wolf School steel sword 2",
+  "cat": "steelsword",
+  "lockey": "item_name_wolf_school_steel_sword_2",
+  "icon": "icons/inventory/weapons/witcher_steel_wolf_sword_lvl3_64x128.png",
+  "ability": "FRG_C_1356",
+  "card": "frg_cut_1356",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.09
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.09
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_speed",
+    "mult",
+    0.09
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.06
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.045
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1357,
+  "donor": "Wolf School steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_wolf_school_steel_sword_3",
+  "icon": "icons/inventory/weapons/witcher_steel_wolf_sword_lvl4_64x128.png",
+  "ability": "FRG_C_1357",
+  "card": "frg_cut_1357",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.12
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.12
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "attack_speed",
+    "mult",
+    0.12
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.08
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.06
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1358,
+  "donor": "blavikensilversword",
+  "cat": "silversword",
+  "lockey": "item_name_blaviken_silver_sword_01",
+  "icon": "icons/inventory/blaviken/blaviken_silver_01_64x128.png",
+  "ability": "FRG_C_1358",
+  "card": "frg_cut_1358",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.15
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.0833
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1359,
+  "donor": "blavikensilversword",
+  "cat": "silversword",
+  "lockey": "item_name_blaviken_silver_sword_01",
+  "icon": "icons/inventory/blaviken/blaviken_silver_01_64x128.png",
+  "ability": "FRG_C_1359",
+  "card": "frg_cut_1359",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.2
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.0833
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1360,
+  "donor": "blavikensilversword",
+  "cat": "silversword",
+  "lockey": "item_name_blaviken_silver_sword_01",
+  "icon": "icons/inventory/blaviken/blaviken_silver_01_64x128.png",
+  "ability": "FRG_C_1360",
+  "card": "frg_cut_1360",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.25
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.0833
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1361,
+  "donor": "blavikensteelsword",
+  "cat": "steelsword",
+  "lockey": "item_name_blaviken_steel_sword_01",
+  "icon": "icons/inventory/blaviken/blaviken_steel_01_64x128.png",
+  "ability": "FRG_C_1361",
+  "card": "frg_cut_1361",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.2
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.1
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.1666
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.1
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1362,
+  "donor": "blavikensteelsword",
+  "cat": "steelsword",
+  "lockey": "item_name_blaviken_steel_sword_01",
+  "icon": "icons/inventory/blaviken/blaviken_steel_01_64x128.png",
+  "ability": "FRG_C_1362",
+  "card": "frg_cut_1362",
+  "stats": [
+   [
+    "poise_damage",
+    "mult",
+    0.3
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.2
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.0833
+   ],
+   [
+    "spell_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1363,
+  "donor": "geralt_axe_01",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Axe1",
+  "icon": "icons/inventory/weapons/axe_01_64x128.png",
+  "ability": "FRG_C_1363",
+  "card": "frg_cut_1363",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.1
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.1
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "shield_disarm_chance",
+    "mult",
+    0.4
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1364,
+  "donor": "geralt_axe_02",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Axe2",
+  "icon": "icons/inventory/weapons/great_axe_1h_02_64x128.png",
+  "ability": "FRG_C_1364",
+  "card": "frg_cut_1364",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "shield_disarm_chance",
+    "mult",
+    0.5
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1365,
+  "donor": "geralt_axe_03",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Axe3",
+  "icon": "icons/inventory/weapons/wildhunt_axe_1h_01_64x128.png",
+  "ability": "FRG_C_1365",
+  "card": "frg_cut_1365",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.2
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.2
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "shield_disarm_chance",
+    "mult",
+    0.6
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1366,
+  "donor": "geralt_hammer_01",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Hammer",
+  "icon": "icons/inventory/weapons/lucerne_hammer_01_64x128.png",
+  "ability": "FRG_C_1366",
+  "card": "frg_cut_1366",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.6
+   ],
+   [
+    "attack_stamina_cost",
+    "mult",
+    0.5
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.0167
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1367,
+  "donor": "geralt_hammer_02",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Hammer",
+  "icon": "icons/inventory/weapons/lucerne_hammer_01_64x128.png",
+  "ability": "FRG_C_1367",
+  "card": "frg_cut_1367",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.75
+   ],
+   [
+    "attack_stamina_cost",
+    "mult",
+    0.5
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.0167
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1368,
+  "donor": "geralt_hammer_03",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Hammer",
+  "icon": "icons/inventory/weapons/lucerne_hammer_01_64x128.png",
+  "ability": "FRG_C_1368",
+  "card": "frg_cut_1368",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.9
+   ],
+   [
+    "attack_stamina_cost",
+    "mult",
+    0.5
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.0167
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1369,
+  "donor": "geralt_mace_01",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Mace",
+  "icon": "icons/inventory/weapons/mace_01_64x128.png",
+  "ability": "FRG_C_1369",
+  "card": "frg_cut_1369",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.5
+   ],
+   [
+    "attack_stamina_cost",
+    "mult",
+    0.5
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1370,
+  "donor": "geralt_mace_02",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Mace",
+  "icon": "icons/inventory/weapons/mace_01_64x128.png",
+  "ability": "FRG_C_1370",
+  "card": "frg_cut_1370",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.65
+   ],
+   [
+    "attack_stamina_cost",
+    "mult",
+    0.5
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1371,
+  "donor": "geralt_mace_03",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Mace",
+  "icon": "icons/inventory/weapons/mace_01_64x128.png",
+  "ability": "FRG_C_1371",
+  "card": "frg_cut_1371",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.75
+   ],
+   [
+    "attack_stamina_cost",
+    "mult",
+    0.5
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1372,
+  "donor": "kotw_vampire_silver_sword",
+  "cat": "silversword",
+  "lockey": "item_name_newgame_wolf_school_silver_sword_4",
+  "icon": "icons/inventory/weapons/witcher_silver_manticora_ep2_sword_lvl2_64x128.png",
+  "ability": "FRG_C_1372",
+  "card": "frg_cut_1372",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "focus_gain",
+    "base",
+    0.15
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1373,
+  "donor": "kotw_vampire_steel_sword",
+  "cat": "steelsword",
+  "lockey": "item_name_newgame_wolf_school_steel_sword_4",
+  "icon": "icons/inventory/weapons/witcher_steel_manticora_ep2_sword_lvl2_64x128.png",
+  "ability": "FRG_C_1373",
+  "card": "frg_cut_1373",
+  "stats": [
+   [
+    "desc_bleedingchance_mult",
+    "add",
+    0.15
+   ],
+   [
+    "buff_apply_chance",
+    "add",
+    0.15
+   ],
+   [
+    "BleedingEffect",
+    "effect",
+    1.0
+   ],
+   [
+    "focus_gain",
+    "base",
+    0.15
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1378,
+  "donor": "Netflix silver sword 1",
+  "cat": "silversword",
+  "lockey": "item_name_netflix_silver_sword_1",
+  "icon": "icons/inventory/weapons/netflix_silver_sword_64x128.png",
+  "ability": "FRG_C_1378",
+  "card": "frg_cut_1378",
+  "stats": [
+   [
+    "indestructible",
+    "add",
+    0.2
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.04
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.02
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1379,
+  "donor": "Netflix silver sword 2",
+  "cat": "silversword",
+  "lockey": "item_name_netflix_silver_sword_2",
+  "icon": "icons/inventory/weapons/netflix_silver_sword_64x128.png",
+  "ability": "FRG_C_1379",
+  "card": "frg_cut_1379",
+  "stats": [
+   [
+    "indestructible",
+    "add",
+    0.25
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.025
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1380,
+  "donor": "Ofir Sabre 2",
+  "cat": "steelsword",
+  "lockey": "item_name_ofir_steel_sabre_3",
+  "icon": "icons/inventory/weapons/ofir_steel_sabre_3_64x128.png",
+  "ability": "FRG_C_1380",
+  "card": "frg_cut_1380",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.2
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.075
+   ],
+   [
+    "counter_damage_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1381,
+  "donor": "Reinald Netflix silver sword",
+  "cat": "silversword",
+  "lockey": "item_name_netflix_silver_sword",
+  "icon": "icons/inventory/weapons/netflix_silver_sword_64x128.png",
+  "ability": "FRG_C_1381",
+  "card": "frg_cut_1381",
+  "stats": [
+   [
+    "indestructible",
+    "add",
+    0.1
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.02
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    -0.01
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1385,
+  "donor": "Wolf School steel sword",
+  "cat": "steelsword",
+  "lockey": "item_name_wolf_school_steel_sword",
+  "icon": "icons/inventory/weapons/witcher_steel_wolf_sword_lvl1_64x128.png",
+  "ability": "FRG_C_1385",
+  "card": "frg_cut_1385",
+  "stats": [
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.05
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.02
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.015
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1386,
+  "donor": "Wolf School steel sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_wolf_school_steel_sword_1",
+  "icon": "icons/inventory/weapons/witcher_steel_wolf_sword_lvl2_64x128.png",
+  "ability": "FRG_C_1386",
+  "card": "frg_cut_1386",
+  "stats": [
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.1
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.04
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.03
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1387,
+  "donor": "Wolf School steel sword 2",
+  "cat": "steelsword",
+  "lockey": "item_name_wolf_school_steel_sword_2",
+  "icon": "icons/inventory/weapons/witcher_steel_wolf_sword_lvl3_64x128.png",
+  "ability": "FRG_C_1387",
+  "card": "frg_cut_1387",
+  "stats": [
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.15
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.06
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.045
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1388,
+  "donor": "Wolf School steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_wolf_school_steel_sword_3",
+  "icon": "icons/inventory/weapons/witcher_steel_wolf_sword_lvl4_64x128.png",
+  "ability": "FRG_C_1388",
+  "card": "frg_cut_1388",
+  "stats": [
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.2
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.08
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.06
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1389,
+  "donor": "Eredin Sword",
+  "cat": "steelsword",
+  "lockey": "item_name_wild_hunt_sword_2",
+  "icon": "icons/inventory/weapons/sword-01-b.png",
+  "ability": "FRG_C_1389",
+  "card": "frg_cut_1389",
+  "stats": [
+   [
+    "human_exp_bonus_when_fatal",
+    "add",
+    0.01
+   ],
+   [
+    "spell_power_igni",
+    "mult",
+    0.05
+   ],
+   [
+    "instant_kill_chance_mult",
+    "add",
+    0.01
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1390,
+  "donor": "Gnomish sword 2_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_gnomish_sword_2",
+  "icon": "icons/inventory/weapons/gnomish_sword_lvl2_64x128.png",
+  "ability": "FRG_C_1390",
+  "card": "frg_cut_1390",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.05
+   ],
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    0.5
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1391,
+  "donor": "Guard lvl1 steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_guard_lvl1_geralt_steel_sword",
+  "icon": "icons/inventory/weapons/guard_1_steel_sword_64x128.png",
+  "ability": "FRG_C_1391",
+  "card": "frg_cut_1391",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.1
+   ],
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    0.5
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1392,
+  "donor": "Guard lvl2 steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_guard_lvl2_geralt_steel_sword",
+  "icon": "icons/inventory/weapons/guard_2_steel_sword_64x128.png",
+  "ability": "FRG_C_1392",
+  "card": "frg_cut_1392",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.15
+   ],
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    0.75
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1393,
+  "donor": "Hanza steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_hanza_steel_sword_2",
+  "icon": "icons/inventory/weapons/hanza_1_steel_sword_64x128.png",
+  "ability": "FRG_C_1393",
+  "card": "frg_cut_1393",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.15
+   ],
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    0.75
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1394,
+  "donor": "Knight Mace 3",
+  "cat": "steelsword",
+  "lockey": "item_name_knight_mace",
+  "icon": "icons/inventory/weapons/mace_knight_2_64x128.png",
+  "ability": "FRG_C_1394",
+  "card": "frg_cut_1394",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.25
+   ],
+   [
+    "critical_hit_chance",
+    "add",
+    0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1395,
+  "donor": "Robustswordofdolblathanna_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_robustswordofdolblathanna",
+  "icon": "icons/inventory/weapons/unique_dol_blathana_64x128.png",
+  "ability": "FRG_C_1395",
+  "card": "frg_cut_1395",
+  "stats": [
+   [
+    "damage_from_behind_off",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_stamina_cost_bonus",
+    "mult",
+    0.1
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1396,
+  "donor": "Serpent Silver Sword 1",
+  "cat": "silversword",
+  "lockey": "item_name_serpent_silver_sword_1",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl2_64x128.png",
+  "ability": "FRG_C_1396",
+  "card": "frg_cut_1396",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.11
+   ],
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    0.85
+   ],
+   [
+    "spell_power_aard",
+    "mult",
+    0.26
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1397,
+  "donor": "Serpent Silver Sword 2",
+  "cat": "silversword",
+  "lockey": "item_name_serpent_silver_sword_2",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl3_64x128.png",
+  "ability": "FRG_C_1397",
+  "card": "frg_cut_1397",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.12
+   ],
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    0.95
+   ],
+   [
+    "spell_power_aard",
+    "mult",
+    0.28
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1398,
+  "donor": "Serpent Silver Sword 3",
+  "cat": "silversword",
+  "lockey": "item_name_serpent_silver_sword_3",
+  "icon": "icons/inventory/weapons/witcher_silver_viper_sword_lvl4_64x128.png",
+  "ability": "FRG_C_1398",
+  "card": "frg_cut_1398",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.15
+   ],
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    1.0
+   ],
+   [
+    "spell_power_aard",
+    "mult",
+    0.3
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1399,
+  "donor": "Serpent Steel Sword 1",
+  "cat": "steelsword",
+  "lockey": "item_name_serpent_steel_sword_1",
+  "icon": "icons/inventory/weapons/witcher_steel_viper_sword_lvl2_64x128.png",
+  "ability": "FRG_C_1399",
+  "card": "frg_cut_1399",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.11
+   ],
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    0.85
+   ],
+   [
+    "spell_power_aard",
+    "mult",
+    0.26
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1400,
+  "donor": "Serpent Steel Sword 2",
+  "cat": "steelsword",
+  "lockey": "item_name_serpent_steel_sword_2",
+  "icon": "icons/inventory/weapons/witcher_steel_viper_sword_lvl3_64x128.png",
+  "ability": "FRG_C_1400",
+  "card": "frg_cut_1400",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.12
+   ],
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    0.95
+   ],
+   [
+    "spell_power_aard",
+    "mult",
+    0.28
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1401,
+  "donor": "Serpent Steel Sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_serpent_steel_sword_3",
+  "icon": "icons/inventory/weapons/witcher_steel_viper_sword_lvl4_64x128.png",
+  "ability": "FRG_C_1401",
+  "card": "frg_cut_1401",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.15
+   ],
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    1.0
+   ],
+   [
+    "spell_power_aard",
+    "mult",
+    0.3
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1402,
+  "donor": "Squire steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_squire_steel_sword",
+  "icon": "icons/inventory/weapons/squire_1_steel_sword_64x128.png",
+  "ability": "FRG_C_1402",
+  "card": "frg_cut_1402",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.1
+   ],
+   [
+    "attack_speed",
+    "mult",
+    0.1
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1403,
+  "donor": "Toussaint steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_toussaint_steel_sword",
+  "icon": "icons/inventory/weapons/toussaint_2_steel_sword_64x128.png",
+  "ability": "FRG_C_1403",
+  "card": "frg_cut_1403",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.15
+   ],
+   [
+    "critical_hit_damage_bonus",
+    "add",
+    0.75
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1404,
+  "donor": "geralt_axe_01",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Axe1",
+  "icon": "icons/inventory/weapons/axe_01_64x128.png",
+  "ability": "FRG_C_1404",
+  "card": "frg_cut_1404",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.4
+   ],
+   [
+    "disarm_chance",
+    "mult",
+    0.1
+   ],
+   [
+    "poise_damage",
+    "mult",
+    0.75
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1405,
+  "donor": "geralt_axe_01",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Axe1",
+  "icon": "icons/inventory/weapons/axe_01_64x128.png",
+  "ability": "FRG_C_1405",
+  "card": "frg_cut_1405",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.4
+   ],
+   [
+    "damage_through_blocks",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_stamina_cost",
+    "mult",
+    0.5
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1406,
+  "donor": "geralt_axe_02",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Axe2",
+  "icon": "icons/inventory/weapons/great_axe_1h_02_64x128.png",
+  "ability": "FRG_C_1406",
+  "card": "frg_cut_1406",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.5
+   ],
+   [
+    "disarm_chance",
+    "mult",
+    0.125
+   ],
+   [
+    "poise_damage",
+    "mult",
+    0.85
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1407,
+  "donor": "geralt_axe_02",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Axe2",
+  "icon": "icons/inventory/weapons/great_axe_1h_02_64x128.png",
+  "ability": "FRG_C_1407",
+  "card": "frg_cut_1407",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.5
+   ],
+   [
+    "damage_through_blocks",
+    "mult",
+    0.25
+   ],
+   [
+    "attack_stamina_cost",
+    "mult",
+    0.5
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1408,
+  "donor": "geralt_axe_03",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Axe3",
+  "icon": "icons/inventory/weapons/wildhunt_axe_1h_01_64x128.png",
+  "ability": "FRG_C_1408",
+  "card": "frg_cut_1408",
+  "stats": [
+   [
+    "armor_reduction",
+    "mult",
+    0.6
+   ],
+   [
+    "disarm_chance",
+    "mult",
+    0.15
+   ],
+   [
+    "poise_damage",
+    "mult",
+    1.0
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1409,
+  "donor": "geralt_axe_03",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Axe3",
+  "icon": "icons/inventory/weapons/wildhunt_axe_1h_01_64x128.png",
+  "ability": "FRG_C_1409",
+  "card": "frg_cut_1409",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.6
+   ],
+   [
+    "damage_through_blocks",
+    "mult",
+    0.3
+   ],
+   [
+    "attack_stamina_cost",
+    "mult",
+    0.5
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1410,
+  "donor": "geralt_hammer_01",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Hammer",
+  "icon": "icons/inventory/weapons/lucerne_hammer_01_64x128.png",
+  "ability": "FRG_C_1410",
+  "card": "frg_cut_1410",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.2
+   ],
+   [
+    "shield_disarm_chance",
+    "mult",
+    0.2
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.0167
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1411,
+  "donor": "geralt_hammer_01",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Hammer",
+  "icon": "icons/inventory/weapons/lucerne_hammer_01_64x128.png",
+  "ability": "FRG_C_1411",
+  "card": "frg_cut_1411",
+  "stats": [
+   [
+    "damage_through_blocks",
+    "mult",
+    0.4
+   ],
+   [
+    "disarm_chance",
+    "mult",
+    0.15
+   ],
+   [
+    "poise_damage",
+    "mult",
+    1.0
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.0167
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1412,
+  "donor": "geralt_hammer_02",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Hammer",
+  "icon": "icons/inventory/weapons/lucerne_hammer_01_64x128.png",
+  "ability": "FRG_C_1412",
+  "card": "frg_cut_1412",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.25
+   ],
+   [
+    "shield_disarm_chance",
+    "mult",
+    0.25
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.0167
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1413,
+  "donor": "geralt_hammer_02",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Hammer",
+  "icon": "icons/inventory/weapons/lucerne_hammer_01_64x128.png",
+  "ability": "FRG_C_1413",
+  "card": "frg_cut_1413",
+  "stats": [
+   [
+    "damage_through_blocks",
+    "mult",
+    0.5
+   ],
+   [
+    "disarm_chance",
+    "mult",
+    0.2
+   ],
+   [
+    "poise_damage",
+    "mult",
+    1.15
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.0167
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1414,
+  "donor": "geralt_hammer_03",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Hammer",
+  "icon": "icons/inventory/weapons/lucerne_hammer_01_64x128.png",
+  "ability": "FRG_C_1414",
+  "card": "frg_cut_1414",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.3
+   ],
+   [
+    "shield_disarm_chance",
+    "mult",
+    0.3
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.0167
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1415,
+  "donor": "geralt_hammer_03",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Hammer",
+  "icon": "icons/inventory/weapons/lucerne_hammer_01_64x128.png",
+  "ability": "FRG_C_1415",
+  "card": "frg_cut_1415",
+  "stats": [
+   [
+    "damage_through_blocks",
+    "mult",
+    0.6
+   ],
+   [
+    "disarm_chance",
+    "mult",
+    0.25
+   ],
+   [
+    "poise_damage",
+    "mult",
+    1.25
+   ],
+   [
+    "attack_power",
+    "mult",
+    -0.0167
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1416,
+  "donor": "geralt_mace_01",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Mace",
+  "icon": "icons/inventory/weapons/mace_01_64x128.png",
+  "ability": "FRG_C_1416",
+  "card": "frg_cut_1416",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.3
+   ],
+   [
+    "shield_disarm_chance",
+    "mult",
+    0.3
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1417,
+  "donor": "geralt_mace_01",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Mace",
+  "icon": "icons/inventory/weapons/mace_01_64x128.png",
+  "ability": "FRG_C_1417",
+  "card": "frg_cut_1417",
+  "stats": [
+   [
+    "damage_through_blocks",
+    "mult",
+    0.3
+   ],
+   [
+    "disarm_chance",
+    "mult",
+    0.2
+   ],
+   [
+    "poise_damage",
+    "mult",
+    1.0
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1418,
+  "donor": "geralt_mace_02",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Mace",
+  "icon": "icons/inventory/weapons/mace_01_64x128.png",
+  "ability": "FRG_C_1418",
+  "card": "frg_cut_1418",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.4
+   ],
+   [
+    "shield_disarm_chance",
+    "mult",
+    0.4
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1419,
+  "donor": "geralt_mace_02",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Mace",
+  "icon": "icons/inventory/weapons/mace_01_64x128.png",
+  "ability": "FRG_C_1419",
+  "card": "frg_cut_1419",
+  "stats": [
+   [
+    "damage_through_blocks",
+    "mult",
+    0.4
+   ],
+   [
+    "disarm_chance",
+    "mult",
+    0.25
+   ],
+   [
+    "poise_damage",
+    "mult",
+    1.15
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1420,
+  "donor": "geralt_mace_03",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Mace",
+  "icon": "icons/inventory/weapons/mace_01_64x128.png",
+  "ability": "FRG_C_1420",
+  "card": "frg_cut_1420",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.5
+   ],
+   [
+    "shield_disarm_chance",
+    "mult",
+    0.5
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1421,
+  "donor": "geralt_mace_03",
+  "cat": "steelsword",
+  "lockey": "W3EE_Two_Handed_Mace",
+  "icon": "icons/inventory/weapons/mace_01_64x128.png",
+  "ability": "FRG_C_1421",
+  "card": "frg_cut_1421",
+  "stats": [
+   [
+    "damage_through_blocks",
+    "mult",
+    0.5
+   ],
+   [
+    "disarm_chance",
+    "mult",
+    0.3
+   ],
+   [
+    "poise_damage",
+    "mult",
+    1.25
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1422,
+  "donor": "kotw_vampire_silver_sword",
+  "cat": "silversword",
+  "lockey": "item_name_newgame_wolf_school_silver_sword_4",
+  "icon": "icons/inventory/weapons/witcher_silver_manticora_ep2_sword_lvl2_64x128.png",
+  "ability": "FRG_C_1422",
+  "card": "frg_cut_1422",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.15
+   ],
+   [
+    "spell_power",
+    "mult",
+    0.15
+   ],
+   [
+    "nonhuman_exp_bonus_when_fatal",
+    "add",
+    0.2
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1423,
+  "donor": "kotw_vampire_steel_sword",
+  "cat": "steelsword",
+  "lockey": "item_name_newgame_wolf_school_steel_sword_4",
+  "icon": "icons/inventory/weapons/witcher_steel_manticora_ep2_sword_lvl2_64x128.png",
+  "ability": "FRG_C_1423",
+  "card": "frg_cut_1423",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.15
+   ],
+   [
+    "spell_power",
+    "mult",
+    0.15
+   ],
+   [
+    "human_exp_bonus_when_fatal",
+    "add",
+    0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1500,
+  "donor": "Blackunicorn_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_blackunicorn",
+  "icon": "icons/inventory/weapons/unique_black_unicorn_64x128.png",
+  "ability": "FRG_C_1500",
+  "card": "frg_cut_1500",
+  "stats": [
+   [
+    "focus_gain",
+    "mult",
+    0.3
+   ],
+   [
+    "vigor_regen",
+    "mult",
+    -0.15
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1501,
+  "donor": "Longclaw_crafted",
+  "cat": "steelsword",
+  "lockey": "item_name_longclaw",
+  "icon": "icons/inventory/weapons/sword-01-b.png",
+  "ability": "FRG_C_1501",
+  "card": "frg_cut_1501",
+  "stats": [
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1502,
+  "donor": "Ofir Sabre 1",
+  "cat": "steelsword",
+  "lockey": "item_name_ofir_steel_sabre_2",
+  "icon": "icons/inventory/weapons/ofir_steel_sabre_2_64x128.png",
+  "ability": "FRG_C_1502",
+  "card": "frg_cut_1502",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.15
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1503,
+  "donor": "Olgierd Sabre",
+  "cat": "steelsword",
+  "lockey": "item_name_olgierd_sabre",
+  "icon": "icons/inventory/weapons/olgierd_sabre_64x128.png",
+  "ability": "FRG_C_1503",
+  "card": "frg_cut_1503",
+  "stats": [
+   [
+    "vigor_regen",
+    "mult",
+    0.2
+   ],
+   [
+    "indestructible",
+    "add",
+    0.25
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    -0.075
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1504,
+  "donor": "Red Wolf School silver sword 2",
+  "cat": "silversword",
+  "lockey": "item_name_newgame_red_wolf_school_silver_sword_1",
+  "icon": "icons/inventory/weapons/witcher_silver_red_wolf_sword_lvl2_64x128.png",
+  "ability": "FRG_C_1504",
+  "card": "frg_cut_1504",
+  "stats": [
+   [
+    "critical_hit_chance",
+    "add",
+    0.15
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1505,
+  "donor": "Red Wolf School steel sword 2",
+  "cat": "steelsword",
+  "lockey": "item_name_newgame_red_wolf_school_steel_sword_1",
+  "icon": "icons/inventory/weapons/witcher_steel_manticora_ep2_sword_lvl1_64x128.png",
+  "ability": "FRG_C_1505",
+  "card": "frg_cut_1505",
+  "stats": [
+   [
+    "focus_gain",
+    "mult",
+    0.15
+   ]
+  ],
+  "junk": false,
+  "relic": false,
+  "cursed": false
+ },
+ {
+  "id": 1506,
+  "donor": "sq701 Geralt of Rivia sword",
+  "cat": "steelsword",
+  "lockey": "item_name_geralt_of_rivia_sword",
+  "icon": "icons/inventory/quests/sq701_sword_geralt_of_rivia.png",
+  "ability": "FRG_C_1506",
+  "card": "frg_cut_1506",
+  "stats": [
+   [
+    "poise_damage",
+    "mult",
+    0.15
+   ],
+   [
+    "focus_gain",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "indestructible",
+    "add",
+    -0.15
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1507,
+  "donor": "sq701 Ravix of Fourhorn sword",
+  "cat": "steelsword",
+  "lockey": "item_name_ravix_of_fourhorn_sword",
+  "icon": "icons/inventory/quests/sq701_sword_ravix_of_fourhorn.png",
+  "ability": "FRG_C_1507",
+  "card": "frg_cut_1507",
+  "stats": [
+   [
+    "poise_damage",
+    "mult",
+    0.15
+   ],
+   [
+    "focus_gain",
+    "mult",
+    0.15
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "indestructible",
+    "add",
+    -0.15
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1527,
+  "donor": "Zireael Phantom Sword",
+  "cat": "steelsword",
+  "lockey": "item_name_zireael_sword",
+  "icon": "icons/inventory/weapons/sword-01-b.png",
+  "ability": "FRG_C_1527",
+  "card": "frg_cut_1527",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.1
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1528,
+  "donor": "Zireael Sword",
+  "cat": "steelsword",
+  "lockey": "item_name_zireael_sword",
+  "icon": "icons/inventory/weapons/sword-01-b.png",
+  "ability": "FRG_C_1528",
+  "card": "frg_cut_1528",
+  "stats": [
+   [
+    "attack_speed",
+    "mult",
+    0.1
+   ],
+   [
+    "armor_reduction",
+    "mult",
+    0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1529,
+  "donor": "sq304 Novigraadan sword 4",
+  "cat": "steelsword",
+  "lockey": "item_name_novigraadan_sword_4",
+  "icon": "icons/inventory/weapons/novigraadan_sword_lvl4_64x128.png",
+  "ability": "FRG_C_1529",
+  "card": "frg_cut_1529",
+  "stats": [
+   [
+    "injury_chance",
+    "mult",
+    0.1
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    0.2
+   ],
+   [
+    "focus_gain",
+    "mult",
+    -0.1
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ },
+ {
+  "id": 1530,
+  "donor": "Knights steel sword 3",
+  "cat": "steelsword",
+  "lockey": "item_name_knights_steel_sword",
+  "icon": "icons/inventory/weapons/knight_1_steel_sword_64x128.png",
+  "ability": "FRG_C_1530",
+  "card": "frg_cut_1530",
+  "stats": [
+   [
+    "indestructible",
+    "add",
+    0.2
+   ],
+   [
+    "attack_speed",
+    "mult",
+    -0.05
+   ],
+   [
+    "movement_stamina_efficiency",
+    "mult",
+    -0.0833
+   ],
+   [
+    "parry_stamina_cost_bonus",
+    "mult",
+    -0.05
+   ]
+  ],
+  "junk": false,
+  "relic": true,
+  "cursed": false
+ }
+]

@@ -3,10 +3,6 @@
   0.2,
   "PC Caretaker Shovel"
  ],
- "armor_reduction": [
-  0.25,
-  "Knight Mace 1"
- ],
  "indestructible": [
   0.5,
   "Adversary Silver Sword"
@@ -14,6 +10,10 @@
  "spell_power": [
   0.25,
   "Gryphon School silver sword 4"
+ ],
+ "armor_reduction": [
+  0.25,
+  "Knight Mace 1"
  ],
  "poise_damage": [
   0.5,
@@ -75,13 +75,13 @@
   0.3,
   "pool:Master_Heft"
  ],
- "parry_stamina_cost_bonus": [
-  0.2,
-  "Crafted Ofir Steel Sword"
- ],
  "counter_damage_bonus": [
   0.3,
   "Bear School steel sword 4"
+ ],
+ "parry_stamina_cost_bonus": [
+  0.2,
+  "Crafted Ofir Steel Sword"
  ],
  "focus_gain": [
   0.3,

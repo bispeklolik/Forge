@@ -33,6 +33,7 @@ import os, sys
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from lines_data import no_forge_family
 from lines_data import (LINES, CUT, TOKEN_ITEM, LINE_LIMIT_BASE, LINE_LIMIT_MAX,
                         TEMPER, DMG_MARKS, FLAT, flat_ability, stat_text,
                         ARMOR, armor_ability, armor_res_ability,
@@ -310,7 +311,12 @@ WS = """// modForgeLab - forge core, stages 1-2. Console commands only.
 \t\t// the builder answers "" for non-weapons, so probe until it speaks
 \t\ts = Equipment().GetRelicAbilityDescription( reps[i] );
 \t\tif( s != "" )
+\t\t{
+\t\t\t// the Dark Curse carries its vampirism inside (user 24.09)
+\t\t\tif( fx == 13 )
+\t\t\t\ts += "<br>" + GetLocStringByKeyExt( "frgu_curse_vamp" );
 \t\t\treturn s;
+\t\t}
 \t}
 \treturn "";
 }
@@ -336,8 +342,7 @@ WS = """// modForgeLab - forge core, stages 1-2. Console commands only.
 \t\t\tline = "<font color='#ca610c'>" + FRGL_Stats( fx );
 \t\t\tif( FRGL_IsJunk( fx ) )
 \t\t\t\tline = line + " " + GetLocStringByKeyExt( "frgu_b_junk" );
-\t\t\tif( FRGL_IsRelic( fx ) )
-\t\t\t\tline = line + " " + GetLocStringByKeyExt( "frgu_b_relic" );
+
 \t\t\tline = line + "</font>";
 \t\t\tcur = o.GetMemberFlashString( "Description" );
 \t\t\tif( cur != "" )
@@ -462,6 +467,15 @@ WS = """// modForgeLab - forge core, stages 1-2. Console commands only.
 \t}
 \tif( fx > 0 && FRG_FxTagged( fx ) && !inv.ItemHasTag( item, FRG_FxTag( fx ) ) )
 \t\tinv.AddItemTag( item, FRG_FxTag( fx ) );
+\t// the Dark Curse carries its vampirism INSIDE the charm (user 24.09):
+\t// W3EE's curse alone is a pure minus
+\tif( fx == 13 && !FRG_HasVampLine( item ) )
+\t{
+\t\tif( FRG_CountAb( item, 'FRG_CurseVamp' ) <= 0 )
+\t\t\tinv.AddItemCraftedAbility( item, 'FRG_CurseVamp', false );
+\t}
+\telse if( FRG_CountAb( item, 'FRG_CurseVamp' ) > 0 )
+\t\tFRG_StripAb( item, 'FRG_CurseVamp' );
 }
 
 // The transferred effect lives as a buff and must follow equip state. W3EE has
@@ -494,6 +508,10 @@ WS = """// modForgeLab - forge core, stages 1-2. Console commands only.
 
 \tif( !witcher )
 \t\treturn;
+\t// a blade from the bag or the stash gets its charm tags and the curse's
+\t// vampirism the moment it is drawn (FxStamp is idempotent)
+\tif( equip )
+\t\twitcher.FRG_FxStamp( item );
 
 \tfx = witcher.inv.GetItemModifierInt( item, 'FRG_Fx', 0 );
 \tif( fx <= 0 )
@@ -535,6 +553,7 @@ WS = """// modForgeLab - forge core, stages 1-2. Console commands only.
 
 \tFRG_GrantSchematics();
 \tFRG_MigrateForged();
+\tFRG_MigrateRetiredTokens();
 \tFRG_ReclaimLost();
 
 \t// Item entities are not ready right at spawn - AMM waits 2 seconds too.
@@ -1395,6 +1414,8 @@ exec function frgvtest( on : int )
 \tvar ok : bool;
 
 \tok = wrappedMethod( item, slot, ignoreMounting, toHand );
+\tif( ok && ( slot == EES_SteelSword || slot == EES_SilverSword ) && inv.GetItemModifierInt( item, 'FRG_Fx', 0 ) > 0 )
+\t\tFRG_FxStamp( item );
 \tif( ok && ( inv.GetItemModifierInt( item, 'FRG_ArmLook', 0 ) > 0
 \t\t|| inv.GetItemModifierInt( item, 'FRG_Look', 0 ) > 0 ) )
 \t\tAddTimer( 'FRG_LookRestore', 0.5, false );
@@ -1728,6 +1749,8 @@ exec function frgsplit( donor : name )
 \t\tif( lid <= 0 || seenL.Contains( lid ) )
 \t\t\tcontinue;
 \t\tseenL.PushBack( lid );
+\t\tif( FRGL_IsRetired( lid ) )
+\t\t\tcontinue;
 \t\tmade = w.inv.AddAnItem( FRGL_TokCard( lid ), 1 );
 \t\tif( made.Size() > 0 )
 \t\t{
@@ -2823,10 +2846,10 @@ function FRGP_Deficit( tier : int ) : int
 // matches the CUT line of any family member ("X" / "X_crafted" / "NGP X")
 function FRG_DonorBase( txt : string ) : string
 {
+\t// only the NG+ prefix goes: "X" and "X_crafted" are different donors
+\t// (armour gets ONE line per piece; the pair bridge lives below)
 \tif( StrFindFirst( txt, "NGP " ) == 0 )
 \t\ttxt = StrAfterFirst( txt, "NGP " );
-\tif( StrLen( txt ) > 8 && StrFindLast( txt, "_crafted" ) == StrLen( txt ) - 8 )
-\t\ttxt = StrLeft( txt, StrLen( txt ) - 8 );
 \treturn txt;
 }
 
@@ -2834,11 +2857,116 @@ function FRG_DonorBase( txt : string ) : string
 // registry, disassembly minted shape/damage/def tokens but not the donor's
 // PROPERTY lines. Those tokens witness a past disassembly - re-mint every
 // missing CUT line of a witnessed donor. Idempotent ("already studied" guard).
+// Mint every CURRENT line of a donor the bag does not hold yet (the whole
+// name family answers). Returns how many were minted.
+@addMethod( W3PlayerWitcher ) function FRG_MintDonorLines( donor : name ) : int
+{
+\tvar made : array< SItemUniqueId >;
+\tvar i, lid, n : int;
+
+\tn = 0;
+\tif( donor == '' || FRGW_NoForge( donor ) )
+\t\treturn 0;
+\tfor( i = 1; i <= FRGL_Count(); i += 1 )
+\t{
+\t\tlid = FRGL_IdAt( i );
+\t\tif( !FRGL_MatchDonor( lid, donor ) )
+\t\t\tcontinue;
+\t\tif( inv.GetItemQuantityByName( FRGL_TokCard( lid ) ) > 0 )
+\t\t\tcontinue;
+\t\tmade = inv.AddAnItem( FRGL_TokCard( lid ), 1 );
+\t\tif( made.Size() > 0 && inv.IsIdValid( made[0] ) )
+\t\t{
+\t\t\tinv.SetItemModifierInt( made[0], 'FRG_Part', 5 );
+\t\t\tinv.SetItemModifierInt( made[0], 'FRG_Line', lid );
+\t\t\tinv.SetItemModifierInt( made[0], 'FRG_Ver', FRG_TokenVer() );
+\t\t\tn += 1;
+\t\t}
+\t}
+\treturn n;
+}
+
+// Does the bag hold every CURRENT line of this donor?
+@addMethod( W3PlayerWitcher ) function FRG_DonorLinesHeld( donor : name ) : bool
+{
+\tvar i, lid : int;
+
+\tfor( i = 1; i <= FRGL_Count(); i += 1 )
+\t{
+\t\tlid = FRGL_IdAt( i );
+\t\tif( FRGL_MatchDonor( lid, donor ) && inv.GetItemQuantityByName( FRGL_TokCard( lid ) ) <= 0 )
+\t\t\treturn false;
+\t}
+\treturn true;
+}
+
+// The 24.09 re-cut (every property relic, two per sword at most): a token of
+// a RETIRED line is traded, once, for its donor's current lines. Blades keep
+// their old lines untouched - their numbers are paid for.
+@addMethod( W3PlayerWitcher ) function FRG_MigrateRetiredTokens()
+{
+\tvar items : array< SItemUniqueId >;
+\tvar i, lid, gone, got, heavy : int;
+\tvar donor : name;
+\tvar msg : string;
+
+\t// the script lands in the game at once, the items package only with a
+\t// rebuild while the game is closed: without the new cards the trade
+\t// would take the old tokens and give nothing back - wait for it
+\tif( !FRG_DlcFresh() )
+\t{
+\t\ttheGame.GetGuiManager().ShowNotification( FRG_StaleText(), 15000 );
+\t\treturn;
+\t}
+\titems = inv.GetItemsByTag( 'FRG_LineTok' );
+\tgone = 0;
+\tgot = 0;
+\theavy = 0;
+\tfor( i = 0; i < items.Size(); i += 1 )
+\t{
+\t\tif( !inv.IsIdValid( items[i] ) )
+\t\t\tcontinue;
+\t\tlid = inv.GetItemModifierInt( items[i], 'FRG_Line', 0 );
+\t\tif( lid <= 0 )
+\t\t\tlid = FRGL_OfTokCard( inv.GetItemName( items[i] ) );
+\t\tif( lid <= 0 || !FRGL_IsRetired( lid ) )
+\t\t\tcontinue;
+\t\tdonor = FRGL_CutDonor( lid );
+\t\t// W3EE's heavy two-handers (user 24.09): the forge no longer works
+\t\t// them - the token is withdrawn, there is nothing to trade it for
+\t\tif( FRGW_NoForge( donor ) )
+\t\t{
+\t\t\tinv.RemoveItem( items[i], inv.GetItemQuantity( items[i] ) );
+\t\t\theavy += 1;
+\t\t\tcontinue;
+\t\t}
+\t\tgot += FRG_MintDonorLines( donor );
+\t\t// the old token goes only when the new ones are really in the bag
+\t\tif( !FRG_DonorLinesHeld( donor ) )
+\t\t\tcontinue;
+\t\tinv.RemoveItem( items[i], inv.GetItemQuantity( items[i] ) );
+\t\tgone += 1;
+\t}
+\tif( gone > 0 || heavy > 0 )
+\t{
+\t\tmsg = "Forge: ";
+\t\tif( gone > 0 )
+\t\t\tmsg += "" + gone + " property tokens re-cut into " + got + " new ones - every property is relic now, two per sword at most";
+\t\tif( heavy > 0 )
+\t\t{
+\t\t\tif( gone > 0 )
+\t\t\t\tmsg += "; ";
+\t\t\tmsg += "" + heavy + " tokens of heavy two-handed axes, hammers and maces withdrawn - the forge no longer works them";
+\t\t}
+\t\ttheGame.GetGuiManager().ShowNotification( msg, 15000 );
+\t}
+}
+
 @addMethod( W3PlayerWitcher ) function FRG_ReclaimLost()
 {
 \tvar items, made : array< SItemUniqueId >;
-\tvar wit : array< string >;
-\tvar nm, base : string;
+\tvar wit, own : array< string >;
+\tvar nm, base, d : string;
 \tvar resNm : name;
 \tvar i, lid, minted : int;
 
@@ -2848,9 +2976,10 @@ function FRG_DonorBase( txt : string ) : string
 \t\tif( !inv.IsIdValid( items[i] ) )
 \t\t\tcontinue;
 \t\tnm = NameToString( inv.GetItemName( items[i] ) );
-\t\tif( StrFindFirst( nm, "FRG Shape " ) == 0 )
-\t\t\tbase = FRG_DonorBase( StrAfterFirst( nm, "FRG Shape " ) );
-\t\telse if( StrFindFirst( nm, "FRG Dmg " ) == 0 )
+\t\t// a SHAPE token proves nothing: shops sell them and Copy Look mints
+\t\t// them without a dismantle (review 24.09) - damage and protection
+\t\t// tokens come only from taking an item apart
+\t\tif( StrFindFirst( nm, "FRG Dmg " ) == 0 )
 \t\t\tbase = FRG_DonorBase( StrAfterFirst( nm, "FRG Dmg " ) );
 \t\telse if( StrFindFirst( nm, "FRG Def " ) == 0 )
 \t\t\tbase = FRG_DonorBase( StrAfterFirst( nm, "FRG Def " ) );
@@ -2880,14 +3009,40 @@ function FRG_DonorBase( txt : string ) : string
 
 \tif( wit.Size() <= 0 )
 \t\treturn;
+\tif( !FRG_DlcFresh() )
+\t\treturn;
+\t// witnesses that own lines themselves never borrow their pair's
+\tfor( i = 1; i <= FRGL_Count(); i += 1 )
+\t{
+\t\tlid = FRGL_IdAt( i );
+\t\tif( FRGL_IsRetired( lid ) )
+\t\t\tcontinue;
+\t\td = NameToString( FRGL_CutDonor( lid ) );
+\t\tif( wit.Contains( d ) && !own.Contains( d ) )
+\t\t\town.PushBack( d );
+\t}
 
 \tminted = 0;
 \tfor( i = 1; i <= FRGL_Count(); i += 1 )
 \t{
 \t\tlid = FRGL_IdAt( i );
-\t\tbase = FRG_DonorBase( NameToString( FRGL_CutDonor( lid ) ) );
-\t\tif( base == "" || !wit.Contains( base ) )
+\t\t// retired lines are never handed out again (they came back every load)
+\t\tif( FRGL_IsRetired( lid ) )
 \t\t\tcontinue;
+\t\td = NameToString( FRGL_CutDonor( lid ) );
+\t\tif( d == "" )
+\t\t\tcontinue;
+\t\tif( !wit.Contains( d ) )
+\t\t{
+\t\t\t// a witness with no lines of its own borrows its X <-> X_crafted
+\t\t\t// pair - exactly as FRGL_MatchDonor does
+\t\t\tif( StrLen( d ) > 8 && StrRight( d, 8 ) == "_crafted" )
+\t\t\t\tbase = StrLeft( d, StrLen( d ) - 8 );
+\t\t\telse
+\t\t\t\tbase = d + "_crafted";
+\t\t\tif( !wit.Contains( base ) || own.Contains( base ) )
+\t\t\t\tcontinue;
+\t\t}
 \t\tif( inv.GetItemQuantityByName( FRGL_TokCard( lid ) ) > 0 )
 \t\t\tcontinue;
 \t\tmade = inv.AddAnItem( FRGL_TokCard( lid ), 1 );
@@ -2987,6 +3142,19 @@ function FRGW_FindTokCard( tag : name, wantText : string, out tok : name ) : boo
 \tvar i, lid, lk, minted, known : int;
 
 \tminted = 0;
+\tif( !FRG_DlcFresh() )
+\t{
+\t\tif( !silent )
+\t\t\ttheGame.GetGuiManager().ShowNotification( FRG_StaleText(), 12000 );
+\t\treturn 0;
+\t}
+\t// W3EE's heavy two-handers are not taken apart by the forge (user 24.09)
+\tif( FRGW_NoForge( donor ) )
+\t{
+\t\tif( !silent )
+\t\t\ttheGame.GetGuiManager().ShowNotification( "The forge cannot take this weapon apart - its properties are too fat to cut", 10000 );
+\t\treturn 0;
+\t}
 \tpathSrc = donor;
 \twant = NameToString( donor );
 \tif( isForged )
@@ -3046,6 +3214,13 @@ function FRGW_FindTokCard( tag : name, wantText : string, out tok : name ) : boo
 \t\tif( lid <= 0 || seenL.Contains( lid ) )
 \t\t\tcontinue;
 \t\tseenL.PushBack( lid );
+\t\t// a RETIRED line (the 24.09 re-cut) on an old blade: its donor's
+\t\t// current lines are the knowledge now
+\t\tif( FRGL_IsRetired( lid ) )
+\t\t{
+\t\t\tminted += FRG_MintDonorLines( FRGL_CutDonor( lid ) );
+\t\t\tcontinue;
+\t\t}
 \t\tif( inv.GetItemQuantityByName( FRGL_TokCard( lid ) ) > 0 )
 \t\t{
 \t\t\tknown += 1;
@@ -3965,7 +4140,7 @@ var FRG_HashCacheN : array< name >;
 \t\tif( seen.Contains( abilities[i] ) )
 \t\t\tcontinue;
 \t\tseen.PushBack( abilities[i] );
-\t\tif( StrFindFirst( NameToString( abilities[i] ), "FRG_" ) != 0 )
+\t\tif( StrFindFirst( NameToString( abilities[i] ), "FRG_" ) != 0 || abilities[i] == 'FRG_CurseVamp' )
 \t\t\tcontinue;
 \t\tn = FRG_CountAb( old, abilities[i] ) - FRG_CountAb( nw, abilities[i] );
 \t\tfor( j = 0; j < n; j += 1 )
@@ -4028,7 +4203,7 @@ var FRG_HashCacheN : array< name >;
 \t\twhy = "enchantment";
 \tfor( i = 0; i < seen.Size(); i += 1 )
 \t{
-\t\tif( StrFindFirst( NameToString( seen[i] ), "FRG_" ) == 0
+\t\tif( StrFindFirst( NameToString( seen[i] ), "FRG_" ) == 0 && seen[i] != 'FRG_CurseVamp'
 \t\t\t&& FRG_CountAb( nw, seen[i] ) < FRG_CountAb( old, seen[i] ) )
 \t\t\twhy = "properties";
 \t}
@@ -4216,6 +4391,16 @@ exec function frgdump( slot : int )
 
 \tw = GetWitcherPlayer();
 \tdmgWant = "";
+\t// the items package is older than this script: the forge could not hand
+\t// out the new property tokens, and the item would be gone for nothing -
+\t// the teardown waits until the package is rebuilt
+\tif( w && _inv.IsIdValid( item ) && !FRG_DlcFresh()
+\t\t&& FRGW_IsMeasurable( _inv.GetItemCategory( item ) )
+\t\t&& !FRGW_NoForge( _inv.GetItemName( item ) ) )
+\t{
+\t\ttheGame.GetGuiManager().ShowNotification( FRG_StaleText(), 12000 );
+\t\treturn false;
+\t}
 \tif( w && _inv.IsIdValid( item ) )
 \t{
 \t\tdonor = _inv.GetItemName( item );
@@ -4248,7 +4433,7 @@ exec function frgdump( slot : int )
 
 \tif( w && donor != '' && !_inv.IsIdValid( item ) )
 \t{
-\t\tminted = w.FRG_MintTokens( donor, isForged, st, sv, stB, stD, svB, svD, fx, abilities, false, dmgWant );
+\t\tminted = w.FRG_MintTokens( donor, isForged, st, sv, stB, stD, svB, svD, fx, abilities, FRGW_NoForge( donor ), dmgWant );
 \t\t// the tier ladder: the upgrade was forged FROM the previous version
 \t\t// of the item - dismantling frees it whole (user's call 02.09)
 \t\tprevName = w.FRG_GivePrevTier( donor );
@@ -4283,15 +4468,8 @@ exec function frgdump( slot : int )
 \tk = FRGL_OfTokCard( nm );
 \tif( k > 0 )
 \t{
-\t\t// the KIND goes first: at a glance you see relic / ordinary / junk
-\t\ttxt = "";
-\t\tif( FRGL_IsRelic( k ) )
-\t\t\ttxt = GetLocStringByKeyExt( "frgu_b_relic" ) + " ";
-\t\telse if( FRGL_IsJunk( k ) )
-\t\t\ttxt = GetLocStringByKeyExt( "frgu_b_junk" ) + " ";
-\t\telse
-\t\t\ttxt = GetLocStringByKeyExt( "frgu_b_plain" ) + " ";
-\t\ttxt = txt + FRGL_Stats( k );
+\t\t// every property is relic now (user 23.09) - no kind label
+\t\ttxt = FRGL_Stats( k );
 \t}
 \t// FLAW marks explain their price and what the price buys
 \tk = FRGF_OfTokCard( nm );
@@ -4741,7 +4919,7 @@ var FRG_InCraft : bool;
 \t\t// показ = РЕАЛЬНЫЙ потолок реликтовых свойств (тот же, что запрещает
 \t\t// крафт): база 2, тяжёлый порок даёт 3. Раньше показ брал тир реликта
 \t\t// (=4) и врал «3/4» — обещал место, которого нет (ГД 21.09).
-\t\tlim = w.FRGL_RelicLimit( target );
+\t\tlim = w.FRGL_SlotCap( target );
 \t\ts += "<br>" + GetLocStringByKeyExt( "frgu_s_slots" ) + ": " + picked + "/" + lim;
 \t\tk = w.FRGF_On( target );
 \t\tif( k > 0 )
@@ -4860,9 +5038,7 @@ var FRG_InCraft : bool;
 \tif( !FRGW_IsPlaceholder( shapeTok ) && w.FRG_FindForWork( shapeTok, blankId ) )
 \t{
 \t\thaveTarget = true;
-\t\tcap = w.FRGL_BaseSlots( blankId );
-\t\tif( w.inv.GetItemModifierInt( blankId, 'FRG_Fx', 0 ) == 13 )
-\t\t\tcap += 1;
+\t\tcap = w.FRGL_SlotCap( blankId );
 \t}
 \tcid = 0;
 \tplus = 0;
@@ -4882,12 +5058,12 @@ var FRG_InCraft : bool;
 \t\t\ttakenKeys.PushBack( FRGL_StatKey( id ) );
 \t\t\tif( FRGL_DomAxis( id ) != '' )
 \t\t\t\ttakenDoms.PushBack( FRGL_DomAxis( id ) );
-\t\t\tfor( k2 = 0; k2 < 4; k2 += 1 )
+\t\t\tfor( k2 = 0; k2 < 8; k2 += 1 )
 \t\t\t{
-\t\t\t\tif( FRGL_PlusAxis( id * 4 + k2 ) == '' )
+\t\t\t\tif( FRGL_PlusAxis( id * 8 + k2 ) == '' )
 \t\t\t\t\tbreak;
-\t\t\t\ttakenAxes.PushBack( FRGL_PlusAxis( id * 4 + k2 ) );
-\t\t\t\ttakenVals.PushBack( FRGL_PlusVal( id * 4 + k2 ) );
+\t\t\t\ttakenAxes.PushBack( FRGL_PlusAxis( id * 8 + k2 ) );
+\t\t\t\ttakenVals.PushBack( FRGL_PlusVal( id * 8 + k2 ) );
 \t\t\t}
 \t\t\tif( FRGL_IsJunk( id ) )
 \t\t\t\tjunk += 1;
@@ -4913,12 +5089,12 @@ var FRG_InCraft : bool;
 \t\treturn 4;
 \t// I-3: the world envelope. No axis may exceed the most generous single
 \t// Redux item - the forge lives INSIDE the world, never above it.
-\tfor( j = 0; j < 4; j += 1 )
+\tfor( j = 0; j < 8; j += 1 )
 \t{
-\t\taxA = FRGL_PlusAxis( cid * 4 + j );
+\t\taxA = FRGL_PlusAxis( cid * 8 + j );
 \t\tif( axA == '' )
 \t\t\tbreak;
-\t\tsumA = FRGL_PlusVal( cid * 4 + j );
+\t\tsumA = FRGL_PlusVal( cid * 8 + j );
 \t\tfor( i = 0; i < takenAxes.Size(); i += 1 )
 \t\t{
 \t\t\tif( takenAxes[i] == axA )
@@ -5052,6 +5228,9 @@ var FRG_InCraft : bool;
 \t\t\t// our own blanks and forged gear are not donors
 \t\t\tif( w.inv.ItemHasTag( bagIds[i], 'FRG_Blank' ) )
 \t\t\t\tcontinue;
+\t\t\t// W3EE's heavy two-handers are not taken apart (user 24.09)
+\t\t\tif( FRGW_NoForge( w.inv.GetItemName( bagIds[i] ) ) )
+\t\t\t\tcontinue;
 \t\t\t// nothing to take? then it does not clutter the ring
 \t\t\tif( w.FRG_MeasureLeft( bagIds[i] ) <= 0 )
 \t\t\t\tcontinue;
@@ -5115,9 +5294,7 @@ var FRG_InCraft : bool;
 \t\tif( !FRGW_IsPlaceholder( shapeTok ) && w.FRG_FindForWork( shapeTok, blankId ) )
 \t\t{
 \t\t\thaveTarget = true;
-\t\t\tcap = w.FRGL_BaseSlots( blankId );
-\t\t\tif( w.inv.GetItemModifierInt( blankId, 'FRG_Fx', 0 ) == 13 )
-\t\t\t\tcap += 1;
+\t\t\tcap = w.FRGL_SlotCap( blankId );
 \t\t}
 \t\tfor( i = 1; i <= FRGL_Count(); i += 1 )
 \t\t{
@@ -5131,18 +5308,18 @@ var FRG_InCraft : bool;
 \t\t\t\ttakenKeys.PushBack( FRGL_StatKey( id ) );
 \t\t\t\tif( FRGL_DomAxis( id ) != '' )
 \t\t\t\t\ttakenDoms.PushBack( FRGL_DomAxis( id ) );
-\t\t\t\tfor( k2 = 0; k2 < 4; k2 += 1 )
+\t\t\t\tfor( k2 = 0; k2 < 8; k2 += 1 )
 \t\t\t\t{
-\t\t\t\t\tif( FRGL_PlusAxis( id * 4 + k2 ) == '' )
+\t\t\t\t\tif( FRGL_PlusAxis( id * 8 + k2 ) == '' )
 \t\t\t\t\t\tbreak;
-\t\t\t\t\taxJ = axNames.FindFirst( FRGL_PlusAxis( id * 4 + k2 ) );
+\t\t\t\t\taxJ = axNames.FindFirst( FRGL_PlusAxis( id * 8 + k2 ) );
 \t\t\t\t\tif( axJ < 0 )
 \t\t\t\t\t{
-\t\t\t\t\t\taxNames.PushBack( FRGL_PlusAxis( id * 4 + k2 ) );
-\t\t\t\t\t\taxSums.PushBack( FRGL_PlusVal( id * 4 + k2 ) );
+\t\t\t\t\t\taxNames.PushBack( FRGL_PlusAxis( id * 8 + k2 ) );
+\t\t\t\t\t\taxSums.PushBack( FRGL_PlusVal( id * 8 + k2 ) );
 \t\t\t\t\t}
 \t\t\t\t\telse
-\t\t\t\t\t\taxSums[axJ] = axSums[axJ] + FRGL_PlusVal( id * 4 + k2 );
+\t\t\t\t\t\taxSums[axJ] = axSums[axJ] + FRGL_PlusVal( id * 8 + k2 );
 \t\t\t\t}
 \t\t\t\tif( FRGL_IsJunk( id ) )
 \t\t\t\t\tjunk += 1;
@@ -5177,6 +5354,9 @@ var FRG_InCraft : bool;
 \t\t\t// ⛔ РОД СПРАШИВАЕМ У СУДЬИ. Раньше здесь стоял свой фильтр под
 \t\t\t// условием «вещь выбрана»: пока квадрат вещи пуст, он не
 \t\t\t// срабатывал вовсе, и кольцо крутило броню в наборе для меча.
+\t\t\t// a retired line (the 24.09 re-cut) is not forged any more
+\t\t\tif( FRGL_IsRetired( id ) )
+\t\t\t\tcontinue;
 \t\t\tif( !FRGW_LineFitsGear( id, gearCat, gearArmed, haveTarget ) )
 \t\t\t\tcontinue;
 \t\t\tif( takenNames.Contains( card ) )
@@ -5189,15 +5369,15 @@ var FRG_InCraft : bool;
 \t\t\t\tcontinue;
 \t\t\t// I-3: would any axis overflow the world envelope? Not offered either
 \t\t\tcapHit = false;
-\t\t\tfor( k2 = 0; k2 < 4; k2 += 1 )
+\t\t\tfor( k2 = 0; k2 < 8; k2 += 1 )
 \t\t\t{
-\t\t\t\tif( FRGL_PlusAxis( id * 4 + k2 ) == '' )
+\t\t\t\tif( FRGL_PlusAxis( id * 8 + k2 ) == '' )
 \t\t\t\t\tbreak;
-\t\t\t\tsumA = FRGL_PlusVal( id * 4 + k2 );
-\t\t\t\taxJ = axNames.FindFirst( FRGL_PlusAxis( id * 4 + k2 ) );
+\t\t\t\tsumA = FRGL_PlusVal( id * 8 + k2 );
+\t\t\t\taxJ = axNames.FindFirst( FRGL_PlusAxis( id * 8 + k2 ) );
 \t\t\t\tif( axJ >= 0 )
 \t\t\t\t\tsumA += axSums[axJ];
-\t\t\t\tif( sumA > FRGL_AxisCap( FRGL_PlusAxis( id * 4 + k2 ) ) )
+\t\t\t\tif( sumA > FRGL_AxisCap( FRGL_PlusAxis( id * 8 + k2 ) ) )
 \t\t\t\t{
 \t\t\t\t\tcapHit = true;
 \t\t\t\t\tbreak;
@@ -5354,7 +5534,7 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 \t\tfor( i = 1; i <= FRGL_Count(); i += 1 )
 \t\t{
 \t\t\tid = FRGL_IdAt( i );
-\t\t\tif( !FRGW_LineFitsGear( id, gearCat, gearArmed, haveTarget ) )
+\t\t\tif( !FRGW_LineFitsGear( id, gearCat, gearArmed, haveTarget ) || FRGL_IsRetired( id ) )
 \t\t\t\tforbiddenItems.PushBack( FRGL_TokCard( id ) );
 \t\t\tcard = FRGL_TokCard( id );
 \t\t\tfor( j = 0; j < itemsNames.Size(); j += 1 )
@@ -5621,6 +5801,16 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 \t\t\tif( k > 0 && !picks.Contains( k ) )
 \t\t\t\tpicks.PushBack( k );
 \t\t}
+\t\t// a retired line (the 24.09 re-cut) is not forged any more; its old
+\t\t// token is traded for the new ones at the next load
+\t\tfor( i = 0; i < picks.Size(); i += 1 )
+\t\t{
+\t\t\tif( FRGL_IsRetired( picks[i] ) )
+\t\t\t{
+\t\t\t\ttheGame.GetGuiManager().ShowNotification( "That property was re-cut - its token is traded for the new ones at the next load: " + FRGL_Title( picks[i] ), 12000 );
+\t\t\t\treturn ECE_TooFewIngredients;
+\t\t\t}
+\t\t}
 
 \t\t// guards over the whole set: home, weight class, curse bond, relic-
 \t\t// exclusive; count pluses and junk while at it
@@ -5667,24 +5857,12 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 \t\t}
 \t\t// RELIC properties: one per blade, TWO if a heavy flaw mark was forged
 \t\t// into it at birth (design doc: a fat price buys a fat reward)
-\t\tif( k > w.FRGL_RelicLimit( blankId ) )
+\t\t// every property is relic (user 23.09): two per item, a heavy flaw
+\t\t// at the forge opens a third; a raw blank only what its grooves allow
+\t\tif( k > w.FRGL_SlotCap( blankId ) || want_i > w.FRGL_SlotCap( blankId ) )
 \t\t{
-\t\t\tif( w.FRGL_RelicLimit( blankId ) > 1 )
-\t\t\t\ttheGame.GetGuiManager().ShowNotification( "This blade holds two RELIC properties - you picked " + k, 12000 );
-\t\t\telse
-\t\t\t\ttheGame.GetGuiManager().ShowNotification( "A RELIC property is exclusive - one per blade. A HEAVY flaw mark at the forge buys a second one (picked " + k + ")", 13000 );
-\t\t\treturn ECE_TooFewIngredients;
-\t\t}
-\t\t// slot budget of the FUTURE state: tier base + picked junk (+1 for the
-\t\t// Dark Curse), hard cap 5
-\t\tk = w.FRGL_BaseSlots( blankId ) + j;
-\t\tif( w.inv.GetItemModifierInt( blankId, 'FRG_Fx', 0 ) == 13 )
-\t\t\tk += 1;
-\t\tif( k > 5 )
-\t\t\tk = 5;
-\t\tif( want_i > k )
-\t\t{
-\t\t\ttheGame.GetGuiManager().ShowNotification( "Picked " + want_i + " plus-properties, the item holds " + k + " - the next tier or a junk mark opens more", 13000 );
+\t\t\ttheGame.GetGuiManager().ShowNotification( "This item holds " + w.FRGL_SlotCap( blankId )
+\t\t\t\t+ " properties (a heavy flaw at the forge opens a third) - you picked " + Max( k, want_i ), 13000 );
 \t\t\treturn ECE_TooFewIngredients;
 \t\t}
 \t\t// I-2: one axis - one line; I-3: the world envelope (approved: "go")
@@ -5701,18 +5879,18 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 \t\t\t\t}
 \t\t\t\taxDoms.PushBack( FRGL_DomAxis( picks[i] ) );
 \t\t\t}
-\t\t\tfor( j = 0; j < 4; j += 1 )
+\t\t\tfor( j = 0; j < 8; j += 1 )
 \t\t\t{
-\t\t\t\tif( FRGL_PlusAxis( picks[i] * 4 + j ) == '' )
+\t\t\t\tif( FRGL_PlusAxis( picks[i] * 8 + j ) == '' )
 \t\t\t\t\tbreak;
-\t\t\t\tk2 = axNames.FindFirst( FRGL_PlusAxis( picks[i] * 4 + j ) );
+\t\t\t\tk2 = axNames.FindFirst( FRGL_PlusAxis( picks[i] * 8 + j ) );
 \t\t\t\tif( k2 < 0 )
 \t\t\t\t{
-\t\t\t\t\taxNames.PushBack( FRGL_PlusAxis( picks[i] * 4 + j ) );
-\t\t\t\t\taxSums.PushBack( FRGL_PlusVal( picks[i] * 4 + j ) );
+\t\t\t\t\taxNames.PushBack( FRGL_PlusAxis( picks[i] * 8 + j ) );
+\t\t\t\t\taxSums.PushBack( FRGL_PlusVal( picks[i] * 8 + j ) );
 \t\t\t\t}
 \t\t\t\telse
-\t\t\t\t\taxSums[k2] = axSums[k2] + FRGL_PlusVal( picks[i] * 4 + j );
+\t\t\t\t\taxSums[k2] = axSums[k2] + FRGL_PlusVal( picks[i] * 8 + j );
 \t\t\t}
 \t\t}
 \t\tfor( i = 0; i < axNames.Size(); i += 1 )
@@ -5827,8 +6005,7 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 \t\tw.RemoveMoney( GetCraftingCost( schemName ) );
 \t\titem = blankId;
 \t\tif( k == 13 )
-\t\t\ttheGame.GetGuiManager().ShowNotification( "CURSED FORGING: the Dark Curse settles in - it will feed on you between fights, but the blade gains +1 line slot ("
-\t\t\t\t+ w.FRGL_Limit( blankId ) + " now)", 15000 );
+\t\t\ttheGame.GetGuiManager().ShowNotification( GetLocStringByKeyExt( "frgu_curse_done" ), 15000 );
 \t\telse
 \t\t\ttheGame.GetGuiManager().ShowNotification( "The red line settles onto the blade. The effect token is knowledge - kept.", 12000 );
 \t\treturn ECE_NoException;
@@ -6270,6 +6447,11 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 \t\tif( !w.FRG_FindForWork( shapeTok, blankId ) )
 \t\t{
 \t\t\ttheGame.GetGuiManager().ShowNotification( "FRG gate: that item is gone - " + shapeTok, 10000 );
+\t\t\treturn ECE_TooFewIngredients;
+\t\t}
+\t\tif( !FRG_DlcFresh() )
+\t\t{
+\t\t\ttheGame.GetGuiManager().ShowNotification( FRG_StaleText(), 12000 );
 \t\t\treturn ECE_TooFewIngredients;
 \t\t}
 \t\tcpNew = w.FRG_MeasureItem( blankId );
@@ -6935,6 +7117,38 @@ def _frgl_section():
                  for rec in ARMOR_LINES)
     s += "\t}\n\treturn '';\n}\n\n"
 
+    # отставные строки (перерезка 24.09): объявлены, но не чеканятся
+    s += "// RETIRED line (the 24.09 re-cut): still declared for blades that\n"
+    s += "// carry it, never minted - its donor's current lines are minted instead\n"
+    _ret = [(c["id"], "true") for c in CUT if c.get("retired")]
+    if _ret:
+        s += chunked_switch("FRGL_IsRetired", "bool", "false", _ret)
+    else:
+        s += "function FRGL_IsRetired( id : int ) : bool\n{\n\treturn false;\n}\n\n"
+    # свежесть пакета предметов: скрипт кладётся в игру сразу, а пакет —
+    # отдельной сборкой при закрытой игре. Карточка самой новой строки —
+    # проба: нет её в игре — пакет старый, обмен жетонов и разбор ждут.
+    _probe = max((c for c in CUT if not c.get("retired")), key=lambda c: c["id"])["card"]
+    s += "// is the items package as new as this script? (the newest line card)\n"
+    s += "// said in the script itself: the text would live in the missing package\n"
+    s += "function FRG_StaleText() : string\n{\n"
+    s += "\treturn \"Forge: the items package is out of date - close the game and rebuild it. "
+    s += "Until then property tokens are not traded and forge study and dismantling wait.\";\n}\n\n"
+    s += "function FRG_DlcFresh() : bool\n{\n"
+    s += "\treturn theGame.GetDefinitionsManager().ItemHasTag( '%s', 'FRG_LineTok' );\n}\n\n" % _probe
+    # старые «проклятые» строки несут вампиризм проклятья сами
+    _vl = [c["ability"] for c in CUT if c.get("vamp_line")]
+    s += "// an old cursed line already carries the curse's vampirism itself\n"
+    s += "@addMethod( W3PlayerWitcher ) function FRG_HasVampLine( item : SItemUniqueId ) : bool\n{\n"
+    s += "".join("\tif( FRG_CountAb( item, '%s' ) > 0 )\n\t\treturn true;\n" % _a for _a in _vl)
+    s += "\treturn false;\n}\n\n"
+    # кузнице не поддаются (ГД 24.09): тяжёлые двуручники W3EE, вся семья
+    s += "// the forge cannot take these apart (user 24.09): W3EE's heavy\n"
+    s += "// two-handed axes, hammers and maces - their pluses are too fat\n"
+    s += "function FRGW_NoForge( n : name ) : bool\n{\n"
+    s += "".join("\tif( n == '%s' )\n\t\treturn true;\n" % _nf for _nf in no_forge_family())
+    s += "\treturn false;\n}\n\n"
+
     # проклятая сцепка (Р-3а): вампиризм-строки проклятых доноров
     cursed_ids = [str(c["id"]) for c in CUT if c.get("cursed")]
     s += "// CURSED bond: a cursed donor's lifesteal line demands the Dark\n"
@@ -7017,16 +7231,32 @@ def _frgl_section():
     # мост родни: статы у Redux часто живут только на одной карточке семьи
     # «X» / «X_crafted» / «NGP X» (Объятья проклятого, НГ+-трофеи). Строка
     # отвечает на разбор ЛЮБОГО члена семьи, не имеющего своих строк.
-    donors_with_lines = {c["donor"] for c in CUT}
+    # ⛔ ОТСТАВНЫЕ строки (перерезка 24.09) не отвечают никому: их не
+    # чеканят, взамен чеканятся текущие строки донора
+    _active = [c for c in CUT if not c.get("retired")]
+    donors_with_lines = {c["donor"] for c in _active}
+
+    def _parent(m):
+        """Один «родитель» для члена семьи без своих строк: «NGP X» -> X
+        (или его пара _crafted), X -> пара. Иначе «NGP X» отвечал бы и за X,
+        и за X_crafted — и давал вдвое больше жетонов."""
+        base = m[4:] if m.startswith("NGP ") else m
+        other = base[:-8] if base.endswith("_crafted") else base + "_crafted"
+        order = [base, other] if m.startswith("NGP ") else [other]
+        for k in order:
+            if k in donors_with_lines:
+                return k
+        return None
 
     def kinset(nm):
         base = nm[:-8] if nm.endswith("_crafted") else nm
         fam = {base, base + "_crafted", "NGP " + base,
                "NGP " + base + "_crafted"}
         fam.discard(nm)
-        return [k for k in sorted(fam) if k not in donors_with_lines]
+        return [k for k in sorted(fam)
+                if k not in donors_with_lines and _parent(k) == nm]
     match_pairs = []
-    for c in CUT:
+    for c in _active:
         conds = ["donor == '%s'" % c["donor"]] +                 ["donor == '%s'" % k for k in kinset(c["donor"])]
         match_pairs.append((c["id"], " || ".join(conds)))
     s += "// does this donor name belong to the CUT line's family?\n"
@@ -7112,22 +7342,17 @@ def _frgl_section():
 \treturn 2;
 }
 
+// Property slots of an item (user 23-24.09): every property is relic - TWO,
+// a heavy flaw opens a third; a raw blank holds only what its grooves allow.
+// The Dark Curse no longer buys a slot: its vampirism is inside the charm.
+@addMethod( W3PlayerWitcher ) function FRGL_SlotCap( item : SItemUniqueId ) : int
+{
+\treturn Min( FRGL_RelicLimit( item ), FRGL_BaseSlots( item ) );
+}
+
 @addMethod( W3PlayerWitcher ) function FRGL_Limit( item : SItemUniqueId ) : int
 {
-\tvar plus, junk, lim : int;
-
-\tFRGL_CountOn( item, plus, junk );
-\tlim = FRGL_BaseSlots( item ) + junk;
-\t// cursed forging (P-3v): the Dark Curse anti-enchant pays for itself
-\t// with one extra line slot - a fat minus buying a fat plus
-\tif( inv.GetItemModifierInt( item, 'FRG_Fx', 0 ) == 13 )
-\t\tlim += 1;
-\t// a LIGHT flaw mark forged into the blade buys one ordinary slot
-\tif( inv.GetItemModifierInt( item, 'FRG_Flaw', 0 ) == 1 )
-\t\tlim += 1;
-\tif( lim > %CAP% )
-\t\tlim = %CAP%;
-\treturn lim;
+\treturn FRGL_SlotCap( item );
 }
 
 // Teleport the player to exact world coordinates. The game ships pos()
@@ -7232,7 +7457,7 @@ exec function frgrelic()
 	for( i = 1; i <= FRGL_Count(); i += 1 )
 	{
 		id = FRGL_IdAt( i );
-		if( !FRGL_IsRelic( id ) || FRGL_IsArmorLine( id ) )
+		if( !FRGL_IsRelic( id ) || FRGL_IsArmorLine( id ) || FRGL_IsRetired( id ) )
 			continue;
 		total += 1;
 		if( w.inv.GetItemQuantityByName( FRGL_TokCard( id ) ) > 0 )
@@ -7401,18 +7626,7 @@ exec function frgline( slot : int, id : int )
 \t\ttheGame.GetGuiManager().ShowNotification( "FRG: this line is already on the item - stacking the SAME line is not a thing", 10000 );
 \t\treturn;
 \t}
-\tif( FRGL_IsRelic( id ) )
-\t{
-\t\tfor( plus = 1; plus <= FRGL_Count(); plus += 1 )
-\t\t{
-\t\t\tjunk = FRGL_IdAt( plus );
-\t\t\tif( junk != id && FRGL_IsRelic( junk ) && w.FRG_CountAb( dst, FRGL_Ability( junk ) ) > 0 )
-\t\t\t{
-\t\t\t\ttheGame.GetGuiManager().ShowNotification( "FRG: a RELIC line is exclusive - one per item (carried: " + FRGL_Title( junk ) + ")", 12000 );
-\t\t\t\treturn;
-\t\t\t}
-\t\t}
-\t}
+
 \tif( FRGL_WeightTag( id ) != '' && !w.inv.ItemHasTag( dst, FRGL_WeightTag( id ) ) )
 \t{
 \t\ttheGame.GetGuiManager().ShowNotification( "FRG: this line is tailored for another armour weight class", 10000 );
@@ -7759,10 +7973,18 @@ exec function frgtemper( slot : int, id : int )
     import os as _os2
 
     def _axes_of(stats):
-        out = [(a, float(v)) for a, k, v in stats
-               if k != "effect" and 0 < float(v) <= 1.5]
+        _agg = {}
+        for a, k, v in stats:
+            if k != "effect" and 0 < float(v) <= 1.5:
+                _agg[a] = _agg.get(a, 0.0) + float(v)
+        # одна запись на ось (сумма): кольцо проверяет по строке, ворота —
+        # суммой; при повторах оси в строке они расходились (ревью 24.09)
+        out = list(_agg.items())
         out.sort(key=lambda p: -p[1])
-        return out[:4]
+        # ⛔ «остальные вместе» (24.09) дал строки с 5+ плюсами: срез [:4]
+        # терял ось для проверки конверта мира. Шаг ключа теперь 8.
+        assert len(out) <= 8, stats
+        return out
 
     def _dom_of(stats):
         for a, k, v in stats:
@@ -7779,11 +8001,11 @@ exec function frgtemper( slot : int, id : int )
         if _d:
             _dom_pairs.append((_id, "'%s'" % _d))
         for _k, (_a, _v) in enumerate(_axes_of(_st)):
-            _pa_pairs.append((_id * 4 + _k, "'%s'" % _a))
-            _pv_pairs.append((_id * 4 + _k, str(int(round(_v * 100)))))
+            _pa_pairs.append((_id * 8 + _k, "'%s'" % _a))
+            _pv_pairs.append((_id * 8 + _k, str(int(round(_v * 100)))))
     s += "// dominant axis of a line: one axis - one line on a blade (I-2)\n"
     s += chunked_switch("FRGL_DomAxis", "name", "''", _dom_pairs)
-    s += "// every percent plus of a line, key = id*4+k (axis caps, I-3)\n"
+    s += "// every percent plus of a line, key = id*8+k (axis caps, I-3)\n"
     s += chunked_switch("FRGL_PlusAxis", "name", "''", _pa_pairs)
     s += chunked_switch("FRGL_PlusVal", "int", "0", _pv_pairs)
     _caps = _json2.load(open(_os2.path.join(_os2.path.dirname(

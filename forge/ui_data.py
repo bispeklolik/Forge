@@ -540,6 +540,7 @@ def ui_loc_keys():
             "frgu_rl_forged", "frgu_rl_home", "frgu_rl_metal", "frgu_rl_same",
             "frgu_rl_sheathe", "frgu_rl_fail", "frgu_rl_done", "frgu_rl_to",
             "frgu_rl_pick", "frgu_rl_bag", "frgu_rl_done_v",
+            "frgu_curse_vamp", "frgu_curse_done", "frgu_dlc_stale",
             "frgu_farmor", "frgu_farmor_sc", "frgu_fpants", "frgu_fpants_sc",
             "frgu_fgloves", "frgu_fgloves_sc", "frgu_fboots", "frgu_fboots_sc",
             "frgu_fside", "frgu_fside_sc",
@@ -580,12 +581,13 @@ def ui_text_for(key, ru):
     if key == "frgu_engrave" or key == "frgu_engrave_sc":
         return "Свойства клинка" if ru else "Blade properties"
     if key == "frgu_engrave_desc":
-        return ("Собери набор свойств целиком: выбери до пяти жетонов — "
-                "клинок пересоберётся под них. Прежние свойства снимаются, "
-                "жетоны вечны, менять можно сколько угодно.") if ru else \
-               ("Assemble the property set as a whole: pick up to five tokens "
-                "- the blade is rebuilt around them. Old properties come off, "
-                "tokens are eternal, rearrange at will.")
+        return ("Собери набор свойств целиком: два жетона (три, если при "
+                "ковке вкован тяжёлый порок) — клинок пересоберётся под них. "
+                "Прежние свойства снимаются, жетоны вечны, менять можно "
+                "сколько угодно.") if ru else \
+               ("Assemble the property set as a whole: two tokens (three if a "
+                "heavy flaw was forged in) - the blade is rebuilt around them. "
+                "Old properties come off, tokens are eternal, rearrange at will.")
     if key == "frgu_native_desc":
         return ("Прокрути квадрат облика до этой метки и выкуй — вещь вернётся "
                 "к своему родному виду. Метка вечная и не тратится.") if ru else \
@@ -649,41 +651,37 @@ def ui_text_for(key, ru):
     if key == "frgu_s_flaw":
         return ("Порок") if ru else ("Flaw")
     if key == "frgu_s_flaw_light":
-        return ("  -> откроет ещё одно место под обычное свойство") if ru else \
-               ("  -> opens one more ordinary property slot")
+        return ("  -> лёгкий порок места не даёт") if ru else \
+               ("  -> a light flaw gives no slot")
     if key == "frgu_s_flaw_heavy":
-        return ("  -> откроет место под ВТОРОЕ реликтовое свойство") if ru else \
-               ("  -> opens a slot for a SECOND relic property")
+        return ("  -> откроет ТРЕТЬЕ место под свойство") if ru else \
+               ("  -> opens a THIRD property slot")
     if key == "frgu_flaw_desc_light":
-        return ("ПОРОК КЛИНКА (лёгкий). Вкуй его в четвёртый слот при ковке — "
-                "и клинок получит ОДНО ЛИШНЕЕ МЕСТО под обычное свойство. "
-                "Порок — чистый минус без плюсов: это плата за место, а не "
-                "награда. Одна марка на клинок, выбор делается при ковке.") if ru else \
-               ("A BLADE'S FLAW (light). Forge it into the fourth slot and the "
-                "blade gains ONE EXTRA SLOT for an ordinary property. A flaw is "
-                "a pure minus - the price of the slot, not a reward. One mark "
-                "per blade, chosen at the forge.")
+        return ("ПОРОК КЛИНКА (лёгкий). Обычных свойств больше нет, поэтому "
+                "лёгкая марка места не даёт — это просто минус. Место под третье "
+                "свойство открывает только тяжёлый порок.") if ru else \
+               ("A BLADE'S FLAW (light). There are no ordinary properties any "
+                "more, so a light mark gives no slot - it is just a minus. Only a "
+                "heavy flaw opens the third property slot.")
     if key == "frgu_flaw_desc_heavy":
         return ("ПОРОК КЛИНКА (тяжёлый). Вкуй его в четвёртый слот при ковке — "
-                "и клинок получит МЕСТО ПОД ВТОРОЕ РЕЛИКТОВОЕ свойство. "
-                "Цена выше, чем у лёгкой марки, потому что реликтовое свойство "
-                "того стоит. Одна марка на клинок, выбор делается при ковке.") if ru else \
+                "и клинок получит ТРЕТЬЕ место под свойство (обычно их два). "
+                "Порок — чистый минус: это плата за место. Одна марка на клинок, "
+                "выбор делается при ковке.") if ru else \
                ("A BLADE'S FLAW (heavy). Forge it into the fourth slot and the "
-                "blade gains a slot for a SECOND RELIC property. The price is "
-                "steeper than a light mark because a relic property is worth "
-                "it. One mark per blade, chosen at the forge.")
+                "blade gains a THIRD property slot (normally there are two). A "
+                "flaw is a pure minus - the price of the slot. One mark per "
+                "blade, chosen at the forge.")
     if key == "frgu_flaw_desc":
-        return ("Порок клинка. Вкуй его при ковке — и клинок получит лишнее "
-                "место под свойство. Лёгкая марка даёт обычное место, "
-                "тяжёлая — реликтовое. Одна марка на клинок.") if ru else \
-               ("A blade's flaw. Forge it in and the blade gains one more "
-                "property slot: a light mark buys an ordinary one, a heavy "
-                "mark a relic one. One mark per blade.")
+        return ("Порок клинка. Тяжёлая марка, вкованная при ковке, открывает "
+                "третье место под свойство. Одна марка на клинок.") if ru else \
+               ("A blade's flaw. A heavy mark forged in at the forge opens a "
+                "third property slot. One mark per blade.")
     if key == "frgu_full_deny":
-        return ("Мест под свойства не осталось: освободи слот или вложи "
-                "мусорное свойство - оно открывает место") if ru else \
-               ("No property slot left - free one, or seat a junk property: "
-                "it opens a slot")
+        return ("Мест под свойства не осталось: на клинок ложится два "
+                "свойства, тяжёлый порок при ковке открывает третье") if ru else \
+               ("No property slot left: a blade holds two properties, a heavy "
+                "flaw at the forge opens a third")
     if key == "frgu_dup_deny":
         return ("Это знание уже вложено в другое место набора") if ru else \
                ("That knowledge already fills another slot of the set")
@@ -718,11 +716,11 @@ def ui_text_for(key, ru):
         return "Чары клинка" if ru else "Blade enchanting"
     if key == "frgu_enchant_desc":
         return ("Реликтовый эффект — красная строка — ложится на клинок "
-                "реликтовой ступени. Тёмное проклятье — особый случай: оно "
-                "вредит, но взамен открывает +1 место под строку.") if ru else \
+                "реликтовой ступени. Тёмное проклятье — особый случай: вне боя "
+                "оно тянет здоровье, зато даёт +10% к вампиризму.") if ru else \
                ("A relic effect - the red line - goes onto a relic-tier blade. "
-                "The Dark Curse is special: it hurts, but opens +1 line slot "
-                "in return.")
+                "The Dark Curse is special: out of combat it feeds on your "
+                "health, but it gives +10% vampirism.")
     if key == "frgu_mark" or key == "frgu_mark_sc":
         return "Клеймо мастера" if ru else "Maker's mark"
     if key == "frgu_mark_desc":
@@ -778,8 +776,8 @@ def ui_text_for(key, ru):
                             "(scroll the slots to pick)"),
         "frgu_s_steel": ("стальной клинок", "steel blade"),
         "frgu_s_silver": ("серебряный клинок", "silver blade"),
-        "frgu_s_result": ("Итог: реликтовое качество, 4 места свойств, 3 гнезда рун",
-                          "Result: relic quality, 4 property slots, 3 rune sockets"),
+        "frgu_s_result": ("Итог: реликтовое качество, 2 места свойств (3 с тяжёлым пороком), 3 гнезда рун",
+                          "Result: relic quality, 2 property slots (3 with a heavy flaw), 3 rune sockets"),
         # смена облика меча (карточная пересадка, 23.09)
         "frgu_rl_forged": ("Облик меняется только у меча — не у заготовки, топора или булавы",
                            "Only a sword changes its look - not a blank, an axe or a mace"),
@@ -800,6 +798,16 @@ def ui_text_for(key, ru):
                          "The blade takes the new look. Damage, elemental damage, "
                          "properties, charm, runes, enchantment, wear and oil came along."),
         "frgu_rl_to": ("Станет", "Becomes"),
+        # «Тёмное проклятье» несёт вампиризм в самих чарах (ГД 24.09)
+        "frgu_curse_vamp": ("+10% к вампиризму", "+10% vampirism"),
+        "frgu_dlc_stale": ("Кузница: пакет предметов устарел — закрой игру и пересобери его. "
+                           "До этого жетоны свойств не меняются, а разбор кузницей отложен.",
+                           "Forge: the items package is out of date - close the game and rebuild it. "
+                           "Until then property tokens are not traded and forge dismantling waits."),
+        "frgu_curse_done": ("ПРОКЛЯТАЯ КОВКА: Тёмное проклятье легло на клинок. Вне боя оно "
+                            "тянет из тебя здоровье, зато клинок пьёт кровь: +10% к вампиризму.",
+                            "CURSED FORGING: the Dark Curse settles onto the blade. Out of "
+                            "combat it feeds on you, but the blade drinks blood: +10% vampirism."),
         "frgu_rl_pick": ("Сначала выбери клинок — прокрути первый квадрат",
                          "Pick the blade first - scroll the first square"),
         "frgu_rl_bag": ("Клинок должен быть на Геральте или в сумке, не в седельных сумках",

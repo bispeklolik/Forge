@@ -925,6 +925,11 @@ def line_abilities():
         out.append(T * 3 + '<ability name="%s">\n' % _f[1]
                    + P + "<tags></tags>\n" + rows_of(_f[4])
                    + T * 3 + "</ability>\n")
+    # вампиризм, вшитый в чары «Тёмное проклятье» (ГД 24.09): сами чары W3EE —
+    # чистый минус, скрипт кузницы вешает эту абилку на клинок с проклятьем
+    out.append(T * 3 + '<ability name="FRG_CurseVamp">\n'
+               + P + "<tags></tags>\n" + rows_of([("lifesteal", "add", 0.1)])
+               + T * 3 + "</ability>\n")
     for c in CUT:
         out.append(T * 3 + '<ability name="%s">\n' % c["ability"]
                    + P + "<tags></tags>\n" + rows_of(c["stats"])
