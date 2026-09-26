@@ -120,7 +120,8 @@ WS = """// modForgeLab - forge core, stages 1-2. Console commands only.
 \t\t// FRG_Part == 0 keeps tokens out: they are copies of the donor, and a
 \t\t// second frgsplit would otherwise sacrifice a TOKEN instead of the item.
 \t\tif( inv.IsIdValid( items[i] ) && !IsItemEquipped( items[i] )
-\t\t\t&& inv.GetItemModifierInt( items[i], 'FRG_Part', 0 ) == 0 )
+\t\t\t&& inv.GetItemModifierInt( items[i], 'FRG_Part', 0 ) == 0
+\t\t\t&& !inv.ItemHasTag( items[i], 'FRG_LookItem' ) )
 \t\t{
 \t\t\titem = items[i];
 \t\t\treturn true;
@@ -919,6 +920,342 @@ function FRG_MeshVis( ent : CEntity, on : bool )
 \t\tFRG_MeshShow( inv.GetItemEntityUnsafe( item ) );
 }
 
+// ---- the look's SCABBARD and the paper doll (user 26.09: "the sword changed,
+// the scabbard stayed the same - not good enough") ----
+// A scabbard is an item of its own: the sword card's <bound_items> puts a
+// hidden steel_scabbards / silver_scabbards item into the bag and the engine
+// skins it onto Geralt together with the sword. So a vanilla sword keeps its
+// scabbard untouched - only switched invisible - and the look's scabbard is
+// worn beside it as a separate hidden item of ours (tag FRG_LookScab, the
+// slot in FRG_ScabSlot). Which scabbard belongs to which card is a table
+// built from the game's item files (FRGW_BoundScab, build_scab.py).
+
+@addField( W3PlayerWitcher )
+var FRG_ScabHid : array< name >;    // the vanilla scabbard a slot's look hides (runtime only)
+@addField( W3PlayerWitcher )
+var FRG_ScabTries : int;            // retries while a vanilla scabbard is still being mounted
+
+@addMethod( W3PlayerWitcher ) function FRG_ScabHidSet( slot : int, n : name )
+{
+\twhile( FRG_ScabHid.Size() < 6 )
+\t\tFRG_ScabHid.PushBack( '' );
+\tif( slot >= 0 && slot < 6 )
+\t\tFRG_ScabHid[slot] = n;
+}
+
+@addMethod( W3PlayerWitcher ) function FRG_ScabHidOf( slot : int ) : name
+{
+\tif( slot >= 0 && slot < FRG_ScabHid.Size() )
+\t\treturn FRG_ScabHid[slot];
+\treturn '';
+}
+
+// the look's scabbard worn for a slot, if any
+@addMethod( W3PlayerWitcher ) function FRG_ScabOf( slot : int, out id : SItemUniqueId ) : bool
+{
+\tvar ours : array< SItemUniqueId >;
+\tvar i : int;
+
+\tours = inv.GetItemsByTag( 'FRG_LookScab' );
+\tfor( i = 0; i < ours.Size(); i += 1 )
+\t{
+\t\tif( inv.GetItemModifierInt( ours[i], 'FRG_ScabSlot', 0 ) == slot )
+\t\t{
+\t\t\tid = ours[i];
+\t\t\treturn true;
+\t\t}
+\t}
+\treturn false;
+}
+
+// The forge card a vanilla sword's look was taken from. Kept on the blade as
+// two hashes (FRG_LookH1/H2); a look put on before 26.09 knows only its
+// model - the forge card of the blade's metal with that model is found once
+// and its hashes are written onto the blade.
+@addMethod( W3PlayerWitcher ) function FRG_LookCardOf( blade : SItemUniqueId ) : name
+{
+\tvar dm : CDefinitionsManagerAccessor;
+\tvar all : array< name >;
+\tvar path : string;
+\tvar cat, card : name;
+\tvar i, h1, h2 : int;
+
+\tcard = FRG_CardByHash( 'FRG_Forge', inv.GetItemModifierInt( blade, 'FRG_LookH1', 0 ),
+\t\tinv.GetItemModifierInt( blade, 'FRG_LookH2', 0 ) );
+\tif( card != '' )
+\t\treturn card;
+\tpath = FRG_LookRead( "frg_look_", inv.GetItemModifierInt( blade, 'FRG_Look', 0 ) );
+\tif( path == "" )
+\t\treturn '';
+\tdm = theGame.GetDefinitionsManager();
+\tcat = inv.GetItemCategory( blade );
+\tall = dm.GetItemsWithTag( 'FRG_Forge' );
+\tfor( i = 0; i < all.Size(); i += 1 )
+\t{
+\t\tif( dm.GetItemCategory( all[i] ) == cat && dm.GetItemEquipTemplate( all[i] ) == path )
+\t\t{
+\t\t\tFRG_HashOfCard( all[i], h1, h2 );
+\t\t\tinv.SetItemModifierInt( blade, 'FRG_LookH1', h1 );
+\t\t\tinv.SetItemModifierInt( blade, 'FRG_LookH2', h2 );
+\t\t\treturn all[i];
+\t\t}
+\t}
+\treturn '';
+}
+
+// Takes a slot's look scabbard off and shows the vanilla one again.
+@addMethod( W3PlayerWitcher ) function FRG_ScabUndo( slot : int )
+{
+\tvar ours, own : array< SItemUniqueId >;
+\tvar nat : name;
+\tvar i : int;
+
+\tours = inv.GetItemsByTag( 'FRG_LookScab' );
+\tfor( i = 0; i < ours.Size(); i += 1 )
+\t{
+\t\tif( inv.GetItemModifierInt( ours[i], 'FRG_ScabSlot', 0 ) != slot )
+\t\t\tcontinue;
+\t\tinv.UnmountItem( ours[i], true );
+\t\tinv.RemoveItem( ours[i], 1 );
+\t}
+\t// only a scabbard WE hid is shown: the engine hides some itself (a
+\t// silver card on a steel model has none even in vanilla)
+\tnat = FRG_ScabHidOf( slot );
+\tif( nat == '' )
+\t\treturn;
+\tFRG_ScabHidSet( slot, '' );
+\town = inv.GetItemsByName( nat );
+\tfor( i = 0; i < own.Size(); i += 1 )
+\t{
+\t\tif( !inv.ItemHasTag( own[i], 'FRG_LookScab' ) )
+\t\t\tFRG_MeshVis( inv.GetItemEntityUnsafe( own[i] ), true );
+\t}
+}
+
+// Wears the look card's scabbard for a slot and hides the vanilla one.
+// false = the vanilla scabbard has no entity yet (the caller retries).
+@addMethod( W3PlayerWitcher ) function FRG_ScabApply( slot : int, blade : SItemUniqueId, card : name ) : bool
+{
+\tvar ours, own, made : array< SItemUniqueId >;
+\tvar mine : SItemUniqueId;
+\tvar want, nat : name;
+\tvar ent : CEntity;
+\tvar i : int;
+\tvar have, seen : bool;
+
+\tnat = FRGW_BoundScab( inv.GetItemName( blade ) );
+\twant = FRGW_BoundScab( card );
+\t// the same scabbard, or the look has none: the vanilla one serves
+\tif( want == '' || want == nat )
+\t{
+\t\tFRG_ScabUndo( slot );
+\t\treturn true;
+\t}
+\tours = inv.GetItemsByTag( 'FRG_LookScab' );
+\tfor( i = 0; i < ours.Size(); i += 1 )
+\t{
+\t\tif( inv.GetItemModifierInt( ours[i], 'FRG_ScabSlot', 0 ) != slot )
+\t\t\tcontinue;
+\t\tif( !have && inv.GetItemName( ours[i] ) == want )
+\t\t{
+\t\t\tmine = ours[i];
+\t\t\thave = true;
+\t\t\tcontinue;
+\t\t}
+\t\tinv.UnmountItem( ours[i], true );
+\t\tinv.RemoveItem( ours[i], 1 );
+\t}
+\tif( !have )
+\t{
+\t\tmade = inv.AddAnItem( want, 1, true, true );
+\t\tif( made.Size() <= 0 )
+\t\t{
+\t\t\t// no such scabbard in this game: the vanilla one stays on
+\t\t\tFRG_ScabUndo( slot );
+\t\t\treturn true;
+\t\t}
+\t\tmine = made[0];
+\t\t// scenery, not gear: never sold, dropped, shown or weighed
+\t\tinv.AddItemTag( mine, 'FRG_LookScab' );
+\t\tinv.AddItemTag( mine, 'NoDrop' );
+\t\tinv.AddItemTag( mine, 'NoShow' );
+\t\tinv.AddItemTag( mine, 'EncumbranceOff' );
+\t\tinv.SetItemModifierInt( mine, 'FRG_ScabSlot', slot );
+\t}
+\t// mounted the way the game mounts Geralt's own scabbards (GiveStartingItems);
+\t// an entity already standing means it is on - no remount, no flicker
+\tent = inv.GetItemEntityUnsafe( mine );
+\tif( !ent && !inv.IsItemMounted( mine ) )
+\t\tinv.MountItem( mine );
+\tif( nat == '' )
+\t\treturn true;
+\tFRG_ScabHidSet( slot, nat );
+\t// the vanilla scabbard is the one with an ENTITY (a scabbard lying in the
+\t// bag with another sword has none); the mounted flag is not trusted here
+\town = inv.GetItemsByName( nat );
+\tfor( i = 0; i < own.Size(); i += 1 )
+\t{
+\t\tif( inv.ItemHasTag( own[i], 'FRG_LookScab' ) )
+\t\t\tcontinue;
+\t\tent = inv.GetItemEntityUnsafe( own[i] );
+\t\tif( !ent )
+\t\t\tcontinue;
+\t\tFRG_MeshVis( ent, false );
+\t\tseen = true;
+\t}
+\treturn seen;
+}
+
+// Both sword slots: the look's scabbard on, a stale one off. Runs with every
+// look refresh (load, equip, draw/sheathe, bombs, the menu closing).
+@addMethod( W3PlayerWitcher ) function FRG_ScabRefresh()
+{
+\tvar blade : SItemUniqueId;
+\tvar card : name;
+\tvar s : int;
+\tvar pending : bool;
+
+\tfor( s = 4; s <= 5; s += 1 )
+\t{
+\t\tif( !FRG_Slot( s, blade ) )
+\t\t{
+\t\t\tFRG_ScabUndo( s );
+\t\t\tcontinue;
+\t\t}
+\t\tcard = '';
+\t\t// a FORGED blade's look is its own card - its scabbard came with it
+\t\tif( !inv.ItemHasTag( blade, 'FRG_Forge' ) && inv.GetItemModifierInt( blade, 'FRG_Look', 0 ) > 0 )
+\t\t\tcard = FRG_LookCardOf( blade );
+\t\tif( card == '' )
+\t\t\tFRG_ScabUndo( s );
+\t\telse if( !FRG_ScabApply( s, blade, card ) )
+\t\t\tpending = true;
+\t}
+\t// the game mounts a sword's scabbard a beat after the sword - a few
+\t// short retries, never an endless timer
+\tif( pending && FRG_ScabTries < 6 )
+\t{
+\t\tFRG_ScabTries += 1;
+\t\tAddTimer( 'FRG_ScabRetry', 0.5, false );
+\t}
+}
+
+@addMethod( W3PlayerWitcher )
+timer function FRG_ScabRetry( deltaTime : float, id : int )
+{
+\tFRG_ScabRefresh();
+}
+
+// The inventory's paper doll is a separate scene the engine dresses from item
+// IDS (r4guiSceneController.SetEntityItems -> GetMountableItems ->
+// UpdateSceneEntityItems): a fake riding the world sword never shows there.
+// A blade wearing a look is shown by a STAND-IN - a hidden item of the look's
+// forge card, alive only while a menu is open (FRG_DollSweep takes it away).
+// The look's scabbard (ours, already worn) replaces the vanilla one there too.
+@wrapMethod( W3PlayerWitcher ) function GetMountableItems( out items : array< SItemUniqueId > )
+{
+\twrappedMethod( items );
+\tFRG_DollSwap( items );
+}
+
+@addMethod( W3PlayerWitcher ) function FRG_DollSwap( out items : array< SItemUniqueId > )
+{
+\tvar blade, stand, mine : SItemUniqueId;
+\tvar card, nat : name;
+\tvar s, i : int;
+
+\tfor( s = 4; s <= 5; s += 1 )
+\t{
+\t\tif( !FRG_Slot( s, blade ) || inv.ItemHasTag( blade, 'FRG_Forge' )
+\t\t\t|| inv.GetItemModifierInt( blade, 'FRG_Look', 0 ) <= 0 )
+\t\t\tcontinue;
+\t\tcard = FRG_LookCardOf( blade );
+\t\tif( card == '' || !FRG_DollStand( s, card, stand ) )
+\t\t\tcontinue;
+\t\tfor( i = 0; i < items.Size(); i += 1 )
+\t\t{
+\t\t\tif( items[i] == blade )
+\t\t\t\titems[i] = stand;
+\t\t}
+\t\tnat = FRG_ScabHidOf( s );
+\t\tif( nat == '' || !FRG_ScabOf( s, mine ) )
+\t\t\tcontinue;
+\t\tfor( i = items.Size() - 1; i >= 0; i -= 1 )
+\t\t{
+\t\t\tif( inv.GetItemName( items[i] ) == nat && !inv.ItemHasTag( items[i], 'FRG_LookScab' ) )
+\t\t\t\titems.Erase( i );
+\t\t}
+\t\tif( !items.Contains( mine ) )
+\t\t\titems.PushBack( mine );
+\t}
+}
+
+// The doll's stand-in for a slot: one hidden item of the look card (made on
+// first need, a stale one of another look is thrown away).
+@addMethod( W3PlayerWitcher ) function FRG_DollStand( slot : int, card : name, out stand : SItemUniqueId ) : bool
+{
+\tvar all, before, made : array< SItemUniqueId >;
+\tvar bs : name;
+\tvar i : int;
+\tvar found : bool;
+
+\tall = inv.GetItemsByTag( 'FRG_LookItem' );
+\tfor( i = 0; i < all.Size(); i += 1 )
+\t{
+\t\tif( inv.GetItemModifierInt( all[i], 'FRG_DollFor', 0 ) != slot )
+\t\t\tcontinue;
+\t\tif( !found && inv.GetItemName( all[i] ) == card )
+\t\t{
+\t\t\tstand = all[i];
+\t\t\tfound = true;
+\t\t}
+\t\telse
+\t\t\tinv.RemoveItem( all[i], 1 );
+\t}
+\tif( found )
+\t\treturn true;
+\tbs = FRGW_BoundScab( card );
+\tif( bs != '' )
+\t\tbefore = inv.GetItemsByName( bs );
+\tmade = inv.AddAnItem( card, 1, true, true );
+\tif( made.Size() <= 0 )
+\t\treturn false;
+\tstand = made[0];
+\tinv.AddItemTag( stand, 'FRG_LookItem' );
+\tinv.AddItemTag( stand, 'NoDrop' );
+\tinv.AddItemTag( stand, 'NoShow' );
+\tinv.AddItemTag( stand, 'EncumbranceOff' );
+\tinv.SetItemModifierInt( stand, 'FRG_DollFor', slot );
+\t// the card's own scabbard came into the bag with it: it leaves with it
+\tif( bs != '' )
+\t{
+\t\tmade = inv.GetItemsByName( bs );
+\t\tfor( i = 0; i < made.Size(); i += 1 )
+\t\t{
+\t\t\tif( !before.Contains( made[i] ) && !inv.ItemHasTag( made[i], 'FRG_LookScab' ) )
+\t\t\t\tinv.AddItemTag( made[i], 'FRG_DollScab' );
+\t\t}
+\t}
+\treturn true;
+}
+
+// the doll is gone: its stand-ins leave the bag
+@addMethod( W3PlayerWitcher ) function FRG_DollSweep()
+{
+\tvar all : array< SItemUniqueId >;
+\tvar i : int;
+
+\tall = inv.GetItemsByTag( 'FRG_LookItem' );
+\tfor( i = 0; i < all.Size(); i += 1 )
+\t{
+\t\tif( inv.GetItemModifierInt( all[i], 'FRG_DollFor', 0 ) > 0 )
+\t\t\tinv.RemoveItem( all[i], 1 );
+\t}
+\tall = inv.GetItemsByTag( 'FRG_DollScab' );
+\tfor( i = 0; i < all.Size(); i += 1 )
+\t\tinv.RemoveItem( all[i], 1 );
+}
+
 // ---- TEMP 23.09: where does the look sit? (vanilla-sword overlay test) ----
 // the nearest of Geralt's two back hooks and his hand
 @addMethod( W3PlayerWitcher ) function FRG_WhereIs( p : Vector ) : string
@@ -1035,6 +1372,11 @@ exec function frglookmode( m : int )
 
 \tfor( s = 4; s <= 5; s += 1 )
 \t\tFRG_ApplyLookVisual( s );
+\t// the look's scabbard (26.09); the paper doll's stand-ins live only in menus
+\tFRG_ScabTries = 0;
+\tFRG_ScabRefresh();
+\tif( !theGame.GetGuiManager().IsAnyMenu() )
+\t\tFRG_DollSweep();
 \t// armour looks are OFF (13.09) - whatever is left of them is swept
 \tFRG_ArmLookRefresh();
 }
@@ -1237,6 +1579,9 @@ timer function FRG_ArmLookGuard( deltaTime : float, id : int )
 \tinv.GetAllItems( items );
 \tfor( i = 0; i < carriers.Size(); i += 1 )
 \t{
+\t\t// a paper-doll stand-in is not an armour carrier (FRG_DollSweep owns it)
+\t\tif( inv.GetItemModifierInt( carriers[i], 'FRG_DollFor', 0 ) > 0 )
+\t\t\tcontinue;
 \t\tkey = inv.GetItemModifierInt( carriers[i], 'FRG_LookFor', 0 );
 \t\towned = false;
 \t\tonBody = false;
@@ -1394,9 +1739,15 @@ exec function frgvtest( on : int )
 \t\tFRG_FxRefresh();
 \t// the sword entity left with the slot - its look fake goes too
 \tif( ok && slot == EES_SteelSword )
+\t{
 \t\tFRG_DropLookEnt( 4 );
+\t\tFRG_ScabUndo( 4 );
+\t}
 \tif( ok && slot == EES_SilverSword )
+\t{
 \t\tFRG_DropLookEnt( 5 );
+\t\tFRG_ScabUndo( 5 );
+\t}
 \tif( !ok || !hadLook )
 \t\treturn ok;
 \tif( FRG_ArmLookCarrier( lookKey, carrier ) )
@@ -1872,8 +2223,11 @@ exec function frglook0( slot : int )
 \t\treturn;
 \t}
 \tw.FRG_ClearLookVisual( slot );
+\tw.FRG_ScabUndo( slot );
 \tw.FRG_LookEraseAll( k );
 \tw.inv.SetItemModifierInt( dst, 'FRG_Look', 0 );
+\tw.inv.SetItemModifierInt( dst, 'FRG_LookH1', 0 );
+\tw.inv.SetItemModifierInt( dst, 'FRG_LookH2', 0 );
 \ttheGame.GetGuiManager().ShowNotification( w.inv.GetItemName( dst ) + " wears its own face again", 10000 );
 }
 
@@ -3836,17 +4190,24 @@ var FRG_HashCacheN : array< name >;
 {
 \tvar dm : CDefinitionsManagerAccessor;
 \tvar path, icon : string;
-\tvar k, k2, s : int;
+\tvar k, k2, s, h1, h2, oh1, oh2 : int;
 
 \tdm = theGame.GetDefinitionsManager();
 \ts = FRG_SlotOfBlade( blade );
 \tk = inv.GetItemModifierInt( blade, 'FRG_Look', 0 );
+\toh1 = inv.GetItemModifierInt( blade, 'FRG_LookH1', 0 );
+\toh2 = inv.GetItemModifierInt( blade, 'FRG_LookH2', 0 );
 \tif( card == inv.GetItemName( blade ) )
 \t{
 \t\tif( s >= 0 )
+\t\t{
 \t\t\tFRG_ClearLookVisual( s );
+\t\t\tFRG_ScabUndo( s );
+\t\t}
 \t\tFRG_LookEraseAll( k );
 \t\tinv.SetItemModifierInt( blade, 'FRG_Look', 0 );
+\t\tinv.SetItemModifierInt( blade, 'FRG_LookH1', 0 );
+\t\tinv.SetItemModifierInt( blade, 'FRG_LookH2', 0 );
 \t\treturn true;
 \t}
 \tpath = dm.GetItemEquipTemplate( card );
@@ -3863,17 +4224,28 @@ var FRG_HashCacheN : array< name >;
 \tif( icon != "" )
 \t\tFRG_LookPack( "frg_icon_", k2, icon );
 \tinv.SetItemModifierInt( blade, 'FRG_Look', k2 );
+\t// the look CARD too: its scabbard and the paper doll's stand-in
+\tFRG_HashOfCard( card, h1, h2 );
+\tinv.SetItemModifierInt( blade, 'FRG_LookH1', h1 );
+\tinv.SetItemModifierInt( blade, 'FRG_LookH2', h2 );
 \t// the new look must really mount before the old one is let go (a sword
 \t// without an entity right now mounts on the next draw/load - not fatal)
 \tif( s >= 0 && !FRG_ApplyLookVisual( s ) && FRG_LookWhyOf( s ) != "no sword entity" )
 \t{
 \t\tFRG_LookFail = FRG_LookWhyOf( s );
 \t\tinv.SetItemModifierInt( blade, 'FRG_Look', k );
+\t\tinv.SetItemModifierInt( blade, 'FRG_LookH1', oh1 );
+\t\tinv.SetItemModifierInt( blade, 'FRG_LookH2', oh2 );
 \t\tFRG_LookEraseAll( k2 );
 \t\tFRG_ApplyLookVisual( s );    // the old look back on (none: stays native)
 \t\treturn false;
 \t}
 \tFRG_LookEraseAll( k );
+\tif( s >= 0 )
+\t{
+\t\tFRG_ScabTries = 0;
+\t\tFRG_ScabRefresh();
+\t}
 \treturn true;
 }
 // Why a sword re-look cannot go (a loc key), or "" when it can - or when
@@ -4532,17 +4904,22 @@ exec function frgdump( slot : int )
 // Equip/unequip done INSIDE the inventory rebuilds item entities and orphans
 // the look fakes. Re-mount right after the menu closes. (The paperdoll render
 // itself is a SEPARATE engine-built entity from item templates - a world-side
-// fake can never show there; AMM shares this limitation. Target class is
-// CR4InventoryMenu, the most-derived copy - W3EE overrides OnClosingMenu in
+// fake never shows there; the doll gets stand-ins instead, FRG_DollSwap -
+// and they leave with the menu. Target class is CR4InventoryMenu, the
+// most-derived copy - W3EE overrides OnClosingMenu in
 // wmkQuickSlotsInventory.ws:9, the documented WmkCR4InventoryMenu trap.)
 @wrapMethod( CR4InventoryMenu ) function OnClosingMenu()
 {
 \tvar w : W3PlayerWitcher;
+\tvar r : bool;
 
 \tw = GetWitcherPlayer();
 \tif( w )
 \t\tw.AddTimer( 'FRG_LookRestore', 0.3, false );
-\treturn wrappedMethod();
+\tr = wrappedMethod();
+\tif( w )
+\t\tw.FRG_DollSweep();
+\treturn r;
 }
 
 // the body slot a given armour recipe forges
@@ -8137,6 +8514,34 @@ def _shoplooks_ws():
     return helpers + out
 WS = WS.replace("@@FRG_SHOPLOOKS@@", _shoplooks_ws())
 WS = WS + _frgl_section()
+
+
+def _scab_section():
+    """Карточка меча -> её ножны (bound_items), из scab_map.json
+    (build_scab.py). Имя в имя: switch по name, куски по 120 — длинные
+    цепочки валят компилятор WitcherScript."""
+    import json as _json_sc
+    _p = os.path.join(os.path.dirname(os.path.abspath(__file__)), "scab_map.json")
+    head = "// the scabbard a sword card hangs on Geralt (its <bound_items>); '' if none\n"
+    if not os.path.exists(_p):
+        print("   [!!] scab_map.json нет — ножны облика выключены (запусти build_scab.py)")
+        return head + "function FRGW_BoundScab( n : name ) : name\n{\n\treturn '';\n}\n\n"
+    pairs = sorted(_json_sc.load(open(_p, encoding="utf-8")).items())
+    parts = [pairs[i:i + 120] for i in range(0, len(pairs), 120)]
+    out = ""
+    for ci, part in enumerate(parts):
+        out += "function FRGW_BoundScab_c%d( n : name ) : name\n{\n\tswitch( n )\n\t{\n" % ci
+        out += "".join("\t\tcase '%s':\treturn '%s';\n" % (a, b) for a, b in part)
+        out += "\t}\n\treturn '';\n}\n\n"
+    out += head + "function FRGW_BoundScab( n : name ) : name\n{\n\tvar v : name;\n\n"
+    for ci in range(len(parts)):
+        out += "\tv = FRGW_BoundScab_c%d( n );\n\tif( v != '' )\n\t\treturn v;\n" % ci
+    out += "\treturn '';\n}\n\n"
+    print("   [ok] ножны облика: %d карточек мечей" % len(pairs))
+    return out
+
+
+WS = WS + _scab_section()
 
 print("=" * 66)
 print("  modForgeLab — кузница, этапы 1-2")
