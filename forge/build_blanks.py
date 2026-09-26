@@ -1143,10 +1143,7 @@ ITEMXML = (
     + armor_res_cards()
     + armor_pool_token_cards()
     + ui_data.ui_cards(_donor_icons)
-    # ВРЕМЕННО (мини-пруф 22.09): невидимый маркер для теста <variant>.
-    + (T * 3 + '<item name="frg_swtest" category="frg_swtest" equip_template="" attachment_type="skinning">\n'
-       + T * 4 + "<tags>NoShow, NoDrop, EncumbranceOff</tags>\n"
-       + T * 3 + "</item>\n")
+    # мини-пруф 22.09 (маркер frg_swtest) из релиза убран 26.09
     + T * 2 + "</items>\n" + T + "</definitions>\n"
     + T + "<custom>\n" + T * 2 + "<crafting_schematics>\n"
     + "".join(schematic(nm, ct, ing) for nm, _s, _k, ct, ing, _r, _e in BLANKS)
@@ -1254,8 +1251,9 @@ for branch in ("items", "items_plus"):
     d.mkdir(parents=True)
     (d / ITEMS).write_bytes(payload)
     (d / SHOP).write_bytes(shop_payload)
-    # ВРЕМЕННО (мини-пруф): item_extension живёт в ветке items_plus
-    (d / EXTS).write_bytes(TEST_EXTS.encode("utf-16") if branch == "items_plus" else empty)
+    # мини-пруф 22.09 (вариант Аэрондита) убран 26.09: расширение ПУСТОЕ в
+    # обеих ветках — чужую ванильную карточку релиз не трогает
+    (d / EXTS).write_bytes(empty)
 (base / "data" / "items").mkdir(parents=True)
 (base / "data" / "items" / "readme.txt").write_bytes(b"placeholder\n")
 say("   [ok] карточки: %d болванок + %d чертежей, %d Б" % (len(BLANKS), len(BLANKS), len(payload)))

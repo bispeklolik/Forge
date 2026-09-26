@@ -87,17 +87,16 @@ WS = """// modForgeLab - forge core, stages 1-2. Console commands only.
 \treturn GetItemEquippedOnSlot( slots[slot], item );
 }
 
-// Finds a WORK TARGET by card name: the bag first, then whatever is worn.
-// Engraving, upgrades, marks and naming all modify a LIVING instance - the
-// player naturally keeps the blade equipped, and that must just work.
+// Finds a WORK TARGET by card name: whatever is worn first, then the bag.
+// Engraving, marks and naming all modify a LIVING instance - the player
+// naturally keeps the blade equipped, and that must just work. Worn first
+// (user 26.09): the pickers list the worn piece first and keep one entry
+// per card name, so a name shared with a bag copy means the worn one.
 @addMethod( W3PlayerWitcher ) function FRG_FindForWork( wanted : name, out item : SItemUniqueId ) : bool
 {
-\tvar slots : array< EEquipmentSlots >;
 \tvar worn : SItemUniqueId;
 \tvar i : int;
 
-\tif( FRG_FindInBag( wanted, item ) )
-\t\treturn true;
 \tfor( i = 0; i <= 5; i += 1 )
 \t{
 \t\tif( FRG_Slot( i, worn ) && inv.GetItemName( worn ) == wanted )
@@ -106,7 +105,7 @@ WS = """// modForgeLab - forge core, stages 1-2. Console commands only.
 \t\t\treturn true;
 \t\t}
 \t}
-\treturn false;
+\treturn FRG_FindInBag( wanted, item );
 }
 
 @addMethod( W3PlayerWitcher ) function FRG_FindInBag( donor : name, out item : SItemUniqueId ) : bool
@@ -573,7 +572,16 @@ WS = """// modForgeLab - forge core, stages 1-2. Console commands only.
 
 \tschems = theGame.GetDefinitionsManager().GetItemsWithTag( 'FRG_Schem' );
 \tfor( i = 0; i < schems.Size(); i += 1 )
-\t\tAddCraftingSchematic( schems[i], true, true );
+\t{
+\t\tif( !FRGW_IsHiddenSchem( schems[i] ) )
+\t\t\tAddCraftingSchematic( schems[i], true, true );
+\t}
+\t// a hidden recipe learned by an older build is forgotten again
+\tfor( i = craftingSchematics.Size() - 1; i >= 0; i -= 1 )
+\t{
+\t\tif( FRGW_IsHiddenSchem( craftingSchematics[i] ) )
+\t\t\tcraftingSchematics.Erase( i );
+\t}
 
 \t// the "native look" mark: an eternal pointer for the look square of the
 \t// armour reskin recipes. The ring has no empty position (the vanilla walker
@@ -4992,6 +5000,15 @@ function FRGW_BlankOfSchem( n : name ) : name
 \treturn '';
 }
 
+// Recipes kept in the code but NOT offered by the window (user 26.09): the
+// look change of a finished blade - "too expensive and murky to fix, not
+// worth it; a blade is re-forged with any look you like". Its code stays
+// for a later return; without the recipe nothing reaches it.
+function FRGW_IsHiddenSchem( n : name ) : bool
+{
+\treturn n == 'FRG Reskin schematic' || FRGW_IsArmorReskin( n );
+}
+
 function FRGW_IsOurSchem( n : name ) : bool
 {
 \treturn n == 'FRG ForgeBlade schematic' || n == 'FRG Engrave schematic'
@@ -5514,7 +5531,7 @@ var FRG_InCraft : bool;
 \tvar orig, tag, shapeTok, card : name;
 \tvar pool, all, takenNames, takenDoms, axNames : array< name >;
 \tvar takenKeys, axSums : array< int >;
-\tvar bagIds : array< SItemUniqueId >;
+\tvar bagIds, allIds : array< SItemUniqueId >;
 \tvar i, j, id, k2, plus, junk, cap, axJ, sumA : int;
 \tvar haveTarget, roomPlus, wantArmor, capHit, gearArmed : bool;
 \tvar gearCat : name;
@@ -5541,7 +5558,12 @@ var FRG_InCraft : bool;
 \t\t\tif( w.FRG_Slot( i, blankId ) )
 \t\t\t\tbagIds.PushBack( blankId );
 \t\t}
-\t\tw.inv.GetAllItems( bagIds );
+\t\t// GetAllItems REFILLS its out-array (vanilla GiveStartingItems reuses
+\t\t// one array for two calls): the bag goes into a second array and is
+\t\t// appended, or the worn prefix above is wiped (user 26.09)
+\t\tw.inv.GetAllItems( allIds );
+\t\tfor( i = 0; i < allIds.Size(); i += 1 )
+\t\t\tbagIds.PushBack( allIds[i] );
 \t\tfor( i = 0; i < bagIds.Size(); i += 1 )
 \t\t{
 \t\t\tif( !w.inv.IsIdValid( bagIds[i] ) )
@@ -5595,7 +5617,16 @@ var FRG_InCraft : bool;
 \t{
 \t\tw = GetWitcherPlayer();
 \t\tbagIds.Clear();
-\t\tw.inv.GetAllItems( bagIds );
+\t\t// WORN FIRST (user 26.09): the piece on Geralt leads the ring right
+\t\t// after the placeholder; StudyFits below keeps only the matching slot
+\t\tfor( i = 0; i <= 5; i += 1 )
+\t\t{
+\t\t\tif( w.FRG_Slot( i, blankId ) )
+\t\t\t\tbagIds.PushBack( blankId );
+\t\t}
+\t\tw.inv.GetAllItems( allIds );
+\t\tfor( i = 0; i < allIds.Size(); i += 1 )
+\t\t\tbagIds.PushBack( allIds[i] );
 \t\tfor( i = 0; i < bagIds.Size(); i += 1 )
 \t\t{
 \t\t\tif( !w.inv.IsIdValid( bagIds[i] ) )
@@ -5859,6 +5890,7 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 \tvar i, j, id : int;
 \tvar w : W3PlayerWitcher;
 \tvar blankId : SItemUniqueId;
+\tvar pickIds, bagIds : array< SItemUniqueId >;
 \tvar haveTarget, gearArmed, orTags : bool;
 
 \torig = m_schematicListOriginal[selectedSchematicIndex].ingredients[selectedIngredient].itemName;
@@ -5936,6 +5968,60 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 \ttheInput.UnregisterListener( this, 'IngredientShift' );
 \tpopupData.filterTagsList = tags;
 \tpopupData.filterForbiddenTagsList = forbiddenTags;
+\t// WORN FIRST (user 26.09). The stock list never shows equipped items
+\t// (guiPlayerInventoryComponent.ws:900): the pieces on Geralt that pass the
+\t// ring's own rules go over by id and are drawn ahead of the bag. Their
+\t// card names join forbiddenItems - one entry per name, as in the ring -
+\t// and FRG_FindForWork resolves that name to the worn piece.
+\tw = GetWitcherPlayer();
+\tif( w && orig == 'frg_slot_blade' && !orTags )
+\t{
+\t\tfor( i = 0; i <= 5; i += 1 )
+\t\t{
+\t\t\tif( !w.FRG_Slot( i, blankId ) )
+\t\t\t\tcontinue;
+\t\t\tcard = w.inv.GetItemName( blankId );
+\t\t\tif( forbiddenItems.Contains( card ) )
+\t\t\t\tcontinue;
+\t\t\tif( !FRGW_FitsWorkSlot( selectedSchematic.schemName, w.inv.GetItemCategory( blankId ) ) )
+\t\t\t\tcontinue;
+\t\t\tif( !w.inv.ItemHasTag( blankId, 'FRG_Blank' ) || w.inv.ItemHasTag( blankId, 'FRG_LookItem' ) )
+\t\t\t\tcontinue;
+\t\t\tif( selectedSchematic.schemName == 'FRG Enchant schematic' && !FRGW_IsWorthyBlade( w, blankId ) )
+\t\t\t\tcontinue;
+\t\t\tpopupData.FRG_FirstIds.PushBack( blankId );
+\t\t\tforbiddenItems.PushBack( card );
+\t\t}
+\t}
+\t// the STUDY popup filters by FRG_MeasTok*, a tag no item carries, so it
+\t// was always empty: it gets the ring's own pool, worn first
+\tif( w && FRGW_IsStudyTag( FRGW_AxisTag( orig ) ) )
+\t{
+\t\tfor( i = 0; i <= 5; i += 1 )
+\t\t{
+\t\t\tif( w.FRG_Slot( i, blankId ) )
+\t\t\t\tpickIds.PushBack( blankId );
+\t\t}
+\t\tw.inv.GetAllItems( bagIds );
+\t\tfor( i = 0; i < bagIds.Size(); i += 1 )
+\t\t\tpickIds.PushBack( bagIds[i] );
+\t\tfor( i = 0; i < pickIds.Size(); i += 1 )
+\t\t{
+\t\t\tif( !w.inv.IsIdValid( pickIds[i] ) || w.inv.ItemHasTag( pickIds[i], 'NoShow' ) )
+\t\t\t\tcontinue;
+\t\t\tcard = w.inv.GetItemName( pickIds[i] );
+\t\t\tif( forbiddenItems.Contains( card ) )
+\t\t\t\tcontinue;
+\t\t\tif( !FRGW_StudyFits( FRGW_AxisTag( orig ), w.inv.GetItemCategory( pickIds[i] ) ) )
+\t\t\t\tcontinue;
+\t\t\tif( w.inv.ItemHasTag( pickIds[i], 'FRG_Blank' ) || FRGW_NoForge( card ) )
+\t\t\t\tcontinue;
+\t\t\tif( w.FRG_MeasureLeft( pickIds[i] ) <= 0 )
+\t\t\t\tcontinue;
+\t\t\tforbiddenItems.PushBack( card );
+\t\t\tpopupData.FRG_FirstIds.PushBack( pickIds[i] );
+\t\t}
+\t}
 \tpopupData.forbiddenItems = forbiddenItems;
 \tpopupData.checkTagsOR = orTags;
 \tframe = new W3PopupData in theGame.GetGuiManager();
@@ -5943,6 +6029,43 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 \tpopupData.frame = frame;
 \tRequestSubMenu( 'PopupMenu', frame );
 \ttheGame.RequestPopup( 'ItemSelectionPopup', popupData );
+}
+
+// WORN FIRST in the item popup (user 26.09). Ids the forge hands over in
+// FRG_FirstIds (the pieces on Geralt, which the stock list hides as equipped;
+// for studying - the whole pool) are drawn ahead of the stock list on
+// Geralt's tab. Empty for every other popup (radial menu, stands, alchemy,
+// other mods): those run untouched.
+@addField( W3ItemSelectionPopupData )
+var FRG_FirstIds : array< SItemUniqueId >;
+
+@wrapMethod( CR4ItemSelectionPopup ) function UpdateData() : void
+{
+\tvar arr : CScriptedFlashArray;
+\tvar obj, cell : CScriptedFlashObject;
+\tvar i : int;
+
+\tif( !m_DataObject || m_DataObject.FRG_FirstIds.Size() == 0 || m_playerInv != m_geraltInv )
+\t{
+\t\twrappedMethod();
+\t\treturn;
+\t}
+\tobj = m_flashValueStorage.CreateTempFlashObject();
+\tarr = m_flashValueStorage.CreateTempFlashArray();
+\tfor( i = 0; i < m_DataObject.FRG_FirstIds.Size(); i += 1 )
+\t{
+\t\tif( !thePlayer.inv.IsIdValid( m_DataObject.FRG_FirstIds[i] ) )
+\t\t\tcontinue;
+\t\tcell = obj.CreateFlashObject( "red.game.witcher3.menus.common.ItemDataStub" );
+\t\tm_playerInv.SetInventoryFlashObjectForItem( m_DataObject.FRG_FirstIds[i], cell );
+\t\t// a plain cell: vanilla never sends worn gear to this grid
+\t\tcell.SetMemberFlashInt( "equipped", 0 );
+\t\tarr.PushBackFlashObject( cell );
+\t}
+\t// the stock pass only appends (guiBaseInventoryComponent.ws:175-208),
+\t// so the bag lands after the worn pieces
+\tm_playerInv.GetInventoryFlashArray( arr, obj );
+\tm_flashValueStorage.SetFlashArray( "repair.grid.player", arr );
 }
 
 // Belt and braces: even if a taken token sneaks past the popup filter, refuse
