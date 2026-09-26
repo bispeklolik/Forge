@@ -565,6 +565,16 @@ WS = """// modForgeLab - forge core, stages 1-2. Console commands only.
 // itself, playerWitcher.ws:4536), and a size-based guard already misfired once
 // when one diagram replaced another and the total stayed the same - the new
 // ForgeBlade schematic was silently never taught.
+// every copy of a pointer item leaves the bag
+@addMethod( W3PlayerWitcher ) function FRG_TakeBack( n : name )
+{
+\tvar q : int;
+
+\tq = inv.GetItemQuantityByName( n );
+\tif( q > 0 )
+\t\tinv.RemoveItemByName( n, q );
+}
+
 @addMethod( W3PlayerWitcher ) function FRG_GrantSchematics()
 {
 \tvar schems : array< name >;
@@ -587,20 +597,18 @@ WS = """// modForgeLab - forge core, stages 1-2. Console commands only.
 \t// armour reskin recipes. The ring has no empty position (the vanilla walker
 \t// steps over the placeholder - nothing of that name is in the bag), so
 \t// going back to the native look needs a THING to scroll to (user 13.09).
+\t// ...the look change is off the counter (user 26.09): the mark served only
+\t// it, so it is no longer handed out and is taken back from the bag
 \tschems = theGame.GetDefinitionsManager().GetItemsWithTag( 'FRG_Native' );
 \tfor( i = 0; i < schems.Size(); i += 1 )
-\t{
-\t\tif( inv.GetItemQuantityByName( schems[i] ) <= 0 )
-\t\t\tinv.AddAnItem( schems[i], 1 );
-\t}
+\t\tFRG_TakeBack( schems[i] );
 
 \t// the four mark stamps are eternal pointers - handed out once
+\t// ...but the master's mark recipe was removed (GD): the stamps served only
+\t// it - no longer handed out, taken back (release 26.09)
 \tschems = theGame.GetDefinitionsManager().GetItemsWithTag( 'FRG_Stamp' );
 \tfor( i = 0; i < schems.Size(); i += 1 )
-\t{
-\t\tif( inv.GetItemQuantityByName( schems[i] ) <= 0 )
-\t\t\tinv.AddAnItem( schems[i], 1 );
-\t}
+\t\tFRG_TakeBack( schems[i] );
 \t// blade CHARACTERS are NOT handed out (GD call 25.08: "too strong, they
 \t// should be found and taken off real weapons"). They stay in the registry
 \t// at full Redux strength, but every one of them costs a sacrifice.
@@ -3780,14 +3788,23 @@ function FRGV_RestockShop( inv : CInventoryComponent, force : bool ) : bool
 {
 \tvar lootDef : name;
 \tvar key : string;
-\tvar looks : array< name >;
-\tvar i, added : int;
+\tvar looks, toks : array< name >;
+\tvar i, added, nAv : int;
 
 \tif( !inv )
 \t\treturn false;
 \tkey = FRGV_StockKey( inv.GetEntity(), lootDef );
 \tif( key == "" )
 \t\treturn false;
+\t// the mark also counts the looks of other mods / add-ons installed now:
+\t// install one later and the shelf is laid out again (review 26.09)
+\ttoks = FRGW_ForeignTokens();
+\tfor( i = 0; i < toks.Size(); i += 1 )
+\t{
+\t\tif( FRGW_LookAvailable( toks[i] ) )
+\t\t\tnAv += 1;
+\t}
+\tkey = key + "_a" + nAv;
 \tif( !force && FactsQuerySum( key ) > 0 )
 \t\treturn false;
 \t// ⛔ ПРЯМАЯ ВЫДАЧА (20.09). AddItemsFromLootDefinition из 414 записей клал
@@ -3834,7 +3851,8 @@ function FRGW_LookAvailable( tok : name ) : bool
 }
 
 // The shops' own loot tables may roll such a token too: it leaves the shelf
-// while its mod is missing (and comes back with the mod on the next restock).
+// while its mod is missing. Installing the mod changes the restock mark
+// (FRGV_RestockShop counts the available looks), so the shelf is laid again.
 function FRGV_DropMissingLooks( inv : CInventoryComponent )
 {
 \tvar toks : array< name >;
@@ -5040,7 +5058,11 @@ function FRGW_BlankOfSchem( n : name ) : name
 // for a later return; without the recipe nothing reaches it.
 function FRGW_IsHiddenSchem( n : name ) : bool
 {
-\treturn n == 'FRG Reskin schematic' || FRGW_IsArmorReskin( n );
+\t// sidearm forging too (user 26.09): a forged spear, halberd or NPC axe
+\t// most likely cannot be equipped (W3EE gives such categories no slot) -
+\t// hidden until it is checked and fixed
+\treturn n == 'FRG Reskin schematic' || FRGW_IsArmorReskin( n )
+\t\t|| n == 'FRG ForgeSide schematic' || n == 'FRG Blank Secondary schematic';
 }
 
 function FRGW_IsOurSchem( n : name ) : bool
@@ -7685,7 +7707,8 @@ def _frgl_section():
     s += "// is the items package as new as this script? (the newest line card)\n"
     s += "// said in the script itself: the text would live in the missing package\n"
     s += "function FRG_StaleText() : string\n{\n"
-    s += "\treturn \"Forge: the items package is out of date - close the game and rebuild it. "
+    s += "\treturn \"Forge: the item package (dlc/dlcFRGBlanks) is older than the forge script - "
+    s += "close the game and install both folders from the same archive again. "
     s += "Until then property tokens are not traded and forge study and dismantling wait.\";\n}\n\n"
     s += "function FRG_DlcFresh() : bool\n{\n"
     s += "\treturn theGame.GetDefinitionsManager().ItemHasTag( '%s', 'FRG_LineTok' );\n}\n\n" % _probe

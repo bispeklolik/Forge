@@ -716,11 +716,13 @@ def ui_text_for(key, ru):
         return "Чары клинка" if ru else "Blade enchanting"
     if key == "frgu_enchant_desc":
         return ("Реликтовый эффект — красная строка — ложится на клинок "
-                "реликтовой ступени. Тёмное проклятье — особый случай: вне боя "
-                "оно тянет здоровье, зато даёт +10% к вампиризму.") if ru else \
+                "реликтовой ступени. Тёмное проклятье — особый случай: если "
+                "клинок в руке 5 секунд не бьёт врага, оно тянет по 1% здоровья "
+                "в секунду и может убить; зато даёт +10% к вампиризму.") if ru else \
                ("A relic effect - the red line - goes onto a relic-tier blade. "
-                "The Dark Curse is special: out of combat it feeds on your "
-                "health, but it gives +10% vampirism.")
+                "The Dark Curse is special: when the drawn blade lands no hit "
+                "for 5 seconds it drains 1% of your health per second and can "
+                "kill; in return it gives +10% vampirism.")
     if key == "frgu_mark" or key == "frgu_mark_sc":
         return "Клеймо мастера" if ru else "Maker's mark"
     if key == "frgu_mark_desc":
@@ -804,10 +806,12 @@ def ui_text_for(key, ru):
                            "До этого жетоны свойств не меняются, а разбор кузницей отложен.",
                            "Forge: the items package is out of date - close the game and rebuild it. "
                            "Until then property tokens are not traded and forge dismantling waits."),
-        "frgu_curse_done": ("ПРОКЛЯТАЯ КОВКА: Тёмное проклятье легло на клинок. Вне боя оно "
-                            "тянет из тебя здоровье, зато клинок пьёт кровь: +10% к вампиризму.",
-                            "CURSED FORGING: the Dark Curse settles onto the blade. Out of "
-                            "combat it feeds on you, but the blade drinks blood: +10% vampirism."),
+        "frgu_curse_done": ("ПРОКЛЯТАЯ КОВКА: Тёмное проклятье легло на клинок. Пока он в "
+                            "руке и 5 секунд не бьёт врага, проклятье тянет из тебя здоровье; "
+                            "зато клинок пьёт кровь: +10% к вампиризму.",
+                            "CURSED FORGING: the Dark Curse settles onto the blade. While it "
+                            "is drawn and lands no hit for 5 seconds, the curse feeds on you; "
+                            "but the blade drinks blood: +10% vampirism."),
         "frgu_rl_pick": ("Сначала выбери клинок — прокрути первый квадрат",
                          "Pick the blade first - scroll the first square"),
         "frgu_rl_bag": ("Клинок должен быть на Геральте или в сумке, не в седельных сумках",

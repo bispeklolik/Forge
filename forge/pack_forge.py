@@ -78,7 +78,7 @@ def check(path, want):
     for n in ws:
         body = z.read(n).decode("utf-16")
         # тестовые хвосты не едут в релиз
-        for probe in ("frgswtest_ext", "items_plus\\frgswtest"):
+        for probe in ("frgswtest_ext", "items_plus\\frgswtest", "frgvtest", "'frg_swtest'"):
             if probe in body:
                 fail("%s: в скрипте тестовый след %r" % (n, probe))
     return got
