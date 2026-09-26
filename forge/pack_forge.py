@@ -5,10 +5,13 @@
 заново и пересчитывает состав (урок SetBonusTransfer: подписи забывались,
 тестовые хвосты ехали в архив — см. заметку witcher3-release-packaging).
 
-    python pack_forge.py            основной архив: скрипт + пакет предметов
-    python pack_forge.py --looks    плюс отдельный архив обликов из чужих модов
-                                    (TW2 Gear, Perfect KM, доспех Весемира) —
-                                    ТОЛЬКО с разрешения их авторов
+    python pack_forge.py            основной архив (скрипт + пакет предметов)
+                                    и архивы дополнений с обликами из чужих
+                                    модов — их выкладывать ТОЛЬКО с разрешения
+                                    авторов (TW2 Gear; Perfect KM и доспех
+                                    Весемира). Основной архив чужих моделей
+                                    не содержит: жетоны этих обликов лавки
+                                    предлагают, только когда дополнение стоит.
 
 Перед запуском: build_blanks.py (игра закрыта) -> build_scab.py -> build_lab.py.
 """
@@ -26,7 +29,9 @@ NAME = "PathOfTheBlade-Forge"
 
 SCRIPT = GAME / "mods" / "modForgeLab" / "content" / "scripts" / "local" / "ForgeLab.ws"
 CORE_DLC = ["dlcFRGBlanks"]
-LOOK_DLC = ["dlcFRGTW2", "dlcFRGZmeya", "dlcFRGVesemir"]
+# дополнения с чужими моделями: имя архива -> папки DLC
+ADDONS = {"Looks-TW2Gear": ["dlcFRGTW2"],
+          "Looks-KaerMorhen": ["dlcFRGZmeya", "dlcFRGVesemir"]}
 
 # ровно столько языков кладёт build_blanks.py
 LANGS = 17
@@ -80,10 +85,9 @@ def check(path, want):
 
 
 def main():
-    looks = "--looks" in sys.argv
     if not SCRIPT.exists():
         fail("нет скрипта %s — сначала build_lab.py" % SCRIPT)
-    for d in CORE_DLC + (LOOK_DLC if looks else []):
+    for d in CORE_DLC + [x for v in ADDONS.values() for x in v]:
         if not (GAME / "dlc" / d / "content" / "blob0.bundle").exists():
             fail("нет пакета dlc/%s — сначала его сборщик" % d)
     readme_ru = (ROOT / "release" / "README_RU.txt")
@@ -107,14 +111,22 @@ def main():
     check(core, {"скрипт": 1, "подписи": LANGS * len(CORE_DLC),
                  "бандлы": 2 * len(CORE_DLC), "паспорта": len(CORE_DLC), "readme": 2})
 
-    if looks:
-        pack = OUT / ("%s-Looks-%s.zip" % (NAME, VER))
+    for key, dlcs in ADDONS.items():
+        pack = OUT / ("%s-%s-%s.zip" % (NAME, key, VER))
+        rd = ROOT / "release" / ("README_%s.txt" % key)
+        if not rd.exists():
+            fail("нет %s" % rd)
         say("== %s" % pack.name)
         with zipfile.ZipFile(pack, "w", zipfile.ZIP_DEFLATED) as z:
-            for d in LOOK_DLC:
+            for d in dlcs:
                 add_tree(z, GAME / "dlc" / d, "dlc/" + d)
-        z = zipfile.ZipFile(pack)
-        say("      всего %d файлов" % len(z.namelist()))
+            z.write(rd, "README.txt")
+        names = zipfile.ZipFile(pack).namelist()
+        if len(names) != len(set(names)):
+            fail("%s: один путь лежит дважды" % pack.name)
+        if any(n.endswith(".ws") for n in names) or not any(n.endswith("blob0.bundle") for n in names):
+            fail("%s: состав не тот (скрипт внутри или нет бандла)" % pack.name)
+        say("      всего %d файлов, папок DLC %d" % (len(names), len({n.split("/")[1] for n in names if n.startswith("dlc/")})))
     say("готово: %s" % OUT)
 
 

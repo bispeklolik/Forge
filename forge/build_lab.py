@@ -958,22 +958,48 @@ var FRG_ScabTries : int;            // retries while a vanilla scabbard is still
 \treturn '';
 }
 
+// scenery, not gear: never sold, dropped, shown or weighed. Instance tags do
+// NOT survive a save (modASHTagTest 11.08) - they are laid again on every find.
+@addMethod( W3PlayerWitcher ) function FRG_TagScenery( id : SItemUniqueId, own : name )
+{
+\tif( !inv.ItemHasTag( id, own ) )
+\t\tinv.AddItemTag( id, own );
+\tif( !inv.ItemHasTag( id, 'NoDrop' ) )
+\t\tinv.AddItemTag( id, 'NoDrop' );
+\tif( !inv.ItemHasTag( id, 'NoShow' ) )
+\t\tinv.AddItemTag( id, 'NoShow' );
+\tif( !inv.ItemHasTag( id, 'EncumbranceOff' ) )
+\t\tinv.AddItemTag( id, 'EncumbranceOff' );
+}
+
+// OUR scabbards of a slot - by the SAVED number FRG_ScabSlot. A tag-only item
+// was lost after a load and a new one was added every time (review 26.09).
+@addMethod( W3PlayerWitcher ) function FRG_ScabItems( slot : int ) : array< SItemUniqueId >
+{
+\tvar all, res : array< SItemUniqueId >;
+\tvar i : int;
+
+\tinv.GetAllItems( all );
+\tfor( i = 0; i < all.Size(); i += 1 )
+\t{
+\t\tif( inv.GetItemModifierInt( all[i], 'FRG_ScabSlot', 0 ) != slot )
+\t\t\tcontinue;
+\t\tFRG_TagScenery( all[i], 'FRG_LookScab' );
+\t\tres.PushBack( all[i] );
+\t}
+\treturn res;
+}
+
 // the look's scabbard worn for a slot, if any
 @addMethod( W3PlayerWitcher ) function FRG_ScabOf( slot : int, out id : SItemUniqueId ) : bool
 {
 \tvar ours : array< SItemUniqueId >;
-\tvar i : int;
 
-\tours = inv.GetItemsByTag( 'FRG_LookScab' );
-\tfor( i = 0; i < ours.Size(); i += 1 )
-\t{
-\t\tif( inv.GetItemModifierInt( ours[i], 'FRG_ScabSlot', 0 ) == slot )
-\t\t{
-\t\t\tid = ours[i];
-\t\t\treturn true;
-\t\t}
-\t}
-\treturn false;
+\tours = FRG_ScabItems( slot );
+\tif( ours.Size() <= 0 )
+\t\treturn false;
+\tid = ours[0];
+\treturn true;
 }
 
 // The forge card a vanilla sword's look was taken from. Kept on the blade as
@@ -1018,11 +1044,9 @@ var FRG_ScabTries : int;            // retries while a vanilla scabbard is still
 \tvar nat : name;
 \tvar i : int;
 
-\tours = inv.GetItemsByTag( 'FRG_LookScab' );
+\tours = FRG_ScabItems( slot );
 \tfor( i = 0; i < ours.Size(); i += 1 )
 \t{
-\t\tif( inv.GetItemModifierInt( ours[i], 'FRG_ScabSlot', 0 ) != slot )
-\t\t\tcontinue;
 \t\tinv.UnmountItem( ours[i], true );
 \t\tinv.RemoveItem( ours[i], 1 );
 \t}
@@ -1035,7 +1059,7 @@ var FRG_ScabTries : int;            // retries while a vanilla scabbard is still
 \town = inv.GetItemsByName( nat );
 \tfor( i = 0; i < own.Size(); i += 1 )
 \t{
-\t\tif( !inv.ItemHasTag( own[i], 'FRG_LookScab' ) )
+\t\tif( inv.GetItemModifierInt( own[i], 'FRG_ScabSlot', 0 ) <= 0 )
 \t\t\tFRG_MeshVis( inv.GetItemEntityUnsafe( own[i] ), true );
 \t}
 }
@@ -1059,11 +1083,9 @@ var FRG_ScabTries : int;            // retries while a vanilla scabbard is still
 \t\tFRG_ScabUndo( slot );
 \t\treturn true;
 \t}
-\tours = inv.GetItemsByTag( 'FRG_LookScab' );
+\tours = FRG_ScabItems( slot );
 \tfor( i = 0; i < ours.Size(); i += 1 )
 \t{
-\t\tif( inv.GetItemModifierInt( ours[i], 'FRG_ScabSlot', 0 ) != slot )
-\t\t\tcontinue;
 \t\tif( !have && inv.GetItemName( ours[i] ) == want )
 \t\t{
 \t\t\tmine = ours[i];
@@ -1076,19 +1098,18 @@ var FRG_ScabTries : int;            // retries while a vanilla scabbard is still
 \tif( !have )
 \t{
 \t\tmade = inv.AddAnItem( want, 1, true, true );
-\t\tif( made.Size() <= 0 )
+\t\t// AddAnItem hands back ONE id even for an unknown name - an invalid one
+\t\tif( made.Size() <= 0 || !inv.IsIdValid( made[0] ) )
 \t\t{
 \t\t\t// no such scabbard in this game: the vanilla one stays on
 \t\t\tFRG_ScabUndo( slot );
 \t\t\treturn true;
 \t\t}
 \t\tmine = made[0];
-\t\t// scenery, not gear: never sold, dropped, shown or weighed
-\t\tinv.AddItemTag( mine, 'FRG_LookScab' );
-\t\tinv.AddItemTag( mine, 'NoDrop' );
-\t\tinv.AddItemTag( mine, 'NoShow' );
-\t\tinv.AddItemTag( mine, 'EncumbranceOff' );
 \t\tinv.SetItemModifierInt( mine, 'FRG_ScabSlot', slot );
+\t\tFRG_TagScenery( mine, 'FRG_LookScab' );
+\t\t// the refresh scans the bag only while such items may exist
+\t\tFactsSet( "FRG_ScabLive", 1 );
 \t}
 \t// mounted the way the game mounts Geralt's own scabbards (GiveStartingItems);
 \t// an entity already standing means it is on - no remount, no flicker
@@ -1103,7 +1124,7 @@ var FRG_ScabTries : int;            // retries while a vanilla scabbard is still
 \town = inv.GetItemsByName( nat );
 \tfor( i = 0; i < own.Size(); i += 1 )
 \t{
-\t\tif( inv.ItemHasTag( own[i], 'FRG_LookScab' ) )
+\t\tif( inv.GetItemModifierInt( own[i], 'FRG_ScabSlot', 0 ) > 0 )
 \t\t\tcontinue;
 \t\tent = inv.GetItemEntityUnsafe( own[i] );
 \t\tif( !ent )
@@ -1123,6 +1144,9 @@ var FRG_ScabTries : int;            // retries while a vanilla scabbard is still
 \tvar s : int;
 \tvar pending : bool;
 
+\t// nobody ever wore a look scabbard and no blade wears a look: nothing to do
+\tif( FactsQuerySum( "FRG_ScabLive" ) <= 0 && !FRG_AnyBladeLook() )
+\t\treturn;
 \tfor( s = 4; s <= 5; s += 1 )
 \t{
 \t\tif( !FRG_Slot( s, blade ) )
@@ -1190,7 +1214,7 @@ timer function FRG_ScabRetry( deltaTime : float, id : int )
 \t\t\tcontinue;
 \t\tfor( i = items.Size() - 1; i >= 0; i -= 1 )
 \t\t{
-\t\t\tif( inv.GetItemName( items[i] ) == nat && !inv.ItemHasTag( items[i], 'FRG_LookScab' ) )
+\t\t\tif( inv.GetItemName( items[i] ) == nat && inv.GetItemModifierInt( items[i], 'FRG_ScabSlot', 0 ) <= 0 )
 \t\t\t\titems.Erase( i );
 \t\t}
 \t\tif( !items.Contains( mine ) )
@@ -1207,7 +1231,8 @@ timer function FRG_ScabRetry( deltaTime : float, id : int )
 \tvar i : int;
 \tvar found : bool;
 
-\tall = inv.GetItemsByTag( 'FRG_LookItem' );
+\t// by the SAVED number: a tag does not survive a save
+\tinv.GetAllItems( all );
 \tfor( i = 0; i < all.Size(); i += 1 )
 \t{
 \t\tif( inv.GetItemModifierInt( all[i], 'FRG_DollFor', 0 ) != slot )
@@ -1216,6 +1241,7 @@ timer function FRG_ScabRetry( deltaTime : float, id : int )
 \t\t{
 \t\t\tstand = all[i];
 \t\t\tfound = true;
+\t\t\tFRG_TagScenery( stand, 'FRG_LookItem' );
 \t\t}
 \t\telse
 \t\t\tinv.RemoveItem( all[i], 1 );
@@ -1226,42 +1252,42 @@ timer function FRG_ScabRetry( deltaTime : float, id : int )
 \tif( bs != '' )
 \t\tbefore = inv.GetItemsByName( bs );
 \tmade = inv.AddAnItem( card, 1, true, true );
-\tif( made.Size() <= 0 )
+\tif( made.Size() <= 0 || !inv.IsIdValid( made[0] ) )
 \t\treturn false;
 \tstand = made[0];
-\tinv.AddItemTag( stand, 'FRG_LookItem' );
-\tinv.AddItemTag( stand, 'NoDrop' );
-\tinv.AddItemTag( stand, 'NoShow' );
-\tinv.AddItemTag( stand, 'EncumbranceOff' );
 \tinv.SetItemModifierInt( stand, 'FRG_DollFor', slot );
+\tFRG_TagScenery( stand, 'FRG_LookItem' );
+\tFactsSet( "FRG_DollLive", 1 );
 \t// the card's own scabbard came into the bag with it: it leaves with it
 \tif( bs != '' )
 \t{
 \t\tmade = inv.GetItemsByName( bs );
 \t\tfor( i = 0; i < made.Size(); i += 1 )
 \t\t{
-\t\t\tif( !before.Contains( made[i] ) && !inv.ItemHasTag( made[i], 'FRG_LookScab' ) )
-\t\t\t\tinv.AddItemTag( made[i], 'FRG_DollScab' );
+\t\t\tif( !before.Contains( made[i] ) && inv.GetItemModifierInt( made[i], 'FRG_ScabSlot', 0 ) <= 0 )
+\t\t\t\tinv.SetItemModifierInt( made[i], 'FRG_DollScabFor', slot );
 \t\t}
 \t}
 \treturn true;
 }
 
-// the doll is gone: its stand-ins leave the bag
+// the doll is gone: its stand-ins (and the scabbards their cards brought)
+// leave the bag - found by their saved numbers
 @addMethod( W3PlayerWitcher ) function FRG_DollSweep()
 {
 \tvar all : array< SItemUniqueId >;
 \tvar i : int;
 
-\tall = inv.GetItemsByTag( 'FRG_LookItem' );
+\tif( FactsQuerySum( "FRG_DollLive" ) <= 0 )
+\t\treturn;
+\tinv.GetAllItems( all );
 \tfor( i = 0; i < all.Size(); i += 1 )
 \t{
-\t\tif( inv.GetItemModifierInt( all[i], 'FRG_DollFor', 0 ) > 0 )
+\t\tif( inv.GetItemModifierInt( all[i], 'FRG_DollFor', 0 ) > 0
+\t\t\t|| inv.GetItemModifierInt( all[i], 'FRG_DollScabFor', 0 ) > 0 )
 \t\t\tinv.RemoveItem( all[i], 1 );
 \t}
-\tall = inv.GetItemsByTag( 'FRG_DollScab' );
-\tfor( i = 0; i < all.Size(); i += 1 )
-\t\tinv.RemoveItem( all[i], 1 );
+\tFactsRemove( "FRG_DollLive" );
 }
 
 // ---- TEMP 23.09: where does the look sit? (vanilla-sword overlay test) ----
@@ -1692,35 +1718,6 @@ exec function frgarmfix()
 \tw.FRG_ArmReEquip();
 \tw.FRG_ArmLookRefresh();
 \ttheGame.GetGuiManager().ShowNotification( "FRG: armour looks swept, gear re-equipped", 9000 );
-}
-
-// ВРЕМЕННО (мини-пруф 22.09): проверка техники <variant>+маркер. Надевает/снимает
-// невидимый маркер frg_swtest. Пока надет — у ванильного Аэрондита (серебряный меч)
-// должна появиться СТАЛЬНАЯ модель Дикой Охоты В СЕРЕБРЯНОЙ позиции. Работает —
-// значит технику можно строить по-крупному; после проверки эту команду убрать.
-exec function frgvtest( on : int )
-{
-\tvar inv : CInventoryComponent;
-\tvar ids : array< SItemUniqueId >;
-\tvar i : int;
-
-\tinv = thePlayer.GetInventory();
-\tids = inv.GetItemsByCategory( 'frg_swtest' );
-\tfor( i = 0; i < ids.Size(); i += 1 )
-\t{
-\t\tif( inv.IsItemMounted( ids[i] ) )
-\t\t\tinv.UnmountItem( ids[i], true );
-\t\tinv.RemoveItem( ids[i], 1 );
-\t}
-\tif( on > 0 )
-\t{
-\t\tids = inv.AddAnItem( 'frg_swtest', 1, true, true );
-\t\tif( ids.Size() > 0 )
-\t\t\tinv.MountItem( ids[0] );
-\t\ttheGame.GetGuiManager().ShowNotification( "FRG: marker ON - look at Aerondight (silver slot)", 9000 );
-\t}
-\telse
-\t\ttheGame.GetGuiManager().ShowNotification( "FRG: marker OFF", 6000 );
 }
 
 // Putting a piece on: the game mounts it itself, asynchronously - swap the
@@ -3799,6 +3796,9 @@ function FRGV_RestockShop( inv : CInventoryComponent, force : bool ) : bool
 \tlooks = FRGV_ShopLooks( lootDef );
 \tfor( i = 0; i < looks.Size(); i += 1 )
 \t{
+\t\t// a look of a mod that is not installed has no model: not offered
+\t\tif( !FRGW_LookAvailable( looks[i] ) )
+\t\t\tcontinue;
 \t\tif( inv.GetItemQuantityByName( looks[i] ) <= 0 )
 \t\t{
 \t\t\tinv.AddAnItem( looks[i], 1, true, true );
@@ -3815,8 +3815,42 @@ function FRGV_RestockShop( inv : CInventoryComponent, force : bool ) : bool
 @wrapMethod( W3GuiBaseInventoryComponent ) function Initialize( inv : CInventoryComponent )
 {
 \tif( (W3GuiShopInventoryComponent)this )
+\t{
 \t\tFRGV_RestockShop( inv, false );
+\t\tFRGV_DropMissingLooks( inv );
+\t}
 \twrappedMethod( inv );
+}
+
+// A look whose model lives in ANOTHER mod or in a look add-on of the forge
+// (TW2 Gear, Kaer Morhen, Raven, Frayed, Vagabond) is real only while that
+// mod is installed - its donor card is defined there (release 26.09).
+function FRGW_LookAvailable( tok : name ) : bool
+{
+\tvar d : name;
+
+\td = FRGW_ForeignDonor( tok );
+\treturn d == '' || theGame.GetDefinitionsManager().GetItemCategory( d ) != '';
+}
+
+// The shops' own loot tables may roll such a token too: it leaves the shelf
+// while its mod is missing (and comes back with the mod on the next restock).
+function FRGV_DropMissingLooks( inv : CInventoryComponent )
+{
+\tvar toks : array< name >;
+\tvar i, n : int;
+
+\tif( !inv )
+\t\treturn;
+\ttoks = FRGW_ForeignTokens();
+\tfor( i = 0; i < toks.Size(); i += 1 )
+\t{
+\t\tif( FRGW_LookAvailable( toks[i] ) )
+\t\t\tcontinue;
+\t\tn = inv.GetItemQuantityByName( toks[i] );
+\t\tif( n > 0 )
+\t\t\tinv.RemoveItemByName( toks[i], n );
+\t}
 }
 
 // Долив руками: встать рядом с торговцем (гроссмейстер или Элихаль) и
@@ -5992,6 +6026,19 @@ function FRGW_LineFitsGear( lineId : int, gearCat : name, isWeapon : bool, gearP
 \t\t\tpopupData.FRG_FirstIds.PushBack( blankId );
 \t\t\tforbiddenItems.PushBack( card );
 \t\t}
+\t\t// the bag goes by the ring's rules too: the stock list filters by the
+\t\t// FRG_Blank tag alone, and armour blanks carry it (review 26.09)
+\t\tw.inv.GetAllItems( bagIds );
+\t\tfor( i = 0; i < bagIds.Size(); i += 1 )
+\t\t{
+\t\t\tcard = w.inv.GetItemName( bagIds[i] );
+\t\t\tif( forbiddenItems.Contains( card ) || !w.inv.ItemHasTag( bagIds[i], 'FRG_Blank' ) )
+\t\t\t\tcontinue;
+\t\t\tif( !FRGW_FitsWorkSlot( selectedSchematic.schemName, w.inv.GetItemCategory( bagIds[i] ) )
+\t\t\t\t|| w.inv.ItemHasTag( bagIds[i], 'FRG_LookItem' )
+\t\t\t\t|| ( selectedSchematic.schemName == 'FRG Enchant schematic' && !FRGW_IsWorthyBlade( w, bagIds[i] ) ) )
+\t\t\t\tforbiddenItems.PushBack( card );
+\t\t}
 \t}
 \t// the STUDY popup filters by FRG_MeasTok*, a tag no item carries, so it
 \t// was always empty: it gets the ring's own pool, worn first
@@ -6291,6 +6338,9 @@ var FRG_FirstIds : array< SItemUniqueId >;
 \t\t\treturn ECE_TooFewIngredients;
 \t\t}
 \t\tif( !w.FRG_FindForWork( shapeTok, blankId ) )
+\t\t\treturn ECE_TooFewIngredients;
+\t\t// a blade recipe never acts on armour of the same name (review 26.09)
+\t\tif( !FRGW_FitsWorkSlot( schemName, w.inv.GetItemCategory( blankId ) ) )
 \t\t\treturn ECE_TooFewIngredients;
 
 \t\t// the picked SET: duplicates collapse, placeholders are empty slots
@@ -6771,6 +6821,9 @@ var FRG_FirstIds : array< SItemUniqueId >;
 \t\tif( FRGW_IsPlaceholder( shapeTok ) || FRGW_IsPlaceholder( dmgTok ) || FRGW_IsPlaceholder( fxTok ) )
 \t\t\treturn ECE_TooFewIngredients;
 \t\tif( !w.FRG_FindForWork( shapeTok, blankId ) )
+\t\t\treturn ECE_TooFewIngredients;
+\t\t// a blade recipe never acts on armour of the same name (review 26.09)
+\t\tif( !FRGW_FitsWorkSlot( schemName, w.inv.GetItemCategory( blankId ) ) )
 \t\t\treturn ECE_TooFewIngredients;
 \t\tif( !w.inv.ItemHasTag( blankId, 'FRG_Forge' ) )
 \t\t{
@@ -8665,6 +8718,28 @@ def _scab_section():
 
 
 WS = WS + _scab_section()
+
+
+def _foreign_section():
+    """Жетон облика -> карточка донора из ЧУЖОГО мода или дополнения
+    (foreign_looks.py). Ворота лавки: нет карточки — нет и жетона."""
+    import foreign_looks as _fl
+    _names = sorted(_fl.donor_names())
+    bad = [n for n in _names if "'" in n or "\\" in n]
+    if bad:
+        raise SystemExit("имена доноров с кавычкой: %r" % bad)
+    out = "// look token -> its donor card living in another mod / a look add-on\n"
+    out += "function FRGW_ForeignDonor( tok : name ) : name\n{\n\tswitch( tok )\n\t{\n"
+    out += "".join("\t\tcase 'FRG Shape %s':\treturn '%s';\n" % (n, n) for n in _names)
+    out += "\t}\n\treturn '';\n}\n\n"
+    out += "function FRGW_ForeignTokens() : array< name >\n{\n\tvar a : array< name >;\n\n"
+    out += "".join("\ta.PushBack( 'FRG Shape %s' );\n" % n for n in _names)
+    out += "\treturn a;\n}\n\n"
+    print("   [ok] облики чужих модов под воротами лавки: %d" % len(_names))
+    return out
+
+
+WS = WS + _foreign_section()
 
 print("=" * 66)
 print("  modForgeLab — кузница, этапы 1-2")

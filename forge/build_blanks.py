@@ -125,29 +125,13 @@ _BLANK_OF = {"armor": "FRG Blank Armor", "pants": "FRG Blank Pants",
 
 # модовые облики (заказ 03.09): ТОЛЬКО жетон облика, без защиты и строк.
 # Жетоны продаёт Элихаль; сами вещи скрыты из магазинов глушителем витрины.
-SKIN_ONLY_NAMES = {"Frayed Armor", "Frayed Gloves", "Raven Armor",
-                   "Raven Pants", "Raven Gloves", "Raven Boots",
-                   "vagabondarmor",
-                   # перенесённый вид модов Весемира (15.09): свой предмет
-                   # в dlcFRGVesemir, ваниль Змеи не тронута
-                   "Vesemir KM Armor"}
-# облики TW2 Gear (18.09): свои предметы в dlcFRGTW2 по путям-двойникам,
-# ваниль не тронута. Тоже ТОЛЬКО жетон облика — и через _ARMOR_LOOKS
-# сами уходят в обе лавки (Элихаль + гроссмейстер Туссента). Список
-# пишет build_tw2looks.py; читаем его, а не копию имён.
-_TW2_DONORS = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                           "tw2", "tw2_donors.json")
-if os.path.exists(_TW2_DONORS):
-    SKIN_ONLY_NAMES |= {_d["name"] for _d in _json.load(
-        _io.open(_TW2_DONORS, encoding="utf-8"))}
-# облики Змеи (dlcFRGZmeya, 18.09): свои предметы по путям-двойникам,
-# ваниль не тронута; моды-замены гасятся при build_zmeya --install. Тоже
-# только жетон облика — через _ARMOR_LOOKS сами идут в обе лавки.
-_ZMEYA_DONORS = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                             "zmeya_donors.json")
-if os.path.exists(_ZMEYA_DONORS):
-    SKIN_ONLY_NAMES |= {_d["name"] for _d in _json.load(
-        _io.open(_ZMEYA_DONORS, encoding="utf-8"))}
+# Список — в foreign_looks.py (релиз 26.09): тот же источник читает
+# build_lab.py, чтобы лавка не продавала жетон облика, чьей модели в
+# игре нет (дополнение TW2/Каэр-Морхен или чужой мод не установлен).
+# Чужие моды-DLC (Frayed, Raven, Vagabond), доспех Весемира (dlcFRGVesemir),
+# облики TW2 Gear (dlcFRGTW2, пишет build_tw2looks.py) и Змеи (dlcFRGZmeya).
+import foreign_looks as _foreign_looks
+SKIN_ONLY_NAMES = _foreign_looks.donor_names()
 # ВСЕ уникальные облики брони идут в лавку Элихаля (заказ 05.09): список
 # строит gen_elihal.py (generic-одежда вон, дубли по модели схлопнуты)
 ELIHAL_LOOKS = _json.load(_io.open(os.path.join(os.path.dirname(
@@ -1153,21 +1137,6 @@ ITEMXML = (
 
 EMPTY_XML = ('<?xml version="1.0" encoding="UTF-16"?>\r\n<redxml>\r\n\t<definitions>\r\n'
              '\t\t<items>\r\n\t\t</items>\r\n\t</definitions>\r\n</redxml>\r\n')
-
-# ВРЕМЕННО (мини-пруф 22.09): даём ванильному Аэрондиту (серебряный меч) вариант
-# со стальной моделью Дикой Охоты. Пока надет маркер frg_swtest — движок должен
-# нарисовать у Аэрондита стальную модель В СЕРЕБРЯНОЙ позиции (проверка кросс-металла).
-TEST_EXTS = ('<?xml version="1.0" encoding="UTF-16"?>\r\n<redxml>\r\n\t<definitions>\r\n'
-             '\t\t<items_extensions>\r\n'
-             '\t\t\t<item_extension name="Aerondight">\r\n'
-             '\t\t\t\t<variants>\r\n'
-             '\t\t\t\t\t<variant equip_template="wildhunt_sword_lvl1">\r\n'
-             '\t\t\t\t\t\t<item>frg_swtest</item>\r\n'
-             '\t\t\t\t\t</variant>\r\n'
-             '\t\t\t\t</variants>\r\n'
-             '\t\t\t</item_extension>\r\n'
-             '\t\t</items_extensions>\r\n'
-             '\t</definitions>\r\n</redxml>\r\n')
 
 # Проверка разметки ДО упаковки: обрубленный <item> ломает весь файл целиком,
 # и игра просто не выдаёт НИ ОДНОГО предмета мода — без ошибки и без лога.
