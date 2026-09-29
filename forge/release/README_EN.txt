@@ -95,8 +95,8 @@ WHERE
     Armor) are put on the shelf only if that mod is installed.
 
 REQUIREMENTS
-  - The Witcher 3 Next-Gen 4.0 or newer (the author plays on 4.04c). Classic
-    1.32 will not work.
+  - The Witcher 3 Next-Gen 4.0x (tested on 4.04c). The 5.00 (Remastered)
+    update has not been tested yet. Classic 1.32 will not work.
   - W3EE Redux (the author plays on 1.47). The script won't compile without
     it.
   - Both expansions: Hearts of Stone and Blood and Wine.
