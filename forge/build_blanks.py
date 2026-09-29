@@ -668,6 +668,12 @@ ARMOR_DONORS[:] = [d for d in ARMOR_DONORS if d["name"] in samples]
 ELIHAL_LOOKS[:] = [n for n in ELIHAL_LOOKS if n in samples]
 
 
+# метки типа оружия W3EE: анимации выхватывания/боя вспомогательного оружия
+# (топоры, булавы, дубины, кочерги в категории steelsword) держатся на них
+WEAPON_TYPE_TAGS = ("SecondaryWeapon", "TypeAxe", "TypeMace", "TypeClub",
+                    "TypeBattleaxe", "TypeBattlemace", "Wooden", "mod_secondary")
+
+
 def forged_card(donor_name, donor_xml, cat, cross=False):
     """«Кованая» карточка: полная копия карточки донора (модель, иконка,
     анимации, ножны в bound_items), но статы — ПУСТЫЕ, как у болванки.
@@ -742,6 +748,18 @@ def forged_card(donor_name, donor_xml, cat, cross=False):
         tags = "PlayerSilverWeapon, Weapon, sword1h, 1handedWeapon, mod_weapon, FRG_Blank, FRG_Forge, DoNotEnhance"
     else:
         tags = "PlayerSteelWeapon, Weapon, sword1h, 1handedWeapon, mod_weapon, FRG_Blank, FRG_Forge, DoNotEnhance"
+    # ...но метки ТИПА оружия донора остаются (ГД 29.09, видео с кочергой):
+    # по SecondaryWeapon W3EE выхватывает топор/булаву/дубину своей анимацией с
+    # места топора (secondaryWeaponForOverlay). Без метки кованая кочерга
+    # доставалась мечевым махом из-за плеча и перелетала с axe_back_slot в руку.
+    # Только родной металл: у кросс-версии слот — спина меча, а SecondaryWeapon
+    # выключил бы её как серебряный меч (IsItemSilverSwordUsableByPlayer).
+    if not cross:
+        _dm = re.search(r"<tags>(.*?)</tags>", c, flags=re.S)
+        _dt = [t.strip() for t in (_dm.group(1) if _dm else "").split(",")]
+        _keep = [t for t in _dt if t in WEAPON_TYPE_TAGS]
+        if _keep:
+            tags += ", " + ", ".join(_keep)
     c = re.sub(r"<tags>.*?</tags>",
                "<tags>" + P + tags + "\n" + P + "</tags>", c, count=1, flags=re.S)
     c = re.sub(r"<recycling_parts>.*?</recycling_parts>",
