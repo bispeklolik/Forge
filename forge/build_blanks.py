@@ -668,10 +668,14 @@ ARMOR_DONORS[:] = [d for d in ARMOR_DONORS if d["name"] in samples]
 ELIHAL_LOOKS[:] = [n for n in ELIHAL_LOOKS if n in samples]
 
 
-# метки типа оружия W3EE: анимации выхватывания/боя вспомогательного оружия
-# (топоры, булавы, дубины, кочерги в категории steelsword) держатся на них
-WEAPON_TYPE_TAGS = ("SecondaryWeapon", "TypeAxe", "TypeMace", "TypeClub",
-                    "TypeBattleaxe", "TypeBattlemace", "Wooden", "mod_secondary")
+# события выхватывания/убирания обычного меча со спины (303 стальных и 172
+# серебряных кованых карточки уже такие); ими выравниваются переехавшие на спину
+STD_BACK_ACTS = (("draw_event", "DrawWeapon"),
+                 ("draw_act", "draw_steel_sword_back_act"),
+                 ("draw_deact", "draw_steel_sword_back_deact"),
+                 ("holster_event", "HolsterWeapon"),
+                 ("holster_act", "holster_steel_sword_back_act"),
+                 ("holster_deact", "holster_steel_sword_back_deact"))
 
 
 def forged_card(donor_name, donor_xml, cat, cross=False):
@@ -696,12 +700,20 @@ def forged_card(donor_name, donor_xml, cat, cross=False):
     new_slot = "%s_sword_back_slot" % want_metal
     # ГДЕ МЕЧ ВИСИТ НА СПИНЕ — атрибут equip_slot шапки (не модель и не категория;
     # проверено 22.09). Кросс: всегда на сторону НОВОГО металла. Родная карточка:
-    # только если у донора стоял слот ЧУЖОГО меча (у W3EE есть «серебряные» мечи на
-    # стальной модели); прочие слоты (например axe_back_slot) не трогаем.
+    # если у донора стоял слот ЧУЖОГО меча (у W3EE есть «серебряные» мечи на
+    # стальной модели) — и если не мечевой вовсе: топоры, булавы, дубины, кочерги
+    # W3EE висят на axe_back_slot, а свою анимацию выхватывания берут по метке
+    # SecondaryWeapon. Метку кованая вещь не несёт (с ней игра запрещает
+    # добивания — ГД 29.09), значит выхватывается мечевым махом из-за плеча: пусть
+    # и висит на месте меча, иначе оружие перелетает с места топора в руку.
     # equip_slot внутри anim_switches — переходы анимаций, металл-нейтральны: не трогаем.
     _slot = re.search(r'equip_slot\s*=\s*"([^"]+)"', c)
-    if cross or (_slot and _slot.group(1) == other_slot):
+    if cross or (_slot and _slot.group(1) != new_slot):
         c = re.sub(r'(equip_slot\s*=\s*")[^"]+(")', r"\g<1>%s\g<2>" % new_slot, c, count=1)
+        # ...и выхватывается как все мечи на спине: у мечей NPC «с бедра»
+        # (draw_sword_act) и у W_Poker (HolsterSecondaryWeapon) события свои
+        for _a, _v in STD_BACK_ACTS:
+            c = re.sub(r'(%s\s*=\s*")[^"]+(")' % _a, r"\g<1>%s\g<2>" % _v, c, count=1)
     # НОЖНЫ — по ОПИСАНИЮ предмета (категория + шаблон), а не по имени: у многих
     # мечей ножны зовутся «Long Steel Sword Scabbard», «Sabre Scabbard 02»… (23.09:
     # старый поиск по имени scabbard_steel_* пропускал 200 кросс-карточек из 565).
@@ -748,18 +760,8 @@ def forged_card(donor_name, donor_xml, cat, cross=False):
         tags = "PlayerSilverWeapon, Weapon, sword1h, 1handedWeapon, mod_weapon, FRG_Blank, FRG_Forge, DoNotEnhance"
     else:
         tags = "PlayerSteelWeapon, Weapon, sword1h, 1handedWeapon, mod_weapon, FRG_Blank, FRG_Forge, DoNotEnhance"
-    # ...но метки ТИПА оружия донора остаются (ГД 29.09, видео с кочергой):
-    # по SecondaryWeapon W3EE выхватывает топор/булаву/дубину своей анимацией с
-    # места топора (secondaryWeaponForOverlay). Без метки кованая кочерга
-    # доставалась мечевым махом из-за плеча и перелетала с axe_back_slot в руку.
-    # Только родной металл: у кросс-версии слот — спина меча, а SecondaryWeapon
-    # выключил бы её как серебряный меч (IsItemSilverSwordUsableByPlayer).
-    if not cross:
-        _dm = re.search(r"<tags>(.*?)</tags>", c, flags=re.S)
-        _dt = [t.strip() for t in (_dm.group(1) if _dm else "").split(",")]
-        _keep = [t for t in _dt if t in WEAPON_TYPE_TAGS]
-        if _keep:
-            tags += ", " + ", ".join(_keep)
+    # ⛔ SecondaryWeapon донора НЕ переносим (ГД 29.09): с ней игра запрещает
+    # добивания. Полёт при выхватывании лечит слот подвеса выше.
     c = re.sub(r"<tags>.*?</tags>",
                "<tags>" + P + tags + "\n" + P + "</tags>", c, count=1, flags=re.S)
     c = re.sub(r"<recycling_parts>.*?</recycling_parts>",
