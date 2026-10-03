@@ -1,8 +1,8 @@
-Путь клинка — облики TW2 Gear 1.0 (дополнение)
+Выкуй свой меч и броню — облики TW2 Gear 1.0 (дополнение)
 ============================================================
 
 ЧТО ЭТО
-  46 обликов брони из «Ведьмака 2» для кузницы «Путь клинка»: 20 доспехов,
+  46 обликов брони из «Ведьмака 2» для мода «Выкуй свой меч и броню»: 20 доспехов,
   8 штанов, 4 перчатки и 14 сапог. Облики приходят в кузницу жетонами:
   доспех выглядит как вещь из «Ведьмака 2», а защищает как та, чей жетон
   защиты вы вложили. Ванильные вещи игры не меняются, это не замена.
@@ -11,7 +11,7 @@
   Туссенте. Без этого дополнения лавки их не выкладывают.
 
 ТРЕБОВАНИЯ
-  Основной мод «Путь клинка» (и всё, что нужно ему: Next-Gen 4.0+, W3EE Redux).
+  Основной мод «Выкуй свой меч и броню» (и всё, что нужно ему: Next-Gen 4.0+, W3EE Redux).
 
 УСТАНОВКА
   Папку dlc из архива положить в корень игры поверх существующей. Если
@@ -30,10 +30,10 @@
 
 ------------------------------------------------------------
 
-Path of the Blade — TW2 Gear looks 1.0 (add-on)
+Forge Your Own Sword and Armor — TW2 Gear looks 1.0 (add-on)
 
 WHAT IT IS
-  46 armour looks from The Witcher 2 for the Path of the Blade forge: 20 chest
+  46 armour looks from The Witcher 2 for the Forge Your Own Sword and Armor mod: 20 chest
   pieces, 8 trousers, 4 gloves and 14 boots. They come to the forge as look
   tokens: a piece looks like the Witcher 2 gear and protects like the piece
   whose defence token you put in. No vanilla item is changed - this is not a
@@ -43,7 +43,7 @@ WHAT IT IS
   tokens. Without this add-on the shops do not offer them.
 
 REQUIREMENTS
-  The main Path of the Blade mod (and what it needs: Next-Gen 4.0+,
+  The main Forge Your Own Sword and Armor mod (and what it needs: Next-Gen 4.0+,
   W3EE Redux).
 
 INSTALLATION

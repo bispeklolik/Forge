@@ -1,4 +1,4 @@
-Path of the Blade 1.0 - a forge for W3EE Redux
+Forge Your Own Sword and Armor 1.0 - a forge for W3EE Redux
 ============================================================
 
 WHAT IT IS
